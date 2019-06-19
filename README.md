@@ -58,8 +58,3 @@ Note that this is different from the main GOGS url, which is https://hoth.sevenc
 5. Enjoy like ... looking at the docs... or something
 
 Doc generation *will succeed*, but will throw an error afterward if run by anyone other than Mike. This is because only Mike has permission to upload directly to hoth, until a better solution is found.
-
-
-
-
-# Asteroids
