@@ -1,0 +1,9 @@
+<map id="Asteroids::UI::ServerTextUI::ServerTextUI::main_menu_loop" name="Asteroids::UI::ServerTextUI::ServerTextUI::main_menu_loop">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI.html#a35d6eb54e2eabfff2cc1ee47a6c228c6" title="Asteroids::UI::ServerText\lUI::ServerTextUI::do_apply\l_updates" alt="" coords="231,5,414,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI.html#a6713eb173fef32a2fc96932b96ce2dea" title="Asteroids::UI::ServerText\lUI::ServerTextUI::do_process\l_credit_card_payment" alt="" coords="224,85,421,141"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI.html#a5518087c5d0ab9fd8c24c1b6948ee11b" title="Asteroids::UI::ServerText\lUI::ServerTextUI::do_review\l_flagged_users" alt="" coords="228,165,417,221"/>
+<area shape="rect" id="node8" href="$classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI.html#afc4ba344c4244c2650ade2148e08d5f2" title="Asteroids::UI::ServerText\lUI::ServerTextUI::main_menu" alt="" coords="224,246,421,287"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface.html#a605de1c4a264b4f9ae94ed13dd5fe1c0" title="Asteroids::TechnicalServices\l::Financial::CreditCardProcessor\lInterface::authorizePayment" alt="" coords="480,5,692,61"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface.html#a8dcf97d20a9de55d04e0f84b4a788f78" title="Asteroids::TechnicalServices\l::Financial::CreditCardProcessor\lInterface::get_processor_description" alt="" coords="469,85,703,141"/>
+<area shape="rect" id="node7" href="$classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI.html#af85d5a35efcb8c75fe7b5419da0d6f93" title="Asteroids::UI::ServerText\lUI::ServerTextUI::do_review\l_flagged_user" alt="" coords="491,165,681,221"/>
+</map>

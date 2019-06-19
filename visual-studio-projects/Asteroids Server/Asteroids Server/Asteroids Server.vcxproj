@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{40BC3290-C736-41B5-A454-7FBBFBFED124}</ProjectGuid>
+    <RootNamespace>AsteroidsServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>C:\Users\Me\Desktop\asteroids;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Asteroids\doxygen_dummy.h" />
+    <ClInclude Include="..\..\..\Asteroids\Factory\Factory.h" />
+    <ClInclude Include="..\..\..\Asteroids\Factory\FactoryInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\ForwardDeclarations.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\Actor.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\ActorInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\Alien.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\Bullet.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\GunShip.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\Rect.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\Rock.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Actors\Vector.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Defines.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Game.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\GameFactory.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\GameFactoryInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\GameInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Game\Randomer.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\Authentication\AuthenticationInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\Authentication\Authenticator.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\ClientServerCommunicator.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\ClientServerCommunicatorInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\Messages\AUTH_ATTEMPT.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\Messages\AUTH_STATE.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\Messages\Enums\Enums.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\NetFactory.h" />
+    <ClInclude Include="..\..\..\Asteroids\Net\NetFactoryInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\HACCS_REPORT.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\HACCS_REPORT_ACTIVITY.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\HACCS_REPORT_ACTIVITY_INTERFACE.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\HACCS_REPORT_INTERFACE.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\ServerDaemon.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\ServerDaemonInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\ServerFactory.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\ServerFactoryInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\ServerUpdater.h" />
+    <ClInclude Include="..\..\..\Asteroids\Server\ServerUpdaterInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\Enums\Enums.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\PaymentHelper.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\PaymentHelperInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\PAYMENT_RESULT_DETAILS.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\PAYMENT_RESULT_DETAILS_INTERFACE.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\POWERUP_ADDED_INFO.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\POWERUP_ADDED_INFO_INTERFACE.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\Store.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\StoreFactory.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\StoreFactoryInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\StoreInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\STORE_ITEM.h" />
+    <ClInclude Include="..\..\..\Asteroids\Store\STORE_ITEM_INTERFACE.h" />
+    <ClInclude Include="..\..\..\Asteroids\TechnicalServices\Financial\FinancialServices.h" />
+    <ClInclude Include="..\..\..\Asteroids\TechnicalServices\Financial\FinancialServicesInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\TechnicalServices\Persistence\Databaser.h" />
+    <ClInclude Include="..\..\..\Asteroids\TechnicalServices\Persistence\DatabaserInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\TechnicalServices\TechnicalServicesFactory.h" />
+    <ClInclude Include="..\..\..\Asteroids\TechnicalServices\TechnicalServicesFactoryInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ClientTextUI\ClientTextUI.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ClientTextUI\ClientTextUIInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ClientTextUI\Defines.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ClientTextUI\DisplayGrid.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ClientTextUI\Enums\Enums.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ClientTextUI\Input.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ServerTextUI\Enums\Enums.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ServerTextUI\ServerTextUI.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\ServerTextUI\ServerTextUIInterface.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\UIFactory.h" />
+    <ClInclude Include="..\..\..\Asteroids\UI\UIFactoryInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Asteroids\Factory\Factory.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Actors\Actor.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Actors\Alien.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Actors\Bullet.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Actors\GunShip.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Actors\Rect.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Actors\Rock.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Actors\Vector.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Game.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\GameFactory.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Game\Randomer.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\main-server.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Net\Authentication\Authenticator.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Net\ClientServerCommunicator.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Net\Messages\AUTH_ATTEMPT.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Net\Messages\AUTH_STATE.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Net\NetFactory.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Server\HACCS_REPORT.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Server\HACCS_REPORT_ACTIVITY.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Server\ServerDaemon.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Server\ServerFactory.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Server\ServerUpdater.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Store\PaymentHelper.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Store\PAYMENT_RESULT_DETAILS.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Store\POWERUP_ADDED_INFO.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Store\Store.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Store\StoreFactory.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\Store\STORE_ITEM.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\TechnicalServices\Financial\FinancialServices.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\TechnicalServices\Persistence\Databaser.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\TechnicalServices\TechnicalServicesFactory.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\UI\ClientTextUI\ClientTextUI.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\UI\ClientTextUI\DisplayGrid.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\UI\ClientTextUI\Input.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\UI\ServerTextUI\ServerTextUI.cpp" />
+    <ClCompile Include="..\..\..\Asteroids\UI\UIFactory.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,89 @@
+.TH "Asteroids::UI::UIFactory" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::UI::UIFactory \- Implementation of \fBUIFactoryInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <UIFactory\&.h>\fP
+.PP
+Inherits \fBAsteroids::UI::UIFactoryInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUIFactory\fP (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::UI::ClientTextUI::ClientTextUIInterface\fP > \fBcreateClientTextUI\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::UI::ServerTextUI::ServerTextUIInterface\fP > \fBcreateServerTextUI\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > \fB_factory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBUIFactoryInterface\fP\&. 
+.PP
+Definition at line 17 of file UIFactory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::UI::UIFactory::UIFactory (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+
+.PP
+Definition at line 17 of file UIFactory\&.cpp\&.
+.PP
+References _factory, and init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::unique_ptr< \fBAsteroids::UI::ClientTextUI::ClientTextUIInterface\fP > Asteroids::UI::UIFactory::createClientTextUI ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::UI::UIFactoryInterface\fP\&.
+.PP
+Definition at line 38 of file UIFactory\&.cpp\&.
+.PP
+References _factory\&.
+.SS "std::unique_ptr< \fBAsteroids::UI::ServerTextUI::ServerTextUIInterface\fP > Asteroids::UI::UIFactory::createServerTextUI ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::UI::UIFactoryInterface\fP\&.
+.PP
+Definition at line 27 of file UIFactory\&.cpp\&.
+.PP
+References _factory\&.
+.SS "void Asteroids::UI::UIFactory::init ()\fC [private]\fP"
+bleh 
+.PP
+Definition at line 49 of file UIFactory\&.cpp\&.
+.PP
+Referenced by UIFactory()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::Domain::Factory::FactoryInterface\fP> Asteroids::UI::UIFactory::_factory\fC [private]\fP"
+
+.PP
+Definition at line 34 of file UIFactory\&.h\&.
+.PP
+Referenced by createClientTextUI(), createServerTextUI(), and UIFactory()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,8 @@
+<map id="Asteroids::Domain::Game::Actors::GunShip::use_input" name="Asteroids::Domain::Game::Actors::GunShip::use_input">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#ad108a838180454ac98facde4518d7660" title="Asteroids::Domain::\lGame::Actors::Actor\l::fire_bullet" alt="" coords="215,125,357,181"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#afa2ca9372ddf8f08de11682dae43840f" title="Asteroids::Domain::\lGame::Actors::Actor\l::get_rotation" alt="" coords="409,5,551,61"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector.html#a540d3867c26c3cc6dafeb7a055cd392d" title="Asteroids::Domain::\lGame::Actors::Vector\l::rotate_velocity" alt="" coords="405,245,555,301"/>
+<area shape="rect" id="node7" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#ade49ee1d618ef27e07314794fcf25cf0" title="Asteroids::Domain::\lGame::Actors::Actor\l::set_input_fire" alt="" coords="215,256,357,312"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a6b56087b412883601fce5af07d67bd50" title="Asteroids::Domain::\lGame::Actors::Actor\l::get_x" alt="" coords="409,85,551,141"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#afa54aab6e7be56e04014dd3f80f0e7af" title="Asteroids::Domain::\lGame::Actors::Actor\l::get_y" alt="" coords="409,165,551,221"/>
+</map>

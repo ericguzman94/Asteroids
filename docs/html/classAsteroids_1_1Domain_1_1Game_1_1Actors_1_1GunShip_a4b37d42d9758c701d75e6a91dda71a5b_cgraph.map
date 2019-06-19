@@ -1,0 +1,15 @@
+<map id="Asteroids::Domain::Game::Actors::GunShip::update" name="Asteroids::Domain::Game::Actors::GunShip::update">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a5a53ac407eec2feb06f167d1a496bbe5" title="Asteroids::Domain::\lGame::Actors::Actor\l::update" alt="" coords="224,97,367,153"/>
+<area shape="rect" id="node8" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#aae99fa7e1cae7f17c81b68217ed2fa32" title="Asteroids::Domain::\lGame::Actors::GunShip\l::use_input" alt="" coords="215,205,376,261"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#aafec1372aa2f5b203112aae5f6b16310" title="Asteroids::Domain::\lGame::Actors::Actor\l::apply_vector_to_position" alt="" coords="424,57,599,113"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a4bb89af7457ff402fa5a4a11d62ab4ca" title="Asteroids::Domain::\lGame::Actors::Actor\l::update_rect" alt="" coords="650,45,793,101"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a0ab06f4fe6e0dbd681c89397f22aa08f" title="Asteroids::Domain::\lGame::Actors::Rect::\ladd_offset" alt="" coords="844,5,991,61"/>
+<area shape="rect" id="node7" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a687d0848c13d1b8dfbd2f896636b4145" title="Create a rect from polygon points. " alt="" coords="844,85,991,141"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a40c593b8be9c243d6cdc30e2f8ee67df" title="Asteroids::Domain::\lGame::Actors::Rect::\lupdate_dimensions" alt="" coords="1039,45,1185,101"/>
+<area shape="rect" id="node9" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector.html#a540d3867c26c3cc6dafeb7a055cd392d" title="Asteroids::Domain::\lGame::Actors::Vector\l::rotate_velocity" alt="" coords="647,365,796,421"/>
+<area shape="rect" id="node10" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#afa2ca9372ddf8f08de11682dae43840f" title="Asteroids::Domain::\lGame::Actors::Actor\l::get_rotation" alt="" coords="650,125,793,181"/>
+<area shape="rect" id="node11" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#ade49ee1d618ef27e07314794fcf25cf0" title="Asteroids::Domain::\lGame::Actors::Actor\l::set_input_fire" alt="" coords="440,285,583,341"/>
+<area shape="rect" id="node12" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#ad108a838180454ac98facde4518d7660" title="Asteroids::Domain::\lGame::Actors::Actor\l::fire_bullet" alt="" coords="440,205,583,261"/>
+<area shape="rect" id="node13" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a6b56087b412883601fce5af07d67bd50" title="Asteroids::Domain::\lGame::Actors::Actor\l::get_x" alt="" coords="650,205,793,261"/>
+<area shape="rect" id="node14" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#afa54aab6e7be56e04014dd3f80f0e7af" title="Asteroids::Domain::\lGame::Actors::Actor\l::get_y" alt="" coords="650,285,793,341"/>
+</map>

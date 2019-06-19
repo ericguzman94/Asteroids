@@ -1,0 +1,9 @@
+<map id="Asteroids::Domain::Game::Game" name="Asteroids::Domain::Game::Game">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1GameInterface.html" title="Interface that allows users to control the main client game. " alt="" coords="5,535,157,803"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Randomer.html" title="Helper class to generate random numbers for the Game. " alt="" coords="521,255,660,421"/>
+<area shape="rect" id="node5" title="STL class. " alt="" coords="903,299,1043,377"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="381,299,497,377"/>
+<area shape="rect" id="node11" href="$classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface.html" title="Create things inside the Game package. " alt="" coords="684,277,879,399"/>
+<area shape="rect" id="node13" href="$classAsteroids_1_1Domain_1_1Factory_1_1Factory.html" title="Implementation of FactoryInterface. " alt="" coords="1239,233,1468,443"/>
+<area shape="rect" id="node14" href="$classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface.html" title="The main FactoryInterface is responsible for generating other factories of subpackages. " alt="" coords="1131,5,1360,171"/>
+</map>

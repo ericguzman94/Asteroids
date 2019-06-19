@@ -1,0 +1,9 @@
+<map id="Domain/Net/ClientServerCommunicatorInterface.h" name="Domain/Net/ClientServerCommunicatorInterface.h">
+<area shape="rect" id="node2" href="$ClientServerCommunicator_8h.html" title="Domain/Net/ClientServerCommunicator.h" alt="" coords="137,102,401,129"/>
+<area shape="rect" id="node7" href="$PaymentHelper_8cpp.html" title="Domain/Store/PaymentHelper.cpp" alt="" coords="425,102,646,129"/>
+<area shape="rect" id="node8" href="$ClientTextUI_8cpp.html" title="UI/ClientTextUI/ClientText\lUI.cpp" alt="" coords="670,95,849,136"/>
+<area shape="rect" id="node3" href="$ClientServerCommunicator_8cpp.html" title="Domain/Net/ClientServerCommunicator.cpp" alt="" coords="5,184,284,211"/>
+<area shape="rect" id="node4" href="$NetFactory_8h.html" title="Domain/Net/NetFactory.h" alt="" coords="308,184,480,211"/>
+<area shape="rect" id="node5" href="$Factory_8cpp.html" title="Domain/Factory/Factory.cpp" alt="" coords="193,259,381,285"/>
+<area shape="rect" id="node6" href="$NetFactory_8cpp.html" title="Domain/Net/NetFactory.cpp" alt="" coords="406,259,593,285"/>
+</map>

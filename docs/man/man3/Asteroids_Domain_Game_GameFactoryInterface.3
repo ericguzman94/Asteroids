@@ -1,0 +1,49 @@
+.TH "Asteroids::Domain::Game::GameFactoryInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::GameFactoryInterface \- Create things inside the \fBGame\fP package\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GameFactoryInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Game::GameFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Game::GameInterface\fP > \fBcreateGame\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Game::GameHistoryInterface\fP > \fBcreateGameHistory\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Game::Randomer\fP > \fBcreateRandomer\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Create things inside the \fBGame\fP package\&. 
+.PP
+Definition at line 23 of file GameFactoryInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Game::GameInterface\fP> Asteroids::Domain::Game::GameFactoryInterface::createGame ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::GameFactory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Game::GameHistoryInterface\fP> Asteroids::Domain::Game::GameFactoryInterface::createGameHistory ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::GameFactory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Game::Randomer\fP> Asteroids::Domain::Game::GameFactoryInterface::createRandomer ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::GameFactory\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

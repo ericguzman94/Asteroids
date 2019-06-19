@@ -1,0 +1,209 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Randomer Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+
+
+Helper class to generate random numbers for the \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game}{Game}.  
+
+
+
+
+{\ttfamily \#include $<$Randomer.\+h$>$}
+
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Randomer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classAsteroids_1_1Domain_1_1Game_1_1Randomer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a8e660c706ed181bde7b6f6310285b8e9}{Randomer} ()
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a43965ff48fe73e5eef6e1c223a94f463}{get\+\_\+double} ()
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer_af56d89fbf17d7e82e5470b1716a0dc34}{get\+\_\+double} (double min, double max)
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer_af57f0a4d202d7d2b314964231bf5c5b3}{reset} ()
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a9d5a2a8aeb43ade5f1a0a9a212f4dd4a}{roll\+\_\+bool} (double chance=0.\+5)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer_aaef0f9e57c6743748a2f0b2d944345ee}{init} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::default\+\_\+random\+\_\+engine \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer_ab8883b05686f2c197fbe51bed15516db}{\+\_\+random\+\_\+engine}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class to generate random numbers for the \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game}{Game}. 
+
+Definition at line 23 of file Randomer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a8e660c706ed181bde7b6f6310285b8e9}\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a8e660c706ed181bde7b6f6310285b8e9}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}!Randomer@{Randomer}}
+\index{Randomer@{Randomer}!Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+\subsubsection{\texorpdfstring{Randomer()}{Randomer()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Game\+::\+Randomer\+::\+Randomer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Randomer.\+cpp.
+
+
+
+References init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a8e660c706ed181bde7b6f6310285b8e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a43965ff48fe73e5eef6e1c223a94f463}\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a43965ff48fe73e5eef6e1c223a94f463}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}!get\+\_\+double@{get\+\_\+double}}
+\index{get\+\_\+double@{get\+\_\+double}!Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+\subsubsection{\texorpdfstring{get\+\_\+double()}{get\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Randomer\+::get\+\_\+double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file Randomer.\+cpp.
+
+
+
+Referenced by roll\+\_\+bool().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a43965ff48fe73e5eef6e1c223a94f463_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer_af56d89fbf17d7e82e5470b1716a0dc34}\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer_af56d89fbf17d7e82e5470b1716a0dc34}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}!get\+\_\+double@{get\+\_\+double}}
+\index{get\+\_\+double@{get\+\_\+double}!Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+\subsubsection{\texorpdfstring{get\+\_\+double()}{get\_double()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Randomer\+::get\+\_\+double (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file Randomer.\+cpp.
+
+
+
+References \+\_\+random\+\_\+engine.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer_aaef0f9e57c6743748a2f0b2d944345ee}\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer_aaef0f9e57c6743748a2f0b2d944345ee}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}!init@{init}}
+\index{init@{init}!Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Randomer\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Randomer.\+cpp.
+
+
+
+References \+\_\+random\+\_\+engine, and reset().
+
+
+
+Referenced by Randomer().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Randomer_aaef0f9e57c6743748a2f0b2d944345ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Randomer_aaef0f9e57c6743748a2f0b2d944345ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer_af57f0a4d202d7d2b314964231bf5c5b3}\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer_af57f0a4d202d7d2b314964231bf5c5b3}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Randomer\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Randomer.\+cpp.
+
+
+
+Referenced by init().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Randomer_af57f0a4d202d7d2b314964231bf5c5b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a9d5a2a8aeb43ade5f1a0a9a212f4dd4a}\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a9d5a2a8aeb43ade5f1a0a9a212f4dd4a}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}!roll\+\_\+bool@{roll\+\_\+bool}}
+\index{roll\+\_\+bool@{roll\+\_\+bool}!Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+\subsubsection{\texorpdfstring{roll\+\_\+bool()}{roll\_bool()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Game\+::\+Randomer\+::roll\+\_\+bool (\begin{DoxyParamCaption}\item[{double}]{chance = {\ttfamily 0.5} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Randomer.\+cpp.
+
+
+
+References get\+\_\+double().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Randomer_a9d5a2a8aeb43ade5f1a0a9a212f4dd4a_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Randomer_ab8883b05686f2c197fbe51bed15516db}\label{classAsteroids_1_1Domain_1_1Game_1_1Randomer_ab8883b05686f2c197fbe51bed15516db}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}!\+\_\+random\+\_\+engine@{\+\_\+random\+\_\+engine}}
+\index{\+\_\+random\+\_\+engine@{\+\_\+random\+\_\+engine}!Asteroids\+::\+Domain\+::\+Game\+::\+Randomer@{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer}}
+\subsubsection{\texorpdfstring{\+\_\+random\+\_\+engine}{\_random\_engine}}
+{\footnotesize\ttfamily std\+::default\+\_\+random\+\_\+engine Asteroids\+::\+Domain\+::\+Game\+::\+Randomer\+::\+\_\+random\+\_\+engine\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Randomer.\+h.
+
+
+
+Referenced by get\+\_\+double(), and init().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\hyperlink{Randomer_8h}{Randomer.\+h}\item 
+Domain/\+Game/\hyperlink{Randomer_8cpp}{Randomer.\+cpp}\end{DoxyCompactItemize}

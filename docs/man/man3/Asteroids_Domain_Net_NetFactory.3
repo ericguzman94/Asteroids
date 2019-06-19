@@ -1,0 +1,66 @@
+.TH "Asteroids::Domain::Net::NetFactory" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::NetFactory \- Implementation of \fBNetFactoryInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NetFactory\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Net::NetFactoryInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNetFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBNet::ClientServerCommunicatorInterface\fP > \fBcreateClientServerCommunicator\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBNet::Authentication::AuthenticationInterface\fP > \fBcreateNetworkAuthenticator\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBNetFactoryInterface\fP\&. 
+.PP
+Definition at line 26 of file NetFactory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Net::NetFactory::NetFactory ()"
+
+.PP
+Definition at line 17 of file NetFactory\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::unique_ptr< \fBNet::ClientServerCommunicatorInterface\fP > Asteroids::Domain::Net::NetFactory::createClientServerCommunicator ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Net::NetFactoryInterface\fP\&.
+.PP
+Definition at line 43 of file NetFactory\&.cpp\&.
+.SS "std::unique_ptr< \fBNet::Authentication::AuthenticationInterface\fP > Asteroids::Domain::Net::NetFactory::createNetworkAuthenticator ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Net::NetFactoryInterface\fP\&.
+.PP
+Definition at line 31 of file NetFactory\&.cpp\&.
+.SS "void Asteroids::Domain::Net::NetFactory::reset ()"
+
+.PP
+Definition at line 24 of file NetFactory\&.cpp\&.
+.PP
+Referenced by NetFactory()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

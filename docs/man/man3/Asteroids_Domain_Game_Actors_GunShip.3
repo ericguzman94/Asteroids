@@ -1,0 +1,102 @@
+.TH "Asteroids::Domain::Game::Actors::GunShip" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors::GunShip \- \fBGunShip\fP is the player's main actor; Subclass of \fBActor\fP; Flies around and shoots at stuff\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GunShip\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGunShip\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (long ticks)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBfire_gun\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitialize_polygon\fP ()"
+.br
+.ti -1c
+.RI "void \fBuse_input\fP (long elapsed_ticks)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+\fBGunShip\fP is the player's main actor; Subclass of \fBActor\fP; Flies around and shoots at stuff\&. 
+.PP
+Definition at line 23 of file GunShip\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Actors::GunShip::GunShip ()"
+
+.PP
+Definition at line 22 of file GunShip\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::Domain::Game::Actors::GunShip::fire_gun ()\fC [private]\fP"
+
+.SS "void Asteroids::Domain::Game::Actors::GunShip::init ()\fC [private]\fP"
+
+.PP
+Definition at line 92 of file GunShip\&.cpp\&.
+.PP
+References reset()\&.
+.PP
+Referenced by GunShip()\&.
+.SS "void Asteroids::Domain::Game::Actors::GunShip::initialize_polygon ()\fC [private]\fP"
+
+.PP
+Definition at line 99 of file GunShip\&.cpp\&.
+.PP
+References ASTEROIDS_GAME_ACTOR_SIZE_FACTOR, and Asteroids::Domain::Game::Actors::Actor::set_polygon()\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::Domain::Game::Actors::GunShip::reset ()"
+
+.PP
+Definition at line 29 of file GunShip\&.cpp\&.
+.PP
+References ASTEROIDS_GAME_GUNSHIP_BULLET_SPEED, initialize_polygon(), Asteroids::Domain::Game::Actors::Actor::reset(), and Asteroids::Domain::Game::Actors::Actor::set_bullet_speed()\&.
+.PP
+Referenced by init()\&.
+.SS "void Asteroids::Domain::Game::Actors::GunShip::update (long ticks)"
+
+.PP
+Definition at line 42 of file GunShip\&.cpp\&.
+.PP
+References Asteroids::Domain::Game::Actors::Actor::update(), and use_input()\&.
+.SS "void Asteroids::Domain::Game::Actors::GunShip::use_input (long elapsed_ticks)\fC [private]\fP"
+
+.PP
+Definition at line 52 of file GunShip\&.cpp\&.
+.PP
+References Asteroids::Domain::Game::Actors::Actor::_input_down, Asteroids::Domain::Game::Actors::Actor::_input_fire, Asteroids::Domain::Game::Actors::Actor::_input_left, Asteroids::Domain::Game::Actors::Actor::_input_right, Asteroids::Domain::Game::Actors::Actor::_input_up, Asteroids::Domain::Game::Actors::Actor::_vector, ASTEROIDS_GAME_VELOCITY_INPUT_TICKS_FACTOR, Asteroids::Domain::Game::Actors::Actor::fire_bullet(), Asteroids::Domain::Game::Actors::Actor::get_rotation(), Asteroids::Domain::Game::Actors::Vector::rotate_velocity(), and Asteroids::Domain::Game::Actors::Actor::set_input_fire()\&.
+.PP
+Referenced by update()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

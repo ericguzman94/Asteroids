@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Actors::Bullet::maybe_die" name="Asteroids::Domain::Game::Actors::Bullet::maybe_die">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#afb9985ff7dea1fe2d21b365a7aec8a45" title="Asteroids::Domain::\lGame::Actors::Actor\l::deleteme" alt="" coords="197,5,340,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a4e096daf30dca67bcd500fcae7e80979" title="Asteroids::Domain::\lGame::Actors::Actor\l::get_lifetime_ticks" alt="" coords="197,85,340,141"/>
+</map>

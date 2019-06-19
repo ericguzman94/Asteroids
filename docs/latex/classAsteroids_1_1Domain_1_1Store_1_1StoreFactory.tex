@@ -1,0 +1,157 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory}{}\section{Asteroids\+:\+:Domain\+:\+:Store\+:\+:Store\+Factory Class Reference}
+\label{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory}\index{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface}{Store\+Factory\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Store\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Store\+:\+:Store\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Store\+:\+:Store\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a10b3738650544e33597f5dea25cc4684}{Store\+Factory} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ factory)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a2b705db9646ef39d911e31ddc26d2131}{create\+Payment\+Helper} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PAYMENT__RESULT__DETAILS__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a5489405a1a23048570d89de58a456982}{create\+Payment\+Result\+Details} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1POWERUP__ADDED__INFO__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+O\+W\+E\+R\+U\+P\+\_\+\+A\+D\+D\+E\+D\+\_\+\+I\+N\+F\+O\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a7c359274ea360991c612b3cdb87df2a2}{create\+Power\+Up\+Added\+Info} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a5717439d93cf9fd0e799c9dd748804fd}{create\+Store} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_aa074ae6116833b7ff3d3fb86e1ba1291}{\+\_\+factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface}{Store\+Factory\+Interface}. 
+
+Definition at line 24 of file Store\+Factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a10b3738650544e33597f5dea25cc4684}\label{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a10b3738650544e33597f5dea25cc4684}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}!Store\+Factory@{Store\+Factory}}
+\index{Store\+Factory@{Store\+Factory}!Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}}
+\subsubsection{\texorpdfstring{Store\+Factory()}{StoreFactory()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+::\+Store\+Factory (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Store\+Factory.\+cpp.
+
+
+
+References \+\_\+factory.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a2b705db9646ef39d911e31ddc26d2131}\label{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a2b705db9646ef39d911e31ddc26d2131}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}!create\+Payment\+Helper@{create\+Payment\+Helper}}
+\index{create\+Payment\+Helper@{create\+Payment\+Helper}!Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}}
+\subsubsection{\texorpdfstring{create\+Payment\+Helper()}{createPaymentHelper()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface} $>$ Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+::create\+Payment\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface_a6b28cbc40f47112d835d89269de1be40}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface}.
+
+
+
+Definition at line 40 of file Store\+Factory.\+cpp.
+
+
+
+References \+\_\+factory.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a5489405a1a23048570d89de58a456982}\label{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a5489405a1a23048570d89de58a456982}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}!create\+Payment\+Result\+Details@{create\+Payment\+Result\+Details}}
+\index{create\+Payment\+Result\+Details@{create\+Payment\+Result\+Details}!Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}}
+\subsubsection{\texorpdfstring{create\+Payment\+Result\+Details()}{createPaymentResultDetails()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PAYMENT__RESULT__DETAILS__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+::create\+Payment\+Result\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface_a46a547e9eee1e53a5f423f40ee8ef59e}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface}.
+
+
+
+Definition at line 51 of file Store\+Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a7c359274ea360991c612b3cdb87df2a2}\label{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a7c359274ea360991c612b3cdb87df2a2}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}!create\+Power\+Up\+Added\+Info@{create\+Power\+Up\+Added\+Info}}
+\index{create\+Power\+Up\+Added\+Info@{create\+Power\+Up\+Added\+Info}!Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}}
+\subsubsection{\texorpdfstring{create\+Power\+Up\+Added\+Info()}{createPowerUpAddedInfo()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1POWERUP__ADDED__INFO__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+O\+W\+E\+R\+U\+P\+\_\+\+A\+D\+D\+E\+D\+\_\+\+I\+N\+F\+O\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+::create\+Power\+Up\+Added\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface_a6cac2d91c8da57941879b15c624b2215}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface}.
+
+
+
+Definition at line 62 of file Store\+Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a5717439d93cf9fd0e799c9dd748804fd}\label{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_a5717439d93cf9fd0e799c9dd748804fd}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}!create\+Store@{create\+Store}}
+\index{create\+Store@{create\+Store}!Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}}
+\subsubsection{\texorpdfstring{create\+Store()}{createStore()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Interface} $>$ Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+::create\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface_a90c8a34020605c4c2e311e0997677298}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface}.
+
+
+
+Definition at line 29 of file Store\+Factory.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_aa074ae6116833b7ff3d3fb86e1ba1291}\label{classAsteroids_1_1Domain_1_1Store_1_1StoreFactory_aa074ae6116833b7ff3d3fb86e1ba1291}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}!\+\_\+factory@{\+\_\+factory}}
+\index{\+\_\+factory@{\+\_\+factory}!Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory@{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory}}
+\subsubsection{\texorpdfstring{\+\_\+factory}{\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}$>$ Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+::\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Store\+Factory.\+h.
+
+
+
+Referenced by create\+Payment\+Helper(), and Store\+Factory().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Store/\hyperlink{StoreFactory_8h}{Store\+Factory.\+h}\item 
+Domain/\+Store/\hyperlink{StoreFactory_8cpp}{Store\+Factory.\+cpp}\end{DoxyCompactItemize}

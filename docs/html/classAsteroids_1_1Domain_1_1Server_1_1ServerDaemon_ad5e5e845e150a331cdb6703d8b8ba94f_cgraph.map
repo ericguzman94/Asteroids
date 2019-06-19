@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Server::ServerDaemon::apply_updates" name="Asteroids::Domain::Server::ServerDaemon::apply_updates">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon.html#a11925ed5e5c6951aceac9c823789476e" title="Asteroids::Domain::\lServer::ServerDaemon\l::require_restart" alt="" coords="232,5,387,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Server_1_1ServerUpdaterInterface.html#a361160b4683c46d96833943873de0c2c" title="Asteroids::Domain::\lServer::ServerUpdaterInterface\l::update" alt="" coords="208,85,411,141"/>
+</map>

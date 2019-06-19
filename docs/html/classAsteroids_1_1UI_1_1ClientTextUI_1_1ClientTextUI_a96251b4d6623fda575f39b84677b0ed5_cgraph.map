@@ -1,0 +1,4 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI::do_authentication" name="Asteroids::UI::ClientTextUI::ClientTextUI::do_authentication">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1AuthenticationInterface.html#a2358abf451a5aa6df9d29e9dfda2898c" title="Asteroids::Domain::\lNet::Authentication\l::AuthenticationInterface\l::attemptLogin" alt="" coords="283,5,447,76"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a41f904ea570af3e3a8c4d70da8411ef3" title="Asteroids::UI::ClientText\lUI::ClientTextUI::print" alt="" coords="281,100,448,141"/>
+</map>

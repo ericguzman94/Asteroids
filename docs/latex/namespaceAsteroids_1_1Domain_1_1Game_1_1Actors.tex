@@ -1,0 +1,30 @@
+\hypertarget{namespaceAsteroids_1_1Domain_1_1Game_1_1Actors}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors Namespace Reference}
+\label{namespaceAsteroids_1_1Domain_1_1Game_1_1Actors}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors}}
+
+
+Not really a package so much as a way to organize allll the \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor}{Actor} classes and helpers away from the \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game}{Game} logic classes.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor}{Actor}
+\begin{DoxyCompactList}\small\item\em Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Actor\+Interface}. \end{DoxyCompactList}\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Actor\+Interface}
+\begin{DoxyCompactList}\small\item\em Main superclass for game board actors. \end{DoxyCompactList}\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet}{Bullet}
+\begin{DoxyCompactList}\small\item\em A bullet is... a bullet... Can be shot by the player (eventually Alien too); Player\textquotesingle{}s bullet kills rocks/alien; Alien bullet kills rocks/player. \end{DoxyCompactList}\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}{Gun\+Ship}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}{Gun\+Ship} is the player\textquotesingle{}s main actor; Subclass of \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor}{Actor}; Flies around and shoots at stuff. \end{DoxyCompactList}\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1LongRock}{Long\+Rock}
+\begin{DoxyCompactList}\small\item\em A long rock is an actor that floats within the game; Can be shot by player; Can smash player. \end{DoxyCompactList}\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect}{Rect}
+\begin{DoxyCompactList}\small\item\em Convenience class to help manage actor rectangle boundaries and collisions. \end{DoxyCompactList}\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rock}{Rock}
+\begin{DoxyCompactList}\small\item\em A rock is an actor that floats within the game; Can be shot by player; Can smash player. \end{DoxyCompactList}\item 
+class \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector}{Vector}
+\begin{DoxyCompactList}\small\item\em Simple class to store 2D vector and rotation, to lend physics to game actors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Not really a package so much as a way to organize allll the \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor}{Actor} classes and helpers away from the \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game}{Game} logic classes. 

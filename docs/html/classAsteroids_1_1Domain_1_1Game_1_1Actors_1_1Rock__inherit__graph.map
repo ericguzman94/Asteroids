@@ -1,0 +1,5 @@
+<map id="Asteroids::Domain::Game::Actors::Rock" name="Asteroids::Domain::Game::Actors::Rock">
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1LongRock.html" title="A long rock is an actor that floats within the game; Can be shot by player; Can smash player..." alt="" coords="17,1291,187,1397"/>
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html" title="Implementation of ActorInterface. " alt="" coords="11,292,193,1059"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface.html" title="Main superclass for game board actors. " alt="" coords="5,5,199,244"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="Domain/Server/ServerDaemon.cpp" name="Domain/Server/ServerDaemon.cpp">
+<area shape="rect" id="node2" href="$ServerDaemon_8h.html" title="Asteroids/Domain/Server\l/ServerDaemon.h" alt="" coords="786,80,954,121"/>
+<area shape="rect" id="node8" href="$FactoryInterface_8h.html" title="Asteroids/Domain/Factory\l/FactoryInterface.h" alt="" coords="5,169,180,211"/>
+<area shape="rect" id="node9" href="$TechnicalServicesFactoryInterface_8h.html" title="Asteroids/TechnicalServices\l/TechnicalServicesFactoryInterface.h" alt="" coords="204,169,443,211"/>
+<area shape="rect" id="node10" href="$DatabaserInterface_8h.html" title="Asteroids/TechnicalServices\l/Persistence/DatabaserInterface.h" alt="" coords="1553,169,1774,211"/>
+<area shape="rect" id="node13" href="$ServerFactoryInterface_8h.html" title="Asteroids/Domain/Server\l/ServerFactoryInterface.h" alt="" coords="467,169,638,211"/>
+<area shape="rect" id="node14" href="$ServerUpdater_8h.html" title="Asteroids/Domain/Server\l/ServerUpdater.h" alt="" coords="978,80,1146,121"/>
+<area shape="rect" id="node16" href="$HACCS__REPORT__INTERFACE_8h.html" title="Asteroids/Domain/Server\l/HACCS_REPORT_INTERFACE.h" alt="" coords="1297,169,1529,211"/>
+<area shape="rect" id="node3" href="$ForwardDeclarations_8h.html" title="Asteroids/ForwardDeclarations.h" alt="" coords="905,259,1117,285"/>
+<area shape="rect" id="node4" href="$ServerDaemonInterface_8h.html" title="Asteroids/Domain/Server\l/ServerDaemonInterface.h" alt="" coords="713,169,888,211"/>
+<area shape="rect" id="node15" href="$ServerUpdaterInterface_8h.html" title="Asteroids/Domain/Server\l/ServerUpdaterInterface.h" alt="" coords="1100,169,1272,211"/>
+</map>

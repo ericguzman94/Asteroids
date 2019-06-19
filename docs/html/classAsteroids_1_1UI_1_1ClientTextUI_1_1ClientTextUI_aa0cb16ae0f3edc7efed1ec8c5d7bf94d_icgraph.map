@@ -1,0 +1,4 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI::play_game" name="Asteroids::UI::ClientTextUI::ClientTextUI::play_game">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a67521714973f97f76618f9598d34d3b8" title="Asteroids::UI::ClientText\lUI::ClientTextUI::main\l_menu_loop" alt="" coords="243,5,409,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a835f455a627e77a5ef99661350281ec3" title="Begin the user interface. " alt="" coords="457,13,624,54"/>
+</map>

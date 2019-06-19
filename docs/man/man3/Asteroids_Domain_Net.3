@@ -1,0 +1,49 @@
+.TH "Asteroids::Domain::Net" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net \- The \fBNet\fP package holds things that help a client communicate with the server\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBAuthentication\fP"
+.br
+.RI "The \fBAuthentication\fP namespace just holds stuff related to authenticating the client with the server\&. "
+.ti -1c
+.RI " \fBMessages\fP"
+.br
+.RI "The messages namespace just holds all the classes that function more as network data containers than functional classes\&. "
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBClientServerCommunicator\fP"
+.br
+.RI "Implementation of \fBClientServerCommunicatorInterface\fP\&. "
+.ti -1c
+.RI "class \fBClientServerCommunicatorInterface\fP"
+.br
+.RI "Allows a client to communicate with the server\&. "
+.ti -1c
+.RI "class \fBNetFactory\fP"
+.br
+.RI "Implementation of \fBNetFactoryInterface\fP\&. "
+.ti -1c
+.RI "class \fBNetFactoryInterface\fP"
+.br
+.RI "\fBFactory\fP to generate things inside the \fBNet\fP package\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBNet\fP package holds things that help a client communicate with the server\&. 
+
+Eventually this might also include things that help a server accept connections and communicate too (maybe) 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

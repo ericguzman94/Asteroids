@@ -1,0 +1,473 @@
+.TH "Asteroids::Domain::Game::Game" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Game \- Implementation of \fBGameInterface\fP (ie: The game \&.\&.\&.)  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Game\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGame\fP ()"
+.br
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > > \fBget_actors\fP ()"
+.br
+.RI "Return all actors in the game\&. "
+.ti -1c
+.RI "double \fBget_board_height\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_board_width\fP ()"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > \fBget_player\fP ()"
+.br
+.RI "Return the player\&. "
+.ti -1c
+.RI "int \fBget_round\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_score\fP ()"
+.br
+.ti -1c
+.RI "long \fBget_ticks_per_second\fP ()"
+.br
+.ti -1c
+.RI "bool \fBis_active\fP ()"
+.br
+.ti -1c
+.RI "void \fBquit\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBstart\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP ()"
+.br
+.ti -1c
+.RI "void \fBwait_for_frames_per_second\fP (long tps)"
+.br
+.RI "Implement \fBGameInterface\fP methods\&. "
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "long \fBcalculate_ticks_since_last_update\fP (bool \fBupdate\fP=true)"
+.br
+.ti -1c
+.RI "long \fBget_current_timestamp_ticks\fP ()"
+.br
+.RI "Ticks are just microseconds\&. "
+.ti -1c
+.RI "std::pair< double, double > \fBget_random_board_position\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitialize_random_rocks\fP ()"
+.br
+.ti -1c
+.RI "void \fBkeep_actors_in_bounds\fP ()"
+.br
+.ti -1c
+.RI "void \fBlose_round\fP ()"
+.br
+.ti -1c
+.RI "void \fBmaybe_lose_round\fP ()"
+.br
+.ti -1c
+.RI "void \fBmaybe_win_round\fP ()"
+.br
+.ti -1c
+.RI "void \fBrandomly_place_player\fP ()"
+.br
+.ti -1c
+.RI "void \fBstart_round\fP ()"
+.br
+.ti -1c
+.RI "void \fBwin_round\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fB_board_height\fP"
+.br
+.ti -1c
+.RI "double \fB_board_width\fP"
+.br
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBAsteroids::Domain::Game::Actors::Bullet\fP > > \fB_bullets\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Factory::Factory\fP > \fB_factory\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Game::GameFactoryInterface\fP > \fB_game_factory\fP"
+.br
+.ti -1c
+.RI "bool \fB_is_active\fP"
+.br
+.ti -1c
+.RI "bool \fB_is_round_active\fP"
+.br
+.ti -1c
+.RI "long \fB_last_time_ms\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBActors::GunShip\fP > \fB_player\fP"
+.br
+.ti -1c
+.RI "int \fB_player_score\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBRandomer\fP > \fB_randomer\fP"
+.br
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBAsteroids::Domain::Game::Actors::Rock\fP > > \fB_rocks\fP"
+.br
+.ti -1c
+.RI "int \fB_round_number\fP"
+.br
+.ti -1c
+.RI "long \fB_ticks_per_second\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBGameInterface\fP (ie: The game \&.\&.\&.) 
+.PP
+Definition at line 25 of file Game\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Game::Game ()"
+
+.PP
+Definition at line 36 of file Game\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "long Asteroids::Domain::Game::Game::calculate_ticks_since_last_update (bool update = \fCtrue\fP)\fC [private]\fP"
+
+.PP
+Definition at line 275 of file Game\&.cpp\&.
+.PP
+References _last_time_ms, and get_current_timestamp_ticks()\&.
+.PP
+Referenced by update(), and wait_for_frames_per_second()\&.
+.SS "std::vector< std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > > Asteroids::Domain::Game::Game::get_actors ()\fC [virtual]\fP"
+
+.PP
+Return all actors in the game\&. 
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 232 of file Game\&.cpp\&.
+.PP
+References _bullets, _player, and _rocks\&.
+.PP
+Referenced by keep_actors_in_bounds()\&.
+.SS "double Asteroids::Domain::Game::Game::get_board_height ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 184 of file Game\&.cpp\&.
+.PP
+References _board_height\&.
+.SS "double Asteroids::Domain::Game::Game::get_board_width ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 177 of file Game\&.cpp\&.
+.PP
+References _board_width\&.
+.SS "long Asteroids::Domain::Game::Game::get_current_timestamp_ticks ()\fC [private]\fP"
+
+.PP
+Ticks are just microseconds\&. 
+.PP
+Definition at line 260 of file Game\&.cpp\&.
+.PP
+Referenced by calculate_ticks_since_last_update()\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > Asteroids::Domain::Game::Game::get_player ()\fC [virtual]\fP"
+
+.PP
+Return the player\&. 
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 225 of file Game\&.cpp\&.
+.PP
+References _player\&.
+.SS "std::pair< double, double > Asteroids::Domain::Game::Game::get_random_board_position ()\fC [private]\fP"
+
+.PP
+Definition at line 250 of file Game\&.cpp\&.
+.PP
+References _board_height, _board_width, and _randomer\&.
+.PP
+Referenced by initialize_random_rocks(), and randomly_place_player()\&.
+.SS "int Asteroids::Domain::Game::Game::get_round ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 211 of file Game\&.cpp\&.
+.PP
+References _round_number\&.
+.SS "int Asteroids::Domain::Game::Game::get_score ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 218 of file Game\&.cpp\&.
+.PP
+References _player_score\&.
+.SS "long Asteroids::Domain::Game::Game::get_ticks_per_second ()"
+
+.PP
+Definition at line 191 of file Game\&.cpp\&.
+.PP
+References _ticks_per_second\&.
+.SS "void Asteroids::Domain::Game::Game::init ()\fC [private]\fP"
+
+.PP
+Definition at line 43 of file Game\&.cpp\&.
+.PP
+References _factory, _game_factory, _player, _randomer, and reset()\&.
+.PP
+Referenced by Game()\&.
+.SS "void Asteroids::Domain::Game::Game::initialize_random_rocks ()\fC [private]\fP"
+
+.PP
+Definition at line 298 of file Game\&.cpp\&.
+.PP
+References _randomer, _rocks, ASTEROIDS_GAME_ROCKS_INITIAL_VELOCITY_STRENGTH, ASTEROIDS_GAME_ROCKS_PER_LEVEL, and get_random_board_position()\&.
+.PP
+Referenced by start_round()\&.
+.SS "bool Asteroids::Domain::Game::Game::is_active ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 170 of file Game\&.cpp\&.
+.PP
+References _is_active\&.
+.SS "void Asteroids::Domain::Game::Game::keep_actors_in_bounds ()\fC [private]\fP"
+
+.PP
+Definition at line 418 of file Game\&.cpp\&.
+.PP
+References _board_height, _board_width, and get_actors()\&.
+.PP
+Referenced by update()\&.
+.SS "void Asteroids::Domain::Game::Game::lose_round ()\fC [private]\fP"
+
+.PP
+Definition at line 401 of file Game\&.cpp\&.
+.PP
+References quit()\&.
+.PP
+Referenced by maybe_lose_round()\&.
+.SS "void Asteroids::Domain::Game::Game::maybe_lose_round ()\fC [private]\fP"
+
+.PP
+Definition at line 385 of file Game\&.cpp\&.
+.PP
+References _is_active, _is_round_active, _rocks, and lose_round()\&.
+.PP
+Referenced by update()\&.
+.SS "void Asteroids::Domain::Game::Game::maybe_win_round ()\fC [private]\fP"
+
+.PP
+Definition at line 369 of file Game\&.cpp\&.
+.PP
+References _is_active, _is_round_active, _rocks, and win_round()\&.
+.PP
+Referenced by update()\&.
+.SS "void Asteroids::Domain::Game::Game::quit ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 163 of file Game\&.cpp\&.
+.PP
+References _is_active\&.
+.PP
+Referenced by lose_round()\&.
+.SS "void Asteroids::Domain::Game::Game::randomly_place_player ()\fC [private]\fP"
+
+.PP
+Definition at line 408 of file Game\&.cpp\&.
+.PP
+References _player, and get_random_board_position()\&.
+.PP
+Referenced by start()\&.
+.SS "void Asteroids::Domain::Game::Game::reset ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 64 of file Game\&.cpp\&.
+.PP
+References _board_height, _board_width, _is_active, _is_round_active, _last_time_ms, _player_score, _round_number, _ticks_per_second, ASTEROIDS_GAME_BOARD_HEIGHT, ASTEROIDS_GAME_BOARD_WIDTH, and ASTEROIDS_GAME_TICKS_PER_SECOND\&.
+.PP
+Referenced by init()\&.
+.SS "void Asteroids::Domain::Game::Game::start ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 82 of file Game\&.cpp\&.
+.PP
+References _is_active, _round_number, randomly_place_player(), and start_round()\&.
+.SS "void Asteroids::Domain::Game::Game::start_round ()\fC [private]\fP"
+
+.PP
+Definition at line 358 of file Game\&.cpp\&.
+.PP
+References _is_round_active, _round_number, and initialize_random_rocks()\&.
+.PP
+Referenced by start(), and win_round()\&.
+.SS "void Asteroids::Domain::Game::Game::update ()\fC [virtual]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Rocks should eventually split when hit 
+.RE
+.PP
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 96 of file Game\&.cpp\&.
+.PP
+References _bullets, _player, _player_score, _rocks, ASTEROIDS_GAME_ROCKS_POINTS, ASTEROIDS_GAME_TARGET_FRAMES_PER_SECOND, calculate_ticks_since_last_update(), keep_actors_in_bounds(), maybe_lose_round(), maybe_win_round(), and wait_for_frames_per_second()\&.
+.SS "void Asteroids::Domain::Game::Game::wait_for_frames_per_second (long tps)\fC [virtual]\fP"
+
+.PP
+Implement \fBGameInterface\fP methods\&. 
+.PP
+Implements \fBAsteroids::Domain::Game::GameInterface\fP\&.
+.PP
+Definition at line 198 of file Game\&.cpp\&.
+.PP
+References _ticks_per_second, and calculate_ticks_since_last_update()\&.
+.PP
+Referenced by update()\&.
+.SS "void Asteroids::Domain::Game::Game::win_round ()\fC [private]\fP"
+
+.PP
+Definition at line 378 of file Game\&.cpp\&.
+.PP
+References start_round()\&.
+.PP
+Referenced by maybe_win_round()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double Asteroids::Domain::Game::Game::_board_height\fC [private]\fP"
+
+.PP
+Definition at line 76 of file Game\&.h\&.
+.PP
+Referenced by get_board_height(), get_random_board_position(), keep_actors_in_bounds(), and reset()\&.
+.SS "double Asteroids::Domain::Game::Game::_board_width\fC [private]\fP"
+
+.PP
+Definition at line 76 of file Game\&.h\&.
+.PP
+Referenced by get_board_width(), get_random_board_position(), keep_actors_in_bounds(), and reset()\&.
+.SS "std::vector<std::shared_ptr<\fBAsteroids::Domain::Game::Actors::Bullet\fP> > Asteroids::Domain::Game::Game::_bullets\fC [private]\fP"
+
+.PP
+Definition at line 85 of file Game\&.h\&.
+.PP
+Referenced by get_actors(), and update()\&.
+.SS "std::unique_ptr<\fBAsteroids::Domain::Factory::Factory\fP> Asteroids::Domain::Game::Game::_factory\fC [private]\fP"
+
+.PP
+Definition at line 61 of file Game\&.h\&.
+.PP
+Referenced by init()\&.
+.SS "std::unique_ptr<\fBAsteroids::Domain::Game::GameFactoryInterface\fP> Asteroids::Domain::Game::Game::_game_factory\fC [private]\fP"
+
+.PP
+Definition at line 62 of file Game\&.h\&.
+.PP
+Referenced by init()\&.
+.SS "bool Asteroids::Domain::Game::Game::_is_active\fC [private]\fP"
+
+.PP
+Definition at line 69 of file Game\&.h\&.
+.PP
+Referenced by is_active(), maybe_lose_round(), maybe_win_round(), quit(), reset(), and start()\&.
+.SS "bool Asteroids::Domain::Game::Game::_is_round_active\fC [private]\fP"
+
+.PP
+Definition at line 70 of file Game\&.h\&.
+.PP
+Referenced by maybe_lose_round(), maybe_win_round(), reset(), and start_round()\&.
+.SS "long Asteroids::Domain::Game::Game::_last_time_ms\fC [private]\fP"
+
+.PP
+Definition at line 72 of file Game\&.h\&.
+.PP
+Referenced by calculate_ticks_since_last_update(), and reset()\&.
+.SS "std::shared_ptr<\fBActors::GunShip\fP> Asteroids::Domain::Game::Game::_player\fC [private]\fP"
+
+.PP
+Definition at line 81 of file Game\&.h\&.
+.PP
+Referenced by get_actors(), get_player(), init(), randomly_place_player(), and update()\&.
+.SS "int Asteroids::Domain::Game::Game::_player_score\fC [private]\fP"
+
+.PP
+Definition at line 82 of file Game\&.h\&.
+.PP
+Referenced by get_score(), reset(), and update()\&.
+.SS "std::unique_ptr<\fBRandomer\fP> Asteroids::Domain::Game::Game::_randomer\fC [private]\fP"
+
+.PP
+Definition at line 63 of file Game\&.h\&.
+.PP
+Referenced by get_random_board_position(), init(), and initialize_random_rocks()\&.
+.SS "std::vector<std::shared_ptr<\fBAsteroids::Domain::Game::Actors::Rock\fP> > Asteroids::Domain::Game::Game::_rocks\fC [private]\fP"
+
+.PP
+Definition at line 86 of file Game\&.h\&.
+.PP
+Referenced by get_actors(), initialize_random_rocks(), maybe_lose_round(), maybe_win_round(), and update()\&.
+.SS "int Asteroids::Domain::Game::Game::_round_number\fC [private]\fP"
+
+.PP
+Definition at line 71 of file Game\&.h\&.
+.PP
+Referenced by get_round(), reset(), start(), and start_round()\&.
+.SS "long Asteroids::Domain::Game::Game::_ticks_per_second\fC [private]\fP"
+
+.PP
+Definition at line 66 of file Game\&.h\&.
+.PP
+Referenced by get_ticks_per_second(), reset(), and wait_for_frames_per_second()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

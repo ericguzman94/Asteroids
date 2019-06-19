@@ -1,0 +1,6 @@
+<map id="Asteroids::UI::ClientTextUI::DisplayGrid::draw_filled_polygon" name="Asteroids::UI::ClientTextUI::DisplayGrid::draw_filled_polygon">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#aaf3c070c4d620f5a8420e349f5501bfd" title="Asteroids::UI::ClientText\lUI::DisplayGrid::draw_polygon" alt="" coords="236,50,436,91"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#a3f77a0874f78d753020e8ba12081bd85" title="Asteroids::UI::ClientText\lUI::DisplayGrid::set_pixel" alt="" coords="484,50,656,91"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#ae831e34de9c3fe439b09ed2543e30dee" title="Asteroids::UI::ClientText\lUI::DisplayGrid::translate\l_source_point" alt="" coords="719,5,889,61"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#acd82bd351302d1423b4e30f3312f7398" title="Asteroids::UI::ClientText\lUI::DisplayGrid::set_grid_pixel" alt="" coords="704,86,904,127"/>
+</map>

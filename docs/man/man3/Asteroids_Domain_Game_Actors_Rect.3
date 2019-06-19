@@ -1,0 +1,179 @@
+.TH "Asteroids::Domain::Game::Actors::Rect" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors::Rect \- Convenience class to help manage actor rectangle boundaries and collisions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Rect\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRect\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd_offset\fP (double x, double y)"
+.br
+.ti -1c
+.RI "bool \fBcollides_with_rect\fP (const \fBRect\fP &other)"
+.br
+.ti -1c
+.RI "bool \fBis_point_within\fP (double x, double y) const"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBto_string\fP () const"
+.br
+.ti -1c
+.RI "void \fBupdate_dimensions\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBRect\fP \fBconsume_polygon\fP (const std::vector< std::pair< double, double >> &points)"
+.br
+.RI "Create a rect from polygon points\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBheight\fP"
+.br
+.ti -1c
+.RI "double \fBwidth\fP"
+.br
+.ti -1c
+.RI "double \fBx1\fP"
+.br
+.ti -1c
+.RI "double \fBx2\fP"
+.br
+.ti -1c
+.RI "double \fBy1\fP"
+.br
+.ti -1c
+.RI "double \fBy2\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Convenience class to help manage actor rectangle boundaries and collisions\&. 
+.PP
+Definition at line 27 of file Rect\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Actors::Rect::Rect ()"
+
+.PP
+Definition at line 28 of file Rect\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::Domain::Game::Actors::Rect::add_offset (double x, double y)"
+
+.PP
+Definition at line 92 of file Rect\&.cpp\&.
+.PP
+References update_dimensions(), x1, x2, y1, and y2\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::Actor::update_rect()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Rect::collides_with_rect (const \fBRect\fP & other)"
+
+.PP
+Definition at line 113 of file Rect\&.cpp\&.
+.PP
+References is_point_within(), x1, x2, y1, and y2\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::Actor::check_collision()\&.
+.SS "\fBRect\fP Asteroids::Domain::Game::Actors::Rect::consume_polygon (const std::vector< std::pair< double, double >> & points)\fC [static]\fP"
+
+.PP
+Create a rect from polygon points\&. 
+.PP
+Definition at line 47 of file Rect\&.cpp\&.
+.PP
+References update_dimensions(), x1, x2, y1, and y2\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::Actor::update_rect()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Rect::is_point_within (double x, double y) const"
+
+.PP
+Definition at line 142 of file Rect\&.cpp\&.
+.PP
+References x1, x2, y1, and y2\&.
+.PP
+Referenced by collides_with_rect()\&.
+.SS "void Asteroids::Domain::Game::Actors::Rect::reset ()"
+
+.PP
+Definition at line 35 of file Rect\&.cpp\&.
+.PP
+References x1, x2, y1, and y2\&.
+.PP
+Referenced by Rect()\&.
+.SS "std::string Asteroids::Domain::Game::Actors::Rect::to_string () const"
+
+.PP
+Definition at line 159 of file Rect\&.cpp\&.
+.PP
+References x1, x2, y1, and y2\&.
+.SS "void Asteroids::Domain::Game::Actors::Rect::update_dimensions ()"
+
+.PP
+Definition at line 105 of file Rect\&.cpp\&.
+.PP
+References height, width, x1, x2, y1, and y2\&.
+.PP
+Referenced by add_offset(), and consume_polygon()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double Asteroids::Domain::Game::Actors::Rect::height"
+
+.PP
+Definition at line 56 of file Rect\&.h\&.
+.PP
+Referenced by update_dimensions()\&.
+.SS "double Asteroids::Domain::Game::Actors::Rect::width"
+
+.PP
+Definition at line 56 of file Rect\&.h\&.
+.PP
+Referenced by update_dimensions()\&.
+.SS "double Asteroids::Domain::Game::Actors::Rect::x1"
+
+.PP
+Definition at line 55 of file Rect\&.h\&.
+.PP
+Referenced by add_offset(), collides_with_rect(), consume_polygon(), is_point_within(), reset(), to_string(), and update_dimensions()\&.
+.SS "double Asteroids::Domain::Game::Actors::Rect::x2"
+
+.PP
+Definition at line 55 of file Rect\&.h\&.
+.PP
+Referenced by add_offset(), collides_with_rect(), consume_polygon(), is_point_within(), reset(), to_string(), and update_dimensions()\&.
+.SS "double Asteroids::Domain::Game::Actors::Rect::y1"
+
+.PP
+Definition at line 55 of file Rect\&.h\&.
+.PP
+Referenced by add_offset(), collides_with_rect(), consume_polygon(), is_point_within(), reset(), to_string(), and update_dimensions()\&.
+.SS "double Asteroids::Domain::Game::Actors::Rect::y2"
+
+.PP
+Definition at line 55 of file Rect\&.h\&.
+.PP
+Referenced by add_offset(), collides_with_rect(), consume_polygon(), is_point_within(), reset(), to_string(), and update_dimensions()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

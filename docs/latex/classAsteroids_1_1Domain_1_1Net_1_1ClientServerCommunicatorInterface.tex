@@ -1,0 +1,88 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface}{}\section{Asteroids\+:\+:Domain\+:\+:Net\+:\+:Client\+Server\+Communicator\+Interface Class Reference}
+\label{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface}\index{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface@{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface}}
+
+
+Allows a client to communicate with the server.  
+
+
+
+
+{\ttfamily \#include $<$Client\+Server\+Communicator\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Net\+:\+:Client\+Server\+Communicator\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Net\+:\+:Client\+Server\+Communicator\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface_a02e01e493689e98bf44aa9a40feee063}{authorize\+Payment} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ item, std\+::string cc\+\_\+number, std\+::string cc\+\_\+expiration, std\+::string cc\+\_\+security\+\_\+code)=0
+\item 
+virtual bool \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface_a99c8f2baa739330f44096da950a1d145}{notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share} (std\+::string game\+\_\+history\+\_\+entry\+\_\+id)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Allows a client to communicate with the server. 
+
+The \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface}{Client\+Server\+Communicator\+Interface} simulates things that should typically be asked of our remote \hyperlink{namespaceAsteroids}{Asteroids} server to do on the Client\textquotesingle{}s behalf. For instance, it wouldn\textquotesingle{}t make sense for a Client to authorize a credit card payment directly with a payment gateway. Instead it would ask our \hyperlink{namespaceAsteroids}{Asteroids} server to auth the payment, T\+H\+EN the \hyperlink{namespaceAsteroids}{Asteroids} server would auth with the external service, and come back with a response 
+
+Definition at line 31 of file Client\+Server\+Communicator\+Interface.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface_a02e01e493689e98bf44aa9a40feee063}\label{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface_a02e01e493689e98bf44aa9a40feee063}} 
+\index{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface@{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface}!authorize\+Payment@{authorize\+Payment}}
+\index{authorize\+Payment@{authorize\+Payment}!Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface@{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface}}
+\subsubsection{\texorpdfstring{authorize\+Payment()}{authorizePayment()}}
+{\footnotesize\ttfamily virtual bool Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface\+::authorize\+Payment (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$}]{item,  }\item[{std\+::string}]{cc\+\_\+number,  }\item[{std\+::string}]{cc\+\_\+expiration,  }\item[{std\+::string}]{cc\+\_\+security\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]Need to add an account ID to this, methinks \end{DoxyRefDesc}
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicator_abf768675ef72169877377e923510e9a5}{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface_a99c8f2baa739330f44096da950a1d145}\label{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface_a99c8f2baa739330f44096da950a1d145}} 
+\index{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface@{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface}!notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share@{notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share}}
+\index{notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share@{notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share}!Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface@{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface}}
+\subsubsection{\texorpdfstring{notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share()}{notifyServerOfGameHistoryEntrySocialMediaShare()}}
+{\footnotesize\ttfamily virtual bool Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface\+::notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share (\begin{DoxyParamCaption}\item[{std\+::string}]{game\+\_\+history\+\_\+entry\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000008}{Todo}]Notify the server that we have shared a game history entry to social media (will cause power\+Up added to account, later) \end{DoxyRefDesc}
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicator_a1910e3929adb473f705b82b793dff450}{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator}.
+
+
+
+Referenced by Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface_a99c8f2baa739330f44096da950a1d145_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Net/\hyperlink{ClientServerCommunicatorInterface_8h}{Client\+Server\+Communicator\+Interface.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Asteroids::Domain::Game::Actors::Rock::initialize_polygon" name="Asteroids::Domain::Game::Actors::Rock::initialize_polygon">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rock.html#aab44647e08659d563aeb28d51868fb86" title="Asteroids::Domain::\lGame::Actors::Rock::reset" alt="" coords="204,13,383,54"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rock.html#a8bdb717103786b8a2e30ea29db791078" title="Asteroids::Domain::\lGame::Actors::Rock::init" alt="" coords="431,13,597,54"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rock.html#aef8f46670fe5751800b9d76079adb5e5" title="Asteroids::Domain::\lGame::Actors::Rock::Rock" alt="" coords="645,13,827,54"/>
+</map>

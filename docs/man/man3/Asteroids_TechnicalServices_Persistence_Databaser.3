@@ -1,0 +1,64 @@
+.TH "Asteroids::TechnicalServices::Persistence::Databaser" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::TechnicalServices::Persistence::Databaser \- Implementation of \fBDatabaser\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Databaser\&.h>\fP
+.PP
+Inherits \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDatabaser\fP ()"
+.br
+.ti -1c
+.RI "void \fBclose\fP ()"
+.br
+.ti -1c
+.RI "void \fBconnect\fP (std::string uri)"
+.br
+.ti -1c
+.RI "std::vector< std::map< std::string, std::string > > \fBquery\fP (std::string q, std::map< std::string, std::string > params=std::map< std::string, std::string >())"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBDatabaser\fP\&. 
+.PP
+Definition at line 20 of file Databaser\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::TechnicalServices::Persistence::Databaser::Databaser ()"
+
+.PP
+Definition at line 17 of file Databaser\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::TechnicalServices::Persistence::Databaser::close ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP\&.
+.PP
+Definition at line 30 of file Databaser\&.cpp\&.
+.SS "void Asteroids::TechnicalServices::Persistence::Databaser::connect (std::string uri)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP\&.
+.PP
+Definition at line 23 of file Databaser\&.cpp\&.
+.SS "std::vector< std::map< std::string, std::string > > Asteroids::TechnicalServices::Persistence::Databaser::query (std::string q, std::map< std::string, std::string > params = \fCstd::map<std::string,std::string>()\fP)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP\&.
+.PP
+Definition at line 37 of file Databaser\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

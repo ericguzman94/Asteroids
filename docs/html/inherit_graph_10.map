@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface.html" title="Allows a client to communicate with the server. " alt="" coords="5,5,213,61"/>
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicator.html" title="Implementation of ClientServerCommunicatorInterface. " alt="" coords="261,13,469,54"/>
+</map>

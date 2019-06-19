@@ -1,0 +1,5 @@
+<map id="Asteroids::Domain::Game::Actors::Actor::set_bullet_speed" name="Asteroids::Domain::Game::Actors::Actor::set_bullet_speed">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#a753c275a7840962c92cfe4843bcbd6ac" title="Asteroids::Domain::\lGame::Actors::GunShip\l::reset" alt="" coords="196,5,357,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#ad5c14269f0503e045f03f265f9019e95" title="Asteroids::Domain::\lGame::Actors::GunShip::init" alt="" coords="405,13,592,54"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#a4e6a5de697b5a88bf3942165397cd27b" title="Asteroids::Domain::\lGame::Actors::GunShip\l::GunShip" alt="" coords="640,5,801,61"/>
+</map>

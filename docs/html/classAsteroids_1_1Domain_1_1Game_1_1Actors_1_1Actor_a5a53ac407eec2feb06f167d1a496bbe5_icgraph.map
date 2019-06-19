@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Actors::Actor::update" name="Asteroids::Domain::Game::Actors::Actor::update">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet.html#a06eb5b7aa30c8547159696c82fd2f642" title="Asteroids::Domain::\lGame::Actors::Bullet\l::update" alt="" coords="205,5,349,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#a4b37d42d9758c701d75e6a91dda71a5b" title="Asteroids::Domain::\lGame::Actors::GunShip\l::update" alt="" coords="196,85,357,141"/>
+</map>

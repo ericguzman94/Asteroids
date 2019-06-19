@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Actors::GunShip" name="Asteroids::Domain::Game::Actors::GunShip">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html" title="Implementation of ActorInterface. " alt="" coords="11,292,193,1059"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface.html" title="Main superclass for game board actors. " alt="" coords="5,5,199,244"/>
+</map>

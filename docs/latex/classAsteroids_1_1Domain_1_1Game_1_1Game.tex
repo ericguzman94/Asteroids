@@ -1,0 +1,1036 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Game Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1Game}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Game\+Interface} (ie\+: The game ...)  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1Domain_1_1Game_1_1Game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a93e2f263a0149964d2ff83f2554db5af}{Game} ()
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface} $>$ $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_af6a7d82ef71615d83aba515a07487641}{get\+\_\+actors} ()
+\begin{DoxyCompactList}\small\item\em Return all actors in the game. \end{DoxyCompactList}\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ab7a8ccde8006ddaa3037f1d1964fba5e}{get\+\_\+board\+\_\+height} ()
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a62894e4b69b28bf686fb646351bfa953}{get\+\_\+board\+\_\+width} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ae036a59145a83f0e66e91acce693035b}{get\+\_\+player} ()
+\begin{DoxyCompactList}\small\item\em Return the player. \end{DoxyCompactList}\item 
+int \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_abc24d11951291f8ceab1d20a6652b46e}{get\+\_\+round} ()
+\item 
+int \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ae2128bded3b91a2bbf7546009a8e5385}{get\+\_\+score} ()
+\item 
+long \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a4dea8a8da52ffe1589fe9c4493824d0f}{get\+\_\+ticks\+\_\+per\+\_\+second} ()
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a29d018d13b934b31e4192758422fea68}{is\+\_\+active} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a7e1bbc8f577a798f57d736bdc51fd149}{quit} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a61e639ba44b16737fdfe26887dba965f}{reset} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a824018131c10d49c8addd305ff36209b}{start} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_aa63114be578393b0113f116798346ac4}{update} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ab586cddf7972dbb9313ad3b241b550b4}{wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second} (long tps)
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Game\+Interface} methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_af8a67c4af1521c3184e873f79aad17f3}{calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update} (bool \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_aa63114be578393b0113f116798346ac4}{update}=true)
+\item 
+long \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a0a4efa785b7cdd6b0ef19478f8d34617}{get\+\_\+current\+\_\+timestamp\+\_\+ticks} ()
+\begin{DoxyCompactList}\small\item\em Ticks are just microseconds. \end{DoxyCompactList}\item 
+std\+::pair$<$ double, double $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a798922774fed23c593a476338acf7100}{get\+\_\+random\+\_\+board\+\_\+position} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a83299855cbf877f34f84b974fc35f8bb}{init} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ad3a7040e8cc0b14228f46577ecf2bc78}{initialize\+\_\+random\+\_\+rocks} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a594494581cf464eafb2842cb98387819}{keep\+\_\+actors\+\_\+in\+\_\+bounds} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_aca6a4c9568d4bffcd9b1ff331c338abb}{lose\+\_\+round} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a5b851b86192080f5f59d61f689bf97a4}{maybe\+\_\+lose\+\_\+round} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_abf55b1a7206729ce7e384bc8e6cb73d0}{maybe\+\_\+win\+\_\+round} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a5de32d7dcb5350720e625be3d40cee54}{randomly\+\_\+place\+\_\+player} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_aa242712e038fce29760d53eb1d57c9fb}{start\+\_\+round} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ac3e1c5498adb64ea278d1a4b69db412b}{win\+\_\+round} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a51a65c4fa072bda2baf91d50e9f6195d}{\+\_\+board\+\_\+height}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a6fea71dec73c6a984ac38a0abd76dd47}{\+\_\+board\+\_\+width}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet} $>$ $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a9972c0063c33e27012ed2aaf8bc18ca7}{\+\_\+bullets}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a1085fddc231fc9b055b1c36d68a3eece}{\+\_\+factory}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ae88a905921e87ce11e14fcbde3aa675a}{\+\_\+game\+\_\+factory}
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a82dc6bf04b526d6ed87dc11256cdf88e}{\+\_\+is\+\_\+active}
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a10d00a146ac392a4996b9076e970c2c4}{\+\_\+is\+\_\+round\+\_\+active}
+\item 
+long \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a29c32f9fcd574468a810df45f0a7fe6a}{\+\_\+last\+\_\+time\+\_\+ms}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}{Actors\+::\+Gun\+Ship} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a98ff3e6110403a4133ebbae40d4eb605}{\+\_\+player}
+\item 
+int \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ac21c7069836851c7485c39d1864df670}{\+\_\+player\+\_\+score}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer}{Randomer} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a0deb897c0ad64573f1892a769185824e}{\+\_\+randomer}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rock}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rock} $>$ $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ad424a9c9f9fdd4bf7785c4da946cb57e}{\+\_\+rocks}
+\item 
+int \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_a2992a61faa00be0bf512fed5c72fbc07}{\+\_\+round\+\_\+number}
+\item 
+long \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Game_ab370339e44ac6ac2aa78bfdde8bc7ea5}{\+\_\+ticks\+\_\+per\+\_\+second}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Game\+Interface} (ie\+: The game ...) 
+
+Definition at line 25 of file Game.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a93e2f263a0149964d2ff83f2554db5af}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a93e2f263a0149964d2ff83f2554db5af}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!Game@{Game}}
+\index{Game@{Game}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 36 of file Game.\+cpp.
+
+
+
+References init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a93e2f263a0149964d2ff83f2554db5af_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_af8a67c4af1521c3184e873f79aad17f3}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_af8a67c4af1521c3184e873f79aad17f3}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update@{calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update}}
+\index{calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update@{calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update()}{calculate\_ticks\_since\_last\_update()}}
+{\footnotesize\ttfamily long Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update (\begin{DoxyParamCaption}\item[{bool}]{update = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 275 of file Game.\+cpp.
+
+
+
+References \+\_\+last\+\_\+time\+\_\+ms, and get\+\_\+current\+\_\+timestamp\+\_\+ticks().
+
+
+
+Referenced by update(), and wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_af8a67c4af1521c3184e873f79aad17f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_af8a67c4af1521c3184e873f79aad17f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_af6a7d82ef71615d83aba515a07487641}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_af6a7d82ef71615d83aba515a07487641}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+actors@{get\+\_\+actors}}
+\index{get\+\_\+actors@{get\+\_\+actors}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+actors()}{get\_actors()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface} $>$ $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+actors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return all actors in the game. 
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_af5bd347cdac153a538ad7d88e3473693}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 232 of file Game.\+cpp.
+
+
+
+References \+\_\+bullets, \+\_\+player, and \+\_\+rocks.
+
+
+
+Referenced by keep\+\_\+actors\+\_\+in\+\_\+bounds().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_af6a7d82ef71615d83aba515a07487641_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ab7a8ccde8006ddaa3037f1d1964fba5e}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ab7a8ccde8006ddaa3037f1d1964fba5e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+board\+\_\+height@{get\+\_\+board\+\_\+height}}
+\index{get\+\_\+board\+\_\+height@{get\+\_\+board\+\_\+height}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+board\+\_\+height()}{get\_board\_height()}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+board\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_a27ad37addb00549ed5123b128edf8edb}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 184 of file Game.\+cpp.
+
+
+
+References \+\_\+board\+\_\+height.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a62894e4b69b28bf686fb646351bfa953}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a62894e4b69b28bf686fb646351bfa953}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+board\+\_\+width@{get\+\_\+board\+\_\+width}}
+\index{get\+\_\+board\+\_\+width@{get\+\_\+board\+\_\+width}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+board\+\_\+width()}{get\_board\_width()}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+board\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_ac2bb4da3441fe36f9893d12d8557c93c}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 177 of file Game.\+cpp.
+
+
+
+References \+\_\+board\+\_\+width.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a0a4efa785b7cdd6b0ef19478f8d34617}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a0a4efa785b7cdd6b0ef19478f8d34617}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+current\+\_\+timestamp\+\_\+ticks@{get\+\_\+current\+\_\+timestamp\+\_\+ticks}}
+\index{get\+\_\+current\+\_\+timestamp\+\_\+ticks@{get\+\_\+current\+\_\+timestamp\+\_\+ticks}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+current\+\_\+timestamp\+\_\+ticks()}{get\_current\_timestamp\_ticks()}}
+{\footnotesize\ttfamily long Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+current\+\_\+timestamp\+\_\+ticks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Ticks are just microseconds. 
+
+
+
+Definition at line 260 of file Game.\+cpp.
+
+
+
+Referenced by calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a0a4efa785b7cdd6b0ef19478f8d34617_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ae036a59145a83f0e66e91acce693035b}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ae036a59145a83f0e66e91acce693035b}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+player@{get\+\_\+player}}
+\index{get\+\_\+player@{get\+\_\+player}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+player()}{get\_player()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface} $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return the player. 
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_aa542e72a3e9063ab44be7bf44550f8db}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 225 of file Game.\+cpp.
+
+
+
+References \+\_\+player.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a798922774fed23c593a476338acf7100}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a798922774fed23c593a476338acf7100}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+random\+\_\+board\+\_\+position@{get\+\_\+random\+\_\+board\+\_\+position}}
+\index{get\+\_\+random\+\_\+board\+\_\+position@{get\+\_\+random\+\_\+board\+\_\+position}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+random\+\_\+board\+\_\+position()}{get\_random\_board\_position()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+random\+\_\+board\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 250 of file Game.\+cpp.
+
+
+
+References \+\_\+board\+\_\+height, \+\_\+board\+\_\+width, and \+\_\+randomer.
+
+
+
+Referenced by initialize\+\_\+random\+\_\+rocks(), and randomly\+\_\+place\+\_\+player().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a798922774fed23c593a476338acf7100_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_abc24d11951291f8ceab1d20a6652b46e}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_abc24d11951291f8ceab1d20a6652b46e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+round@{get\+\_\+round}}
+\index{get\+\_\+round@{get\+\_\+round}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+round()}{get\_round()}}
+{\footnotesize\ttfamily int Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_ac8da5febc9e8115eb166fe9238c32772}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 211 of file Game.\+cpp.
+
+
+
+References \+\_\+round\+\_\+number.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ae2128bded3b91a2bbf7546009a8e5385}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ae2128bded3b91a2bbf7546009a8e5385}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+score@{get\+\_\+score}}
+\index{get\+\_\+score@{get\+\_\+score}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+score()}{get\_score()}}
+{\footnotesize\ttfamily int Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_a8f7ade2512ff188e0647a329acb34848}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 218 of file Game.\+cpp.
+
+
+
+References \+\_\+player\+\_\+score.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a4dea8a8da52ffe1589fe9c4493824d0f}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a4dea8a8da52ffe1589fe9c4493824d0f}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!get\+\_\+ticks\+\_\+per\+\_\+second@{get\+\_\+ticks\+\_\+per\+\_\+second}}
+\index{get\+\_\+ticks\+\_\+per\+\_\+second@{get\+\_\+ticks\+\_\+per\+\_\+second}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+\_\+ticks\+\_\+per\+\_\+second()}{get\_ticks\_per\_second()}}
+{\footnotesize\ttfamily long Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::get\+\_\+ticks\+\_\+per\+\_\+second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 191 of file Game.\+cpp.
+
+
+
+References \+\_\+ticks\+\_\+per\+\_\+second.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a83299855cbf877f34f84b974fc35f8bb}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a83299855cbf877f34f84b974fc35f8bb}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!init@{init}}
+\index{init@{init}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Game.\+cpp.
+
+
+
+References \+\_\+factory, \+\_\+game\+\_\+factory, \+\_\+player, \+\_\+randomer, and reset().
+
+
+
+Referenced by Game().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a83299855cbf877f34f84b974fc35f8bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a83299855cbf877f34f84b974fc35f8bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ad3a7040e8cc0b14228f46577ecf2bc78}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ad3a7040e8cc0b14228f46577ecf2bc78}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!initialize\+\_\+random\+\_\+rocks@{initialize\+\_\+random\+\_\+rocks}}
+\index{initialize\+\_\+random\+\_\+rocks@{initialize\+\_\+random\+\_\+rocks}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{initialize\+\_\+random\+\_\+rocks()}{initialize\_random\_rocks()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::initialize\+\_\+random\+\_\+rocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 298 of file Game.\+cpp.
+
+
+
+References \+\_\+randomer, \+\_\+rocks, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+R\+O\+C\+K\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+S\+T\+R\+E\+N\+G\+TH, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+R\+O\+C\+K\+S\+\_\+\+P\+E\+R\+\_\+\+L\+E\+V\+EL, and get\+\_\+random\+\_\+board\+\_\+position().
+
+
+
+Referenced by start\+\_\+round().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_ad3a7040e8cc0b14228f46577ecf2bc78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_ad3a7040e8cc0b14228f46577ecf2bc78_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a29d018d13b934b31e4192758422fea68}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a29d018d13b934b31e4192758422fea68}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!is\+\_\+active@{is\+\_\+active}}
+\index{is\+\_\+active@{is\+\_\+active}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{is\+\_\+active()}{is\_active()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::is\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_ad7519687f2a916cef85be8a68c6ce6a4}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 170 of file Game.\+cpp.
+
+
+
+References \+\_\+is\+\_\+active.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a594494581cf464eafb2842cb98387819}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a594494581cf464eafb2842cb98387819}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!keep\+\_\+actors\+\_\+in\+\_\+bounds@{keep\+\_\+actors\+\_\+in\+\_\+bounds}}
+\index{keep\+\_\+actors\+\_\+in\+\_\+bounds@{keep\+\_\+actors\+\_\+in\+\_\+bounds}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{keep\+\_\+actors\+\_\+in\+\_\+bounds()}{keep\_actors\_in\_bounds()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::keep\+\_\+actors\+\_\+in\+\_\+bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 418 of file Game.\+cpp.
+
+
+
+References \+\_\+board\+\_\+height, \+\_\+board\+\_\+width, and get\+\_\+actors().
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a594494581cf464eafb2842cb98387819_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a594494581cf464eafb2842cb98387819_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_aca6a4c9568d4bffcd9b1ff331c338abb}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_aca6a4c9568d4bffcd9b1ff331c338abb}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!lose\+\_\+round@{lose\+\_\+round}}
+\index{lose\+\_\+round@{lose\+\_\+round}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{lose\+\_\+round()}{lose\_round()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::lose\+\_\+round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 401 of file Game.\+cpp.
+
+
+
+References quit().
+
+
+
+Referenced by maybe\+\_\+lose\+\_\+round().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_aca6a4c9568d4bffcd9b1ff331c338abb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_aca6a4c9568d4bffcd9b1ff331c338abb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a5b851b86192080f5f59d61f689bf97a4}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a5b851b86192080f5f59d61f689bf97a4}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!maybe\+\_\+lose\+\_\+round@{maybe\+\_\+lose\+\_\+round}}
+\index{maybe\+\_\+lose\+\_\+round@{maybe\+\_\+lose\+\_\+round}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{maybe\+\_\+lose\+\_\+round()}{maybe\_lose\_round()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::maybe\+\_\+lose\+\_\+round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 385 of file Game.\+cpp.
+
+
+
+References \+\_\+is\+\_\+active, \+\_\+is\+\_\+round\+\_\+active, \+\_\+rocks, and lose\+\_\+round().
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a5b851b86192080f5f59d61f689bf97a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a5b851b86192080f5f59d61f689bf97a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_abf55b1a7206729ce7e384bc8e6cb73d0}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_abf55b1a7206729ce7e384bc8e6cb73d0}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!maybe\+\_\+win\+\_\+round@{maybe\+\_\+win\+\_\+round}}
+\index{maybe\+\_\+win\+\_\+round@{maybe\+\_\+win\+\_\+round}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{maybe\+\_\+win\+\_\+round()}{maybe\_win\_round()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::maybe\+\_\+win\+\_\+round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 369 of file Game.\+cpp.
+
+
+
+References \+\_\+is\+\_\+active, \+\_\+is\+\_\+round\+\_\+active, \+\_\+rocks, and win\+\_\+round().
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_abf55b1a7206729ce7e384bc8e6cb73d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_abf55b1a7206729ce7e384bc8e6cb73d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a7e1bbc8f577a798f57d736bdc51fd149}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a7e1bbc8f577a798f57d736bdc51fd149}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!quit@{quit}}
+\index{quit@{quit}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_a045096acf97a53c3827be8bd2795ec35}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 163 of file Game.\+cpp.
+
+
+
+References \+\_\+is\+\_\+active.
+
+
+
+Referenced by lose\+\_\+round().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a7e1bbc8f577a798f57d736bdc51fd149_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a5de32d7dcb5350720e625be3d40cee54}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a5de32d7dcb5350720e625be3d40cee54}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!randomly\+\_\+place\+\_\+player@{randomly\+\_\+place\+\_\+player}}
+\index{randomly\+\_\+place\+\_\+player@{randomly\+\_\+place\+\_\+player}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{randomly\+\_\+place\+\_\+player()}{randomly\_place\_player()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::randomly\+\_\+place\+\_\+player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 408 of file Game.\+cpp.
+
+
+
+References \+\_\+player, and get\+\_\+random\+\_\+board\+\_\+position().
+
+
+
+Referenced by start().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a5de32d7dcb5350720e625be3d40cee54_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a5de32d7dcb5350720e625be3d40cee54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a61e639ba44b16737fdfe26887dba965f}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a61e639ba44b16737fdfe26887dba965f}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_ae68b2eaf69d331bd9f90d3297328cc40}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 64 of file Game.\+cpp.
+
+
+
+References \+\_\+board\+\_\+height, \+\_\+board\+\_\+width, \+\_\+is\+\_\+active, \+\_\+is\+\_\+round\+\_\+active, \+\_\+last\+\_\+time\+\_\+ms, \+\_\+player\+\_\+score, \+\_\+round\+\_\+number, \+\_\+ticks\+\_\+per\+\_\+second, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+H\+E\+I\+G\+HT, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+B\+O\+A\+R\+D\+\_\+\+W\+I\+D\+TH, and A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+T\+I\+C\+K\+S\+\_\+\+P\+E\+R\+\_\+\+S\+E\+C\+O\+ND.
+
+
+
+Referenced by init().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a61e639ba44b16737fdfe26887dba965f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a824018131c10d49c8addd305ff36209b}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a824018131c10d49c8addd305ff36209b}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!start@{start}}
+\index{start@{start}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_a9e11cc0884f1865033627d80e3c4078d}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 82 of file Game.\+cpp.
+
+
+
+References \+\_\+is\+\_\+active, \+\_\+round\+\_\+number, randomly\+\_\+place\+\_\+player(), and start\+\_\+round().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_a824018131c10d49c8addd305ff36209b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_aa242712e038fce29760d53eb1d57c9fb}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_aa242712e038fce29760d53eb1d57c9fb}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!start\+\_\+round@{start\+\_\+round}}
+\index{start\+\_\+round@{start\+\_\+round}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{start\+\_\+round()}{start\_round()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::start\+\_\+round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 358 of file Game.\+cpp.
+
+
+
+References \+\_\+is\+\_\+round\+\_\+active, \+\_\+round\+\_\+number, and initialize\+\_\+random\+\_\+rocks().
+
+
+
+Referenced by start(), and win\+\_\+round().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_aa242712e038fce29760d53eb1d57c9fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_aa242712e038fce29760d53eb1d57c9fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_aa63114be578393b0113f116798346ac4}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_aa63114be578393b0113f116798346ac4}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!update@{update}}
+\index{update@{update}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000004}{Todo}]Rocks should eventually split when hit \end{DoxyRefDesc}
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_a34d23ca6c1559d84f99a8aeec8ead3ed}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 96 of file Game.\+cpp.
+
+
+
+References \+\_\+bullets, \+\_\+player, \+\_\+player\+\_\+score, \+\_\+rocks, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+R\+O\+C\+K\+S\+\_\+\+P\+O\+I\+N\+TS, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+F\+R\+A\+M\+E\+S\+\_\+\+P\+E\+R\+\_\+\+S\+E\+C\+O\+ND, calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update(), keep\+\_\+actors\+\_\+in\+\_\+bounds(), maybe\+\_\+lose\+\_\+round(), maybe\+\_\+win\+\_\+round(), and wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_aa63114be578393b0113f116798346ac4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ab586cddf7972dbb9313ad3b241b550b4}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ab586cddf7972dbb9313ad3b241b550b4}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second@{wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second}}
+\index{wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second@{wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second()}{wait\_for\_frames\_per\_second()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second (\begin{DoxyParamCaption}\item[{long}]{tps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implement \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Game\+Interface} methods. 
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface_a91c58ac4b19f3e2325b91fff0e3c187a}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}.
+
+
+
+Definition at line 198 of file Game.\+cpp.
+
+
+
+References \+\_\+ticks\+\_\+per\+\_\+second, and calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update().
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_ab586cddf7972dbb9313ad3b241b550b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_ab586cddf7972dbb9313ad3b241b550b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ac3e1c5498adb64ea278d1a4b69db412b}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ac3e1c5498adb64ea278d1a4b69db412b}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!win\+\_\+round@{win\+\_\+round}}
+\index{win\+\_\+round@{win\+\_\+round}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{win\+\_\+round()}{win\_round()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::win\+\_\+round (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 378 of file Game.\+cpp.
+
+
+
+References start\+\_\+round().
+
+
+
+Referenced by maybe\+\_\+win\+\_\+round().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_ac3e1c5498adb64ea278d1a4b69db412b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Game_ac3e1c5498adb64ea278d1a4b69db412b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a51a65c4fa072bda2baf91d50e9f6195d}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a51a65c4fa072bda2baf91d50e9f6195d}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+board\+\_\+height@{\+\_\+board\+\_\+height}}
+\index{\+\_\+board\+\_\+height@{\+\_\+board\+\_\+height}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+board\+\_\+height}{\_board\_height}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+board\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+board\+\_\+height(), get\+\_\+random\+\_\+board\+\_\+position(), keep\+\_\+actors\+\_\+in\+\_\+bounds(), and reset().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a6fea71dec73c6a984ac38a0abd76dd47}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a6fea71dec73c6a984ac38a0abd76dd47}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+board\+\_\+width@{\+\_\+board\+\_\+width}}
+\index{\+\_\+board\+\_\+width@{\+\_\+board\+\_\+width}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+board\+\_\+width}{\_board\_width}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+board\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+board\+\_\+width(), get\+\_\+random\+\_\+board\+\_\+position(), keep\+\_\+actors\+\_\+in\+\_\+bounds(), and reset().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a9972c0063c33e27012ed2aaf8bc18ca7}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a9972c0063c33e27012ed2aaf8bc18ca7}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+bullets@{\+\_\+bullets}}
+\index{\+\_\+bullets@{\+\_\+bullets}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+bullets}{\_bullets}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}$>$ $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+bullets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+actors(), and update().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a1085fddc231fc9b055b1c36d68a3eece}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a1085fddc231fc9b055b1c36d68a3eece}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+factory@{\+\_\+factory}}
+\index{\+\_\+factory@{\+\_\+factory}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+factory}{\_factory}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}$>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 61 of file Game.\+h.
+
+
+
+Referenced by init().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ae88a905921e87ce11e14fcbde3aa675a}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ae88a905921e87ce11e14fcbde3aa675a}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+game\+\_\+factory@{\+\_\+game\+\_\+factory}}
+\index{\+\_\+game\+\_\+factory@{\+\_\+game\+\_\+factory}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+game\+\_\+factory}{\_game\_factory}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface}$>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+game\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file Game.\+h.
+
+
+
+Referenced by init().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a82dc6bf04b526d6ed87dc11256cdf88e}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a82dc6bf04b526d6ed87dc11256cdf88e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+is\+\_\+active@{\+\_\+is\+\_\+active}}
+\index{\+\_\+is\+\_\+active@{\+\_\+is\+\_\+active}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+is\+\_\+active}{\_is\_active}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+is\+\_\+active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 69 of file Game.\+h.
+
+
+
+Referenced by is\+\_\+active(), maybe\+\_\+lose\+\_\+round(), maybe\+\_\+win\+\_\+round(), quit(), reset(), and start().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a10d00a146ac392a4996b9076e970c2c4}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a10d00a146ac392a4996b9076e970c2c4}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+is\+\_\+round\+\_\+active@{\+\_\+is\+\_\+round\+\_\+active}}
+\index{\+\_\+is\+\_\+round\+\_\+active@{\+\_\+is\+\_\+round\+\_\+active}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+is\+\_\+round\+\_\+active}{\_is\_round\_active}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+is\+\_\+round\+\_\+active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 70 of file Game.\+h.
+
+
+
+Referenced by maybe\+\_\+lose\+\_\+round(), maybe\+\_\+win\+\_\+round(), reset(), and start\+\_\+round().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a29c32f9fcd574468a810df45f0a7fe6a}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a29c32f9fcd574468a810df45f0a7fe6a}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+last\+\_\+time\+\_\+ms@{\+\_\+last\+\_\+time\+\_\+ms}}
+\index{\+\_\+last\+\_\+time\+\_\+ms@{\+\_\+last\+\_\+time\+\_\+ms}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+last\+\_\+time\+\_\+ms}{\_last\_time\_ms}}
+{\footnotesize\ttfamily long Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+last\+\_\+time\+\_\+ms\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Game.\+h.
+
+
+
+Referenced by calculate\+\_\+ticks\+\_\+since\+\_\+last\+\_\+update(), and reset().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a98ff3e6110403a4133ebbae40d4eb605}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a98ff3e6110403a4133ebbae40d4eb605}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+player@{\+\_\+player}}
+\index{\+\_\+player@{\+\_\+player}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+player}{\_player}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}{Actors\+::\+Gun\+Ship}$>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+player\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 81 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+actors(), get\+\_\+player(), init(), randomly\+\_\+place\+\_\+player(), and update().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ac21c7069836851c7485c39d1864df670}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ac21c7069836851c7485c39d1864df670}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+player\+\_\+score@{\+\_\+player\+\_\+score}}
+\index{\+\_\+player\+\_\+score@{\+\_\+player\+\_\+score}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+player\+\_\+score}{\_player\_score}}
+{\footnotesize\ttfamily int Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+player\+\_\+score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+score(), reset(), and update().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a0deb897c0ad64573f1892a769185824e}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a0deb897c0ad64573f1892a769185824e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+randomer@{\+\_\+randomer}}
+\index{\+\_\+randomer@{\+\_\+randomer}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+randomer}{\_randomer}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer}{Randomer}$>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+randomer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 63 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+random\+\_\+board\+\_\+position(), init(), and initialize\+\_\+random\+\_\+rocks().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ad424a9c9f9fdd4bf7785c4da946cb57e}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ad424a9c9f9fdd4bf7785c4da946cb57e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+rocks@{\+\_\+rocks}}
+\index{\+\_\+rocks@{\+\_\+rocks}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+rocks}{\_rocks}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rock}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rock}$>$ $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+rocks\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 86 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+actors(), initialize\+\_\+random\+\_\+rocks(), maybe\+\_\+lose\+\_\+round(), maybe\+\_\+win\+\_\+round(), and update().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_a2992a61faa00be0bf512fed5c72fbc07}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_a2992a61faa00be0bf512fed5c72fbc07}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+round\+\_\+number@{\+\_\+round\+\_\+number}}
+\index{\+\_\+round\+\_\+number@{\+\_\+round\+\_\+number}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+round\+\_\+number}{\_round\_number}}
+{\footnotesize\ttfamily int Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+round\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+round(), reset(), start(), and start\+\_\+round().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Game_ab370339e44ac6ac2aa78bfdde8bc7ea5}\label{classAsteroids_1_1Domain_1_1Game_1_1Game_ab370339e44ac6ac2aa78bfdde8bc7ea5}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}!\+\_\+ticks\+\_\+per\+\_\+second@{\+\_\+ticks\+\_\+per\+\_\+second}}
+\index{\+\_\+ticks\+\_\+per\+\_\+second@{\+\_\+ticks\+\_\+per\+\_\+second}!Asteroids\+::\+Domain\+::\+Game\+::\+Game@{Asteroids\+::\+Domain\+::\+Game\+::\+Game}}
+\subsubsection{\texorpdfstring{\+\_\+ticks\+\_\+per\+\_\+second}{\_ticks\_per\_second}}
+{\footnotesize\ttfamily long Asteroids\+::\+Domain\+::\+Game\+::\+Game\+::\+\_\+ticks\+\_\+per\+\_\+second\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 66 of file Game.\+h.
+
+
+
+Referenced by get\+\_\+ticks\+\_\+per\+\_\+second(), reset(), and wait\+\_\+for\+\_\+frames\+\_\+per\+\_\+second().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\hyperlink{Game_8h}{Game.\+h}\item 
+Domain/\+Game/\hyperlink{Game_8cpp}{Game.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,252 @@
+.TH "Asteroids::Domain::Server::ServerDaemon" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server::ServerDaemon \- Implements \fBServerDaemonInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ServerDaemon\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBServerDaemon\fP (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+.br
+.ti -1c
+.RI "\fB~ServerDaemon\fP ()"
+.br
+.ti -1c
+.RI "void \fBapply_updates\fP ()"
+.br
+.ti -1c
+.RI "void \fBban_user\fP (std::string username)"
+.br
+.RI "Ban a user from the system\&. "
+.ti -1c
+.RI "void \fBforgive_haccs_report\fP (std::shared_ptr< \fBHACCS_REPORT_INTERFACE\fP > report)"
+.br
+.RI "Forgive a HACCS report\&. "
+.ti -1c
+.RI "std::shared_ptr< \fBHACCS_REPORT_INTERFACE\fP > \fBget_next_haccs_report\fP ()"
+.br
+.ti -1c
+.RI "bool \fBis_restart_required\fP ()"
+.br
+.ti -1c
+.RI "void \fBquit\fP ()"
+.br
+.ti -1c
+.RI "void \fBrequire_restart\fP ()"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP > \fB_databaser\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > \fB_factory\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Server::ServerFactoryInterface\fP > \fB_factory_server\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP > \fB_factory_technical_services\fP"
+.br
+.ti -1c
+.RI "std::atomic< bool > \fB_quit\fP"
+.br
+.ti -1c
+.RI "std::atomic< bool > \fB_restart_is_required\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implements \fBServerDaemonInterface\fP\&. 
+.PP
+Definition at line 25 of file ServerDaemon\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Server::ServerDaemon::ServerDaemon (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+
+.PP
+Definition at line 30 of file ServerDaemon\&.cpp\&.
+.PP
+References _factory, and init()\&.
+.SS "Asteroids::Domain::Server::ServerDaemon::~ServerDaemon ()"
+
+.PP
+Definition at line 40 of file ServerDaemon\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::Domain::Server::ServerDaemon::apply_updates ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 69 of file ServerDaemon\&.cpp\&.
+.PP
+References _factory_server, require_restart(), and Asteroids::Domain::Server::ServerUpdaterInterface::update()\&.
+.SS "void Asteroids::Domain::Server::ServerDaemon::ban_user (std::string username)\fC [virtual]\fP"
+
+.PP
+Ban a user from the system\&. 
+.PP
+\fBTodo\fP
+.RS 4
+Doesn't do anything yet 
+.RE
+.PP
+
+.PP
+\fBTodo\fP
+.RS 4
+Query not yet implemented 
+.RE
+.PP
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 131 of file ServerDaemon\&.cpp\&.
+.PP
+References _databaser\&.
+.SS "void Asteroids::Domain::Server::ServerDaemon::forgive_haccs_report (std::shared_ptr< \fBHACCS_REPORT_INTERFACE\fP > report)\fC [virtual]\fP"
+
+.PP
+Forgive a HACCS report\&. 
+.PP
+\fBTodo\fP
+.RS 4
+Doesn't actually do anything yet 
+.RE
+.PP
+
+.PP
+\fBTodo\fP
+.RS 4
+Query not yet implemented 
+.RE
+.PP
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 116 of file ServerDaemon\&.cpp\&.
+.PP
+References _databaser\&.
+.SS "std::shared_ptr< \fBHACCS_REPORT_INTERFACE\fP > Asteroids::Domain::Server::ServerDaemon::get_next_haccs_report ()\fC [virtual]\fP"
+Get the next user to review for breaking TOS/AUP; Returns dummy data at the moment 
+.PP
+\fBTodo\fP
+.RS 4
+Still returning dummy data! 
+.RE
+.PP
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 97 of file ServerDaemon\&.cpp\&.
+.PP
+References _factory_server\&.
+.SS "void Asteroids::Domain::Server::ServerDaemon::init ()\fC [private]\fP"
+
+.PP
+Definition at line 143 of file ServerDaemon\&.cpp\&.
+.PP
+References _databaser, _factory, _factory_server, and _factory_technical_services\&.
+.PP
+Referenced by ServerDaemon()\&.
+.SS "bool Asteroids::Domain::Server::ServerDaemon::is_restart_required ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 89 of file ServerDaemon\&.cpp\&.
+.PP
+References _restart_is_required\&.
+.SS "void Asteroids::Domain::Server::ServerDaemon::quit ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 62 of file ServerDaemon\&.cpp\&.
+.PP
+References _quit\&.
+.SS "void Asteroids::Domain::Server::ServerDaemon::require_restart ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 82 of file ServerDaemon\&.cpp\&.
+.PP
+References _restart_is_required\&.
+.PP
+Referenced by apply_updates()\&.
+.SS "void Asteroids::Domain::Server::ServerDaemon::run ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerDaemonInterface\fP\&.
+.PP
+Definition at line 46 of file ServerDaemon\&.cpp\&.
+.PP
+References _quit, and _restart_is_required\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP> Asteroids::Domain::Server::ServerDaemon::_databaser\fC [private]\fP"
+
+.PP
+Definition at line 59 of file ServerDaemon\&.h\&.
+.PP
+Referenced by ban_user(), forgive_haccs_report(), and init()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Factory::FactoryInterface\fP> Asteroids::Domain::Server::ServerDaemon::_factory\fC [private]\fP"
+
+.PP
+Definition at line 55 of file ServerDaemon\&.h\&.
+.PP
+Referenced by init(), and ServerDaemon()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Server::ServerFactoryInterface\fP> Asteroids::Domain::Server::ServerDaemon::_factory_server\fC [private]\fP"
+
+.PP
+Definition at line 56 of file ServerDaemon\&.h\&.
+.PP
+Referenced by apply_updates(), get_next_haccs_report(), and init()\&.
+.SS "std::shared_ptr<\fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP> Asteroids::Domain::Server::ServerDaemon::_factory_technical_services\fC [private]\fP"
+
+.PP
+Definition at line 57 of file ServerDaemon\&.h\&.
+.PP
+Referenced by init()\&.
+.SS "std::atomic<bool> Asteroids::Domain::Server::ServerDaemon::_quit\fC [private]\fP"
+
+.PP
+Definition at line 63 of file ServerDaemon\&.h\&.
+.PP
+Referenced by quit(), and run()\&.
+.SS "std::atomic<bool> Asteroids::Domain::Server::ServerDaemon::_restart_is_required\fC [private]\fP"
+
+.PP
+Definition at line 62 of file ServerDaemon\&.h\&.
+.PP
+Referenced by is_restart_required(), require_restart(), and run()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

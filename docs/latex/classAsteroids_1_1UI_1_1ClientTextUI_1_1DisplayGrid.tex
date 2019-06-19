@@ -1,0 +1,681 @@
+\hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid}{}\section{Asteroids\+:\+:UI\+:\+:Client\+Text\+UI\+:\+:Display\+Grid Class Reference}
+\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid}\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+
+
+Class to help translate and render actors and stuff from the virtual game board, to actual A\+S\+C\+II graphics that can be seen.  
+
+
+
+
+{\ttfamily \#include $<$Display\+Grid.\+h$>$}
+
+
+
+Collaboration diagram for Asteroids\+:\+:UI\+:\+:Client\+Text\+UI\+:\+:Display\+Grid\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a186316077596113cfd3cbb5d0be4922e}{Display\+Grid} (double source\+\_\+width, double source\+\_\+height, int grid\+\_\+width, int grid\+\_\+height)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a7e8af47380bb1c10250090b00b578227}{clear} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a54cc7e12266f854d8047e99b7f547f22}{draw\+\_\+filled\+\_\+polygon} (double offset\+\_\+x, double offset\+\_\+y, const std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ \&points)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aaf3c070c4d620f5a8420e349f5501bfd}{draw\+\_\+polygon} (double offset\+\_\+x, double offset\+\_\+y, const std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ \&points)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a1be310d6b569c5abee1299a1a50ce7cb}{print} ()
+\item 
+string \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a72317ad63490f1041543c51b21da527e}{render} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a118e0cad34b68aae5b178bd8e2b344c5}{reset} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae1826bd3ba813147465b5129b414feeb}{set\+\_\+footer\+\_\+text} (string s)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_acd82bd351302d1423b4e30f3312f7398}{set\+\_\+grid\+\_\+pixel} (int x, int y)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ac9ee1a4e1b1f20e7e7c7d2ccb57ce5db}{set\+\_\+header\+\_\+text} (string s)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a3f77a0874f78d753020e8ba12081bd85}{set\+\_\+pixel} (double x, double y)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8c7048980c9b3443b5cfa20dd16c6935}{add\+\_\+border} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aba2b6b3d0cef0cff63f709207652cf44}{calculate\+\_\+translation} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa5b4f98a3eae7f672021228e5f484f54}{clear\+\_\+grid} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a56b4a0b5f6d69ac13c3c7212db3e77b0}{init} ()
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae831e34de9c3fe439b09ed2543e30dee}{translate\+\_\+source\+\_\+point} (double x, double y)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a2efe868935cdf0664ccc9fb526909644}{\+\_\+footer\+\_\+text}
+\item 
+string \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ac08ce94aad0ffa78ab934dd348c1d05a}{\+\_\+header\+\_\+text}
+\item 
+int \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ad6276b6308240eb47ed4bfde35c08584}{\+\_\+height}
+\item 
+double \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a6be16b048d8b4350ce46562b974b68eb}{\+\_\+source\+\_\+height}
+\item 
+double \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8e8c5a59cdeab669f73f78a17ee46869}{\+\_\+source\+\_\+width}
+\item 
+double \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a541ceaabe467918053ff04714146bb33}{\+\_\+translation\+\_\+ratio}
+\item 
+int \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae868a284f85a6c1b58690b8d8234ee82}{\+\_\+unused\+\_\+height}
+\item 
+double \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a48740e237aa4c1b381073e53f699a456}{\+\_\+unused\+\_\+source\+\_\+height}
+\item 
+double \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_abd72f038f80e0109f41503ed6b26fd40}{\+\_\+unused\+\_\+source\+\_\+width}
+\item 
+int \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aab07512057cd22213ad9e0e1f06b9d4b}{\+\_\+unused\+\_\+width}
+\item 
+int \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa112573df2e5975cb31932b501e5f0d9}{\+\_\+width}
+\item 
+std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_afb1ace93d029332d54de18e60c625050}{grid}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to help translate and render actors and stuff from the virtual game board, to actual A\+S\+C\+II graphics that can be seen. 
+
+Definition at line 28 of file Display\+Grid.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a186316077596113cfd3cbb5d0be4922e}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a186316077596113cfd3cbb5d0be4922e}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!Display\+Grid@{Display\+Grid}}
+\index{Display\+Grid@{Display\+Grid}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{Display\+Grid()}{DisplayGrid()}}
+{\footnotesize\ttfamily Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+Display\+Grid (\begin{DoxyParamCaption}\item[{double}]{source\+\_\+width,  }\item[{double}]{source\+\_\+height,  }\item[{int}]{grid\+\_\+width,  }\item[{int}]{grid\+\_\+height }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+height, \+\_\+source\+\_\+height, \+\_\+source\+\_\+width, \+\_\+width, and init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a186316077596113cfd3cbb5d0be4922e_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8c7048980c9b3443b5cfa20dd16c6935}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8c7048980c9b3443b5cfa20dd16c6935}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!add\+\_\+border@{add\+\_\+border}}
+\index{add\+\_\+border@{add\+\_\+border}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{add\+\_\+border()}{add\_border()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::add\+\_\+border (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 102 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+source\+\_\+height, \+\_\+source\+\_\+width, and set\+\_\+pixel().
+
+
+
+Referenced by clear(), and clear\+\_\+grid().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8c7048980c9b3443b5cfa20dd16c6935_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8c7048980c9b3443b5cfa20dd16c6935_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aba2b6b3d0cef0cff63f709207652cf44}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aba2b6b3d0cef0cff63f709207652cf44}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!calculate\+\_\+translation@{calculate\+\_\+translation}}
+\index{calculate\+\_\+translation@{calculate\+\_\+translation}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{calculate\+\_\+translation()}{calculate\_translation()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::calculate\+\_\+translation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+height, \+\_\+source\+\_\+height, \+\_\+source\+\_\+width, \+\_\+translation\+\_\+ratio, \+\_\+unused\+\_\+height, \+\_\+unused\+\_\+source\+\_\+height, \+\_\+unused\+\_\+source\+\_\+width, \+\_\+unused\+\_\+width, and \+\_\+width.
+
+
+
+Referenced by reset().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aba2b6b3d0cef0cff63f709207652cf44_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a7e8af47380bb1c10250090b00b578227}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a7e8af47380bb1c10250090b00b578227}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!clear@{clear}}
+\index{clear@{clear}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 135 of file Display\+Grid.\+cpp.
+
+
+
+References add\+\_\+border(), and grid.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a7e8af47380bb1c10250090b00b578227_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa5b4f98a3eae7f672021228e5f484f54}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa5b4f98a3eae7f672021228e5f484f54}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!clear\+\_\+grid@{clear\+\_\+grid}}
+\index{clear\+\_\+grid@{clear\+\_\+grid}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{clear\+\_\+grid()}{clear\_grid()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::clear\+\_\+grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+height, \+\_\+width, add\+\_\+border(), and grid.
+
+
+
+Referenced by reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa5b4f98a3eae7f672021228e5f484f54_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa5b4f98a3eae7f672021228e5f484f54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a54cc7e12266f854d8047e99b7f547f22}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a54cc7e12266f854d8047e99b7f547f22}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!draw\+\_\+filled\+\_\+polygon@{draw\+\_\+filled\+\_\+polygon}}
+\index{draw\+\_\+filled\+\_\+polygon@{draw\+\_\+filled\+\_\+polygon}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{draw\+\_\+filled\+\_\+polygon()}{draw\_filled\_polygon()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::draw\+\_\+filled\+\_\+polygon (\begin{DoxyParamCaption}\item[{double}]{offset\+\_\+x,  }\item[{double}]{offset\+\_\+y,  }\item[{const std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ \&}]{points }\end{DoxyParamCaption})}
+
+
+
+Definition at line 163 of file Display\+Grid.\+cpp.
+
+
+
+References draw\+\_\+polygon().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a54cc7e12266f854d8047e99b7f547f22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aaf3c070c4d620f5a8420e349f5501bfd}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aaf3c070c4d620f5a8420e349f5501bfd}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!draw\+\_\+polygon@{draw\+\_\+polygon}}
+\index{draw\+\_\+polygon@{draw\+\_\+polygon}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{draw\+\_\+polygon()}{draw\_polygon()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::draw\+\_\+polygon (\begin{DoxyParamCaption}\item[{double}]{offset\+\_\+x,  }\item[{double}]{offset\+\_\+y,  }\item[{const std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ \&}]{points }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000024}{Todo}]It\textquotesingle{}d be nice if we could finish connecting the polygon points with a line \end{DoxyRefDesc}
+
+
+Definition at line 219 of file Display\+Grid.\+cpp.
+
+
+
+References set\+\_\+pixel().
+
+
+
+Referenced by draw\+\_\+filled\+\_\+polygon().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aaf3c070c4d620f5a8420e349f5501bfd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aaf3c070c4d620f5a8420e349f5501bfd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a56b4a0b5f6d69ac13c3c7212db3e77b0}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a56b4a0b5f6d69ac13c3c7212db3e77b0}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!init@{init}}
+\index{init@{init}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Display\+Grid.\+cpp.
+
+
+
+References reset().
+
+
+
+Referenced by Display\+Grid().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a56b4a0b5f6d69ac13c3c7212db3e77b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a56b4a0b5f6d69ac13c3c7212db3e77b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a1be310d6b569c5abee1299a1a50ce7cb}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a1be310d6b569c5abee1299a1a50ce7cb}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!print@{print}}
+\index{print@{print}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 317 of file Display\+Grid.\+cpp.
+
+
+
+References render().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a1be310d6b569c5abee1299a1a50ce7cb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a72317ad63490f1041543c51b21da527e}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a72317ad63490f1041543c51b21da527e}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!render@{render}}
+\index{render@{render}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily string Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 333 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+footer\+\_\+text, \+\_\+header\+\_\+text, \+\_\+unused\+\_\+width, and grid.
+
+
+
+Referenced by print().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a72317ad63490f1041543c51b21da527e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a118e0cad34b68aae5b178bd8e2b344c5}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a118e0cad34b68aae5b178bd8e2b344c5}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 121 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+footer\+\_\+text, \+\_\+header\+\_\+text, calculate\+\_\+translation(), and clear\+\_\+grid().
+
+
+
+Referenced by init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a118e0cad34b68aae5b178bd8e2b344c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a118e0cad34b68aae5b178bd8e2b344c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae1826bd3ba813147465b5129b414feeb}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae1826bd3ba813147465b5129b414feeb}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!set\+\_\+footer\+\_\+text@{set\+\_\+footer\+\_\+text}}
+\index{set\+\_\+footer\+\_\+text@{set\+\_\+footer\+\_\+text}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{set\+\_\+footer\+\_\+text()}{set\_footer\_text()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::set\+\_\+footer\+\_\+text (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+footer\+\_\+text.
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_acd82bd351302d1423b4e30f3312f7398}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_acd82bd351302d1423b4e30f3312f7398}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!set\+\_\+grid\+\_\+pixel@{set\+\_\+grid\+\_\+pixel}}
+\index{set\+\_\+grid\+\_\+pixel@{set\+\_\+grid\+\_\+pixel}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{set\+\_\+grid\+\_\+pixel()}{set\_grid\_pixel()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::set\+\_\+grid\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 300 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+height, \+\_\+width, and grid.
+
+
+
+Referenced by set\+\_\+pixel().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_acd82bd351302d1423b4e30f3312f7398_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ac9ee1a4e1b1f20e7e7c7d2ccb57ce5db}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ac9ee1a4e1b1f20e7e7c7d2ccb57ce5db}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!set\+\_\+header\+\_\+text@{set\+\_\+header\+\_\+text}}
+\index{set\+\_\+header\+\_\+text@{set\+\_\+header\+\_\+text}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{set\+\_\+header\+\_\+text()}{set\_header\_text()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::set\+\_\+header\+\_\+text (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 149 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+header\+\_\+text.
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a3f77a0874f78d753020e8ba12081bd85}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a3f77a0874f78d753020e8ba12081bd85}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!set\+\_\+pixel@{set\+\_\+pixel}}
+\index{set\+\_\+pixel@{set\+\_\+pixel}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{set\+\_\+pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::set\+\_\+pixel (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 288 of file Display\+Grid.\+cpp.
+
+
+
+References set\+\_\+grid\+\_\+pixel(), and translate\+\_\+source\+\_\+point().
+
+
+
+Referenced by add\+\_\+border(), and draw\+\_\+polygon().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a3f77a0874f78d753020e8ba12081bd85_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a3f77a0874f78d753020e8ba12081bd85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae831e34de9c3fe439b09ed2543e30dee}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae831e34de9c3fe439b09ed2543e30dee}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!translate\+\_\+source\+\_\+point@{translate\+\_\+source\+\_\+point}}
+\index{translate\+\_\+source\+\_\+point@{translate\+\_\+source\+\_\+point}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{translate\+\_\+source\+\_\+point()}{translate\_source\_point()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::translate\+\_\+source\+\_\+point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 380 of file Display\+Grid.\+cpp.
+
+
+
+References \+\_\+translation\+\_\+ratio.
+
+
+
+Referenced by set\+\_\+pixel().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae831e34de9c3fe439b09ed2543e30dee_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a2efe868935cdf0664ccc9fb526909644}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a2efe868935cdf0664ccc9fb526909644}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+footer\+\_\+text@{\+\_\+footer\+\_\+text}}
+\index{\+\_\+footer\+\_\+text@{\+\_\+footer\+\_\+text}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+footer\+\_\+text}{\_footer\_text}}
+{\footnotesize\ttfamily string Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+footer\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 88 of file Display\+Grid.\+h.
+
+
+
+Referenced by render(), reset(), and set\+\_\+footer\+\_\+text().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ac08ce94aad0ffa78ab934dd348c1d05a}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ac08ce94aad0ffa78ab934dd348c1d05a}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+header\+\_\+text@{\+\_\+header\+\_\+text}}
+\index{\+\_\+header\+\_\+text@{\+\_\+header\+\_\+text}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+header\+\_\+text}{\_header\_text}}
+{\footnotesize\ttfamily string Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+header\+\_\+text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 88 of file Display\+Grid.\+h.
+
+
+
+Referenced by render(), reset(), and set\+\_\+header\+\_\+text().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ad6276b6308240eb47ed4bfde35c08584}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ad6276b6308240eb47ed4bfde35c08584}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+height@{\+\_\+height}}
+\index{\+\_\+height@{\+\_\+height}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+height}{\_height}}
+{\footnotesize\ttfamily int Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Display\+Grid.\+h.
+
+
+
+Referenced by calculate\+\_\+translation(), clear\+\_\+grid(), Display\+Grid(), and set\+\_\+grid\+\_\+pixel().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a6be16b048d8b4350ce46562b974b68eb}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a6be16b048d8b4350ce46562b974b68eb}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+source\+\_\+height@{\+\_\+source\+\_\+height}}
+\index{\+\_\+source\+\_\+height@{\+\_\+source\+\_\+height}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+source\+\_\+height}{\_source\_height}}
+{\footnotesize\ttfamily double Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+source\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Display\+Grid.\+h.
+
+
+
+Referenced by add\+\_\+border(), calculate\+\_\+translation(), and Display\+Grid().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8e8c5a59cdeab669f73f78a17ee46869}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a8e8c5a59cdeab669f73f78a17ee46869}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+source\+\_\+width@{\+\_\+source\+\_\+width}}
+\index{\+\_\+source\+\_\+width@{\+\_\+source\+\_\+width}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+source\+\_\+width}{\_source\_width}}
+{\footnotesize\ttfamily double Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+source\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Display\+Grid.\+h.
+
+
+
+Referenced by add\+\_\+border(), calculate\+\_\+translation(), and Display\+Grid().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a541ceaabe467918053ff04714146bb33}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a541ceaabe467918053ff04714146bb33}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+translation\+\_\+ratio@{\+\_\+translation\+\_\+ratio}}
+\index{\+\_\+translation\+\_\+ratio@{\+\_\+translation\+\_\+ratio}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+translation\+\_\+ratio}{\_translation\_ratio}}
+{\footnotesize\ttfamily double Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+translation\+\_\+ratio\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 83 of file Display\+Grid.\+h.
+
+
+
+Referenced by calculate\+\_\+translation(), and translate\+\_\+source\+\_\+point().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae868a284f85a6c1b58690b8d8234ee82}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_ae868a284f85a6c1b58690b8d8234ee82}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+unused\+\_\+height@{\+\_\+unused\+\_\+height}}
+\index{\+\_\+unused\+\_\+height@{\+\_\+unused\+\_\+height}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+unused\+\_\+height}{\_unused\_height}}
+{\footnotesize\ttfamily int Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+unused\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Display\+Grid.\+h.
+
+
+
+Referenced by calculate\+\_\+translation().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a48740e237aa4c1b381073e53f699a456}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_a48740e237aa4c1b381073e53f699a456}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+unused\+\_\+source\+\_\+height@{\+\_\+unused\+\_\+source\+\_\+height}}
+\index{\+\_\+unused\+\_\+source\+\_\+height@{\+\_\+unused\+\_\+source\+\_\+height}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+unused\+\_\+source\+\_\+height}{\_unused\_source\_height}}
+{\footnotesize\ttfamily double Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+unused\+\_\+source\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Display\+Grid.\+h.
+
+
+
+Referenced by calculate\+\_\+translation().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_abd72f038f80e0109f41503ed6b26fd40}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_abd72f038f80e0109f41503ed6b26fd40}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+unused\+\_\+source\+\_\+width@{\+\_\+unused\+\_\+source\+\_\+width}}
+\index{\+\_\+unused\+\_\+source\+\_\+width@{\+\_\+unused\+\_\+source\+\_\+width}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+unused\+\_\+source\+\_\+width}{\_unused\_source\_width}}
+{\footnotesize\ttfamily double Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+unused\+\_\+source\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Display\+Grid.\+h.
+
+
+
+Referenced by calculate\+\_\+translation().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aab07512057cd22213ad9e0e1f06b9d4b}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aab07512057cd22213ad9e0e1f06b9d4b}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+unused\+\_\+width@{\+\_\+unused\+\_\+width}}
+\index{\+\_\+unused\+\_\+width@{\+\_\+unused\+\_\+width}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+unused\+\_\+width}{\_unused\_width}}
+{\footnotesize\ttfamily int Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+unused\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Display\+Grid.\+h.
+
+
+
+Referenced by calculate\+\_\+translation(), and render().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa112573df2e5975cb31932b501e5f0d9}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_aa112573df2e5975cb31932b501e5f0d9}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!\+\_\+width@{\+\_\+width}}
+\index{\+\_\+width@{\+\_\+width}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{\+\_\+width}{\_width}}
+{\footnotesize\ttfamily int Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Display\+Grid.\+h.
+
+
+
+Referenced by calculate\+\_\+translation(), clear\+\_\+grid(), Display\+Grid(), and set\+\_\+grid\+\_\+pixel().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_afb1ace93d029332d54de18e60c625050}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid_afb1ace93d029332d54de18e60c625050}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}!grid@{grid}}
+\index{grid@{grid}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}}
+\subsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$bool$>$ $>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid\+::grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 84 of file Display\+Grid.\+h.
+
+
+
+Referenced by clear(), clear\+\_\+grid(), render(), and set\+\_\+grid\+\_\+pixel().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+U\+I/\+Client\+Text\+U\+I/\hyperlink{DisplayGrid_8h}{Display\+Grid.\+h}\item 
+U\+I/\+Client\+Text\+U\+I/\hyperlink{DisplayGrid_8cpp}{Display\+Grid.\+cpp}\end{DoxyCompactItemize}

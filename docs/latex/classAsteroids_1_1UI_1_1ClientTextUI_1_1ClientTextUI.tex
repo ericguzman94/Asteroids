@@ -1,0 +1,1020 @@
+\hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI}{}\section{Asteroids\+:\+:UI\+:\+:Client\+Text\+UI\+:\+:Client\+Text\+UI Class Reference}
+\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI}\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface}{Client\+Text\+U\+I\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Client\+Text\+U\+I.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:UI\+:\+:Client\+Text\+UI\+:\+:Client\+Text\+UI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:UI\+:\+:Client\+Text\+UI\+:\+:Client\+Text\+UI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aec13a3cf71cb24f12d9c9b44066e1243}{Client\+Text\+UI} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ factory)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6efe3f748a4eee4913824be2aab9ab18}{reset} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a835f455a627e77a5ef99661350281ec3}{run} ()
+\begin{DoxyCompactList}\small\item\em Begin the user interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac3cec81751843b8e8fa503af51b17546}{demand\+\_\+authentication} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a96251b4d6623fda575f39b84677b0ed5}{do\+\_\+authentication} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6157c8167618db7195c35479096620ec}{draw\+\_\+actor} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface} $>$ actor)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a68028ff6a5b6d38321496c83ff872158}{draw\+\_\+game} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac6ed983203b9d88a3a7d532eeceac524}{find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aaea5f1fccb9aa46a331b15ad2274b319}{handle\+\_\+game\+\_\+input} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_af89b843cd3eecc9b5b54cf3067b5fab8}{init} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a681a6bfc7d4438a4eb3cc146c9117125}{initialize\+\_\+display\+\_\+grid} ()
+\item 
+\hyperlink{namespaceAsteroids_1_1UI_1_1ClientTextUI_1_1Enums_a009625aa8c73d3ab757537ad32c367b6}{Enums\+::\+Main\+Menu\+Choice} \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9d9c6942f7cf39ddb177df02fbe3e742}{main\+\_\+menu} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a67521714973f97f76618f9598d34d3b8}{main\+\_\+menu\+\_\+loop} ()
+\item 
+bool \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a4613a9af03e06c960c467b0b6be44db9}{pay\+\_\+for\+\_\+store\+\_\+item} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ item, \hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Payment\+Method} payment\+\_\+method)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PAYMENT__RESULT__DETAILS__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a02d420d49c44459fe7a2af9b0000adf9}{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ item)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aa0cb16ae0f3edc7efed1ec8c5d7bf94d}{play\+\_\+game} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a41f904ea570af3e3a8c4d70da8411ef3}{print} (string s=\char`\"{}\char`\"{}, bool do\+\_\+newline=true)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1POWERUP__ADDED__INFO__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+O\+W\+E\+R\+U\+P\+\_\+\+A\+D\+D\+E\+D\+\_\+\+I\+N\+F\+O\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a469a7cd3423794fa0ca7c34d95db5a10}{purchasing\+\_\+store\+\_\+item} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ item)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a27ec39f73edbb3688a3ebe67533abf5a}{review\+\_\+game\+\_\+history} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab0a3f9e22046b77a85dc7771d3502365}{share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GAME__HISTORY__ENTRY__INTERFACE}{Asteroids\+::\+Domain\+::\+Game\+::\+G\+A\+M\+E\+\_\+\+H\+I\+S\+T\+O\+R\+Y\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ entry)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae228a731be242ef0cf88005c2c03acee}{store} ()
+\item 
+bool \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a66aab545b0cd59af6bec829a1b82be89}{store\+\_\+loop} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9175792a129c214f55dd0bda9ac36b33}{store\+\_\+offer\+\_\+available\+\_\+items} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__STATE}{Asteroids\+::\+Domain\+::\+Net\+::\+Messages\+::\+A\+U\+T\+H\+\_\+\+S\+T\+A\+TE} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae52171fdbc596c6a59c81635794991e8}{\+\_\+authentication\+\_\+state}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid}{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_acab5b0f0efd512d54c4168d5ea0d67fe}{\+\_\+display\+\_\+grid}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_abb34be5ffc1f0f83b1b7005ef6371026}{\+\_\+factory}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aad702d0c440eb1d0b3e6a8532f2bc68a}{\+\_\+game}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a5b8e9f49274c1facac8895c111c4ed25}{\+\_\+game\+\_\+factory}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameHistoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+History\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a31468f9f3a6239ae0c8e56ffb9505acd}{\+\_\+game\+\_\+history}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1Input}{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Input} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a3c8cfb8f7896e7ea7ca10da23871d94c}{\+\_\+input}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1NetFactoryInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Net\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab6854b036563ab75f3768545a04408c2}{\+\_\+net\+\_\+factory}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a336c11e361de184974f409b5a95fff6a}{\+\_\+payment\+\_\+helper}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a8a1942977eefbdb5b04a63bfca67379f}{\+\_\+store}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a29fb41eef3f766c841dce3b6cfa801a1}{\+\_\+store\+\_\+factory}
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a52e7ca578c973a1c686de71abe86f0ad}{\+\_\+technical\+\_\+services\+\_\+factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface}{Client\+Text\+U\+I\+Interface}. 
+
+Definition at line 54 of file Client\+Text\+U\+I.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aec13a3cf71cb24f12d9c9b44066e1243}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aec13a3cf71cb24f12d9c9b44066e1243}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!Client\+Text\+UI@{Client\+Text\+UI}}
+\index{Client\+Text\+UI@{Client\+Text\+UI}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{Client\+Text\+U\+I()}{ClientTextUI()}}
+{\footnotesize\ttfamily Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+factory, init(), and reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aec13a3cf71cb24f12d9c9b44066e1243_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac3cec81751843b8e8fa503af51b17546}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac3cec81751843b8e8fa503af51b17546}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!demand\+\_\+authentication@{demand\+\_\+authentication}}
+\index{demand\+\_\+authentication@{demand\+\_\+authentication}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{demand\+\_\+authentication()}{demand\_authentication()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::demand\+\_\+authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 143 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+authentication\+\_\+state, do\+\_\+authentication(), and print().
+
+
+
+Referenced by run().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac3cec81751843b8e8fa503af51b17546_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac3cec81751843b8e8fa503af51b17546_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a96251b4d6623fda575f39b84677b0ed5}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a96251b4d6623fda575f39b84677b0ed5}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!do\+\_\+authentication@{do\+\_\+authentication}}
+\index{do\+\_\+authentication@{do\+\_\+authentication}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{do\+\_\+authentication()}{do\_authentication()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::do\+\_\+authentication (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 164 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+authentication\+\_\+state, \+\_\+net\+\_\+factory, Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authentication\+Interface\+::attempt\+Login(), and print().
+
+
+
+Referenced by demand\+\_\+authentication().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a96251b4d6623fda575f39b84677b0ed5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a96251b4d6623fda575f39b84677b0ed5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6157c8167618db7195c35479096620ec}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6157c8167618db7195c35479096620ec}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!draw\+\_\+actor@{draw\+\_\+actor}}
+\index{draw\+\_\+actor@{draw\+\_\+actor}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{draw\+\_\+actor()}{draw\_actor()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::draw\+\_\+actor (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface} $>$}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 375 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+display\+\_\+grid.
+
+
+
+Referenced by draw\+\_\+game().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6157c8167618db7195c35479096620ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a68028ff6a5b6d38321496c83ff872158}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a68028ff6a5b6d38321496c83ff872158}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!draw\+\_\+game@{draw\+\_\+game}}
+\index{draw\+\_\+game@{draw\+\_\+game}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{draw\+\_\+game()}{draw\_game()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::draw\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 348 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+display\+\_\+grid, \+\_\+game, and draw\+\_\+actor().
+
+
+
+Referenced by play\+\_\+game().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a68028ff6a5b6d38321496c83ff872158_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a68028ff6a5b6d38321496c83ff872158_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac6ed983203b9d88a3a7d532eeceac524}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac6ed983203b9d88a3a7d532eeceac524}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media@{find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media}}
+\index{find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media@{find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media()}{find\_friends\_on\_social\_media()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000023}{Todo}]Actually navigate to the friend\textquotesingle{}s social media account, somehow \end{DoxyRefDesc}
+
+
+Definition at line 468 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+technical\+\_\+services\+\_\+factory, and print().
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac6ed983203b9d88a3a7d532eeceac524_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ac6ed983203b9d88a3a7d532eeceac524_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aaea5f1fccb9aa46a331b15ad2274b319}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aaea5f1fccb9aa46a331b15ad2274b319}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!handle\+\_\+game\+\_\+input@{handle\+\_\+game\+\_\+input}}
+\index{handle\+\_\+game\+\_\+input@{handle\+\_\+game\+\_\+input}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{handle\+\_\+game\+\_\+input()}{handle\_game\_input()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::handle\+\_\+game\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 308 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+game, \+\_\+input, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Input\+::\+K\+E\+Y\+\_\+\+D\+O\+WN, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Input\+::\+K\+E\+Y\+\_\+\+F\+I\+RE, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Input\+::\+K\+E\+Y\+\_\+\+L\+E\+FT, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Input\+::\+K\+E\+Y\+\_\+\+R\+I\+G\+HT, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Input\+::\+K\+E\+Y\+\_\+\+UP, and print().
+
+
+
+Referenced by play\+\_\+game().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aaea5f1fccb9aa46a331b15ad2274b319_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aaea5f1fccb9aa46a331b15ad2274b319_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_af89b843cd3eecc9b5b54cf3067b5fab8}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_af89b843cd3eecc9b5b54cf3067b5fab8}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!init@{init}}
+\index{init@{init}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000021}{Todo}]Make a Text\+UI Factory instead of doing this here \end{DoxyRefDesc}
+
+
+Definition at line 68 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+factory, \+\_\+game\+\_\+factory, \+\_\+input, \+\_\+net\+\_\+factory, \+\_\+store\+\_\+factory, and \+\_\+technical\+\_\+services\+\_\+factory.
+
+
+
+Referenced by Client\+Text\+U\+I().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_af89b843cd3eecc9b5b54cf3067b5fab8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a681a6bfc7d4438a4eb3cc146c9117125}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a681a6bfc7d4438a4eb3cc146c9117125}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!initialize\+\_\+display\+\_\+grid@{initialize\+\_\+display\+\_\+grid}}
+\index{initialize\+\_\+display\+\_\+grid@{initialize\+\_\+display\+\_\+grid}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{initialize\+\_\+display\+\_\+grid()}{initialize\_display\_grid()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::initialize\+\_\+display\+\_\+grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000022}{Todo}]Make a Text\+UI Factory instead of doing this here \end{DoxyRefDesc}
+
+
+Definition at line 83 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+display\+\_\+grid, \+\_\+game, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+U\+I\+\_\+\+T\+E\+X\+T\+U\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+G\+R\+I\+D\+\_\+\+H\+E\+I\+G\+HT, and A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+U\+I\+\_\+\+T\+E\+X\+T\+U\+I\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+G\+R\+I\+D\+\_\+\+W\+I\+D\+TH.
+
+
+
+Referenced by play\+\_\+game().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a681a6bfc7d4438a4eb3cc146c9117125_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9d9c6942f7cf39ddb177df02fbe3e742}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9d9c6942f7cf39ddb177df02fbe3e742}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!main\+\_\+menu@{main\+\_\+menu}}
+\index{main\+\_\+menu@{main\+\_\+menu}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{main\+\_\+menu()}{main\_menu()}}
+{\footnotesize\ttfamily \hyperlink{namespaceAsteroids_1_1UI_1_1ClientTextUI_1_1Enums_a009625aa8c73d3ab757537ad32c367b6}{Enums\+::\+Main\+Menu\+Choice} Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::main\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 233 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Find\+Friends\+On\+Social\+Media, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Invalid, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Play\+Game, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Power\+Up\+Store, print(), Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Quit, and Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Review\+Game\+History.
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9d9c6942f7cf39ddb177df02fbe3e742_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9d9c6942f7cf39ddb177df02fbe3e742_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a67521714973f97f76618f9598d34d3b8}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a67521714973f97f76618f9598d34d3b8}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!main\+\_\+menu\+\_\+loop@{main\+\_\+menu\+\_\+loop}}
+\index{main\+\_\+menu\+\_\+loop@{main\+\_\+menu\+\_\+loop}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{main\+\_\+menu\+\_\+loop()}{main\_menu\_loop()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::main\+\_\+menu\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 185 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media(), Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Find\+Friends\+On\+Social\+Media, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Invalid, main\+\_\+menu(), play\+\_\+game(), Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Play\+Game, Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Power\+Up\+Store, print(), Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Quit, review\+\_\+game\+\_\+history(), Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Enums\+::\+Review\+Game\+History, and store().
+
+
+
+Referenced by run().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a67521714973f97f76618f9598d34d3b8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a67521714973f97f76618f9598d34d3b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a4613a9af03e06c960c467b0b6be44db9}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a4613a9af03e06c960c467b0b6be44db9}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!pay\+\_\+for\+\_\+store\+\_\+item@{pay\+\_\+for\+\_\+store\+\_\+item}}
+\index{pay\+\_\+for\+\_\+store\+\_\+item@{pay\+\_\+for\+\_\+store\+\_\+item}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{pay\+\_\+for\+\_\+store\+\_\+item()}{pay\_for\_store\_item()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::pay\+\_\+for\+\_\+store\+\_\+item (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$}]{item,  }\item[{\hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Payment\+Method}}]{payment\+\_\+method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 750 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+payment\+\_\+helper, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Credit\+Card, pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card(), and print().
+
+
+
+Referenced by purchasing\+\_\+store\+\_\+item().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a4613a9af03e06c960c467b0b6be44db9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a4613a9af03e06c960c467b0b6be44db9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a02d420d49c44459fe7a2af9b0000adf9}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a02d420d49c44459fe7a2af9b0000adf9}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card@{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card}}
+\index{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card@{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card()}{pay\_for\_store\_item\_with\_credit\_card()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PAYMENT__RESULT__DETAILS__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 804 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+payment\+\_\+helper, and print().
+
+
+
+Referenced by pay\+\_\+for\+\_\+store\+\_\+item().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a02d420d49c44459fe7a2af9b0000adf9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a02d420d49c44459fe7a2af9b0000adf9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aa0cb16ae0f3edc7efed1ec8c5d7bf94d}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aa0cb16ae0f3edc7efed1ec8c5d7bf94d}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!play\+\_\+game@{play\+\_\+game}}
+\index{play\+\_\+game@{play\+\_\+game}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{play\+\_\+game()}{play\_game()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::play\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 277 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+game, \+\_\+game\+\_\+factory, \+\_\+input, draw\+\_\+game(), handle\+\_\+game\+\_\+input(), initialize\+\_\+display\+\_\+grid(), and print().
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aa0cb16ae0f3edc7efed1ec8c5d7bf94d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aa0cb16ae0f3edc7efed1ec8c5d7bf94d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a41f904ea570af3e3a8c4d70da8411ef3}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a41f904ea570af3e3a8c4d70da8411ef3}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!print@{print}}
+\index{print@{print}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::print (\begin{DoxyParamCaption}\item[{string}]{s = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{do\+\_\+newline = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 102 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+Referenced by demand\+\_\+authentication(), do\+\_\+authentication(), find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media(), handle\+\_\+game\+\_\+input(), main\+\_\+menu(), main\+\_\+menu\+\_\+loop(), pay\+\_\+for\+\_\+store\+\_\+item(), pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card(), play\+\_\+game(), purchasing\+\_\+store\+\_\+item(), review\+\_\+game\+\_\+history(), run(), share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media(), store(), store\+\_\+loop(), and store\+\_\+offer\+\_\+available\+\_\+items().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a41f904ea570af3e3a8c4d70da8411ef3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a469a7cd3423794fa0ca7c34d95db5a10}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a469a7cd3423794fa0ca7c34d95db5a10}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!purchasing\+\_\+store\+\_\+item@{purchasing\+\_\+store\+\_\+item}}
+\index{purchasing\+\_\+store\+\_\+item@{purchasing\+\_\+store\+\_\+item}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{purchasing\+\_\+store\+\_\+item()}{purchasing\_store\_item()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1POWERUP__ADDED__INFO__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+O\+W\+E\+R\+U\+P\+\_\+\+A\+D\+D\+E\+D\+\_\+\+I\+N\+F\+O\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::purchasing\+\_\+store\+\_\+item (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 679 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+payment\+\_\+helper, \+\_\+store\+\_\+factory, pay\+\_\+for\+\_\+store\+\_\+item(), and print().
+
+
+
+Referenced by store\+\_\+offer\+\_\+available\+\_\+items().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a469a7cd3423794fa0ca7c34d95db5a10_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a469a7cd3423794fa0ca7c34d95db5a10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6efe3f748a4eee4913824be2aab9ab18}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6efe3f748a4eee4913824be2aab9ab18}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 120 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+authentication\+\_\+state.
+
+
+
+Referenced by Client\+Text\+U\+I().
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a6efe3f748a4eee4913824be2aab9ab18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a27ec39f73edbb3688a3ebe67533abf5a}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a27ec39f73edbb3688a3ebe67533abf5a}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!review\+\_\+game\+\_\+history@{review\+\_\+game\+\_\+history}}
+\index{review\+\_\+game\+\_\+history@{review\+\_\+game\+\_\+history}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{review\+\_\+game\+\_\+history()}{review\_game\_history()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::review\+\_\+game\+\_\+history (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 385 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+game\+\_\+factory, \+\_\+game\+\_\+history, print(), and share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media().
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a27ec39f73edbb3688a3ebe67533abf5a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a27ec39f73edbb3688a3ebe67533abf5a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a835f455a627e77a5ef99661350281ec3}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a835f455a627e77a5ef99661350281ec3}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!run@{run}}
+\index{run@{run}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Begin the user interface. 
+
+
+
+Implements \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface_a9eba8946cd9262221e8b55cea4acd92d}{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+Interface}.
+
+
+
+Definition at line 127 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References demand\+\_\+authentication(), main\+\_\+menu\+\_\+loop(), and print().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a835f455a627e77a5ef99661350281ec3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab0a3f9e22046b77a85dc7771d3502365}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab0a3f9e22046b77a85dc7771d3502365}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media@{share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media}}
+\index{share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media@{share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media()}{share\_game\_history\_entry\_to\_social\_media()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GAME__HISTORY__ENTRY__INTERFACE}{Asteroids\+::\+Domain\+::\+Game\+::\+G\+A\+M\+E\+\_\+\+H\+I\+S\+T\+O\+R\+Y\+\_\+\+E\+N\+T\+R\+Y\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$}]{entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 436 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+net\+\_\+factory, \+\_\+technical\+\_\+services\+\_\+factory, Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface\+::notify\+Server\+Of\+Game\+History\+Entry\+Social\+Media\+Share(), and print().
+
+
+
+Referenced by review\+\_\+game\+\_\+history().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab0a3f9e22046b77a85dc7771d3502365_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab0a3f9e22046b77a85dc7771d3502365_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae228a731be242ef0cf88005c2c03acee}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae228a731be242ef0cf88005c2c03acee}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!store@{store}}
+\index{store@{store}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 534 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+payment\+\_\+helper, \+\_\+store, \+\_\+store\+\_\+factory, print(), and store\+\_\+loop().
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae228a731be242ef0cf88005c2c03acee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae228a731be242ef0cf88005c2c03acee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a66aab545b0cd59af6bec829a1b82be89}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a66aab545b0cd59af6bec829a1b82be89}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!store\+\_\+loop@{store\+\_\+loop}}
+\index{store\+\_\+loop@{store\+\_\+loop}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{store\+\_\+loop()}{store\_loop()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::store\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 553 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References print(), and store\+\_\+offer\+\_\+available\+\_\+items().
+
+
+
+Referenced by store().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a66aab545b0cd59af6bec829a1b82be89_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a66aab545b0cd59af6bec829a1b82be89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9175792a129c214f55dd0bda9ac36b33}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9175792a129c214f55dd0bda9ac36b33}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!store\+\_\+offer\+\_\+available\+\_\+items@{store\+\_\+offer\+\_\+available\+\_\+items}}
+\index{store\+\_\+offer\+\_\+available\+\_\+items@{store\+\_\+offer\+\_\+available\+\_\+items}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{store\+\_\+offer\+\_\+available\+\_\+items()}{store\_offer\_available\_items()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::store\+\_\+offer\+\_\+available\+\_\+items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 591 of file Client\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+store, print(), and purchasing\+\_\+store\+\_\+item().
+
+
+
+Referenced by store\+\_\+loop().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9175792a129c214f55dd0bda9ac36b33_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a9175792a129c214f55dd0bda9ac36b33_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae52171fdbc596c6a59c81635794991e8}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ae52171fdbc596c6a59c81635794991e8}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+authentication\+\_\+state@{\+\_\+authentication\+\_\+state}}
+\index{\+\_\+authentication\+\_\+state@{\+\_\+authentication\+\_\+state}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+authentication\+\_\+state}{\_authentication\_state}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__STATE}{Asteroids\+::\+Domain\+::\+Net\+::\+Messages\+::\+A\+U\+T\+H\+\_\+\+S\+T\+A\+TE}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+authentication\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by demand\+\_\+authentication(), do\+\_\+authentication(), and reset().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_acab5b0f0efd512d54c4168d5ea0d67fe}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_acab5b0f0efd512d54c4168d5ea0d67fe}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+display\+\_\+grid@{\+\_\+display\+\_\+grid}}
+\index{\+\_\+display\+\_\+grid@{\+\_\+display\+\_\+grid}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+display\+\_\+grid}{\_display\_grid}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid}{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Display\+Grid}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+display\+\_\+grid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by draw\+\_\+actor(), draw\+\_\+game(), and initialize\+\_\+display\+\_\+grid().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_abb34be5ffc1f0f83b1b7005ef6371026}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_abb34be5ffc1f0f83b1b7005ef6371026}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+factory@{\+\_\+factory}}
+\index{\+\_\+factory@{\+\_\+factory}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+factory}{\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 73 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by Client\+Text\+U\+I(), and init().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aad702d0c440eb1d0b3e6a8532f2bc68a}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_aad702d0c440eb1d0b3e6a8532f2bc68a}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+game@{\+\_\+game}}
+\index{\+\_\+game@{\+\_\+game}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+game}{\_game}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 83 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by draw\+\_\+game(), handle\+\_\+game\+\_\+input(), initialize\+\_\+display\+\_\+grid(), and play\+\_\+game().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a5b8e9f49274c1facac8895c111c4ed25}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a5b8e9f49274c1facac8895c111c4ed25}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+game\+\_\+factory@{\+\_\+game\+\_\+factory}}
+\index{\+\_\+game\+\_\+factory@{\+\_\+game\+\_\+factory}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+game\+\_\+factory}{\_game\_factory}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+game\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by init(), play\+\_\+game(), and review\+\_\+game\+\_\+history().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a31468f9f3a6239ae0c8e56ffb9505acd}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a31468f9f3a6239ae0c8e56ffb9505acd}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+game\+\_\+history@{\+\_\+game\+\_\+history}}
+\index{\+\_\+game\+\_\+history@{\+\_\+game\+\_\+history}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+game\+\_\+history}{\_game\_history}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameHistoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+History\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+game\+\_\+history\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 88 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by review\+\_\+game\+\_\+history().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a3c8cfb8f7896e7ea7ca10da23871d94c}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a3c8cfb8f7896e7ea7ca10da23871d94c}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+input@{\+\_\+input}}
+\index{\+\_\+input@{\+\_\+input}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+input}{\_input}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1Input}{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Input}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+input\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 84 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by handle\+\_\+game\+\_\+input(), init(), and play\+\_\+game().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab6854b036563ab75f3768545a04408c2}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_ab6854b036563ab75f3768545a04408c2}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+net\+\_\+factory@{\+\_\+net\+\_\+factory}}
+\index{\+\_\+net\+\_\+factory@{\+\_\+net\+\_\+factory}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+net\+\_\+factory}{\_net\_factory}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Net_1_1NetFactoryInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Net\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+net\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by do\+\_\+authentication(), init(), and share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a336c11e361de184974f409b5a95fff6a}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a336c11e361de184974f409b5a95fff6a}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+payment\+\_\+helper@{\+\_\+payment\+\_\+helper}}
+\index{\+\_\+payment\+\_\+helper@{\+\_\+payment\+\_\+helper}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+payment\+\_\+helper}{\_payment\_helper}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+payment\+\_\+helper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 92 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by pay\+\_\+for\+\_\+store\+\_\+item(), pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card(), purchasing\+\_\+store\+\_\+item(), and store().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a8a1942977eefbdb5b04a63bfca67379f}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a8a1942977eefbdb5b04a63bfca67379f}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+store@{\+\_\+store}}
+\index{\+\_\+store@{\+\_\+store}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+store}{\_store}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+store\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 91 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by store(), and store\+\_\+offer\+\_\+available\+\_\+items().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a29fb41eef3f766c841dce3b6cfa801a1}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a29fb41eef3f766c841dce3b6cfa801a1}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+store\+\_\+factory@{\+\_\+store\+\_\+factory}}
+\index{\+\_\+store\+\_\+factory@{\+\_\+store\+\_\+factory}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+store\+\_\+factory}{\_store\_factory}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+store\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by init(), purchasing\+\_\+store\+\_\+item(), and store().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a52e7ca578c973a1c686de71abe86f0ad}\label{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI_a52e7ca578c973a1c686de71abe86f0ad}} 
+\index{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}!\+\_\+technical\+\_\+services\+\_\+factory@{\+\_\+technical\+\_\+services\+\_\+factory}}
+\index{\+\_\+technical\+\_\+services\+\_\+factory@{\+\_\+technical\+\_\+services\+\_\+factory}!Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+technical\+\_\+services\+\_\+factory}{\_technical\_services\_factory}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+::\+\_\+technical\+\_\+services\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file Client\+Text\+U\+I.\+h.
+
+
+
+Referenced by find\+\_\+friends\+\_\+on\+\_\+social\+\_\+media(), init(), and share\+\_\+game\+\_\+history\+\_\+entry\+\_\+to\+\_\+social\+\_\+media().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+U\+I/\+Client\+Text\+U\+I/\hyperlink{ClientTextUI_8h}{Client\+Text\+U\+I.\+h}\item 
+U\+I/\+Client\+Text\+U\+I/\hyperlink{ClientTextUI_8cpp}{Client\+Text\+U\+I.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,3 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI" name="Asteroids::UI::ClientTextUI::ClientTextUI">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface.html" title="Interface to the main client text user interface; Just runs, basically. " alt="" coords="7,5,176,97"/>
+</map>

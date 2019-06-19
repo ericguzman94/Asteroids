@@ -1,0 +1,224 @@
+.TH "Asteroids::Domain::Store::STORE_ITEM" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::STORE_ITEM \- Implementation of \fBSTORE_ITEM_INTERFACE\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <STORE_ITEM\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSTORE_ITEM\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_description\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_formatted_price\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_name\fP ()"
+.br
+.ti -1c
+.RI "\fBEnums::CurrencyType\fP \fBget_price_currency\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_price_currency_as_string\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_price_units\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_description\fP (std::string s)"
+.br
+.ti -1c
+.RI "void \fBset_name\fP (std::string s)"
+.br
+.ti -1c
+.RI "void \fBset_price_currency\fP (\fBEnums::CurrencyType\fP t)"
+.br
+.ti -1c
+.RI "void \fBset_price_units\fP (int n)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::string \fBprice_currency_to_string\fP (\fBEnums::CurrencyType\fP t)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fB_description\fP"
+.br
+.ti -1c
+.RI "std::string \fB_name\fP"
+.br
+.ti -1c
+.RI "\fBEnums::CurrencyType\fP \fB_price_currency_type\fP"
+.br
+.ti -1c
+.RI "int \fB_price_units\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBSTORE_ITEM_INTERFACE\fP\&. 
+.PP
+Definition at line 21 of file STORE_ITEM\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Store::STORE_ITEM::STORE_ITEM ()"
+
+.PP
+Definition at line 22 of file STORE_ITEM\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Store::STORE_ITEM::get_description ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP\&.
+.PP
+Definition at line 60 of file STORE_ITEM\&.cpp\&.
+.PP
+References _description\&.
+.SS "std::string Asteroids::Domain::Store::STORE_ITEM::get_formatted_price ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP\&.
+.PP
+Definition at line 119 of file STORE_ITEM\&.cpp\&.
+.PP
+References _price_currency_type, _price_units, Asteroids::Domain::Store::Enums::Undefined, and Asteroids::Domain::Store::Enums::USA\&.
+.SS "std::string Asteroids::Domain::Store::STORE_ITEM::get_name ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP\&.
+.PP
+Definition at line 46 of file STORE_ITEM\&.cpp\&.
+.PP
+References _name\&.
+.SS "\fBEnums::CurrencyType\fP Asteroids::Domain::Store::STORE_ITEM::get_price_currency ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP\&.
+.PP
+Definition at line 74 of file STORE_ITEM\&.cpp\&.
+.PP
+References _price_currency_type\&.
+.SS "std::string Asteroids::Domain::Store::STORE_ITEM::get_price_currency_as_string ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP\&.
+.PP
+Definition at line 81 of file STORE_ITEM\&.cpp\&.
+.PP
+References _price_currency_type, and price_currency_to_string()\&.
+.SS "int Asteroids::Domain::Store::STORE_ITEM::get_price_units ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP\&.
+.PP
+Definition at line 112 of file STORE_ITEM\&.cpp\&.
+.PP
+References _price_units\&.
+.SS "void Asteroids::Domain::Store::STORE_ITEM::init ()\fC [private]\fP"
+
+.PP
+Definition at line 144 of file STORE_ITEM\&.cpp\&.
+.PP
+References reset()\&.
+.PP
+Referenced by STORE_ITEM()\&.
+.SS "std::string Asteroids::Domain::Store::STORE_ITEM::price_currency_to_string (\fBEnums::CurrencyType\fP t)\fC [static]\fP"
+
+.PP
+Definition at line 88 of file STORE_ITEM\&.cpp\&.
+.PP
+References Asteroids::Domain::Store::Enums::Undefined, and Asteroids::Domain::Store::Enums::USA\&.
+.PP
+Referenced by get_price_currency_as_string()\&.
+.SS "void Asteroids::Domain::Store::STORE_ITEM::reset ()"
+
+.PP
+Definition at line 29 of file STORE_ITEM\&.cpp\&.
+.PP
+References _description, _name, _price_currency_type, _price_units, and Asteroids::Domain::Store::Enums::Undefined\&.
+.PP
+Referenced by init()\&.
+.SS "void Asteroids::Domain::Store::STORE_ITEM::set_description (std::string s)"
+
+.PP
+Definition at line 53 of file STORE_ITEM\&.cpp\&.
+.PP
+References _description\&.
+.SS "void Asteroids::Domain::Store::STORE_ITEM::set_name (std::string s)"
+
+.PP
+Definition at line 39 of file STORE_ITEM\&.cpp\&.
+.PP
+References _name\&.
+.SS "void Asteroids::Domain::Store::STORE_ITEM::set_price_currency (\fBEnums::CurrencyType\fP t)"
+
+.PP
+Definition at line 67 of file STORE_ITEM\&.cpp\&.
+.PP
+References _price_currency_type\&.
+.SS "void Asteroids::Domain::Store::STORE_ITEM::set_price_units (int n)"
+
+.PP
+Definition at line 105 of file STORE_ITEM\&.cpp\&.
+.PP
+References _price_units\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Store::STORE_ITEM::_description\fC [private]\fP"
+
+.PP
+Definition at line 59 of file STORE_ITEM\&.h\&.
+.PP
+Referenced by get_description(), reset(), and set_description()\&.
+.SS "std::string Asteroids::Domain::Store::STORE_ITEM::_name\fC [private]\fP"
+
+.PP
+Definition at line 59 of file STORE_ITEM\&.h\&.
+.PP
+Referenced by get_name(), reset(), and set_name()\&.
+.SS "\fBEnums::CurrencyType\fP Asteroids::Domain::Store::STORE_ITEM::_price_currency_type\fC [private]\fP"
+
+.PP
+Definition at line 63 of file STORE_ITEM\&.h\&.
+.PP
+Referenced by get_formatted_price(), get_price_currency(), get_price_currency_as_string(), reset(), and set_price_currency()\&.
+.SS "int Asteroids::Domain::Store::STORE_ITEM::_price_units\fC [private]\fP"
+
+.PP
+Definition at line 62 of file STORE_ITEM\&.h\&.
+.PP
+Referenced by get_formatted_price(), get_price_units(), reset(), and set_price_units()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

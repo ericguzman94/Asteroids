@@ -1,0 +1,70 @@
+.TH "Asteroids::Domain::Factory::FactoryInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Factory::FactoryInterface \- The main \fBFactoryInterface\fP is responsible for generating other factories of subpackages\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FactoryInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Factory::Factory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Game::GameFactoryInterface\fP > \fBcreateGameFactory\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Net::NetFactoryInterface\fP > \fBcreateNetworkFactory\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Server::ServerFactoryInterface\fP > \fBcreateServerFactory\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Store::StoreFactoryInterface\fP > \fBcreateStoreFactory\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP > \fBcreateTechnicalServicesFactory\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::UI::UIFactoryInterface\fP > \fBcreateUIFactory\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The main \fBFactoryInterface\fP is responsible for generating other factories of subpackages\&. 
+.PP
+Definition at line 23 of file FactoryInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Game::GameFactoryInterface\fP> Asteroids::Domain::Factory::FactoryInterface::createGameFactory ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Factory::Factory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Net::NetFactoryInterface\fP> Asteroids::Domain::Factory::FactoryInterface::createNetworkFactory ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Factory::Factory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Server::ServerFactoryInterface\fP> Asteroids::Domain::Factory::FactoryInterface::createServerFactory ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Factory::Factory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Store::StoreFactoryInterface\fP> Asteroids::Domain::Factory::FactoryInterface::createStoreFactory ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Factory::Factory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP> Asteroids::Domain::Factory::FactoryInterface::createTechnicalServicesFactory ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Factory::Factory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::UI::UIFactoryInterface\fP> Asteroids::Domain::Factory::FactoryInterface::createUIFactory ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Factory::Factory\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

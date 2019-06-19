@@ -1,0 +1,152 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator}{}\section{Asteroids\+:\+:Domain\+:\+:Net\+:\+:Authentication\+:\+:Authenticator Class Reference}
+\label{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator}\index{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1AuthenticationInterface}{Authentication\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Authenticator.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Net\+:\+:Authentication\+:\+:Authenticator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Net\+:\+:Authentication\+:\+:Authenticator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_afadb967c25e27246382ace3ffe9ee85a}{Authenticator} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__STATE}{Messages\+::\+A\+U\+T\+H\+\_\+\+S\+T\+A\+TE} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a1dd2c0964bae0658b8477c7d041f62d5}{attempt\+Login} (string username, string password)
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_adcb0d071c190cabc1333ab81ae2c9650}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__STATE}{Messages\+::\+A\+U\+T\+H\+\_\+\+S\+T\+A\+TE} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a8a8edfa95f03ea7dc5ca921f1e1ca622}{send\+Auth\+To\+Server} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__ATTEMPT}{Messages\+::\+A\+U\+T\+H\+\_\+\+A\+T\+T\+E\+M\+PT} $>$ auth)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1AuthenticationInterface}{Authentication\+Interface}. 
+
+Definition at line 31 of file Authenticator.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_afadb967c25e27246382ace3ffe9ee85a}\label{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_afadb967c25e27246382ace3ffe9ee85a}} 
+\index{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}!Authenticator@{Authenticator}}
+\index{Authenticator@{Authenticator}!Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}}
+\subsubsection{\texorpdfstring{Authenticator()}{Authenticator()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator\+::\+Authenticator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file Authenticator.\+cpp.
+
+
+
+References reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_afadb967c25e27246382ace3ffe9ee85a_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a1dd2c0964bae0658b8477c7d041f62d5}\label{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a1dd2c0964bae0658b8477c7d041f62d5}} 
+\index{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}!attempt\+Login@{attempt\+Login}}
+\index{attempt\+Login@{attempt\+Login}!Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}}
+\subsubsection{\texorpdfstring{attempt\+Login()}{attemptLogin()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__STATE}{Messages\+::\+A\+U\+T\+H\+\_\+\+S\+T\+A\+TE} $>$ Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator\+::attempt\+Login (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1AuthenticationInterface_a2358abf451a5aa6df9d29e9dfda2898c}{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authentication\+Interface}.
+
+
+
+Definition at line 37 of file Authenticator.\+cpp.
+
+
+
+References send\+Auth\+To\+Server().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a1dd2c0964bae0658b8477c7d041f62d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_adcb0d071c190cabc1333ab81ae2c9650}\label{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_adcb0d071c190cabc1333ab81ae2c9650}} 
+\index{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file Authenticator.\+cpp.
+
+
+
+Referenced by Authenticator().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_adcb0d071c190cabc1333ab81ae2c9650_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a8a8edfa95f03ea7dc5ca921f1e1ca622}\label{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a8a8edfa95f03ea7dc5ca921f1e1ca622}} 
+\index{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}!send\+Auth\+To\+Server@{send\+Auth\+To\+Server}}
+\index{send\+Auth\+To\+Server@{send\+Auth\+To\+Server}!Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator@{Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator}}
+\subsubsection{\texorpdfstring{send\+Auth\+To\+Server()}{sendAuthToServer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__STATE}{Messages\+::\+A\+U\+T\+H\+\_\+\+S\+T\+A\+TE} $>$ Asteroids\+::\+Domain\+::\+Net\+::\+Authentication\+::\+Authenticator\+::send\+Auth\+To\+Server (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__ATTEMPT}{Messages\+::\+A\+U\+T\+H\+\_\+\+A\+T\+T\+E\+M\+PT} $>$}]{auth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000006}{Todo}]Stub function that always returns success! \end{DoxyRefDesc}
+
+
+Definition at line 61 of file Authenticator.\+cpp.
+
+
+
+Referenced by attempt\+Login().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Net_1_1Authentication_1_1Authenticator_a8a8edfa95f03ea7dc5ca921f1e1ca622_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Net/\+Authentication/\hyperlink{Authenticator_8h}{Authenticator.\+h}\item 
+Domain/\+Net/\+Authentication/\hyperlink{Authenticator_8cpp}{Authenticator.\+cpp}\end{DoxyCompactItemize}

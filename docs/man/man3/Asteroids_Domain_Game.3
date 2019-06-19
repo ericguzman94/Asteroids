@@ -1,0 +1,63 @@
+.TH "Asteroids::Domain::Game" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game \- The \fBGame\fP package holds things related to playing the game\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBActors\fP"
+.br
+.RI "Not really a package so much as a way to organize allll the \fBActor\fP classes and helpers away from the \fBGame\fP logic classes\&. "
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBGame\fP"
+.br
+.RI "Implementation of \fBGameInterface\fP (ie: The game \&.\&.\&.) "
+.ti -1c
+.RI "class \fBGAME_HISTORY_ENTRY\fP"
+.br
+.RI "Implements \fBGAME_HISTORY_ENTRY_INTERFACE\fP\&. "
+.ti -1c
+.RI "class \fBGAME_HISTORY_ENTRY_INTERFACE\fP"
+.br
+.RI "Holds one entry of gameplay historical data\&. "
+.ti -1c
+.RI "class \fBGameFactory\fP"
+.br
+.RI "Implements \fBGameFactoryInterface\fP\&. "
+.ti -1c
+.RI "class \fBGameFactoryInterface\fP"
+.br
+.RI "Create things inside the \fBGame\fP package\&. "
+.ti -1c
+.RI "class \fBGameHistory\fP"
+.br
+.ti -1c
+.RI "class \fBGameHistoryInterface\fP"
+.br
+.ti -1c
+.RI "class \fBGameInterface\fP"
+.br
+.RI "Interface that allows users to control the main client game\&. "
+.ti -1c
+.RI "class \fBRandomer\fP"
+.br
+.RI "Helper class to generate random numbers for the \fBGame\fP\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBGame\fP package holds things related to playing the game\&. 
+
+ie the \fBActors\fP (GunShip, Bullet, Rocks, etc), and other helpers 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

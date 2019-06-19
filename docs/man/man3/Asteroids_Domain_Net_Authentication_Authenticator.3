@@ -1,0 +1,79 @@
+.TH "Asteroids::Domain::Net::Authentication::Authenticator" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::Authentication::Authenticator \- Implementation of \fBAuthenticationInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Authenticator\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Net::Authentication::AuthenticationInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAuthenticator\fP ()"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBMessages::AUTH_STATE\fP > \fBattemptLogin\fP (string username, string password)"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBMessages::AUTH_STATE\fP > \fBsendAuthToServer\fP (std::shared_ptr< \fBMessages::AUTH_ATTEMPT\fP > auth)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBAuthenticationInterface\fP\&. 
+.PP
+Definition at line 31 of file Authenticator\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Net::Authentication::Authenticator::Authenticator ()"
+
+.PP
+Definition at line 23 of file Authenticator\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::shared_ptr< \fBMessages::AUTH_STATE\fP > Asteroids::Domain::Net::Authentication::Authenticator::attemptLogin (string username, string password)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Net::Authentication::AuthenticationInterface\fP\&.
+.PP
+Definition at line 37 of file Authenticator\&.cpp\&.
+.PP
+References sendAuthToServer()\&.
+.SS "void Asteroids::Domain::Net::Authentication::Authenticator::reset ()"
+
+.PP
+Definition at line 30 of file Authenticator\&.cpp\&.
+.PP
+Referenced by Authenticator()\&.
+.SS "std::shared_ptr< \fBMessages::AUTH_STATE\fP > Asteroids::Domain::Net::Authentication::Authenticator::sendAuthToServer (std::shared_ptr< \fBMessages::AUTH_ATTEMPT\fP > auth)\fC [private]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Stub function that always returns success! 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file Authenticator\&.cpp\&.
+.PP
+Referenced by attemptLogin()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

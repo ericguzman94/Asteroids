@@ -1,0 +1,83 @@
+\hypertarget{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface}{}\section{Asteroids\+:\+:Technical\+Services\+:\+:Persistence\+:\+:Databaser\+Interface Class Reference}
+\label{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface}\index{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}}
+
+
+The \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1Databaser}{Databaser} interface allows us to connect to and manipulate a database.  
+
+
+
+
+{\ttfamily \#include $<$Databaser\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Technical\+Services\+:\+:Persistence\+:\+:Databaser\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Technical\+Services\+:\+:Persistence\+:\+:Databaser\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a2c10f4a7500c8285924164334d133aae}{close} ()=0
+\item 
+virtual void \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a5ad374ce9c8f0fc04b224a85417b4742}{connect} (std\+::string uri)=0
+\item 
+virtual std\+::vector$<$ std\+::map$<$ std\+::string, std\+::string $>$ $>$ \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a8405defffe62181ae654b65bbe45d1c9}{query} (std\+::string q, std\+::map$<$ std\+::string, std\+::string $>$ params=std\+::map$<$ std\+::string, std\+::string $>$())=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1Databaser}{Databaser} interface allows us to connect to and manipulate a database. 
+
+Definition at line 25 of file Databaser\+Interface.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a2c10f4a7500c8285924164334d133aae}\label{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a2c10f4a7500c8285924164334d133aae}} 
+\index{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}!close@{close}}
+\index{close@{close}!Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1Databaser_a53cd8a3f467fc3c8284711eccbb25d8e}{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser}.
+
+\mbox{\Hypertarget{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a5ad374ce9c8f0fc04b224a85417b4742}\label{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a5ad374ce9c8f0fc04b224a85417b4742}} 
+\index{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}!connect@{connect}}
+\index{connect@{connect}!Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface\+::connect (\begin{DoxyParamCaption}\item[{std\+::string}]{uri }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1Databaser_aa7dc4f3b86f7966260d6f5d391d4a3ba}{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser}.
+
+\mbox{\Hypertarget{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a8405defffe62181ae654b65bbe45d1c9}\label{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface_a8405defffe62181ae654b65bbe45d1c9}} 
+\index{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}!query@{query}}
+\index{query@{query}!Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}}
+\subsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::map$<$std\+::string, std\+::string$>$ $>$ Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface\+::query (\begin{DoxyParamCaption}\item[{std\+::string}]{q,  }\item[{std\+::map$<$ std\+::string, std\+::string $>$}]{params = {\ttfamily std\+:\+:map$<$~std\+:\+:string,~std\+:\+:string~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1Databaser_a0686831c03a3eabced8649a2e189fef1}{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Technical\+Services/\+Persistence/\hyperlink{DatabaserInterface_8h}{Databaser\+Interface.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+.TH "todo" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+todoTodo List 
+ \- 
+.IP "\fBNamespace \fBAsteroids\fP \fP" 1c
+remove me  
+.IP "\fBMember \fBAsteroids::Domain::Game::Actors::Rock::initialize_polygon\fP ()\fP" 1c
+Make the rocks more round  
+.IP "\fBMember \fBAsteroids::Domain::Game::Game::update\fP ()\fP" 1c
+Rocks should eventually split when hit  
+.IP "\fBMember \fBAsteroids::Domain::Game::GameHistory::get_history\fP ()\fP" 1c
+Still returning dummy data  
+.IP "\fBMember \fBAsteroids::Domain::Net::Authentication::Authenticator::sendAuthToServer\fP (std::shared_ptr< Messages::AUTH_ATTEMPT > auth)\fP" 1c
+Stub function that always returns success!  
+.IP "\fBMember \fBAsteroids::Domain::Net::ClientServerCommunicatorInterface::authorizePayment\fP (std::shared_ptr< Asteroids::Domain::Store::STORE_ITEM_INTERFACE > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)=0\fP" 1c
+Need to add an account ID to this, methinks  
+.IP "\fBMember \fBAsteroids::Domain::Net::ClientServerCommunicatorInterface::notifyServerOfGameHistoryEntrySocialMediaShare\fP (std::string game_history_entry_id)=0\fP" 1c
+Notify the server that we have shared a game history entry to social media (will cause powerUp added to account, later)  
+.IP "\fBMember \fBAsteroids::Domain::Server::ServerDaemon::ban_user\fP (std::string username)\fP" 1c
+Doesn't do anything yet 
+.PP
+Query not yet implemented  
+.IP "\fBMember \fBAsteroids::Domain::Server::ServerDaemon::forgive_haccs_report\fP (std::shared_ptr< HACCS_REPORT_INTERFACE > report)\fP" 1c
+Doesn't actually do anything yet 
+.PP
+Query not yet implemented  
+.IP "\fBMember \fBAsteroids::Domain::Server::ServerDaemon::get_next_haccs_report\fP ()\fP" 1c
+Still returning dummy data!  
+.IP "\fBMember \fBAsteroids::Domain::Store::PaymentHelper::pay_for_store_item_with_credit_card\fP (std::shared_ptr< Asteroids::Domain::Store::STORE_ITEM_INTERFACE > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fP" 1c
+Uhhhhhhmmm\&.\&.\&.\&. using the 'This object knows about payment result, therefore create it' pattern ; Contrast against the normal factory pattern because normal factory pattern will make this class more dependent on factory classes and less self contained  
+.IP "\fBMember \fBAsteroids::Domain::Store::Store::get_available_store_items\fP ()\fP" 1c
+Should 
+.PP
+Currently returning dummy data; Eventually maybe actually communicate with the server via network 
+.PP
+Extra lives not actually implemented in the game yet 
+.PP
+Large bullets not actually implemented in the game yet 
+.PP
+Rocklike Ship not actually implemented in the game yet  
+.IP "\fBMember \fBAsteroids::TechnicalServices::Social::SocialMedia::share_game_history_entry\fP (std::string date, int score)\fP" 1c
+Emitting to stdout instead of actually doing anything \&.\&.\&. for now  
+.IP "\fBMember \fBAsteroids::TechnicalServices::TechnicalServicesFactory::createDatabaser\fP ()\fP" 1c
+Should eventually actually connect to some database during creation  
+.IP "\fBMember \fBAsteroids::UI::ClientTextUI::ClientTextUI::find_friends_on_social_media\fP ()\fP" 1c
+Actually navigate to the friend's social media account, somehow  
+.IP "\fBMember \fBAsteroids::UI::ClientTextUI::ClientTextUI::init\fP ()\fP" 1c
+Make a TextUI Factory instead of doing this here  
+.IP "\fBMember \fBAsteroids::UI::ClientTextUI::ClientTextUI::initialize_display_grid\fP ()\fP" 1c
+Make a TextUI Factory instead of doing this here  
+.IP "\fBMember \fBAsteroids::UI::ClientTextUI::DisplayGrid::draw_polygon\fP (double offset_x, double offset_y, const std::vector< std::pair< double, double >> &points)\fP" 1c
+It'd be nice if we could finish connecting the polygon points with a line  
+.IP "\fBMember \fBASTEROIDS_GAME_VELOCITY_INPUT_TICKS_FACTOR\fP \fP" 1c
+Maybe remove these for static members!? 
+.PP
+

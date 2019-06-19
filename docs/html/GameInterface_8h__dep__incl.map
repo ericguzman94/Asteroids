@@ -1,0 +1,8 @@
+<map id="Domain/Game/GameInterface.h" name="Domain/Game/GameInterface.h">
+<area shape="rect" id="node2" href="$Game_8h.html" title="Domain/Game/Game.h" alt="" coords="230,80,386,107"/>
+<area shape="rect" id="node5" href="$ClientTextUI_8cpp.html" title="UI/ClientTextUI/ClientText\lUI.cpp" alt="" coords="440,155,619,196"/>
+<area shape="rect" id="node6" href="$ClientTextUI_8h.html" title="UI/ClientTextUI/ClientTextUI.h" alt="" coords="513,80,716,107"/>
+<area shape="rect" id="node3" href="$Game_8cpp.html" title="Domain/Game/Game.cpp" alt="" coords="5,162,176,189"/>
+<area shape="rect" id="node4" href="$GameFactory_8cpp.html" title="Domain/Game/GameFactory.cpp" alt="" coords="201,162,415,189"/>
+<area shape="rect" id="node7" href="$UIFactory_8cpp.html" title="UI/UIFactory.cpp" alt="" coords="643,162,765,189"/>
+</map>

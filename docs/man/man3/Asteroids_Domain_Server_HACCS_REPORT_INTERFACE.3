@@ -1,0 +1,91 @@
+.TH "Asteroids::Domain::Server::HACCS_REPORT_INTERFACE" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server::HACCS_REPORT_INTERFACE \- Just a class that contains one report of one suspicious user\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <HACCS_REPORT_INTERFACE\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBadd_suspicious_activity\fP (std::string when, std::string what)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_email\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_id\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_nickname\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::vector< std::shared_ptr< \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP > > \fBget_suspicious_activities\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_username\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBreset\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_id\fP (std::string id)=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_user_details\fP (std::string username, std::string nickname, std::string email)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Just a class that contains one report of one suspicious user\&. 
+.PP
+Definition at line 25 of file HACCS_REPORT_INTERFACE\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::add_suspicious_activity (std::string when, std::string what)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual std::string Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::get_email ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual std::string Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::get_id ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual std::string Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::get_nickname ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual std::vector<std::shared_ptr<\fBHACCS_REPORT_ACTIVITY_INTERFACE\fP> > Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::get_suspicious_activities ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual std::string Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::get_username ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual void Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::reset ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual void Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::set_id (std::string id)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+.SS "virtual void Asteroids::Domain::Server::HACCS_REPORT_INTERFACE::set_user_details (std::string username, std::string nickname, std::string email)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::HACCS_REPORT\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

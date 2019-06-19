@@ -1,0 +1,163 @@
+.TH "Asteroids::UI::ClientTextUI::Input" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::UI::ClientTextUI::Input \- Thank you very much: https://stackoverflow.com/questions/448944/c-non-blocking-keyboard-input\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Input\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBInput\fP ()"
+.br
+.ti -1c
+.RI "\fB~Input\fP ()"
+.br
+.ti -1c
+.RI "void \fBdisable\fP ()"
+.br
+.ti -1c
+.RI "void \fBenable\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetchar\fP ()"
+.br
+.ti -1c
+.RI "int \fBkbhit\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static constexpr int \fBKEY_DOWN\fP = 80"
+.br
+.ti -1c
+.RI "static constexpr int \fBKEY_FIRE\fP = 32"
+.br
+.ti -1c
+.RI "static constexpr int \fBKEY_LEFT\fP = 75"
+.br
+.ti -1c
+.RI "static constexpr int \fBKEY_RIGHT\fP = 77"
+.br
+.ti -1c
+.RI "static constexpr int \fBKEY_UP\fP = 72"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fB_is_enabled\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Thank you very much: https://stackoverflow.com/questions/448944/c-non-blocking-keyboard-input\&. 
+.PP
+Definition at line 32 of file Input\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::UI::ClientTextUI::Input::Input ()"
+
+.PP
+Definition at line 17 of file Input\&.cpp\&.
+.PP
+References init()\&.
+.SS "Asteroids::UI::ClientTextUI::Input::~Input ()"
+
+.PP
+Definition at line 24 of file Input\&.cpp\&.
+.PP
+References disable()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::UI::ClientTextUI::Input::disable ()"
+
+.PP
+Definition at line 61 of file Input\&.cpp\&.
+.PP
+References _is_enabled\&.
+.PP
+Referenced by ~Input()\&.
+.SS "void Asteroids::UI::ClientTextUI::Input::enable ()"
+
+.PP
+Definition at line 31 of file Input\&.cpp\&.
+.PP
+References _is_enabled\&.
+.SS "int Asteroids::UI::ClientTextUI::Input::getchar ()"
+
+.PP
+Definition at line 114 of file Input\&.cpp\&.
+.PP
+References _is_enabled\&.
+.SS "void Asteroids::UI::ClientTextUI::Input::init ()\fC [private]\fP"
+
+.PP
+Definition at line 149 of file Input\&.cpp\&.
+.PP
+References _is_enabled\&.
+.PP
+Referenced by Input()\&.
+.SS "int Asteroids::UI::ClientTextUI::Input::kbhit ()"
+
+.PP
+Definition at line 80 of file Input\&.cpp\&.
+.PP
+References _is_enabled\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Asteroids::UI::ClientTextUI::Input::_is_enabled\fC [private]\fP"
+
+.PP
+Definition at line 67 of file Input\&.h\&.
+.PP
+Referenced by disable(), enable(), getchar(), init(), and kbhit()\&.
+.SS "constexpr int Asteroids::UI::ClientTextUI::Input::KEY_DOWN = 80\fC [static]\fP"
+
+.PP
+Definition at line 57 of file Input\&.h\&.
+.PP
+Referenced by Asteroids::UI::ClientTextUI::ClientTextUI::handle_game_input()\&.
+.SS "constexpr int Asteroids::UI::ClientTextUI::Input::KEY_FIRE = 32\fC [static]\fP"
+
+.PP
+Definition at line 61 of file Input\&.h\&.
+.PP
+Referenced by Asteroids::UI::ClientTextUI::ClientTextUI::handle_game_input()\&.
+.SS "constexpr int Asteroids::UI::ClientTextUI::Input::KEY_LEFT = 75\fC [static]\fP"
+
+.PP
+Definition at line 58 of file Input\&.h\&.
+.PP
+Referenced by Asteroids::UI::ClientTextUI::ClientTextUI::handle_game_input()\&.
+.SS "constexpr int Asteroids::UI::ClientTextUI::Input::KEY_RIGHT = 77\fC [static]\fP"
+
+.PP
+Definition at line 59 of file Input\&.h\&.
+.PP
+Referenced by Asteroids::UI::ClientTextUI::ClientTextUI::handle_game_input()\&.
+.SS "constexpr int Asteroids::UI::ClientTextUI::Input::KEY_UP = 72\fC [static]\fP"
+
+.PP
+Definition at line 56 of file Input\&.h\&.
+.PP
+Referenced by Asteroids::UI::ClientTextUI::ClientTextUI::handle_game_input()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

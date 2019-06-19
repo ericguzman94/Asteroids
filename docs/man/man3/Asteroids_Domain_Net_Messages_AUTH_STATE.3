@@ -1,0 +1,85 @@
+.TH "Asteroids::Domain::Net::Messages::AUTH_STATE" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::Messages::AUTH_STATE \- Information about the current authentication state\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AUTH_STATE\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAUTH_STATE\fP ()"
+.br
+.ti -1c
+.RI "bool \fBisAuthSuccessful\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAuthSuccessful\fP (bool b)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fB_auth_successful\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Information about the current authentication state\&. 
+
+Currently only tells you whether or not you're authenticated 
+.PP
+Definition at line 32 of file AUTH_STATE\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Net::Messages::AUTH_STATE::AUTH_STATE ()"
+
+.PP
+Definition at line 20 of file AUTH_STATE\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Asteroids::Domain::Net::Messages::AUTH_STATE::isAuthSuccessful ()"
+
+.PP
+Definition at line 41 of file AUTH_STATE\&.cpp\&.
+.PP
+References _auth_successful\&.
+.SS "void Asteroids::Domain::Net::Messages::AUTH_STATE::reset ()"
+
+.PP
+Definition at line 27 of file AUTH_STATE\&.cpp\&.
+.PP
+References setAuthSuccessful()\&.
+.PP
+Referenced by AUTH_STATE()\&.
+.SS "void Asteroids::Domain::Net::Messages::AUTH_STATE::setAuthSuccessful (bool b)"
+
+.PP
+Definition at line 34 of file AUTH_STATE\&.cpp\&.
+.PP
+References _auth_successful\&.
+.PP
+Referenced by reset()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Asteroids::Domain::Net::Messages::AUTH_STATE::_auth_successful\fC [private]\fP"
+
+.PP
+Definition at line 51 of file AUTH_STATE\&.h\&.
+.PP
+Referenced by isAuthSuccessful(), and setAuthSuccessful()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

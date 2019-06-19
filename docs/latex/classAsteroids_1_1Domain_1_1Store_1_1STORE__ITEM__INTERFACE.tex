@@ -1,0 +1,119 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{}\section{Asteroids\+:\+:Domain\+:\+:Store\+:\+:S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE Class Reference}
+\label{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}\index{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+
+
+Interface for one item available for purchase, inside the \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1Store}{Store}.  
+
+
+
+
+{\ttfamily \#include $<$S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Store\+:\+:S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Store\+:\+:S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_a75aeeea1b67c334516b4c385ab2d816d}{get\+\_\+description} ()=0
+\item 
+virtual std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_acde01f5da09e656994cd6b76e1f5a625}{get\+\_\+formatted\+\_\+price} ()=0
+\item 
+virtual std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_ac3d8f396c58c25522961a1f606ef5bae}{get\+\_\+name} ()=0
+\item 
+virtual \hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a995d66dbd6bc566c0765fdcfd7be6006}{Enums\+::\+Currency\+Type} \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_abe2b040ee1d6676d604123e1ea102e09}{get\+\_\+price\+\_\+currency} ()=0
+\item 
+virtual std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_a914d5fb19a801e397953180f6b115e04}{get\+\_\+price\+\_\+currency\+\_\+as\+\_\+string} ()=0
+\item 
+virtual int \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_ae9fbf8488c53bbf068980d97866ec269}{get\+\_\+price\+\_\+units} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for one item available for purchase, inside the \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1Store}{Store}. 
+
+Definition at line 23 of file S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_a75aeeea1b67c334516b4c385ab2d816d}\label{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_a75aeeea1b67c334516b4c385ab2d816d}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!get\+\_\+description@{get\+\_\+description}}
+\index{get\+\_\+description@{get\+\_\+description}!Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\subsubsection{\texorpdfstring{get\+\_\+description()}{get\_description()}}
+{\footnotesize\ttfamily virtual std\+::string Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+::get\+\_\+description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM_af57fe8114a95a44bc03fad64e17717f1}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+EM}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_acde01f5da09e656994cd6b76e1f5a625}\label{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_acde01f5da09e656994cd6b76e1f5a625}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!get\+\_\+formatted\+\_\+price@{get\+\_\+formatted\+\_\+price}}
+\index{get\+\_\+formatted\+\_\+price@{get\+\_\+formatted\+\_\+price}!Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\subsubsection{\texorpdfstring{get\+\_\+formatted\+\_\+price()}{get\_formatted\_price()}}
+{\footnotesize\ttfamily virtual std\+::string Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+::get\+\_\+formatted\+\_\+price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM_aec607f6610f24f270da5dbfe7b866c05}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+EM}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_ac3d8f396c58c25522961a1f606ef5bae}\label{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_ac3d8f396c58c25522961a1f606ef5bae}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\subsubsection{\texorpdfstring{get\+\_\+name()}{get\_name()}}
+{\footnotesize\ttfamily virtual std\+::string Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM_a628bc9964ad941711a6ed5222f514c2b}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+EM}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_abe2b040ee1d6676d604123e1ea102e09}\label{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_abe2b040ee1d6676d604123e1ea102e09}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!get\+\_\+price\+\_\+currency@{get\+\_\+price\+\_\+currency}}
+\index{get\+\_\+price\+\_\+currency@{get\+\_\+price\+\_\+currency}!Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\subsubsection{\texorpdfstring{get\+\_\+price\+\_\+currency()}{get\_price\_currency()}}
+{\footnotesize\ttfamily virtual \hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a995d66dbd6bc566c0765fdcfd7be6006}{Enums\+::\+Currency\+Type} Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+::get\+\_\+price\+\_\+currency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM_abb6f9fd46295bcac9756d4a82d95db47}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+EM}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_a914d5fb19a801e397953180f6b115e04}\label{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_a914d5fb19a801e397953180f6b115e04}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!get\+\_\+price\+\_\+currency\+\_\+as\+\_\+string@{get\+\_\+price\+\_\+currency\+\_\+as\+\_\+string}}
+\index{get\+\_\+price\+\_\+currency\+\_\+as\+\_\+string@{get\+\_\+price\+\_\+currency\+\_\+as\+\_\+string}!Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\subsubsection{\texorpdfstring{get\+\_\+price\+\_\+currency\+\_\+as\+\_\+string()}{get\_price\_currency\_as\_string()}}
+{\footnotesize\ttfamily virtual std\+::string Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+::get\+\_\+price\+\_\+currency\+\_\+as\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM_a55c625077b78bf51b53880a2a77a8ece}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+EM}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_ae9fbf8488c53bbf068980d97866ec269}\label{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE_ae9fbf8488c53bbf068980d97866ec269}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!get\+\_\+price\+\_\+units@{get\+\_\+price\+\_\+units}}
+\index{get\+\_\+price\+\_\+units@{get\+\_\+price\+\_\+units}!Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\subsubsection{\texorpdfstring{get\+\_\+price\+\_\+units()}{get\_price\_units()}}
+{\footnotesize\ttfamily virtual int Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+::get\+\_\+price\+\_\+units (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM_ad79bef2044b0f10c7e2a08bc84a9d9f2}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+EM}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Store/\hyperlink{STORE__ITEM__INTERFACE_8h}{S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E.\+h}\end{DoxyCompactItemize}

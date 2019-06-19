@@ -1,0 +1,194 @@
+.TH "Asteroids::Domain::Server::HACCS_REPORT" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server::HACCS_REPORT \- Implementation of \fBHACCS_REPORT_INTERFACE\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <HACCS_REPORT\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHACCS_REPORT\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd_suspicious_activity\fP (std::string when, std::string what)"
+.br
+.ti -1c
+.RI "std::string \fBget_email\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_id\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_nickname\fP ()"
+.br
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP > > \fBget_suspicious_activities\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_username\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_id\fP (std::string id)"
+.br
+.ti -1c
+.RI "void \fBset_user_details\fP (std::string username, std::string nickname, std::string email)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fB_email\fP"
+.br
+.ti -1c
+.RI "std::string \fB_id\fP"
+.br
+.ti -1c
+.RI "std::string \fB_nickname\fP"
+.br
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP > > \fB_suspicious_activities\fP"
+.br
+.RI "_suspicious activities: "
+.ti -1c
+.RI "std::string \fB_username\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBHACCS_REPORT_INTERFACE\fP\&. 
+.PP
+Definition at line 28 of file HACCS_REPORT\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Server::HACCS_REPORT::HACCS_REPORT ()"
+
+.PP
+Definition at line 18 of file HACCS_REPORT\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::Domain::Server::HACCS_REPORT::add_suspicious_activity (std::string when, std::string what)\fC [virtual]\fP"
+Creates a \fBHACCS_REPORT_ACTIVITY\fP, because nobody else will need to create the activity, but the report 
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 83 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _suspicious_activities\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::get_email ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 75 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _email\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::get_id ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 45 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _id\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::get_nickname ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 68 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _nickname\&.
+.SS "std::vector< std::shared_ptr< \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP > > Asteroids::Domain::Server::HACCS_REPORT::get_suspicious_activities ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 99 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _suspicious_activities\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::get_username ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 61 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _username\&.
+.SS "void Asteroids::Domain::Server::HACCS_REPORT::reset ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 25 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _email, _id, _nickname, _suspicious_activities, and _username\&.
+.PP
+Referenced by HACCS_REPORT()\&.
+.SS "void Asteroids::Domain::Server::HACCS_REPORT::set_id (std::string id)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 38 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _id\&.
+.SS "void Asteroids::Domain::Server::HACCS_REPORT::set_user_details (std::string username, std::string nickname, std::string email)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP\&.
+.PP
+Definition at line 52 of file HACCS_REPORT\&.cpp\&.
+.PP
+References _email, _nickname, and _username\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::_email\fC [private]\fP"
+
+.PP
+Definition at line 62 of file HACCS_REPORT\&.h\&.
+.PP
+Referenced by get_email(), reset(), and set_user_details()\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::_id\fC [private]\fP"
+
+.PP
+Definition at line 58 of file HACCS_REPORT\&.h\&.
+.PP
+Referenced by get_id(), reset(), and set_id()\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::_nickname\fC [private]\fP"
+
+.PP
+Definition at line 62 of file HACCS_REPORT\&.h\&.
+.PP
+Referenced by get_nickname(), reset(), and set_user_details()\&.
+.SS "std::vector< std::shared_ptr<\fBHACCS_REPORT_ACTIVITY_INTERFACE\fP> > Asteroids::Domain::Server::HACCS_REPORT::_suspicious_activities\fC [private]\fP"
+
+.PP
+_suspicious activities: 
+.PP
+Definition at line 68 of file HACCS_REPORT\&.h\&.
+.PP
+Referenced by add_suspicious_activity(), get_suspicious_activities(), and reset()\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT::_username\fC [private]\fP"
+
+.PP
+Definition at line 62 of file HACCS_REPORT\&.h\&.
+.PP
+Referenced by get_username(), reset(), and set_user_details()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

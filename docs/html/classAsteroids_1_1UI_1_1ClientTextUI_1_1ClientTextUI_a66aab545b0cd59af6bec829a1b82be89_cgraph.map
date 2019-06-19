@@ -1,0 +1,7 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI::store_loop" name="Asteroids::UI::ClientTextUI::ClientTextUI::store_loop">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a41f904ea570af3e3a8c4d70da8411ef3" title="Asteroids::UI::ClientText\lUI::ClientTextUI::print" alt="" coords="1149,86,1316,127"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a9175792a129c214f55dd0bda9ac36b33" title="Asteroids::UI::ClientText\lUI::ClientTextUI::store\l_offer_available_items" alt="" coords="240,43,407,99"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a469a7cd3423794fa0ca7c34d95db5a10" title="Asteroids::UI::ClientText\lUI::ClientTextUI::purchasing\l_store_item" alt="" coords="455,93,644,149"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a4613a9af03e06c960c467b0b6be44db9" title="Asteroids::UI::ClientText\lUI::ClientTextUI::pay_for\l_store_item" alt="" coords="692,144,861,200"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a02d420d49c44459fe7a2af9b0000adf9" title="Asteroids::UI::ClientText\lUI::ClientTextUI::pay_for\l_store_item_with_credit_card" alt="" coords="909,195,1101,251"/>
+</map>

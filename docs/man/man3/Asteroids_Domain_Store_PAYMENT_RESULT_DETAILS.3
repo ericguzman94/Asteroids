@@ -1,0 +1,109 @@
+.TH "Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS \- Implementation of PATMENT_RESULTS_DETAILS_INTERFACE\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <PAYMENT_RESULT_DETAILS\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPAYMENT_RESULT_DETAILS\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_message\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_message\fP (std::string m)"
+.br
+.ti -1c
+.RI "void \fBset_was_successful\fP (bool b)"
+.br
+.ti -1c
+.RI "bool \fBwas_successful\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fB_message\fP"
+.br
+.ti -1c
+.RI "bool \fB_was_successful\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of PATMENT_RESULTS_DETAILS_INTERFACE\&. 
+.PP
+Definition at line 20 of file PAYMENT_RESULT_DETAILS\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS::PAYMENT_RESULT_DETAILS ()"
+
+.PP
+Definition at line 17 of file PAYMENT_RESULT_DETAILS\&.cpp\&.
+.PP
+References set_was_successful()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS::get_message ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP\&.
+.PP
+Definition at line 45 of file PAYMENT_RESULT_DETAILS\&.cpp\&.
+.PP
+References _message\&.
+.SS "void Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS::set_message (std::string m)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP\&.
+.PP
+Definition at line 38 of file PAYMENT_RESULT_DETAILS\&.cpp\&.
+.PP
+References _message\&.
+.SS "void Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS::set_was_successful (bool b)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP\&.
+.PP
+Definition at line 24 of file PAYMENT_RESULT_DETAILS\&.cpp\&.
+.PP
+References _was_successful\&.
+.PP
+Referenced by PAYMENT_RESULT_DETAILS()\&.
+.SS "bool Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS::was_successful ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP\&.
+.PP
+Definition at line 31 of file PAYMENT_RESULT_DETAILS\&.cpp\&.
+.PP
+References _was_successful\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS::_message\fC [private]\fP"
+
+.PP
+Definition at line 44 of file PAYMENT_RESULT_DETAILS\&.h\&.
+.PP
+Referenced by get_message(), and set_message()\&.
+.SS "bool Asteroids::Domain::Store::PAYMENT_RESULT_DETAILS::_was_successful\fC [private]\fP"
+
+.PP
+Definition at line 41 of file PAYMENT_RESULT_DETAILS\&.h\&.
+.PP
+Referenced by set_was_successful(), and was_successful()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

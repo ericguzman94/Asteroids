@@ -1,0 +1,162 @@
+\hypertarget{classAsteroids_1_1UI_1_1UIFactory}{}\section{Asteroids\+:\+:UI\+:\+:U\+I\+Factory Class Reference}
+\label{classAsteroids_1_1UI_1_1UIFactory}\index{Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1UI_1_1UIFactoryInterface}{U\+I\+Factory\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$U\+I\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:UI\+:\+:U\+I\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classAsteroids_1_1UI_1_1UIFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:UI\+:\+:U\+I\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classAsteroids_1_1UI_1_1UIFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1UI_1_1UIFactory_a47523bac4da1426badfd2dec54da7779}{U\+I\+Factory} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ factory)
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface}{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1UIFactory_ac9a90bd87ef42d1b1af6ef9ff597aa28}{create\+Client\+Text\+UI} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUIInterface}{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1UIFactory_abee314a786ce6f30022c008755e71805}{create\+Server\+Text\+UI} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1UIFactory_a4b3a29aad342a46b3ab713ca402095b6}{init} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1UIFactory_ae8ba4636e6a333d0f57a7456e5555e9f}{\+\_\+factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1UI_1_1UIFactoryInterface}{U\+I\+Factory\+Interface}. 
+
+Definition at line 17 of file U\+I\+Factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1UIFactory_a47523bac4da1426badfd2dec54da7779}\label{classAsteroids_1_1UI_1_1UIFactory_a47523bac4da1426badfd2dec54da7779}} 
+\index{Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}!U\+I\+Factory@{U\+I\+Factory}}
+\index{U\+I\+Factory@{U\+I\+Factory}!Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}}
+\subsubsection{\texorpdfstring{U\+I\+Factory()}{UIFactory()}}
+{\footnotesize\ttfamily Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+::\+U\+I\+Factory (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file U\+I\+Factory.\+cpp.
+
+
+
+References \+\_\+factory, and init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1UIFactory_a47523bac4da1426badfd2dec54da7779_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1UIFactory_ac9a90bd87ef42d1b1af6ef9ff597aa28}\label{classAsteroids_1_1UI_1_1UIFactory_ac9a90bd87ef42d1b1af6ef9ff597aa28}} 
+\index{Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}!create\+Client\+Text\+UI@{create\+Client\+Text\+UI}}
+\index{create\+Client\+Text\+UI@{create\+Client\+Text\+UI}!Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}}
+\subsubsection{\texorpdfstring{create\+Client\+Text\+U\+I()}{createClientTextUI()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface}{Asteroids\+::\+U\+I\+::\+Client\+Text\+U\+I\+::\+Client\+Text\+U\+I\+Interface} $>$ Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+::create\+Client\+Text\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1UI_1_1UIFactoryInterface_a6133ee6b7552c1f218df3e51aed91c74}{Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+Interface}.
+
+
+
+Definition at line 38 of file U\+I\+Factory.\+cpp.
+
+
+
+References \+\_\+factory.
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1UIFactory_abee314a786ce6f30022c008755e71805}\label{classAsteroids_1_1UI_1_1UIFactory_abee314a786ce6f30022c008755e71805}} 
+\index{Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}!create\+Server\+Text\+UI@{create\+Server\+Text\+UI}}
+\index{create\+Server\+Text\+UI@{create\+Server\+Text\+UI}!Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}}
+\subsubsection{\texorpdfstring{create\+Server\+Text\+U\+I()}{createServerTextUI()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUIInterface}{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+Interface} $>$ Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+::create\+Server\+Text\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1UI_1_1UIFactoryInterface_a830fa72105e7f123146383330f2fa8b9}{Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+Interface}.
+
+
+
+Definition at line 27 of file U\+I\+Factory.\+cpp.
+
+
+
+References \+\_\+factory.
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1UIFactory_a4b3a29aad342a46b3ab713ca402095b6}\label{classAsteroids_1_1UI_1_1UIFactory_a4b3a29aad342a46b3ab713ca402095b6}} 
+\index{Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}!init@{init}}
+\index{init@{init}!Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+bleh 
+
+Definition at line 49 of file U\+I\+Factory.\+cpp.
+
+
+
+Referenced by U\+I\+Factory().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1UIFactory_a4b3a29aad342a46b3ab713ca402095b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1UIFactory_ae8ba4636e6a333d0f57a7456e5555e9f}\label{classAsteroids_1_1UI_1_1UIFactory_ae8ba4636e6a333d0f57a7456e5555e9f}} 
+\index{Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}!\+\_\+factory@{\+\_\+factory}}
+\index{\+\_\+factory@{\+\_\+factory}!Asteroids\+::\+U\+I\+::\+U\+I\+Factory@{Asteroids\+::\+U\+I\+::\+U\+I\+Factory}}
+\subsubsection{\texorpdfstring{\+\_\+factory}{\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+::\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file U\+I\+Factory.\+h.
+
+
+
+Referenced by create\+Client\+Text\+U\+I(), create\+Server\+Text\+U\+I(), and U\+I\+Factory().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+U\+I/\hyperlink{UIFactory_8h}{U\+I\+Factory.\+h}\item 
+U\+I/\hyperlink{UIFactory_8cpp}{U\+I\+Factory.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,145 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1GameFactory}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Game\+Factory Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1GameFactory}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}}
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Game\+Factory\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Game\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classAsteroids_1_1Domain_1_1Game_1_1GameFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Game\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classAsteroids_1_1Domain_1_1Game_1_1GameFactory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a90ae7ac4ed8428b369c71b3dd17a9751}{Game\+Factory} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a87ce9a05bdee942acbc9434d32749a76}{create\+Game} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameHistoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+History\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a1433b01f9a0f1ed45920fd9fb86f50da}{create\+Game\+History} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer}{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_ab46d642aa48fd4de15a0de8d7a425f1d}{create\+Randomer} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a9be2f29f1827928b0145ce42848c11b1}{reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Game\+Factory\+Interface}. 
+
+Definition at line 23 of file Game\+Factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a90ae7ac4ed8428b369c71b3dd17a9751}\label{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a90ae7ac4ed8428b369c71b3dd17a9751}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}!Game\+Factory@{Game\+Factory}}
+\index{Game\+Factory@{Game\+Factory}!Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}}
+\subsubsection{\texorpdfstring{Game\+Factory()}{GameFactory()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+::\+Game\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 21 of file Game\+Factory.\+cpp.
+
+
+
+References reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a90ae7ac4ed8428b369c71b3dd17a9751_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a87ce9a05bdee942acbc9434d32749a76}\label{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a87ce9a05bdee942acbc9434d32749a76}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}!create\+Game@{create\+Game}}
+\index{create\+Game@{create\+Game}!Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}}
+\subsubsection{\texorpdfstring{create\+Game()}{createGame()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Interface} $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+::create\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface_afee076bbbb08048be9df4e7bbc80d4c1}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface}.
+
+
+
+Definition at line 34 of file Game\+Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a1433b01f9a0f1ed45920fd9fb86f50da}\label{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a1433b01f9a0f1ed45920fd9fb86f50da}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}!create\+Game\+History@{create\+Game\+History}}
+\index{create\+Game\+History@{create\+Game\+History}!Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}}
+\subsubsection{\texorpdfstring{create\+Game\+History()}{createGameHistory()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameHistoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+History\+Interface} $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+::create\+Game\+History (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface_a40f7aecd06daa206b762bfc7896bd47c}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface}.
+
+
+
+Definition at line 56 of file Game\+Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_ab46d642aa48fd4de15a0de8d7a425f1d}\label{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_ab46d642aa48fd4de15a0de8d7a425f1d}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}!create\+Randomer@{create\+Randomer}}
+\index{create\+Randomer@{create\+Randomer}!Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}}
+\subsubsection{\texorpdfstring{create\+Randomer()}{createRandomer()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Randomer}{Asteroids\+::\+Domain\+::\+Game\+::\+Randomer} $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+::create\+Randomer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface_a787a72445e1bc61ef5911b7bbbf18929}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface}.
+
+
+
+Definition at line 45 of file Game\+Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a9be2f29f1827928b0145ce42848c11b1}\label{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a9be2f29f1827928b0145ce42848c11b1}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory@{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Game\+Factory.\+cpp.
+
+
+
+Referenced by Game\+Factory().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1GameFactory_a9be2f29f1827928b0145ce42848c11b1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\hyperlink{GameFactory_8h}{Game\+Factory.\+h}\item 
+Domain/\+Game/\hyperlink{GameFactory_8cpp}{Game\+Factory.\+cpp}\end{DoxyCompactItemize}

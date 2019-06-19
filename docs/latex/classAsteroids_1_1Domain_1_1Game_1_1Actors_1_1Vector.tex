@@ -1,0 +1,389 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Vector Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+
+
+Simple class to store 2D vector and rotation, to lend physics to game actors.  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+h$>$}
+
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Vector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1ae45243cda745174556aaed9cb2bdab}{Vector} ()
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a271d706f78f5f1ff2df2a5126298f9d1}{adjust} (double x, double y, double r=0.\+0)
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_aafa43064d8a1d74908e998a613836b83}{get\+\_\+linear} ()
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a59d89995d9c975994f8c019f94ce674f}{get\+\_\+rotated\+\_\+linear} ()
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_aa3dc427a9c067d9e385932eac8d74689}{get\+\_\+rotational} ()
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a58840459ee79a2284b53ecfa535b0d99}{get\+\_\+x} ()
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_afb38a73b114dcb1af794748aca734d84}{get\+\_\+y} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_afe2d6db6c1e45c6f3bf12404ee097200}{reset} ()
+\item 
+std\+::pair$<$ double, double $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a607de2905a1b5e79bc10c15cf4fb0416}{set} (double x, double y, double r)
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_ad5a095932426c3eeea36d6703211dcfc}{update} (long ticks)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::pair$<$ double, double $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a540d3867c26c3cc6dafeb7a055cd392d}{rotate\+\_\+velocity} (double x, double y, double rotate\+\_\+radians)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1191bc524d82418f4f7ebbf782374b65}{apply\+\_\+limits} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a7432d5e9efef0bbf2d64a53c410e2855}{dampen} (long ticks)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_ad0ecfe3789bab99c0052b0eeafcfc60f}{\+\_\+r}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a008778e8412a6fba20c755a5b784fb34}{\+\_\+x}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a78c9c431c461fbe39be37c393c7fe1ba}{\+\_\+y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple class to store 2D vector and rotation, to lend physics to game actors. 
+
+Definition at line 26 of file Vector.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1ae45243cda745174556aaed9cb2bdab}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1ae45243cda745174556aaed9cb2bdab}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Vector.\+cpp.
+
+
+
+References reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1ae45243cda745174556aaed9cb2bdab_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a271d706f78f5f1ff2df2a5126298f9d1}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a271d706f78f5f1ff2df2a5126298f9d1}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!adjust@{adjust}}
+\index{adjust@{adjust}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{adjust()}{adjust()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::adjust (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{r = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file Vector.\+cpp.
+
+
+
+References \+\_\+r, \+\_\+x, and \+\_\+y.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1191bc524d82418f4f7ebbf782374b65}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1191bc524d82418f4f7ebbf782374b65}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!apply\+\_\+limits@{apply\+\_\+limits}}
+\index{apply\+\_\+limits@{apply\+\_\+limits}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{apply\+\_\+limits()}{apply\_limits()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::apply\+\_\+limits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 127 of file Vector.\+cpp.
+
+
+
+References \+\_\+r, \+\_\+x, \+\_\+y, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+M\+AX, and A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+A\+L\+\_\+\+M\+AX.
+
+
+
+Referenced by update().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a1191bc524d82418f4f7ebbf782374b65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a7432d5e9efef0bbf2d64a53c410e2855}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a7432d5e9efef0bbf2d64a53c410e2855}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!dampen@{dampen}}
+\index{dampen@{dampen}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{dampen()}{dampen()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::dampen (\begin{DoxyParamCaption}\item[{long}]{ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 155 of file Vector.\+cpp.
+
+
+
+References \+\_\+r, \+\_\+x, \+\_\+y, and A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+D\+A\+M\+P\+E\+N\+I\+N\+G\+\_\+\+T\+I\+C\+K\+S\+\_\+\+F\+A\+C\+T\+OR.
+
+
+
+Referenced by update().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a7432d5e9efef0bbf2d64a53c410e2855_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_aafa43064d8a1d74908e998a613836b83}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_aafa43064d8a1d74908e998a613836b83}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!get\+\_\+linear@{get\+\_\+linear}}
+\index{get\+\_\+linear@{get\+\_\+linear}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+linear()}{get\_linear()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::get\+\_\+linear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file Vector.\+cpp.
+
+
+
+References \+\_\+x, and \+\_\+y.
+
+
+
+Referenced by set().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_aafa43064d8a1d74908e998a613836b83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a59d89995d9c975994f8c019f94ce674f}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a59d89995d9c975994f8c019f94ce674f}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!get\+\_\+rotated\+\_\+linear@{get\+\_\+rotated\+\_\+linear}}
+\index{get\+\_\+rotated\+\_\+linear@{get\+\_\+rotated\+\_\+linear}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+rotated\+\_\+linear()}{get\_rotated\_linear()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::get\+\_\+rotated\+\_\+linear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Vector.\+cpp.
+
+
+
+References \+\_\+r, \+\_\+x, \+\_\+y, and rotate\+\_\+velocity().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a59d89995d9c975994f8c019f94ce674f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_aa3dc427a9c067d9e385932eac8d74689}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_aa3dc427a9c067d9e385932eac8d74689}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!get\+\_\+rotational@{get\+\_\+rotational}}
+\index{get\+\_\+rotational@{get\+\_\+rotational}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+rotational()}{get\_rotational()}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::get\+\_\+rotational (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 91 of file Vector.\+cpp.
+
+
+
+References \+\_\+r.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a58840459ee79a2284b53ecfa535b0d99}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a58840459ee79a2284b53ecfa535b0d99}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+x()}{get\_x()}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 77 of file Vector.\+cpp.
+
+
+
+References \+\_\+x.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_afb38a73b114dcb1af794748aca734d84}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_afb38a73b114dcb1af794748aca734d84}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{get\+\_\+y()}{get\_y()}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file Vector.\+cpp.
+
+
+
+References \+\_\+y.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_afe2d6db6c1e45c6f3bf12404ee097200}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_afe2d6db6c1e45c6f3bf12404ee097200}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file Vector.\+cpp.
+
+
+
+References \+\_\+x, and \+\_\+y.
+
+
+
+Referenced by Vector().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_afe2d6db6c1e45c6f3bf12404ee097200_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a540d3867c26c3cc6dafeb7a055cd392d}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a540d3867c26c3cc6dafeb7a055cd392d}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!rotate\+\_\+velocity@{rotate\+\_\+velocity}}
+\index{rotate\+\_\+velocity@{rotate\+\_\+velocity}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{rotate\+\_\+velocity()}{rotate\_velocity()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::rotate\+\_\+velocity (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{rotate\+\_\+radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 98 of file Vector.\+cpp.
+
+
+
+Referenced by Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::fire\+\_\+bullet(), get\+\_\+rotated\+\_\+linear(), and Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::use\+\_\+input().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a540d3867c26c3cc6dafeb7a055cd392d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a607de2905a1b5e79bc10c15cf4fb0416}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a607de2905a1b5e79bc10c15cf4fb0416}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!set@{set}}
+\index{set@{set}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily std\+::pair$<$ double, double $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::set (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file Vector.\+cpp.
+
+
+
+References \+\_\+r, \+\_\+x, \+\_\+y, and get\+\_\+linear().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a607de2905a1b5e79bc10c15cf4fb0416_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_ad5a095932426c3eeea36d6703211dcfc}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_ad5a095932426c3eeea36d6703211dcfc}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!update@{update}}
+\index{update@{update}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::update (\begin{DoxyParamCaption}\item[{long}]{ticks }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file Vector.\+cpp.
+
+
+
+References apply\+\_\+limits(), and dampen().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_ad5a095932426c3eeea36d6703211dcfc_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_ad0ecfe3789bab99c0052b0eeafcfc60f}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_ad0ecfe3789bab99c0052b0eeafcfc60f}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!\+\_\+r@{\+\_\+r}}
+\index{\+\_\+r@{\+\_\+r}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{\+\_\+r}{\_r}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::\+\_\+r\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Vector.\+h.
+
+
+
+Referenced by adjust(), apply\+\_\+limits(), dampen(), get\+\_\+rotated\+\_\+linear(), get\+\_\+rotational(), and set().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a008778e8412a6fba20c755a5b784fb34}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a008778e8412a6fba20c755a5b784fb34}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!\+\_\+x@{\+\_\+x}}
+\index{\+\_\+x@{\+\_\+x}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{\+\_\+x}{\_x}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Vector.\+h.
+
+
+
+Referenced by adjust(), apply\+\_\+limits(), dampen(), get\+\_\+linear(), get\+\_\+rotated\+\_\+linear(), get\+\_\+x(), reset(), and set().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a78c9c431c461fbe39be37c393c7fe1ba}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector_a78c9c431c461fbe39be37c393c7fe1ba}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}!\+\_\+y@{\+\_\+y}}
+\index{\+\_\+y@{\+\_\+y}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector}}
+\subsubsection{\texorpdfstring{\+\_\+y}{\_y}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Vector.\+h.
+
+
+
+Referenced by adjust(), apply\+\_\+limits(), dampen(), get\+\_\+linear(), get\+\_\+rotated\+\_\+linear(), get\+\_\+y(), reset(), and set().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\+Actors/\hyperlink{Vector_8h}{Vector.\+h}\item 
+Domain/\+Game/\+Actors/\hyperlink{Vector_8cpp}{Vector.\+cpp}\end{DoxyCompactItemize}

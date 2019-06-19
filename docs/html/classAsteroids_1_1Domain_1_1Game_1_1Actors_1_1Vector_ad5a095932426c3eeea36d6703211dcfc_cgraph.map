@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Actors::Vector::update" name="Asteroids::Domain::Game::Actors::Vector::update">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector.html#a1191bc524d82418f4f7ebbf782374b65" title="Asteroids::Domain::\lGame::Actors::Vector\l::apply_limits" alt="" coords="203,5,352,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Vector.html#a7432d5e9efef0bbf2d64a53c410e2855" title="Asteroids::Domain::\lGame::Actors::Vector\l::dampen" alt="" coords="203,85,352,141"/>
+</map>

@@ -1,0 +1,121 @@
+.TH "Asteroids::Domain::Factory::Factory" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Factory::Factory \- Implementation of \fBFactoryInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Factory\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Factory::FactoryInterface\fP, and enable_shared_from_this< Factory >\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Game::GameFactoryInterface\fP > \fBcreateGameFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Net::NetFactoryInterface\fP > \fBcreateNetworkFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Server::ServerFactoryInterface\fP > \fBcreateServerFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Store::StoreFactoryInterface\fP > \fBcreateStoreFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP > \fBcreateTechnicalServicesFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::UI::UIFactoryInterface\fP > \fBcreateUIFactory\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBFactory\fP > \fBthis_pointer\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBFactoryInterface\fP\&. 
+.PP
+Definition at line 23 of file Factory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Factory::Factory::Factory ()"
+
+.PP
+Definition at line 24 of file Factory\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::unique_ptr< \fBAsteroids::Domain::Game::GameFactoryInterface\fP > Asteroids::Domain::Factory::Factory::createGameFactory ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Factory::FactoryInterface\fP\&.
+.PP
+Definition at line 48 of file Factory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::Domain::Net::NetFactoryInterface\fP > Asteroids::Domain::Factory::Factory::createNetworkFactory ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Factory::FactoryInterface\fP\&.
+.PP
+Definition at line 59 of file Factory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::Domain::Server::ServerFactoryInterface\fP > Asteroids::Domain::Factory::Factory::createServerFactory ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Factory::FactoryInterface\fP\&.
+.PP
+Definition at line 37 of file Factory\&.cpp\&.
+.PP
+References this_pointer()\&.
+.SS "std::unique_ptr< \fBAsteroids::Domain::Store::StoreFactoryInterface\fP > Asteroids::Domain::Factory::Factory::createStoreFactory ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Factory::FactoryInterface\fP\&.
+.PP
+Definition at line 70 of file Factory\&.cpp\&.
+.PP
+References this_pointer()\&.
+.SS "std::unique_ptr< \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP > Asteroids::Domain::Factory::Factory::createTechnicalServicesFactory ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Factory::FactoryInterface\fP\&.
+.PP
+Definition at line 92 of file Factory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::UI::UIFactoryInterface\fP > Asteroids::Domain::Factory::Factory::createUIFactory ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Factory::FactoryInterface\fP\&.
+.PP
+Definition at line 81 of file Factory\&.cpp\&.
+.PP
+References this_pointer()\&.
+.SS "void Asteroids::Domain::Factory::Factory::reset ()"
+
+.PP
+Definition at line 31 of file Factory\&.cpp\&.
+.PP
+Referenced by Factory()\&.
+.SS "std::shared_ptr< \fBFactory\fP > Asteroids::Domain::Factory::Factory::this_pointer ()\fC [private]\fP"
+
+.PP
+Definition at line 103 of file Factory\&.cpp\&.
+.PP
+Referenced by createServerFactory(), createStoreFactory(), and createUIFactory()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

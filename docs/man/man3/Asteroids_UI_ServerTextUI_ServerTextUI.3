@@ -1,0 +1,173 @@
+.TH "Asteroids::UI::ServerTextUI::ServerTextUI" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::UI::ServerTextUI::ServerTextUI \- Implementation of \fBServerTextUIInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ServerTextUI\&.h>\fP
+.PP
+Inherits \fBAsteroids::UI::ServerTextUI::ServerTextUIInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBServerTextUI\fP (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdo_apply_updates\fP ()"
+.br
+.ti -1c
+.RI "void \fBdo_process_credit_card_payment\fP ()"
+.br
+.ti -1c
+.RI "bool \fBdo_review_flagged_user\fP ()"
+.br
+.ti -1c
+.RI "void \fBdo_review_flagged_users\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "\fBEnums::MainMenuChoice\fP \fBmain_menu\fP ()"
+.br
+.ti -1c
+.RI "void \fBmain_menu_loop\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Server::ServerDaemonInterface\fP > \fB_daemon\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > \fB_factory\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Server::ServerFactoryInterface\fP > \fB_factory_server\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP > \fB_factory_technical_services\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBServerTextUIInterface\fP\&. 
+.PP
+Definition at line 27 of file ServerTextUI\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::UI::ServerTextUI::ServerTextUI::ServerTextUI (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+
+.PP
+Definition at line 30 of file ServerTextUI\&.cpp\&.
+.PP
+References _factory, and init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::UI::ServerTextUI::ServerTextUI::do_apply_updates ()\fC [private]\fP"
+
+.PP
+Definition at line 195 of file ServerTextUI\&.cpp\&.
+.PP
+References _daemon\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "void Asteroids::UI::ServerTextUI::ServerTextUI::do_process_credit_card_payment ()\fC [private]\fP"
+
+.PP
+Definition at line 147 of file ServerTextUI\&.cpp\&.
+.PP
+References _factory_technical_services, Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface::authorizePayment(), and Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface::get_processor_description()\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "bool Asteroids::UI::ServerTextUI::ServerTextUI::do_review_flagged_user ()\fC [private]\fP"
+
+.PP
+Definition at line 218 of file ServerTextUI\&.cpp\&.
+.PP
+References _daemon\&.
+.PP
+Referenced by do_review_flagged_users()\&.
+.SS "void Asteroids::UI::ServerTextUI::ServerTextUI::do_review_flagged_users ()\fC [private]\fP"
+
+.PP
+Definition at line 208 of file ServerTextUI\&.cpp\&.
+.PP
+References do_review_flagged_user()\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "void Asteroids::UI::ServerTextUI::ServerTextUI::init ()\fC [private]\fP"
+
+.PP
+Definition at line 136 of file ServerTextUI\&.cpp\&.
+.PP
+References _daemon, _factory, _factory_server, and _factory_technical_services\&.
+.PP
+Referenced by ServerTextUI()\&.
+.SS "\fBEnums::MainMenuChoice\fP Asteroids::UI::ServerTextUI::ServerTextUI::main_menu ()\fC [private]\fP"
+
+.PP
+Definition at line 93 of file ServerTextUI\&.cpp\&.
+.PP
+References _daemon, Asteroids::UI::ServerTextUI::Enums::ApplyUpdates, Asteroids::UI::ServerTextUI::Enums::Invalid, Asteroids::UI::ServerTextUI::Enums::ProcessCreditCardPayment, Asteroids::UI::ServerTextUI::Enums::ReviewFlaggedUsers, and Asteroids::UI::ServerTextUI::Enums::Shutdown\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "void Asteroids::UI::ServerTextUI::ServerTextUI::main_menu_loop ()\fC [private]\fP"
+
+.PP
+Definition at line 49 of file ServerTextUI\&.cpp\&.
+.PP
+References Asteroids::UI::ServerTextUI::Enums::ApplyUpdates, do_apply_updates(), do_process_credit_card_payment(), do_review_flagged_users(), Asteroids::UI::ServerTextUI::Enums::Invalid, main_menu(), Asteroids::UI::ServerTextUI::Enums::ProcessCreditCardPayment, Asteroids::UI::ServerTextUI::Enums::ReviewFlaggedUsers, and Asteroids::UI::ServerTextUI::Enums::Shutdown\&.
+.PP
+Referenced by run()\&.
+.SS "void Asteroids::UI::ServerTextUI::ServerTextUI::run ()\fC [virtual]\fP"
+It is assumed that if you're sitting at the Admin console interface, You already have permission to Administer the server, Since to get to that point you'd need to be able to login to the computer's main server account anyway 
+.PP
+Implements \fBAsteroids::UI::ServerTextUI::ServerTextUIInterface\fP\&.
+.PP
+Definition at line 42 of file ServerTextUI\&.cpp\&.
+.PP
+References main_menu_loop()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::Domain::Server::ServerDaemonInterface\fP> Asteroids::UI::ServerTextUI::ServerTextUI::_daemon\fC [private]\fP"
+
+.PP
+Definition at line 47 of file ServerTextUI\&.h\&.
+.PP
+Referenced by do_apply_updates(), do_review_flagged_user(), init(), and main_menu()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Factory::FactoryInterface\fP> Asteroids::UI::ServerTextUI::ServerTextUI::_factory\fC [private]\fP"
+
+.PP
+Definition at line 43 of file ServerTextUI\&.h\&.
+.PP
+Referenced by init(), and ServerTextUI()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Server::ServerFactoryInterface\fP> Asteroids::UI::ServerTextUI::ServerTextUI::_factory_server\fC [private]\fP"
+
+.PP
+Definition at line 44 of file ServerTextUI\&.h\&.
+.PP
+Referenced by init()\&.
+.SS "std::shared_ptr<\fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP> Asteroids::UI::ServerTextUI::ServerTextUI::_factory_technical_services\fC [private]\fP"
+
+.PP
+Definition at line 45 of file ServerTextUI\&.h\&.
+.PP
+Referenced by do_process_credit_card_payment(), and init()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

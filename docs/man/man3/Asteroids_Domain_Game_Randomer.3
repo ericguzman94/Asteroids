@@ -1,0 +1,103 @@
+.TH "Asteroids::Domain::Game::Randomer" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Randomer \- Helper class to generate random numbers for the \fBGame\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Randomer\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRandomer\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_double\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_double\fP (double min, double max)"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "bool \fBroll_bool\fP (double chance=0\&.5)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::default_random_engine \fB_random_engine\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Helper class to generate random numbers for the \fBGame\fP\&. 
+.PP
+Definition at line 23 of file Randomer\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Randomer::Randomer ()"
+
+.PP
+Definition at line 21 of file Randomer\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double Asteroids::Domain::Game::Randomer::get_double ()"
+
+.PP
+Definition at line 48 of file Randomer\&.cpp\&.
+.PP
+Referenced by roll_bool()\&.
+.SS "double Asteroids::Domain::Game::Randomer::get_double (double min, double max)"
+
+.PP
+Definition at line 55 of file Randomer\&.cpp\&.
+.PP
+References _random_engine\&.
+.SS "void Asteroids::Domain::Game::Randomer::init ()\fC [private]\fP"
+
+.PP
+Definition at line 28 of file Randomer\&.cpp\&.
+.PP
+References _random_engine, and reset()\&.
+.PP
+Referenced by Randomer()\&.
+.SS "void Asteroids::Domain::Game::Randomer::reset ()"
+
+.PP
+Definition at line 42 of file Randomer\&.cpp\&.
+.PP
+Referenced by init()\&.
+.SS "bool Asteroids::Domain::Game::Randomer::roll_bool (double chance = \fC0\&.5\fP)"
+
+.PP
+Definition at line 66 of file Randomer\&.cpp\&.
+.PP
+References get_double()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::default_random_engine Asteroids::Domain::Game::Randomer::_random_engine\fC [private]\fP"
+
+.PP
+Definition at line 45 of file Randomer\&.h\&.
+.PP
+Referenced by get_double(), and init()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,384 @@
+\hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI}{}\section{Asteroids\+:\+:UI\+:\+:Server\+Text\+UI\+:\+:Server\+Text\+UI Class Reference}
+\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI}\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUIInterface}{Server\+Text\+U\+I\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Server\+Text\+U\+I.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:UI\+:\+:Server\+Text\+UI\+:\+:Server\+Text\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:UI\+:\+:Server\+Text\+UI\+:\+:Server\+Text\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa66ce6a8f5a8293e564ba7fe5848eee6}{Server\+Text\+UI} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ factory)
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a92fb489434b5bd2a9e91f5d77c9832ac}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a35d6eb54e2eabfff2cc1ee47a6c228c6}{do\+\_\+apply\+\_\+updates} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a6713eb173fef32a2fc96932b96ce2dea}{do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment} ()
+\item 
+bool \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_af85d5a35efcb8c75fe7b5419da0d6f93}{do\+\_\+review\+\_\+flagged\+\_\+user} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a5518087c5d0ab9fd8c24c1b6948ee11b}{do\+\_\+review\+\_\+flagged\+\_\+users} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa01e964f791e5ea9840f7a49a3e55736}{init} ()
+\item 
+\hyperlink{namespaceAsteroids_1_1UI_1_1ServerTextUI_1_1Enums_ab80731b6b7455a57d7247f6ac859af32}{Enums\+::\+Main\+Menu\+Choice} \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_afc4ba344c4244c2650ade2148e08d5f2}{main\+\_\+menu} ()
+\item 
+void \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aae7cc1a6a551fc4dbd5ac7270f1d3e94}{main\+\_\+menu\+\_\+loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_acd6e888ebaae2720b7ee2c0ba4a48d57}{\+\_\+daemon}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a638ab849164272cccdc65e8fba5a7847}{\+\_\+factory}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a67f2dfea480ca44117e086ef03589322}{\+\_\+factory\+\_\+server}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_afec311ead683a6411254d2c6ab96e4af}{\+\_\+factory\+\_\+technical\+\_\+services}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUIInterface}{Server\+Text\+U\+I\+Interface}. 
+
+Definition at line 27 of file Server\+Text\+U\+I.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa66ce6a8f5a8293e564ba7fe5848eee6}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa66ce6a8f5a8293e564ba7fe5848eee6}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!Server\+Text\+UI@{Server\+Text\+UI}}
+\index{Server\+Text\+UI@{Server\+Text\+UI}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{Server\+Text\+U\+I()}{ServerTextUI()}}
+{\footnotesize\ttfamily Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+factory, and init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa66ce6a8f5a8293e564ba7fe5848eee6_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a35d6eb54e2eabfff2cc1ee47a6c228c6}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a35d6eb54e2eabfff2cc1ee47a6c228c6}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!do\+\_\+apply\+\_\+updates@{do\+\_\+apply\+\_\+updates}}
+\index{do\+\_\+apply\+\_\+updates@{do\+\_\+apply\+\_\+updates}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{do\+\_\+apply\+\_\+updates()}{do\_apply\_updates()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::do\+\_\+apply\+\_\+updates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 195 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+daemon.
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a35d6eb54e2eabfff2cc1ee47a6c228c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a6713eb173fef32a2fc96932b96ce2dea}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a6713eb173fef32a2fc96932b96ce2dea}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment@{do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment}}
+\index{do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment@{do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment()}{do\_process\_credit\_card\_payment()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 147 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+factory\+\_\+technical\+\_\+services, Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface\+::authorize\+Payment(), and Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface\+::get\+\_\+processor\+\_\+description().
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a6713eb173fef32a2fc96932b96ce2dea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a6713eb173fef32a2fc96932b96ce2dea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_af85d5a35efcb8c75fe7b5419da0d6f93}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_af85d5a35efcb8c75fe7b5419da0d6f93}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!do\+\_\+review\+\_\+flagged\+\_\+user@{do\+\_\+review\+\_\+flagged\+\_\+user}}
+\index{do\+\_\+review\+\_\+flagged\+\_\+user@{do\+\_\+review\+\_\+flagged\+\_\+user}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{do\+\_\+review\+\_\+flagged\+\_\+user()}{do\_review\_flagged\_user()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::do\+\_\+review\+\_\+flagged\+\_\+user (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 218 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+daemon.
+
+
+
+Referenced by do\+\_\+review\+\_\+flagged\+\_\+users().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_af85d5a35efcb8c75fe7b5419da0d6f93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a5518087c5d0ab9fd8c24c1b6948ee11b}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a5518087c5d0ab9fd8c24c1b6948ee11b}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!do\+\_\+review\+\_\+flagged\+\_\+users@{do\+\_\+review\+\_\+flagged\+\_\+users}}
+\index{do\+\_\+review\+\_\+flagged\+\_\+users@{do\+\_\+review\+\_\+flagged\+\_\+users}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{do\+\_\+review\+\_\+flagged\+\_\+users()}{do\_review\_flagged\_users()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::do\+\_\+review\+\_\+flagged\+\_\+users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 208 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References do\+\_\+review\+\_\+flagged\+\_\+user().
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a5518087c5d0ab9fd8c24c1b6948ee11b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a5518087c5d0ab9fd8c24c1b6948ee11b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa01e964f791e5ea9840f7a49a3e55736}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa01e964f791e5ea9840f7a49a3e55736}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!init@{init}}
+\index{init@{init}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 136 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+daemon, \+\_\+factory, \+\_\+factory\+\_\+server, and \+\_\+factory\+\_\+technical\+\_\+services.
+
+
+
+Referenced by Server\+Text\+U\+I().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aa01e964f791e5ea9840f7a49a3e55736_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_afc4ba344c4244c2650ade2148e08d5f2}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_afc4ba344c4244c2650ade2148e08d5f2}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!main\+\_\+menu@{main\+\_\+menu}}
+\index{main\+\_\+menu@{main\+\_\+menu}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{main\+\_\+menu()}{main\_menu()}}
+{\footnotesize\ttfamily \hyperlink{namespaceAsteroids_1_1UI_1_1ServerTextUI_1_1Enums_ab80731b6b7455a57d7247f6ac859af32}{Enums\+::\+Main\+Menu\+Choice} Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::main\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 93 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References \+\_\+daemon, Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Apply\+Updates, Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Invalid, Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Process\+Credit\+Card\+Payment, Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Review\+Flagged\+Users, and Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Shutdown.
+
+
+
+Referenced by main\+\_\+menu\+\_\+loop().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_afc4ba344c4244c2650ade2148e08d5f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aae7cc1a6a551fc4dbd5ac7270f1d3e94}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aae7cc1a6a551fc4dbd5ac7270f1d3e94}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!main\+\_\+menu\+\_\+loop@{main\+\_\+menu\+\_\+loop}}
+\index{main\+\_\+menu\+\_\+loop@{main\+\_\+menu\+\_\+loop}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{main\+\_\+menu\+\_\+loop()}{main\_menu\_loop()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::main\+\_\+menu\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 49 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Apply\+Updates, do\+\_\+apply\+\_\+updates(), do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment(), do\+\_\+review\+\_\+flagged\+\_\+users(), Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Invalid, main\+\_\+menu(), Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Process\+Credit\+Card\+Payment, Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Review\+Flagged\+Users, and Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Enums\+::\+Shutdown.
+
+
+
+Referenced by run().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aae7cc1a6a551fc4dbd5ac7270f1d3e94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_aae7cc1a6a551fc4dbd5ac7270f1d3e94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a92fb489434b5bd2a9e91f5d77c9832ac}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a92fb489434b5bd2a9e91f5d77c9832ac}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!run@{run}}
+\index{run@{run}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+It is assumed that if you\textquotesingle{}re sitting at the Admin console interface, You already have permission to Administer the server, Since to get to that point you\textquotesingle{}d need to be able to login to the computer\textquotesingle{}s main server account anyway 
+
+Implements \hyperlink{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUIInterface_a81f61d1e1c051c0f83fe716fee7247d3}{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+Interface}.
+
+
+
+Definition at line 42 of file Server\+Text\+U\+I.\+cpp.
+
+
+
+References main\+\_\+menu\+\_\+loop().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a92fb489434b5bd2a9e91f5d77c9832ac_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_acd6e888ebaae2720b7ee2c0ba4a48d57}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_acd6e888ebaae2720b7ee2c0ba4a48d57}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!\+\_\+daemon@{\+\_\+daemon}}
+\index{\+\_\+daemon@{\+\_\+daemon}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+daemon}{\_daemon}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::\+\_\+daemon\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Server\+Text\+U\+I.\+h.
+
+
+
+Referenced by do\+\_\+apply\+\_\+updates(), do\+\_\+review\+\_\+flagged\+\_\+user(), init(), and main\+\_\+menu().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a638ab849164272cccdc65e8fba5a7847}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a638ab849164272cccdc65e8fba5a7847}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!\+\_\+factory@{\+\_\+factory}}
+\index{\+\_\+factory@{\+\_\+factory}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+factory}{\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Server\+Text\+U\+I.\+h.
+
+
+
+Referenced by init(), and Server\+Text\+U\+I().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a67f2dfea480ca44117e086ef03589322}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_a67f2dfea480ca44117e086ef03589322}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!\+\_\+factory\+\_\+server@{\+\_\+factory\+\_\+server}}
+\index{\+\_\+factory\+\_\+server@{\+\_\+factory\+\_\+server}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+factory\+\_\+server}{\_factory\_server}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::\+\_\+factory\+\_\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Server\+Text\+U\+I.\+h.
+
+
+
+Referenced by init().
+
+\mbox{\Hypertarget{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_afec311ead683a6411254d2c6ab96e4af}\label{classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI_afec311ead683a6411254d2c6ab96e4af}} 
+\index{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}!\+\_\+factory\+\_\+technical\+\_\+services@{\+\_\+factory\+\_\+technical\+\_\+services}}
+\index{\+\_\+factory\+\_\+technical\+\_\+services@{\+\_\+factory\+\_\+technical\+\_\+services}!Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI@{Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+UI}}
+\subsubsection{\texorpdfstring{\+\_\+factory\+\_\+technical\+\_\+services}{\_factory\_technical\_services}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface}$>$ Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::\+\_\+factory\+\_\+technical\+\_\+services\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Server\+Text\+U\+I.\+h.
+
+
+
+Referenced by do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment(), and init().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+U\+I/\+Server\+Text\+U\+I/\hyperlink{ServerTextUI_8h}{Server\+Text\+U\+I.\+h}\item 
+U\+I/\+Server\+Text\+U\+I/\hyperlink{ServerTextUI_8cpp}{Server\+Text\+U\+I.\+cpp}\end{DoxyCompactItemize}

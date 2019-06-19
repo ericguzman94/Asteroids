@@ -1,0 +1,52 @@
+.TH "Asteroids::TechnicalServices::Financial::MastercardProcessor" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::TechnicalServices::Financial::MastercardProcessor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MastercardProcessor\&.h>\fP
+.PP
+Inherits \fBAsteroids::TechnicalServices::Financial::CreditCardProcessorInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMastercardProcessor\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBauthorizePayment\fP (std::string cardholder_name, std::string cardholder_address, std::string cc_number, std::string cc_expiration, std::string cc_security_code)"
+.br
+.ti -1c
+.RI "std::string \fBget_processor_description\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 21 of file MastercardProcessor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::TechnicalServices::Financial::MastercardProcessor::MastercardProcessor ()"
+
+.PP
+Definition at line 21 of file MastercardProcessor\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string Asteroids::TechnicalServices::Financial::MastercardProcessor::authorizePayment (std::string cardholder_name, std::string cardholder_address, std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::TechnicalServices::Financial::CreditCardProcessorInterface\fP\&.
+.PP
+Definition at line 34 of file MastercardProcessor\&.cpp\&.
+.SS "std::string Asteroids::TechnicalServices::Financial::MastercardProcessor::get_processor_description ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::TechnicalServices::Financial::CreditCardProcessorInterface\fP\&.
+.PP
+Definition at line 27 of file MastercardProcessor\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

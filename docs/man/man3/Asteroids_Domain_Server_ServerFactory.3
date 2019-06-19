@@ -1,0 +1,96 @@
+.TH "Asteroids::Domain::Server::ServerFactory" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server::ServerFactory \- Implements the \fBServerFactoryInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ServerFactory\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Server::ServerFactoryInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBServerFactory\fP (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Server::ServerDaemonInterface\fP > \fBcreateDaemon\fP ()"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP > \fBcreateEmptyHACCSReport\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Server::ServerUpdaterInterface\fP > \fBcreateUpdater\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > \fB_factory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implements the \fBServerFactoryInterface\fP\&. 
+.PP
+Definition at line 24 of file ServerFactory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Server::ServerFactory::ServerFactory (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+
+.PP
+Definition at line 21 of file ServerFactory\&.cpp\&.
+.PP
+References _factory, and init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::unique_ptr< \fBAsteroids::Domain::Server::ServerDaemonInterface\fP > Asteroids::Domain::Server::ServerFactory::createDaemon ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerFactoryInterface\fP\&.
+.PP
+Definition at line 31 of file ServerFactory\&.cpp\&.
+.PP
+References _factory\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP > Asteroids::Domain::Server::ServerFactory::createEmptyHACCSReport ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerFactoryInterface\fP\&.
+.PP
+Definition at line 53 of file ServerFactory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::Domain::Server::ServerUpdaterInterface\fP > Asteroids::Domain::Server::ServerFactory::createUpdater ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::ServerFactoryInterface\fP\&.
+.PP
+Definition at line 42 of file ServerFactory\&.cpp\&.
+.SS "void Asteroids::Domain::Server::ServerFactory::init ()\fC [private]\fP"
+bleh 
+.PP
+Definition at line 65 of file ServerFactory\&.cpp\&.
+.PP
+Referenced by ServerFactory()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::Domain::Factory::FactoryInterface\fP> Asteroids::Domain::Server::ServerFactory::_factory\fC [private]\fP"
+
+.PP
+Definition at line 42 of file ServerFactory\&.h\&.
+.PP
+Referenced by createDaemon(), and ServerFactory()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

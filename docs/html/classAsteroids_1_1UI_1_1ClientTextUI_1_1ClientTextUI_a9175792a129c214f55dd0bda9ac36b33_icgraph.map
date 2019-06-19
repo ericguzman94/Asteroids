@@ -1,0 +1,6 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI::store_offer_available_items" name="Asteroids::UI::ClientTextUI::ClientTextUI::store_offer_available_items">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a66aab545b0cd59af6bec829a1b82be89" title="Asteroids::UI::ClientText\lUI::ClientTextUI::store_loop" alt="" coords="220,13,407,54"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#ae228a731be242ef0cf88005c2c03acee" title="Asteroids::UI::ClientText\lUI::ClientTextUI::store" alt="" coords="455,13,621,54"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a67521714973f97f76618f9598d34d3b8" title="Asteroids::UI::ClientText\lUI::ClientTextUI::main\l_menu_loop" alt="" coords="669,5,836,61"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a835f455a627e77a5ef99661350281ec3" title="Begin the user interface. " alt="" coords="884,13,1051,54"/>
+</map>

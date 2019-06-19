@@ -1,0 +1,92 @@
+.TH "Asteroids::Domain::Store::StoreFactory" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::StoreFactory \- Implementation of \fBStoreFactoryInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <StoreFactory\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Store::StoreFactoryInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStoreFactory\fP (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::PaymentHelperInterface\fP > \fBcreatePaymentHelper\fP ()"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > \fBcreatePaymentResultDetails\fP ()"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP > \fBcreatePowerUpAddedInfo\fP ()"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::StoreInterface\fP > \fBcreateStore\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > \fB_factory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBStoreFactoryInterface\fP\&. 
+.PP
+Definition at line 24 of file StoreFactory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Store::StoreFactory::StoreFactory (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+
+.PP
+Definition at line 22 of file StoreFactory\&.cpp\&.
+.PP
+References _factory\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::PaymentHelperInterface\fP > Asteroids::Domain::Store::StoreFactory::createPaymentHelper ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::StoreFactoryInterface\fP\&.
+.PP
+Definition at line 40 of file StoreFactory\&.cpp\&.
+.PP
+References _factory\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > Asteroids::Domain::Store::StoreFactory::createPaymentResultDetails ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::StoreFactoryInterface\fP\&.
+.PP
+Definition at line 51 of file StoreFactory\&.cpp\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP > Asteroids::Domain::Store::StoreFactory::createPowerUpAddedInfo ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::StoreFactoryInterface\fP\&.
+.PP
+Definition at line 62 of file StoreFactory\&.cpp\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::StoreInterface\fP > Asteroids::Domain::Store::StoreFactory::createStore ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::StoreFactoryInterface\fP\&.
+.PP
+Definition at line 29 of file StoreFactory\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::Domain::Factory::FactoryInterface\fP> Asteroids::Domain::Store::StoreFactory::_factory\fC [private]\fP"
+
+.PP
+Definition at line 43 of file StoreFactory\&.h\&.
+.PP
+Referenced by createPaymentHelper(), and StoreFactory()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

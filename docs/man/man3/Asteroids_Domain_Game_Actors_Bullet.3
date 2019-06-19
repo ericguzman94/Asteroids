@@ -1,0 +1,97 @@
+.TH "Asteroids::Domain::Game::Actors::Bullet" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors::Bullet \- A bullet is\&.\&.\&. a bullet\&.\&.\&. Can be shot by the player (eventually Alien too); Player's bullet kills rocks/alien; Alien bullet kills rocks/player\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Bullet\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBullet\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (long ticks)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitialize_polygon\fP ()"
+.br
+.ti -1c
+.RI "void \fBmaybe_die\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A bullet is\&.\&.\&. a bullet\&.\&.\&. Can be shot by the player (eventually Alien too); Player's bullet kills rocks/alien; Alien bullet kills rocks/player\&. 
+.PP
+Definition at line 23 of file Bullet\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Actors::Bullet::Bullet ()"
+
+.PP
+Definition at line 20 of file Bullet\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::Domain::Game::Actors::Bullet::init ()\fC [private]\fP"
+
+.PP
+Definition at line 27 of file Bullet\&.cpp\&.
+.PP
+References reset()\&.
+.PP
+Referenced by Bullet()\&.
+.SS "void Asteroids::Domain::Game::Actors::Bullet::initialize_polygon ()\fC [private]\fP"
+
+.PP
+Definition at line 63 of file Bullet\&.cpp\&.
+.PP
+References Asteroids::Domain::Game::Actors::Actor::set_polygon()\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::Domain::Game::Actors::Bullet::maybe_die ()\fC [private]\fP"
+
+.PP
+Definition at line 54 of file Bullet\&.cpp\&.
+.PP
+References ASTEROIDS_GAME_BULLET_LIFETIME_TICKS, Asteroids::Domain::Game::Actors::Actor::deleteme(), and Asteroids::Domain::Game::Actors::Actor::get_lifetime_ticks()\&.
+.PP
+Referenced by update()\&.
+.SS "void Asteroids::Domain::Game::Actors::Bullet::reset ()"
+
+.PP
+Definition at line 34 of file Bullet\&.cpp\&.
+.PP
+References initialize_polygon(), and Asteroids::Domain::Game::Actors::Actor::reset()\&.
+.PP
+Referenced by init()\&.
+.SS "void Asteroids::Domain::Game::Actors::Bullet::update (long ticks)"
+
+.PP
+Definition at line 44 of file Bullet\&.cpp\&.
+.PP
+References maybe_die(), and Asteroids::Domain::Game::Actors::Actor::update()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

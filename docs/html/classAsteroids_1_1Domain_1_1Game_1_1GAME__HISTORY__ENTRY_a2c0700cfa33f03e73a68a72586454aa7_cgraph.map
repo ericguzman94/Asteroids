@@ -1,0 +1,5 @@
+<map id="Asteroids::Domain::Game::GAME_HISTORY_ENTRY::GAME_HISTORY_ENTRY" name="Asteroids::Domain::Game::GAME_HISTORY_ENTRY::GAME_HISTORY_ENTRY">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1GAME__HISTORY__ENTRY.html#a022471c5c4f1a5d7a3f18f0f6866c9a8" title="Asteroids::Domain::\lGame::GAME_HISTORY_ENTRY\l::reset" alt="" coords="277,45,501,101"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1GAME__HISTORY__ENTRY.html#adb0e9c9f31373615343821a552366b37" title="Asteroids::Domain::\lGame::GAME_HISTORY_ENTRY\l::set_date" alt="" coords="549,5,773,61"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1GAME__HISTORY__ENTRY.html#a156c3017d2c591e7eaef0522a7e5249d" title="Asteroids::Domain::\lGame::GAME_HISTORY_ENTRY\l::set_score" alt="" coords="549,85,773,141"/>
+</map>

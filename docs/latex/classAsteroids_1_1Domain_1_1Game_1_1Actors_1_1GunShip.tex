@@ -1,0 +1,245 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Gun\+Ship Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+
+
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}{Gun\+Ship} is the player\textquotesingle{}s main actor; Subclass of \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor}{Actor}; Flies around and shoots at stuff.  
+
+
+
+
+{\ttfamily \#include $<$Gun\+Ship.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Gun\+Ship\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Gun\+Ship\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4e6a5de697b5a88bf3942165397cd27b}{Gun\+Ship} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a753c275a7840962c92cfe4843bcbd6ac}{reset} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4b37d42d9758c701d75e6a91dda71a5b}{update} (long ticks)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a9ab9a00f7d3c5f241b8a2a36c146864f}{fire\+\_\+gun} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_ad5c14269f0503e045f03f265f9019e95}{init} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4947769593f504d4342abcec5a01330b}{initialize\+\_\+polygon} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_aae99fa7e1cae7f17c81b68217ed2fa32}{use\+\_\+input} (long elapsed\+\_\+ticks)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip}{Gun\+Ship} is the player\textquotesingle{}s main actor; Subclass of \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor}{Actor}; Flies around and shoots at stuff. 
+
+Definition at line 23 of file Gun\+Ship.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4e6a5de697b5a88bf3942165397cd27b}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4e6a5de697b5a88bf3942165397cd27b}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}!Gun\+Ship@{Gun\+Ship}}
+\index{Gun\+Ship@{Gun\+Ship}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+\subsubsection{\texorpdfstring{Gun\+Ship()}{GunShip()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::\+Gun\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 22 of file Gun\+Ship.\+cpp.
+
+
+
+References init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4e6a5de697b5a88bf3942165397cd27b_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a9ab9a00f7d3c5f241b8a2a36c146864f}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a9ab9a00f7d3c5f241b8a2a36c146864f}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}!fire\+\_\+gun@{fire\+\_\+gun}}
+\index{fire\+\_\+gun@{fire\+\_\+gun}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+\subsubsection{\texorpdfstring{fire\+\_\+gun()}{fire\_gun()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::fire\+\_\+gun (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_ad5c14269f0503e045f03f265f9019e95}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_ad5c14269f0503e045f03f265f9019e95}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}!init@{init}}
+\index{init@{init}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 92 of file Gun\+Ship.\+cpp.
+
+
+
+References reset().
+
+
+
+Referenced by Gun\+Ship().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_ad5c14269f0503e045f03f265f9019e95_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_ad5c14269f0503e045f03f265f9019e95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4947769593f504d4342abcec5a01330b}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4947769593f504d4342abcec5a01330b}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}!initialize\+\_\+polygon@{initialize\+\_\+polygon}}
+\index{initialize\+\_\+polygon@{initialize\+\_\+polygon}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+\subsubsection{\texorpdfstring{initialize\+\_\+polygon()}{initialize\_polygon()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::initialize\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 99 of file Gun\+Ship.\+cpp.
+
+
+
+References A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+A\+C\+T\+O\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+F\+A\+C\+T\+OR, and Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::set\+\_\+polygon().
+
+
+
+Referenced by reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4947769593f504d4342abcec5a01330b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4947769593f504d4342abcec5a01330b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a753c275a7840962c92cfe4843bcbd6ac}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a753c275a7840962c92cfe4843bcbd6ac}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 29 of file Gun\+Ship.\+cpp.
+
+
+
+References A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+G\+U\+N\+S\+H\+I\+P\+\_\+\+B\+U\+L\+L\+E\+T\+\_\+\+S\+P\+E\+ED, initialize\+\_\+polygon(), Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::reset(), and Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::set\+\_\+bullet\+\_\+speed().
+
+
+
+Referenced by init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a753c275a7840962c92cfe4843bcbd6ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a753c275a7840962c92cfe4843bcbd6ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4b37d42d9758c701d75e6a91dda71a5b}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4b37d42d9758c701d75e6a91dda71a5b}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}!update@{update}}
+\index{update@{update}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::update (\begin{DoxyParamCaption}\item[{long}]{ticks }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file Gun\+Ship.\+cpp.
+
+
+
+References Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::update(), and use\+\_\+input().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_a4b37d42d9758c701d75e6a91dda71a5b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_aae99fa7e1cae7f17c81b68217ed2fa32}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_aae99fa7e1cae7f17c81b68217ed2fa32}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}!use\+\_\+input@{use\+\_\+input}}
+\index{use\+\_\+input@{use\+\_\+input}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship}}
+\subsubsection{\texorpdfstring{use\+\_\+input()}{use\_input()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Gun\+Ship\+::use\+\_\+input (\begin{DoxyParamCaption}\item[{long}]{elapsed\+\_\+ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 52 of file Gun\+Ship.\+cpp.
+
+
+
+References Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::\+\_\+input\+\_\+down, Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::\+\_\+input\+\_\+fire, Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::\+\_\+input\+\_\+left, Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::\+\_\+input\+\_\+right, Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::\+\_\+input\+\_\+up, Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::\+\_\+vector, A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+V\+E\+L\+O\+C\+I\+T\+Y\+\_\+\+I\+N\+P\+U\+T\+\_\+\+T\+I\+C\+K\+S\+\_\+\+F\+A\+C\+T\+OR, Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::fire\+\_\+bullet(), Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::get\+\_\+rotation(), Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Vector\+::rotate\+\_\+velocity(), and Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::set\+\_\+input\+\_\+fire().
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_aae99fa7e1cae7f17c81b68217ed2fa32_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip_aae99fa7e1cae7f17c81b68217ed2fa32_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\+Actors/\hyperlink{GunShip_8h}{Gun\+Ship.\+h}\item 
+Domain/\+Game/\+Actors/\hyperlink{GunShip_8cpp}{Gun\+Ship.\+cpp}\end{DoxyCompactItemize}

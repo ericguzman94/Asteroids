@@ -1,0 +1,70 @@
+.TH "Asteroids::Domain::Store::STORE_ITEM_INTERFACE" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::STORE_ITEM_INTERFACE \- Interface for one item available for purchase, inside the \fBStore\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <STORE_ITEM_INTERFACE\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Store::STORE_ITEM\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::string \fBget_description\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_formatted_price\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_name\fP ()=0"
+.br
+.ti -1c
+.RI "virtual \fBEnums::CurrencyType\fP \fBget_price_currency\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_price_currency_as_string\fP ()=0"
+.br
+.ti -1c
+.RI "virtual int \fBget_price_units\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface for one item available for purchase, inside the \fBStore\fP\&. 
+.PP
+Definition at line 23 of file STORE_ITEM_INTERFACE\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::string Asteroids::Domain::Store::STORE_ITEM_INTERFACE::get_description ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::STORE_ITEM\fP\&.
+.SS "virtual std::string Asteroids::Domain::Store::STORE_ITEM_INTERFACE::get_formatted_price ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::STORE_ITEM\fP\&.
+.SS "virtual std::string Asteroids::Domain::Store::STORE_ITEM_INTERFACE::get_name ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::STORE_ITEM\fP\&.
+.SS "virtual \fBEnums::CurrencyType\fP Asteroids::Domain::Store::STORE_ITEM_INTERFACE::get_price_currency ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::STORE_ITEM\fP\&.
+.SS "virtual std::string Asteroids::Domain::Store::STORE_ITEM_INTERFACE::get_price_currency_as_string ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::STORE_ITEM\fP\&.
+.SS "virtual int Asteroids::Domain::Store::STORE_ITEM_INTERFACE::get_price_units ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::STORE_ITEM\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

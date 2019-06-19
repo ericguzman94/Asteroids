@@ -1,0 +1,4 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1UIFactoryInterface.html#a6133ee6b7552c1f218df3e51aed91c74" title="Asteroids::UI::UIFactory\lInterface::createClientTextUI" alt="" coords="106,5,297,47"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface.html#a9eba8946cd9262221e8b55cea4acd92d" title="Asteroids::UI::ClientText\lUI::ClientTextUIInterface::run" alt="" coords="104,71,299,112"/>
+</map>

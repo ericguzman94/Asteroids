@@ -1,0 +1,4 @@
+<map id="Asteroids::UI::ServerTextUI::ServerTextUI::main_menu" name="Asteroids::UI::ServerTextUI::ServerTextUI::main_menu">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI.html#aae7cc1a6a551fc4dbd5ac7270f1d3e94" title="Asteroids::UI::ServerText\lUI::ServerTextUI::main\l_menu_loop" alt="" coords="251,5,421,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ServerTextUI_1_1ServerTextUI.html#a92fb489434b5bd2a9e91f5d77c9832ac" title="Asteroids::UI::ServerText\lUI::ServerTextUI::run" alt="" coords="469,13,640,54"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Actors::Actor::deleteme" name="Asteroids::Domain::Game::Actors::Actor::deleteme">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet.html#aa5772b07856c5191c8ccdf5d0df568e8" title="Asteroids::Domain::\lGame::Actors::Bullet\l::maybe_die" alt="" coords="196,5,340,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet.html#a06eb5b7aa30c8547159696c82fd2f642" title="Asteroids::Domain::\lGame::Actors::Bullet\l::update" alt="" coords="388,5,532,61"/>
+</map>

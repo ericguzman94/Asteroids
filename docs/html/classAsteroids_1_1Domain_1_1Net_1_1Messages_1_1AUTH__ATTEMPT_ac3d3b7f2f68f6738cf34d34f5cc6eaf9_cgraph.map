@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::reset" name="Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::reset">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__ATTEMPT.html#ab05c3f631e0ac62fdefe27e95b5066a2" title="Asteroids::Domain::\lNet::Messages::AUTH\l_ATTEMPT::setPassword" alt="" coords="211,5,385,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Net_1_1Messages_1_1AUTH__ATTEMPT.html#a70aded9fd40631e8b8e53b183b62b3d8" title="Asteroids::Domain::\lNet::Messages::AUTH\l_ATTEMPT::setUsername" alt="" coords="209,85,387,141"/>
+</map>

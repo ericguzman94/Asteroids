@@ -1,0 +1,373 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Rect Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+
+
+Convenience class to help manage actor rectangle boundaries and collisions.  
+
+
+
+
+{\ttfamily \#include $<$Rect.\+h$>$}
+
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Rect\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a4e018b8938b343f70672695b58e5fa96}{Rect} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a0ab06f4fe6e0dbd681c89397f22aa08f}{add\+\_\+offset} (double x, double y)
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acc14c3d293e2bfd3b55aa6e727457bf0}{collides\+\_\+with\+\_\+rect} (const \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect}{Rect} \&other)
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a9e3bfefa639425d77c9f417061b4867e}{is\+\_\+point\+\_\+within} (double x, double y) const
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a065181734dd1fd44e698ef52a6a265b1}{reset} ()
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a9b519e84380246e4836c6c0a925cfa89}{to\+\_\+string} () const
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a40c593b8be9c243d6cdc30e2f8ee67df}{update\+\_\+dimensions} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect}{Rect} \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a687d0848c13d1b8dfbd2f896636b4145}{consume\+\_\+polygon} (const std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ \&points)
+\begin{DoxyCompactList}\small\item\em Create a rect from polygon points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a60cb0fe29e20d550b38e93c50c160702}{height}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a5e4e95bead1beb09355881c4b657946a}{width}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a8e1850d7266d0378a5795d2ea1c1985a}{x1}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a13d39720b3adcec9938bdb292973dcc6}{x2}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acb50ec000477a068fb723dc5a184cdbe}{y1}
+\item 
+double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a85994dc2dcf0a09c649958b1fb8e6983}{y2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Convenience class to help manage actor rectangle boundaries and collisions. 
+
+Definition at line 27 of file Rect.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a4e018b8938b343f70672695b58e5fa96}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a4e018b8938b343f70672695b58e5fa96}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!Rect@{Rect}}
+\index{Rect@{Rect}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{Rect()}{Rect()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 28 of file Rect.\+cpp.
+
+
+
+References reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a4e018b8938b343f70672695b58e5fa96_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a0ab06f4fe6e0dbd681c89397f22aa08f}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a0ab06f4fe6e0dbd681c89397f22aa08f}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!add\+\_\+offset@{add\+\_\+offset}}
+\index{add\+\_\+offset@{add\+\_\+offset}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{add\+\_\+offset()}{add\_offset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::add\+\_\+offset (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file Rect.\+cpp.
+
+
+
+References update\+\_\+dimensions(), x1, x2, y1, and y2.
+
+
+
+Referenced by Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::update\+\_\+rect().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a0ab06f4fe6e0dbd681c89397f22aa08f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a0ab06f4fe6e0dbd681c89397f22aa08f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acc14c3d293e2bfd3b55aa6e727457bf0}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acc14c3d293e2bfd3b55aa6e727457bf0}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!collides\+\_\+with\+\_\+rect@{collides\+\_\+with\+\_\+rect}}
+\index{collides\+\_\+with\+\_\+rect@{collides\+\_\+with\+\_\+rect}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{collides\+\_\+with\+\_\+rect()}{collides\_with\_rect()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::collides\+\_\+with\+\_\+rect (\begin{DoxyParamCaption}\item[{const \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect}{Rect} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file Rect.\+cpp.
+
+
+
+References is\+\_\+point\+\_\+within(), x1, x2, y1, and y2.
+
+
+
+Referenced by Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::check\+\_\+collision().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acc14c3d293e2bfd3b55aa6e727457bf0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acc14c3d293e2bfd3b55aa6e727457bf0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a687d0848c13d1b8dfbd2f896636b4145}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a687d0848c13d1b8dfbd2f896636b4145}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!consume\+\_\+polygon@{consume\+\_\+polygon}}
+\index{consume\+\_\+polygon@{consume\+\_\+polygon}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{consume\+\_\+polygon()}{consume\_polygon()}}
+{\footnotesize\ttfamily \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect}{Rect} Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::consume\+\_\+polygon (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ double, double $>$$>$ \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a rect from polygon points. 
+
+
+
+Definition at line 47 of file Rect.\+cpp.
+
+
+
+References update\+\_\+dimensions(), x1, x2, y1, and y2.
+
+
+
+Referenced by Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::update\+\_\+rect().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a687d0848c13d1b8dfbd2f896636b4145_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a687d0848c13d1b8dfbd2f896636b4145_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a9e3bfefa639425d77c9f417061b4867e}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a9e3bfefa639425d77c9f417061b4867e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!is\+\_\+point\+\_\+within@{is\+\_\+point\+\_\+within}}
+\index{is\+\_\+point\+\_\+within@{is\+\_\+point\+\_\+within}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{is\+\_\+point\+\_\+within()}{is\_point\_within()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::is\+\_\+point\+\_\+within (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 142 of file Rect.\+cpp.
+
+
+
+References x1, x2, y1, and y2.
+
+
+
+Referenced by collides\+\_\+with\+\_\+rect().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a9e3bfefa639425d77c9f417061b4867e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a065181734dd1fd44e698ef52a6a265b1}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a065181734dd1fd44e698ef52a6a265b1}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file Rect.\+cpp.
+
+
+
+References x1, x2, y1, and y2.
+
+
+
+Referenced by Rect().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a065181734dd1fd44e698ef52a6a265b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a9b519e84380246e4836c6c0a925cfa89}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a9b519e84380246e4836c6c0a925cfa89}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!to\+\_\+string@{to\+\_\+string}}
+\index{to\+\_\+string@{to\+\_\+string}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{to\+\_\+string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 159 of file Rect.\+cpp.
+
+
+
+References x1, x2, y1, and y2.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a40c593b8be9c243d6cdc30e2f8ee67df}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a40c593b8be9c243d6cdc30e2f8ee67df}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!update\+\_\+dimensions@{update\+\_\+dimensions}}
+\index{update\+\_\+dimensions@{update\+\_\+dimensions}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{update\+\_\+dimensions()}{update\_dimensions()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::update\+\_\+dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 105 of file Rect.\+cpp.
+
+
+
+References height, width, x1, x2, y1, and y2.
+
+
+
+Referenced by add\+\_\+offset(), and consume\+\_\+polygon().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a40c593b8be9c243d6cdc30e2f8ee67df_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a60cb0fe29e20d550b38e93c50c160702}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a60cb0fe29e20d550b38e93c50c160702}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!height@{height}}
+\index{height@{height}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::height}
+
+
+
+Definition at line 56 of file Rect.\+h.
+
+
+
+Referenced by update\+\_\+dimensions().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a5e4e95bead1beb09355881c4b657946a}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a5e4e95bead1beb09355881c4b657946a}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!width@{width}}
+\index{width@{width}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::width}
+
+
+
+Definition at line 56 of file Rect.\+h.
+
+
+
+Referenced by update\+\_\+dimensions().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a8e1850d7266d0378a5795d2ea1c1985a}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a8e1850d7266d0378a5795d2ea1c1985a}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!x1@{x1}}
+\index{x1@{x1}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{x1}{x1}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::x1}
+
+
+
+Definition at line 55 of file Rect.\+h.
+
+
+
+Referenced by add\+\_\+offset(), collides\+\_\+with\+\_\+rect(), consume\+\_\+polygon(), is\+\_\+point\+\_\+within(), reset(), to\+\_\+string(), and update\+\_\+dimensions().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a13d39720b3adcec9938bdb292973dcc6}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a13d39720b3adcec9938bdb292973dcc6}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!x2@{x2}}
+\index{x2@{x2}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{x2}{x2}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::x2}
+
+
+
+Definition at line 55 of file Rect.\+h.
+
+
+
+Referenced by add\+\_\+offset(), collides\+\_\+with\+\_\+rect(), consume\+\_\+polygon(), is\+\_\+point\+\_\+within(), reset(), to\+\_\+string(), and update\+\_\+dimensions().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acb50ec000477a068fb723dc5a184cdbe}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_acb50ec000477a068fb723dc5a184cdbe}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!y1@{y1}}
+\index{y1@{y1}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{y1}{y1}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::y1}
+
+
+
+Definition at line 55 of file Rect.\+h.
+
+
+
+Referenced by add\+\_\+offset(), collides\+\_\+with\+\_\+rect(), consume\+\_\+polygon(), is\+\_\+point\+\_\+within(), reset(), to\+\_\+string(), and update\+\_\+dimensions().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a85994dc2dcf0a09c649958b1fb8e6983}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect_a85994dc2dcf0a09c649958b1fb8e6983}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}!y2@{y2}}
+\index{y2@{y2}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect}}
+\subsubsection{\texorpdfstring{y2}{y2}}
+{\footnotesize\ttfamily double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Rect\+::y2}
+
+
+
+Definition at line 55 of file Rect.\+h.
+
+
+
+Referenced by add\+\_\+offset(), collides\+\_\+with\+\_\+rect(), consume\+\_\+polygon(), is\+\_\+point\+\_\+within(), reset(), to\+\_\+string(), and update\+\_\+dimensions().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\+Actors/\hyperlink{Rect_8h}{Rect.\+h}\item 
+Domain/\+Game/\+Actors/\hyperlink{Rect_8cpp}{Rect.\+cpp}\end{DoxyCompactItemize}

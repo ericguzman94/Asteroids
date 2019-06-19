@@ -1,0 +1,355 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT}{}\section{Asteroids\+:\+:Domain\+:\+:Server\+:\+:H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT Class Reference}
+\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT}\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.  
+
+
+
+
+{\ttfamily \#include $<$H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Server\+:\+:H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Server\+:\+:H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a23cfcd0e92df6dd9c5f6b3ddbf3af55f}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_ad05d48af0fc073b5b4f1889044d0ab53}{add\+\_\+suspicious\+\_\+activity} (std\+::string when, std\+::string what)
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a6782df87aa6252fa3a77ffed948d5dd7}{get\+\_\+email} ()
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a8e8b4f73eed2ab97cbad9aaf6ba6f23d}{get\+\_\+id} ()
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a9e38472572d93ccb521931abf8fe4003}{get\+\_\+nickname} ()
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__ACTIVITY__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a39e82d7e504a456087aca358e059486e}{get\+\_\+suspicious\+\_\+activities} ()
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_aee592bffda2ed344b0e1d3c52ef5f22b}{get\+\_\+username} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a8ac70a5b53e7c93a8cefd963c35f3efa}{reset} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_afd4fb5bff2bc5e2de54bdf5c56d17ce7}{set\+\_\+id} (std\+::string id)
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_aac58cb81d18beb43c31cc11610dd319f}{set\+\_\+user\+\_\+details} (std\+::string username, std\+::string nickname, std\+::string email)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a10f6792d50333b7e862b56b3eb63f938}{\+\_\+email}
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a05f61fcaa97035fd5e8fbcf45553f342}{\+\_\+id}
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_ae4c9fd63a20205a923169a92c6d7b87d}{\+\_\+nickname}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__ACTIVITY__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a33852dfe8d5f96befa05626c374c23d0}{\+\_\+suspicious\+\_\+activities}
+\begin{DoxyCompactList}\small\item\em \+\_\+suspicious activities\+: \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a9038844567cdd62d4ea9094ba76f21fa}{\+\_\+username}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}. 
+
+Definition at line 28 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a23cfcd0e92df6dd9c5f6b3ddbf3af55f}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a23cfcd0e92df6dd9c5f6b3ddbf3af55f}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\index{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T()}{HACCS\_REPORT()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 18 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a23cfcd0e92df6dd9c5f6b3ddbf3af55f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_ad05d48af0fc073b5b4f1889044d0ab53}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_ad05d48af0fc073b5b4f1889044d0ab53}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!add\+\_\+suspicious\+\_\+activity@{add\+\_\+suspicious\+\_\+activity}}
+\index{add\+\_\+suspicious\+\_\+activity@{add\+\_\+suspicious\+\_\+activity}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{add\+\_\+suspicious\+\_\+activity()}{add\_suspicious\_activity()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::add\+\_\+suspicious\+\_\+activity (\begin{DoxyParamCaption}\item[{std\+::string}]{when,  }\item[{std\+::string}]{what }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Creates a \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__ACTIVITY}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+A\+C\+T\+I\+V\+I\+TY}, because nobody else will need to create the activity, but the report 
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_aa9f992ed1f3748412fb9bd6521d8f3ff}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 83 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+suspicious\+\_\+activities.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a6782df87aa6252fa3a77ffed948d5dd7}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a6782df87aa6252fa3a77ffed948d5dd7}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!get\+\_\+email@{get\+\_\+email}}
+\index{get\+\_\+email@{get\+\_\+email}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{get\+\_\+email()}{get\_email()}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::get\+\_\+email (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a766b8de53dfc16a5598d64012ba2564c}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 75 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+email.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a8e8b4f73eed2ab97cbad9aaf6ba6f23d}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a8e8b4f73eed2ab97cbad9aaf6ba6f23d}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!get\+\_\+id@{get\+\_\+id}}
+\index{get\+\_\+id@{get\+\_\+id}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{get\+\_\+id()}{get\_id()}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::get\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a7d7aa92456e0a24475b8618d066ffd63}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 45 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+id.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a9e38472572d93ccb521931abf8fe4003}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a9e38472572d93ccb521931abf8fe4003}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!get\+\_\+nickname@{get\+\_\+nickname}}
+\index{get\+\_\+nickname@{get\+\_\+nickname}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{get\+\_\+nickname()}{get\_nickname()}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::get\+\_\+nickname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a75c843246909be0ab1f8ecd7ac4fd3e8}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 68 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+nickname.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a39e82d7e504a456087aca358e059486e}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a39e82d7e504a456087aca358e059486e}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!get\+\_\+suspicious\+\_\+activities@{get\+\_\+suspicious\+\_\+activities}}
+\index{get\+\_\+suspicious\+\_\+activities@{get\+\_\+suspicious\+\_\+activities}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{get\+\_\+suspicious\+\_\+activities()}{get\_suspicious\_activities()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__ACTIVITY__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ $>$ Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::get\+\_\+suspicious\+\_\+activities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a306c6c10a5d4a5ab886c32ad7e330b14}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 99 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+suspicious\+\_\+activities.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_aee592bffda2ed344b0e1d3c52ef5f22b}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_aee592bffda2ed344b0e1d3c52ef5f22b}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!get\+\_\+username@{get\+\_\+username}}
+\index{get\+\_\+username@{get\+\_\+username}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{get\+\_\+username()}{get\_username()}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::get\+\_\+username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a74bc89d7ffac8ef6825fa08a136ea818}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 61 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+username.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a8ac70a5b53e7c93a8cefd963c35f3efa}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a8ac70a5b53e7c93a8cefd963c35f3efa}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a910f7fdcd75d49a01cea298881a7e089}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 25 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+email, \+\_\+id, \+\_\+nickname, \+\_\+suspicious\+\_\+activities, and \+\_\+username.
+
+
+
+Referenced by H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a8ac70a5b53e7c93a8cefd963c35f3efa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_afd4fb5bff2bc5e2de54bdf5c56d17ce7}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_afd4fb5bff2bc5e2de54bdf5c56d17ce7}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!set\+\_\+id@{set\+\_\+id}}
+\index{set\+\_\+id@{set\+\_\+id}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{set\+\_\+id()}{set\_id()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::set\+\_\+id (\begin{DoxyParamCaption}\item[{std\+::string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a3c7f14b37674ab2849164e7b990ea7bf}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 38 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+id.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_aac58cb81d18beb43c31cc11610dd319f}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_aac58cb81d18beb43c31cc11610dd319f}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!set\+\_\+user\+\_\+details@{set\+\_\+user\+\_\+details}}
+\index{set\+\_\+user\+\_\+details@{set\+\_\+user\+\_\+details}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{set\+\_\+user\+\_\+details()}{set\_user\_details()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::set\+\_\+user\+\_\+details (\begin{DoxyParamCaption}\item[{std\+::string}]{username,  }\item[{std\+::string}]{nickname,  }\item[{std\+::string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE_a95473ef5b5fca37905848f8e6d627d60}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}.
+
+
+
+Definition at line 52 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp.
+
+
+
+References \+\_\+email, \+\_\+nickname, and \+\_\+username.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a10f6792d50333b7e862b56b3eb63f938}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a10f6792d50333b7e862b56b3eb63f938}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!\+\_\+email@{\+\_\+email}}
+\index{\+\_\+email@{\+\_\+email}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{\+\_\+email}{\_email}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::\+\_\+email\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h.
+
+
+
+Referenced by get\+\_\+email(), reset(), and set\+\_\+user\+\_\+details().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a05f61fcaa97035fd5e8fbcf45553f342}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a05f61fcaa97035fd5e8fbcf45553f342}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!\+\_\+id@{\+\_\+id}}
+\index{\+\_\+id@{\+\_\+id}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{\+\_\+id}{\_id}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 58 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h.
+
+
+
+Referenced by get\+\_\+id(), reset(), and set\+\_\+id().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_ae4c9fd63a20205a923169a92c6d7b87d}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_ae4c9fd63a20205a923169a92c6d7b87d}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!\+\_\+nickname@{\+\_\+nickname}}
+\index{\+\_\+nickname@{\+\_\+nickname}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{\+\_\+nickname}{\_nickname}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::\+\_\+nickname\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h.
+
+
+
+Referenced by get\+\_\+nickname(), reset(), and set\+\_\+user\+\_\+details().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a33852dfe8d5f96befa05626c374c23d0}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a33852dfe8d5f96befa05626c374c23d0}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!\+\_\+suspicious\+\_\+activities@{\+\_\+suspicious\+\_\+activities}}
+\index{\+\_\+suspicious\+\_\+activities@{\+\_\+suspicious\+\_\+activities}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{\+\_\+suspicious\+\_\+activities}{\_suspicious\_activities}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__ACTIVITY__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+A\+C\+T\+I\+V\+I\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}$>$ $>$ Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::\+\_\+suspicious\+\_\+activities\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\+\_\+suspicious activities\+: 
+
+
+
+Definition at line 68 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h.
+
+
+
+Referenced by add\+\_\+suspicious\+\_\+activity(), get\+\_\+suspicious\+\_\+activities(), and reset().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a9038844567cdd62d4ea9094ba76f21fa}\label{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT_a9038844567cdd62d4ea9094ba76f21fa}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}!\+\_\+username@{\+\_\+username}}
+\index{\+\_\+username@{\+\_\+username}!Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT@{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+RT}}
+\subsubsection{\texorpdfstring{\+\_\+username}{\_username}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+::\+\_\+username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h.
+
+
+
+Referenced by get\+\_\+username(), reset(), and set\+\_\+user\+\_\+details().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Server/\hyperlink{HACCS__REPORT_8h}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+h}\item 
+Domain/\+Server/\hyperlink{HACCS__REPORT_8cpp}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T.\+cpp}\end{DoxyCompactItemize}

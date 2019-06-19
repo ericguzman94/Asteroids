@@ -1,0 +1,88 @@
+\hypertarget{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface}{}\section{Asteroids\+:\+:Technical\+Services\+:\+:Financial\+:\+:Credit\+Card\+Processor\+Interface Class Reference}
+\label{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface}\index{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface}}
+
+
+{\ttfamily \#include $<$Credit\+Card\+Processor\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Technical\+Services\+:\+:Financial\+:\+:Credit\+Card\+Processor\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Technical\+Services\+:\+:Financial\+:\+:Credit\+Card\+Processor\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a605de1c4a264b4f9ae94ed13dd5fe1c0}{authorize\+Payment} (std\+::string cardholder\+\_\+name, std\+::string cardholder\+\_\+address, std\+::string cc\+\_\+number, std\+::string cc\+\_\+expiration, std\+::string cc\+\_\+security\+\_\+code)=0
+\item 
+virtual std\+::string \hyperlink{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a8dcf97d20a9de55d04e0f84b4a788f78}{get\+\_\+processor\+\_\+description} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file Credit\+Card\+Processor\+Interface.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a605de1c4a264b4f9ae94ed13dd5fe1c0}\label{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a605de1c4a264b4f9ae94ed13dd5fe1c0}} 
+\index{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface}!authorize\+Payment@{authorize\+Payment}}
+\index{authorize\+Payment@{authorize\+Payment}!Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface}}
+\subsubsection{\texorpdfstring{authorize\+Payment()}{authorizePayment()}}
+{\footnotesize\ttfamily virtual std\+::string Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface\+::authorize\+Payment (\begin{DoxyParamCaption}\item[{std\+::string}]{cardholder\+\_\+name,  }\item[{std\+::string}]{cardholder\+\_\+address,  }\item[{std\+::string}]{cc\+\_\+number,  }\item[{std\+::string}]{cc\+\_\+expiration,  }\item[{std\+::string}]{cc\+\_\+security\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1TechnicalServices_1_1Financial_1_1VisaProcessor_ac406ab9c118fd69ea85cf423f0cb69f5}{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Visa\+Processor}, and \hyperlink{classAsteroids_1_1TechnicalServices_1_1Financial_1_1MastercardProcessor_a75069378c5945eb8b94b6a6c7842d814}{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Mastercard\+Processor}.
+
+
+
+Referenced by Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a605de1c4a264b4f9ae94ed13dd5fe1c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a8dcf97d20a9de55d04e0f84b4a788f78}\label{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a8dcf97d20a9de55d04e0f84b4a788f78}} 
+\index{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface}!get\+\_\+processor\+\_\+description@{get\+\_\+processor\+\_\+description}}
+\index{get\+\_\+processor\+\_\+description@{get\+\_\+processor\+\_\+description}!Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface@{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface}}
+\subsubsection{\texorpdfstring{get\+\_\+processor\+\_\+description()}{get\_processor\_description()}}
+{\footnotesize\ttfamily virtual std\+::string Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Credit\+Card\+Processor\+Interface\+::get\+\_\+processor\+\_\+description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1TechnicalServices_1_1Financial_1_1VisaProcessor_a867ad9ef829698dc57e3f71ab7778945}{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Visa\+Processor}, and \hyperlink{classAsteroids_1_1TechnicalServices_1_1Financial_1_1MastercardProcessor_a3dc222f21a228d61b581af1dbbd6e93b}{Asteroids\+::\+Technical\+Services\+::\+Financial\+::\+Mastercard\+Processor}.
+
+
+
+Referenced by Asteroids\+::\+U\+I\+::\+Server\+Text\+U\+I\+::\+Server\+Text\+U\+I\+::do\+\_\+process\+\_\+credit\+\_\+card\+\_\+payment().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface_a8dcf97d20a9de55d04e0f84b4a788f78_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Technical\+Services/\+Financial/\hyperlink{CreditCardProcessorInterface_8h}{Credit\+Card\+Processor\+Interface.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,43 @@
+.TH "Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CreditCardProcessorInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::TechnicalServices::Financial::MastercardProcessor\fP, and \fBAsteroids::TechnicalServices::Financial::VisaProcessor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::string \fBauthorizePayment\fP (std::string cardholder_name, std::string cardholder_address, std::string cc_number, std::string cc_expiration, std::string cc_security_code)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBget_processor_description\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file CreditCardProcessorInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::string Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface::authorizePayment (std::string cardholder_name, std::string cardholder_address, std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::Financial::VisaProcessor\fP, and \fBAsteroids::TechnicalServices::Financial::MastercardProcessor\fP\&.
+.PP
+Referenced by Asteroids::UI::ServerTextUI::ServerTextUI::do_process_credit_card_payment()\&.
+.SS "virtual std::string Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface::get_processor_description ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::Financial::VisaProcessor\fP, and \fBAsteroids::TechnicalServices::Financial::MastercardProcessor\fP\&.
+.PP
+Referenced by Asteroids::UI::ServerTextUI::ServerTextUI::do_process_credit_card_payment()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

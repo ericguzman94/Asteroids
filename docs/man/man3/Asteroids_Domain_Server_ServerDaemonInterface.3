@@ -1,0 +1,84 @@
+.TH "Asteroids::Domain::Server::ServerDaemonInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server::ServerDaemonInterface \- \fBServer\fP daemon that would eventually listen for and service network requests (from client or local or whatever)\&. Currently does nothing\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ServerDaemonInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBapply_updates\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBban_user\fP (std::string username)=0"
+.br
+.ti -1c
+.RI "virtual void \fBforgive_haccs_report\fP (std::shared_ptr< \fBHACCS_REPORT_INTERFACE\fP > report)=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBHACCS_REPORT_INTERFACE\fP > \fBget_next_haccs_report\fP ()=0"
+.br
+.ti -1c
+.RI "virtual bool \fBis_restart_required\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBquit\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBrequire_restart\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBrun\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBServer\fP daemon that would eventually listen for and service network requests (from client or local or whatever)\&. Currently does nothing\&. 
+.PP
+Definition at line 24 of file ServerDaemonInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Asteroids::Domain::Server::ServerDaemonInterface::apply_updates ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "virtual void Asteroids::Domain::Server::ServerDaemonInterface::ban_user (std::string username)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "virtual void Asteroids::Domain::Server::ServerDaemonInterface::forgive_haccs_report (std::shared_ptr< \fBHACCS_REPORT_INTERFACE\fP > report)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "virtual std::shared_ptr<\fBHACCS_REPORT_INTERFACE\fP> Asteroids::Domain::Server::ServerDaemonInterface::get_next_haccs_report ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "virtual bool Asteroids::Domain::Server::ServerDaemonInterface::is_restart_required ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "virtual void Asteroids::Domain::Server::ServerDaemonInterface::quit ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "virtual void Asteroids::Domain::Server::ServerDaemonInterface::require_restart ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+.SS "virtual void Asteroids::Domain::Server::ServerDaemonInterface::run ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerDaemon\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

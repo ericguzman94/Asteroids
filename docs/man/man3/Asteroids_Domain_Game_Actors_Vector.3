@@ -1,0 +1,194 @@
+.TH "Asteroids::Domain::Game::Actors::Vector" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors::Vector \- Simple class to store 2D vector and rotation, to lend physics to game actors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Vector\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector\fP ()"
+.br
+.ti -1c
+.RI "std::pair< double, double > \fBadjust\fP (double x, double y, double r=0\&.0)"
+.br
+.ti -1c
+.RI "std::pair< double, double > \fBget_linear\fP ()"
+.br
+.ti -1c
+.RI "std::pair< double, double > \fBget_rotated_linear\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_rotational\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_x\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_y\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "std::pair< double, double > \fBset\fP (double x, double y, double r)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (long ticks)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::pair< double, double > \fBrotate_velocity\fP (double x, double y, double rotate_radians)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBapply_limits\fP ()"
+.br
+.ti -1c
+.RI "void \fBdampen\fP (long ticks)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fB_r\fP"
+.br
+.ti -1c
+.RI "double \fB_x\fP"
+.br
+.ti -1c
+.RI "double \fB_y\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Simple class to store 2D vector and rotation, to lend physics to game actors\&. 
+.PP
+Definition at line 26 of file Vector\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Actors::Vector::Vector ()"
+
+.PP
+Definition at line 26 of file Vector\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::pair< double, double > Asteroids::Domain::Game::Actors::Vector::adjust (double x, double y, double r = \fC0\&.0\fP)"
+
+.PP
+Definition at line 41 of file Vector\&.cpp\&.
+.PP
+References _r, _x, and _y\&.
+.SS "void Asteroids::Domain::Game::Actors::Vector::apply_limits ()\fC [private]\fP"
+
+.PP
+Definition at line 127 of file Vector\&.cpp\&.
+.PP
+References _r, _x, _y, ASTEROIDS_GAME_VELOCITY_MAX, and ASTEROIDS_GAME_VELOCITY_ROTATIONAL_MAX\&.
+.PP
+Referenced by update()\&.
+.SS "void Asteroids::Domain::Game::Actors::Vector::dampen (long ticks)\fC [private]\fP"
+
+.PP
+Definition at line 155 of file Vector\&.cpp\&.
+.PP
+References _r, _x, _y, and ASTEROIDS_GAME_VELOCITY_DAMPENING_TICKS_FACTOR\&.
+.PP
+Referenced by update()\&.
+.SS "std::pair< double, double > Asteroids::Domain::Game::Actors::Vector::get_linear ()"
+
+.PP
+Definition at line 59 of file Vector\&.cpp\&.
+.PP
+References _x, and _y\&.
+.PP
+Referenced by set()\&.
+.SS "std::pair< double, double > Asteroids::Domain::Game::Actors::Vector::get_rotated_linear ()"
+
+.PP
+Definition at line 66 of file Vector\&.cpp\&.
+.PP
+References _r, _x, _y, and rotate_velocity()\&.
+.SS "double Asteroids::Domain::Game::Actors::Vector::get_rotational ()"
+
+.PP
+Definition at line 91 of file Vector\&.cpp\&.
+.PP
+References _r\&.
+.SS "double Asteroids::Domain::Game::Actors::Vector::get_x ()"
+
+.PP
+Definition at line 77 of file Vector\&.cpp\&.
+.PP
+References _x\&.
+.SS "double Asteroids::Domain::Game::Actors::Vector::get_y ()"
+
+.PP
+Definition at line 84 of file Vector\&.cpp\&.
+.PP
+References _y\&.
+.SS "void Asteroids::Domain::Game::Actors::Vector::reset ()"
+
+.PP
+Definition at line 33 of file Vector\&.cpp\&.
+.PP
+References _x, and _y\&.
+.PP
+Referenced by Vector()\&.
+.SS "std::pair< double, double > Asteroids::Domain::Game::Actors::Vector::rotate_velocity (double x, double y, double rotate_radians)\fC [static]\fP"
+
+.PP
+Definition at line 98 of file Vector\&.cpp\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::Actor::fire_bullet(), get_rotated_linear(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "std::pair< double, double > Asteroids::Domain::Game::Actors::Vector::set (double x, double y, double r)"
+
+.PP
+Definition at line 48 of file Vector\&.cpp\&.
+.PP
+References _r, _x, _y, and get_linear()\&.
+.SS "void Asteroids::Domain::Game::Actors::Vector::update (long ticks)"
+
+.PP
+Definition at line 119 of file Vector\&.cpp\&.
+.PP
+References apply_limits(), and dampen()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double Asteroids::Domain::Game::Actors::Vector::_r\fC [private]\fP"
+
+.PP
+Definition at line 56 of file Vector\&.h\&.
+.PP
+Referenced by adjust(), apply_limits(), dampen(), get_rotated_linear(), get_rotational(), and set()\&.
+.SS "double Asteroids::Domain::Game::Actors::Vector::_x\fC [private]\fP"
+
+.PP
+Definition at line 56 of file Vector\&.h\&.
+.PP
+Referenced by adjust(), apply_limits(), dampen(), get_linear(), get_rotated_linear(), get_x(), reset(), and set()\&.
+.SS "double Asteroids::Domain::Game::Actors::Vector::_y\fC [private]\fP"
+
+.PP
+Definition at line 56 of file Vector\&.h\&.
+.PP
+Referenced by adjust(), apply_limits(), dampen(), get_linear(), get_rotated_linear(), get_y(), reset(), and set()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

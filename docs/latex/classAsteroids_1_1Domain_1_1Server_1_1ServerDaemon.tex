@@ -1,0 +1,414 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon}{}\section{Asteroids\+:\+:Domain\+:\+:Server\+:\+:Server\+Daemon Class Reference}
+\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon}\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface}{Server\+Daemon\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Server\+Daemon.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Server\+:\+:Server\+Daemon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Server\+:\+:Server\+Daemon\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_adb13a988eee60960a1994277ef35de7c}{Server\+Daemon} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ factory)
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a21be1fef2658af9fa55a8353ac12c217}{$\sim$\+Server\+Daemon} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ad5e5e845e150a331cdb6703d8b8ba94f}{apply\+\_\+updates} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a16123054c6978205c98ffeb122894606}{ban\+\_\+user} (std\+::string username)
+\begin{DoxyCompactList}\small\item\em Ban a user from the system. \end{DoxyCompactList}\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a0db3978640446e783c54932014d043cb}{forgive\+\_\+haccs\+\_\+report} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ report)
+\begin{DoxyCompactList}\small\item\em Forgive a H\+A\+C\+CS report. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a53548491d0700fffff3730f3c48525d6}{get\+\_\+next\+\_\+haccs\+\_\+report} ()
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a3cafc61bfa34d7af93f6d50a36380da0}{is\+\_\+restart\+\_\+required} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a92d9ded3d37ff875f13172b3b175d176}{quit} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a11925ed5e5c6951aceac9c823789476e}{require\+\_\+restart} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a3f49917f69b862fd6dc916ad15fa2f92}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ae9c4ad2dfbabb9f2f2fbd84fbf5940a5}{init} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface}{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a2856346a9011cc7b717142527fd2a1f8}{\+\_\+databaser}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a5e09fd6503ac3ef9aa3ef18c71e3b4f0}{\+\_\+factory}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ae95b464f2464935d75b4107e49b4112b}{\+\_\+factory\+\_\+server}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a21b2047b38269d597241695ea8a92e87}{\+\_\+factory\+\_\+technical\+\_\+services}
+\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a8e5f1c6809bbe3290bb85fafc6562058}{\+\_\+quit}
+\item 
+std\+::atomic$<$ bool $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a841bf5530b6ae5d6cbc89d50a4280f0c}{\+\_\+restart\+\_\+is\+\_\+required}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface}{Server\+Daemon\+Interface}. 
+
+Definition at line 25 of file Server\+Daemon.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_adb13a988eee60960a1994277ef35de7c}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_adb13a988eee60960a1994277ef35de7c}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!Server\+Daemon@{Server\+Daemon}}
+\index{Server\+Daemon@{Server\+Daemon}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{Server\+Daemon()}{ServerDaemon()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::\+Server\+Daemon (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 30 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+factory, and init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_adb13a988eee60960a1994277ef35de7c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a21be1fef2658af9fa55a8353ac12c217}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a21be1fef2658af9fa55a8353ac12c217}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!````~Server\+Daemon@{$\sim$\+Server\+Daemon}}
+\index{````~Server\+Daemon@{$\sim$\+Server\+Daemon}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{$\sim$\+Server\+Daemon()}{~ServerDaemon()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::$\sim$\+Server\+Daemon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 40 of file Server\+Daemon.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ad5e5e845e150a331cdb6703d8b8ba94f}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ad5e5e845e150a331cdb6703d8b8ba94f}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!apply\+\_\+updates@{apply\+\_\+updates}}
+\index{apply\+\_\+updates@{apply\+\_\+updates}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{apply\+\_\+updates()}{apply\_updates()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::apply\+\_\+updates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_a3ee79b1b6b1e88db05d015969c9fcdc7}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 69 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+factory\+\_\+server, require\+\_\+restart(), and Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Updater\+Interface\+::update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ad5e5e845e150a331cdb6703d8b8ba94f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a16123054c6978205c98ffeb122894606}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a16123054c6978205c98ffeb122894606}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!ban\+\_\+user@{ban\+\_\+user}}
+\index{ban\+\_\+user@{ban\+\_\+user}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{ban\+\_\+user()}{ban\_user()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::ban\+\_\+user (\begin{DoxyParamCaption}\item[{std\+::string}]{username }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Ban a user from the system. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000012}{Todo}]Doesn\textquotesingle{}t do anything yet \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000013}{Todo}]Query not yet implemented \end{DoxyRefDesc}
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_a1c2a40f1a8d8f877ca239aaaf5b0a573}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 131 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+databaser.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a0db3978640446e783c54932014d043cb}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a0db3978640446e783c54932014d043cb}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!forgive\+\_\+haccs\+\_\+report@{forgive\+\_\+haccs\+\_\+report}}
+\index{forgive\+\_\+haccs\+\_\+report@{forgive\+\_\+haccs\+\_\+report}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{forgive\+\_\+haccs\+\_\+report()}{forgive\_haccs\_report()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::forgive\+\_\+haccs\+\_\+report (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$}]{report }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Forgive a H\+A\+C\+CS report. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000010}{Todo}]Doesn\textquotesingle{}t actually do anything yet \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000011}{Todo}]Query not yet implemented \end{DoxyRefDesc}
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_aae0ae0d5ad7b042a8abddb268072b91e}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 116 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+databaser.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a53548491d0700fffff3730f3c48525d6}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a53548491d0700fffff3730f3c48525d6}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!get\+\_\+next\+\_\+haccs\+\_\+report@{get\+\_\+next\+\_\+haccs\+\_\+report}}
+\index{get\+\_\+next\+\_\+haccs\+\_\+report@{get\+\_\+next\+\_\+haccs\+\_\+report}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{get\+\_\+next\+\_\+haccs\+\_\+report()}{get\_next\_haccs\_report()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::get\+\_\+next\+\_\+haccs\+\_\+report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the next user to review for breaking T\+O\+S/\+A\+UP; Returns dummy data at the moment \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000009}{Todo}]Still returning dummy data! \end{DoxyRefDesc}
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_a80d5e04ec214d4eb673d2aac1428deca}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 97 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+factory\+\_\+server.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ae9c4ad2dfbabb9f2f2fbd84fbf5940a5}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ae9c4ad2dfbabb9f2f2fbd84fbf5940a5}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!init@{init}}
+\index{init@{init}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 143 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+databaser, \+\_\+factory, \+\_\+factory\+\_\+server, and \+\_\+factory\+\_\+technical\+\_\+services.
+
+
+
+Referenced by Server\+Daemon().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ae9c4ad2dfbabb9f2f2fbd84fbf5940a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a3cafc61bfa34d7af93f6d50a36380da0}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a3cafc61bfa34d7af93f6d50a36380da0}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!is\+\_\+restart\+\_\+required@{is\+\_\+restart\+\_\+required}}
+\index{is\+\_\+restart\+\_\+required@{is\+\_\+restart\+\_\+required}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{is\+\_\+restart\+\_\+required()}{is\_restart\_required()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::is\+\_\+restart\+\_\+required (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_a6296fbd5a6d327794f7692adf5290d9e}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 89 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+restart\+\_\+is\+\_\+required.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a92d9ded3d37ff875f13172b3b175d176}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a92d9ded3d37ff875f13172b3b175d176}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!quit@{quit}}
+\index{quit@{quit}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_a84b60c3467a1545cb24ec9556ccf707e}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 62 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+quit.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a11925ed5e5c6951aceac9c823789476e}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a11925ed5e5c6951aceac9c823789476e}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!require\+\_\+restart@{require\+\_\+restart}}
+\index{require\+\_\+restart@{require\+\_\+restart}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{require\+\_\+restart()}{require\_restart()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::require\+\_\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_ade086bdbaf264f921653ce56ca31b442}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 82 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+restart\+\_\+is\+\_\+required.
+
+
+
+Referenced by apply\+\_\+updates().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a11925ed5e5c6951aceac9c823789476e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a3f49917f69b862fd6dc916ad15fa2f92}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a3f49917f69b862fd6dc916ad15fa2f92}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!run@{run}}
+\index{run@{run}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface_aa5e7a6e108e131fc8e99d320b826d0c1}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}.
+
+
+
+Definition at line 46 of file Server\+Daemon.\+cpp.
+
+
+
+References \+\_\+quit, and \+\_\+restart\+\_\+is\+\_\+required.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a2856346a9011cc7b717142527fd2a1f8}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a2856346a9011cc7b717142527fd2a1f8}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!\+\_\+databaser@{\+\_\+databaser}}
+\index{\+\_\+databaser@{\+\_\+databaser}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{\+\_\+databaser}{\_databaser}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1TechnicalServices_1_1Persistence_1_1DatabaserInterface}{Asteroids\+::\+Technical\+Services\+::\+Persistence\+::\+Databaser\+Interface}$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::\+\_\+databaser\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file Server\+Daemon.\+h.
+
+
+
+Referenced by ban\+\_\+user(), forgive\+\_\+haccs\+\_\+report(), and init().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a5e09fd6503ac3ef9aa3ef18c71e3b4f0}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a5e09fd6503ac3ef9aa3ef18c71e3b4f0}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!\+\_\+factory@{\+\_\+factory}}
+\index{\+\_\+factory@{\+\_\+factory}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{\+\_\+factory}{\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file Server\+Daemon.\+h.
+
+
+
+Referenced by init(), and Server\+Daemon().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ae95b464f2464935d75b4107e49b4112b}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_ae95b464f2464935d75b4107e49b4112b}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!\+\_\+factory\+\_\+server@{\+\_\+factory\+\_\+server}}
+\index{\+\_\+factory\+\_\+server@{\+\_\+factory\+\_\+server}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{\+\_\+factory\+\_\+server}{\_factory\_server}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::\+\_\+factory\+\_\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Server\+Daemon.\+h.
+
+
+
+Referenced by apply\+\_\+updates(), get\+\_\+next\+\_\+haccs\+\_\+report(), and init().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a21b2047b38269d597241695ea8a92e87}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a21b2047b38269d597241695ea8a92e87}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!\+\_\+factory\+\_\+technical\+\_\+services@{\+\_\+factory\+\_\+technical\+\_\+services}}
+\index{\+\_\+factory\+\_\+technical\+\_\+services@{\+\_\+factory\+\_\+technical\+\_\+services}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{\+\_\+factory\+\_\+technical\+\_\+services}{\_factory\_technical\_services}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface}$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::\+\_\+factory\+\_\+technical\+\_\+services\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 57 of file Server\+Daemon.\+h.
+
+
+
+Referenced by init().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a8e5f1c6809bbe3290bb85fafc6562058}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a8e5f1c6809bbe3290bb85fafc6562058}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!\+\_\+quit@{\+\_\+quit}}
+\index{\+\_\+quit@{\+\_\+quit}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{\+\_\+quit}{\_quit}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::\+\_\+quit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 63 of file Server\+Daemon.\+h.
+
+
+
+Referenced by quit(), and run().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a841bf5530b6ae5d6cbc89d50a4280f0c}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemon_a841bf5530b6ae5d6cbc89d50a4280f0c}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}!\+\_\+restart\+\_\+is\+\_\+required@{\+\_\+restart\+\_\+is\+\_\+required}}
+\index{\+\_\+restart\+\_\+is\+\_\+required@{\+\_\+restart\+\_\+is\+\_\+required}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon}}
+\subsubsection{\texorpdfstring{\+\_\+restart\+\_\+is\+\_\+required}{\_restart\_is\_required}}
+{\footnotesize\ttfamily std\+::atomic$<$bool$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+::\+\_\+restart\+\_\+is\+\_\+required\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file Server\+Daemon.\+h.
+
+
+
+Referenced by is\+\_\+restart\+\_\+required(), require\+\_\+restart(), and run().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Server/\hyperlink{ServerDaemon_8h}{Server\+Daemon.\+h}\item 
+Domain/\+Server/\hyperlink{ServerDaemon_8cpp}{Server\+Daemon.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+.TH "Asteroids::Domain::Game::GameFactory" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::GameFactory \- Implements \fBGameFactoryInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GameFactory\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Game::GameFactoryInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGameFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Game::GameInterface\fP > \fBcreateGame\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Game::GameHistoryInterface\fP > \fBcreateGameHistory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Game::Randomer\fP > \fBcreateRandomer\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implements \fBGameFactoryInterface\fP\&. 
+.PP
+Definition at line 23 of file GameFactory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::GameFactory::GameFactory ()"
+
+.PP
+Definition at line 21 of file GameFactory\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::unique_ptr< \fBAsteroids::Domain::Game::GameInterface\fP > Asteroids::Domain::Game::GameFactory::createGame ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameFactoryInterface\fP\&.
+.PP
+Definition at line 34 of file GameFactory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::Domain::Game::GameHistoryInterface\fP > Asteroids::Domain::Game::GameFactory::createGameHistory ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameFactoryInterface\fP\&.
+.PP
+Definition at line 56 of file GameFactory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::Domain::Game::Randomer\fP > Asteroids::Domain::Game::GameFactory::createRandomer ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GameFactoryInterface\fP\&.
+.PP
+Definition at line 45 of file GameFactory\&.cpp\&.
+.SS "void Asteroids::Domain::Game::GameFactory::reset ()"
+
+.PP
+Definition at line 28 of file GameFactory\&.cpp\&.
+.PP
+Referenced by GameFactory()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

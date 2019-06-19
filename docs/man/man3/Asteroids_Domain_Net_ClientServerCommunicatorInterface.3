@@ -1,0 +1,60 @@
+.TH "Asteroids::Domain::Net::ClientServerCommunicatorInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::ClientServerCommunicatorInterface \- Allows a client to communicate with the server\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ClientServerCommunicatorInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Net::ClientServerCommunicator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBauthorizePayment\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)=0"
+.br
+.ti -1c
+.RI "virtual bool \fBnotifyServerOfGameHistoryEntrySocialMediaShare\fP (std::string game_history_entry_id)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Allows a client to communicate with the server\&. 
+
+The \fBClientServerCommunicatorInterface\fP simulates things that should typically be asked of our remote \fBAsteroids\fP server to do on the Client's behalf\&. For instance, it wouldn't make sense for a Client to authorize a credit card payment directly with a payment gateway\&. Instead it would ask our \fBAsteroids\fP server to auth the payment, THEN the \fBAsteroids\fP server would auth with the external service, and come back with a response 
+.PP
+Definition at line 31 of file ClientServerCommunicatorInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool Asteroids::Domain::Net::ClientServerCommunicatorInterface::authorizePayment (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fC [pure virtual]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Need to add an account ID to this, methinks 
+.RE
+.PP
+
+.PP
+Implemented in \fBAsteroids::Domain::Net::ClientServerCommunicator\fP\&.
+.SS "virtual bool Asteroids::Domain::Net::ClientServerCommunicatorInterface::notifyServerOfGameHistoryEntrySocialMediaShare (std::string game_history_entry_id)\fC [pure virtual]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Notify the server that we have shared a game history entry to social media (will cause powerUp added to account, later) 
+.RE
+.PP
+
+.PP
+Implemented in \fBAsteroids::Domain::Net::ClientServerCommunicator\fP\&.
+.PP
+Referenced by Asteroids::UI::ClientTextUI::ClientTextUI::share_game_history_entry_to_social_media()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

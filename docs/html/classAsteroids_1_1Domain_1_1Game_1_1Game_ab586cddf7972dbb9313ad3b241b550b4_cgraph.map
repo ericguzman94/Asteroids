@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Game::wait_for_frames_per_second" name="Asteroids::Domain::Game::Game::wait_for_frames_per_second">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#af8a67c4af1521c3184e873f79aad17f3" title="Asteroids::Domain::\lGame::Game::calculate\l_ticks_since_last_update" alt="" coords="208,5,377,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#a0a4efa785b7cdd6b0ef19478f8d34617" title="Ticks are just microseconds. " alt="" coords="425,5,599,61"/>
+</map>

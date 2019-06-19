@@ -1,0 +1,49 @@
+.TH "Asteroids::Domain::Net::ClientServerCommunicator" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::ClientServerCommunicator \- Implementation of \fBClientServerCommunicatorInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ClientServerCommunicator\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Net::ClientServerCommunicatorInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBauthorizePayment\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)"
+.br
+.ti -1c
+.RI "bool \fBnotifyServerOfGameHistoryEntrySocialMediaShare\fP (std::string game_history_entry_id)"
+.br
+.RI "Dummy stub\&. Would eventually notify server, which in turn would cause PowerUp added to account\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBClientServerCommunicatorInterface\fP\&. 
+.PP
+Definition at line 20 of file ClientServerCommunicator\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Asteroids::Domain::Net::ClientServerCommunicator::authorizePayment (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fC [virtual]\fP"
+Dummy stub thingy ; Always pretend the payment authorized successfully Assign input args to their freaking selves, to mute 'unused var' warnings 
+.PP
+Implements \fBAsteroids::Domain::Net::ClientServerCommunicatorInterface\fP\&.
+.PP
+Definition at line 18 of file ClientServerCommunicator\&.cpp\&.
+.SS "bool Asteroids::Domain::Net::ClientServerCommunicator::notifyServerOfGameHistoryEntrySocialMediaShare (std::string game_history_entry_id)\fC [virtual]\fP"
+
+.PP
+Dummy stub\&. Would eventually notify server, which in turn would cause PowerUp added to account\&. 
+.PP
+Implements \fBAsteroids::Domain::Net::ClientServerCommunicatorInterface\fP\&.
+.PP
+Definition at line 36 of file ClientServerCommunicator\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

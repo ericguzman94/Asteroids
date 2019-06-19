@@ -1,0 +1,8 @@
+<map id="Asteroids::Domain::Game::Actors::LongRock::LongRock" name="Asteroids::Domain::Game::Actors::LongRock::LongRock">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1LongRock.html#ac2469234e9ea81472af9e7297ff8a75a" title="Asteroids::Domain::\lGame::Actors::LongRock\l::initialize_polygon" alt="" coords="224,45,395,101"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a224abd0a9dff102361ce2a305ba4734f" title="Asteroids::Domain::\lGame::Actors::Actor\l::set_polygon" alt="" coords="443,45,585,101"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a4bb89af7457ff402fa5a4a11d62ab4ca" title="Asteroids::Domain::\lGame::Actors::Actor\l::update_rect" alt="" coords="633,45,776,101"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a0ab06f4fe6e0dbd681c89397f22aa08f" title="Asteroids::Domain::\lGame::Actors::Rect::\ladd_offset" alt="" coords="824,5,971,61"/>
+<area shape="rect" id="node7" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a687d0848c13d1b8dfbd2f896636b4145" title="Create a rect from polygon points. " alt="" coords="824,85,971,141"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a40c593b8be9c243d6cdc30e2f8ee67df" title="Asteroids::Domain::\lGame::Actors::Rect::\lupdate_dimensions" alt="" coords="1019,45,1165,101"/>
+</map>

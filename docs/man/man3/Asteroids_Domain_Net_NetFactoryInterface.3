@@ -1,0 +1,42 @@
+.TH "Asteroids::Domain::Net::NetFactoryInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::NetFactoryInterface \- \fBFactory\fP to generate things inside the \fBNet\fP package\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NetFactoryInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Net::NetFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::unique_ptr< \fBClientServerCommunicatorInterface\fP > \fBcreateClientServerCommunicator\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAuthentication::AuthenticationInterface\fP > \fBcreateNetworkAuthenticator\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBFactory\fP to generate things inside the \fBNet\fP package\&. 
+.PP
+Definition at line 23 of file NetFactoryInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::unique_ptr<\fBClientServerCommunicatorInterface\fP> Asteroids::Domain::Net::NetFactoryInterface::createClientServerCommunicator ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Net::NetFactory\fP\&.
+.SS "virtual std::unique_ptr<\fBAuthentication::AuthenticationInterface\fP> Asteroids::Domain::Net::NetFactoryInterface::createNetworkAuthenticator ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Net::NetFactory\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

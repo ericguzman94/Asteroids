@@ -1,0 +1,61 @@
+.TH "Asteroids::Domain::Server" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server \- The \fBServer\fP namespace holds stuff related to the \fBServer\fP executable\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBHACCS_REPORT\fP"
+.br
+.RI "Implementation of \fBHACCS_REPORT_INTERFACE\fP\&. "
+.ti -1c
+.RI "class \fBHACCS_REPORT_ACTIVITY\fP"
+.br
+.RI "Implements the \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP interface\&. "
+.ti -1c
+.RI "class \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP"
+.br
+.RI "Data structure class that contains a description of one suspicious activity\&. "
+.ti -1c
+.RI "class \fBHACCS_REPORT_INTERFACE\fP"
+.br
+.RI "Just a class that contains one report of one suspicious user\&. "
+.ti -1c
+.RI "class \fBServerDaemon\fP"
+.br
+.RI "Implements \fBServerDaemonInterface\fP\&. "
+.ti -1c
+.RI "class \fBServerDaemonInterface\fP"
+.br
+.RI "\fBServer\fP daemon that would eventually listen for and service network requests (from client or local or whatever)\&. Currently does nothing\&. "
+.ti -1c
+.RI "class \fBServerFactory\fP"
+.br
+.RI "Implements the \fBServerFactoryInterface\fP\&. "
+.ti -1c
+.RI "class \fBServerFactoryInterface\fP"
+.br
+.RI "Creates things inside the \fBServer\fP package\&. "
+.ti -1c
+.RI "class \fBServerUpdater\fP"
+.br
+.RI "Implements \fBServerUpdaterInterface\fP\&. "
+.ti -1c
+.RI "class \fBServerUpdaterInterface\fP"
+.br
+.RI "Interface for updating the server\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBServer\fP namespace holds stuff related to the \fBServer\fP executable\&. 
+
+ie: The \fBServer\fP class, the daemon, the server updater, and data structures you'd only get while sitting at the server 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

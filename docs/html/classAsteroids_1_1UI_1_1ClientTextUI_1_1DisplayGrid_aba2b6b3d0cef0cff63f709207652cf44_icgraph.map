@@ -1,0 +1,5 @@
+<map id="Asteroids::UI::ClientTextUI::DisplayGrid::calculate_translation" name="Asteroids::UI::ClientTextUI::DisplayGrid::calculate_translation">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#a118e0cad34b68aae5b178bd8e2b344c5" title="Asteroids::UI::ClientText\lUI::DisplayGrid::reset" alt="" coords="225,13,392,54"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#a56b4a0b5f6d69ac13c3c7212db3e77b0" title="Asteroids::UI::ClientText\lUI::DisplayGrid::init" alt="" coords="440,13,607,54"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#a186316077596113cfd3cbb5d0be4922e" title="Asteroids::UI::ClientText\lUI::DisplayGrid::DisplayGrid" alt="" coords="655,13,843,54"/>
+</map>

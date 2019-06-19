@@ -1,0 +1,51 @@
+.TH "Asteroids::Domain::Game::Actors" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors \- Not really a package so much as a way to organize allll the \fBActor\fP classes and helpers away from the \fBGame\fP logic classes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActor\fP"
+.br
+.RI "Implementation of \fBActorInterface\fP\&. "
+.ti -1c
+.RI "class \fBActorInterface\fP"
+.br
+.RI "Main superclass for game board actors\&. "
+.ti -1c
+.RI "class \fBBullet\fP"
+.br
+.RI "A bullet is\&.\&.\&. a bullet\&.\&.\&. Can be shot by the player (eventually Alien too); Player's bullet kills rocks/alien; Alien bullet kills rocks/player\&. "
+.ti -1c
+.RI "class \fBGunShip\fP"
+.br
+.RI "\fBGunShip\fP is the player's main actor; Subclass of \fBActor\fP; Flies around and shoots at stuff\&. "
+.ti -1c
+.RI "class \fBLongRock\fP"
+.br
+.RI "A long rock is an actor that floats within the game; Can be shot by player; Can smash player\&. "
+.ti -1c
+.RI "class \fBRect\fP"
+.br
+.RI "Convenience class to help manage actor rectangle boundaries and collisions\&. "
+.ti -1c
+.RI "class \fBRock\fP"
+.br
+.RI "A rock is an actor that floats within the game; Can be shot by player; Can smash player\&. "
+.ti -1c
+.RI "class \fBVector\fP"
+.br
+.RI "Simple class to store 2D vector and rotation, to lend physics to game actors\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Not really a package so much as a way to organize allll the \fBActor\fP classes and helpers away from the \fBGame\fP logic classes\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

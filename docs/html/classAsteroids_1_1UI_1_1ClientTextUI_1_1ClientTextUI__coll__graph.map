@@ -1,0 +1,13 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI" name="Asteroids::UI::ClientTextUI::ClientTextUI">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUIInterface.html" title="Interface to the main client text user interface; Just runs, basically. " alt="" coords="5,983,175,1075"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html" title="Class to help translate and render actors and stuff from the virtual game board, to actual ASCII grap..." alt="" coords="307,469,476,899"/>
+<area shape="rect" id="node6" title="STL class. " alt="" coords="627,153,743,230"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="764,645,904,723"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="351,307,431,385"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="328,145,455,237"/>
+<area shape="rect" id="node12" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1Input.html" title="Thank you very much: https://stackoverflow.com/questions/448944/c&#45;non&#45;blocking&#45;keyboard&#45;input. " alt="" coords="500,557,667,811"/>
+<area shape="rect" id="node14" href="$classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface.html" title="Creates objects that belong to the TechnicalServices package. " alt="" coords="50,623,282,745"/>
+<area shape="rect" id="node16" href="$classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface.html" title="Create things inside the Game package. " alt="" coords="1850,623,2045,745"/>
+<area shape="rect" id="node18" href="$classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface.html" title="Creates things inside the Store package. " alt="" coords="1616,616,1825,752"/>
+<area shape="rect" id="node20" href="$classAsteroids_1_1Domain_1_1Net_1_1NetFactoryInterface.html" title="Factory to generate things inside the Net package. " alt="" coords="1321,631,1555,737"/>
+</map>

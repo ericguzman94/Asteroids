@@ -1,0 +1,542 @@
+.TH "Asteroids::Domain::Game::Actors::Actor" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors::Actor \- Implementation of \fBActorInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actor\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Inherited by \fBAsteroids::Domain::Game::Actors::Bullet\fP, \fBAsteroids::Domain::Game::Actors::GunShip\fP, and \fBAsteroids::Domain::Game::Actors::Rock\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActor\fP ()"
+.br
+.ti -1c
+.RI "double \fBadjust_rotation\fP (double radians)"
+.br
+.ti -1c
+.RI "bool \fBcheck_collision\fP (const \fBAsteroids::Domain::Game::Actors::Actor\fP &other_actor)"
+.br
+.ti -1c
+.RI "bool \fBcheck_collision\fP (std::shared_ptr< \fBAsteroids::Domain::Game::Actors::Actor\fP > other_actor)"
+.br
+.ti -1c
+.RI "void \fBclear_input\fP ()"
+.br
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBBullet\fP > > \fBget_fired_bullets\fP (bool clear=true)"
+.br
+.ti -1c
+.RI "long \fBget_lifetime_ticks\fP ()"
+.br
+.ti -1c
+.RI "const std::vector< std::pair< double, double > > & \fBget_polygon\fP ()"
+.br
+.ti -1c
+.RI "std::pair< double, double > \fBget_position\fP ()"
+.br
+.ti -1c
+.RI "\fBRect\fP \fBget_rect\fP () const"
+.br
+.ti -1c
+.RI "std::vector< std::pair< double, double > > \fBget_rotated_polygon\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_rotation\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_x\fP ()"
+.br
+.ti -1c
+.RI "double \fBget_y\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "std::vector< std::pair< double, double > > \fBrotate_polygon\fP (double radians)"
+.br
+.ti -1c
+.RI "void \fBset_input_down\fP (bool b)"
+.br
+.ti -1c
+.RI "void \fBset_input_fire\fP (bool b)"
+.br
+.ti -1c
+.RI "void \fBset_input_left\fP (bool b)"
+.br
+.ti -1c
+.RI "void \fBset_input_right\fP (bool b)"
+.br
+.ti -1c
+.RI "void \fBset_input_up\fP (bool b)"
+.br
+.ti -1c
+.RI "void \fBset_polygon\fP (std::vector< std::pair< double, double >> points)"
+.br
+.ti -1c
+.RI "void \fBset_position\fP (double x, double y)"
+.br
+.ti -1c
+.RI "double \fBset_rotation\fP (double radians)"
+.br
+.ti -1c
+.RI "void \fBset_velocity\fP (double x, double y, double r)"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (long elapsed_ticks)"
+.br
+.ti -1c
+.RI "bool \fBwants_to_be_deleted\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdeleteme\fP ()"
+.br
+.ti -1c
+.RI "void \fBfire_bullet\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_bullet_speed\fP (double s)"
+.br
+.ti -1c
+.RI "void \fBupdate_rect\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fB_input_down\fP"
+.br
+.ti -1c
+.RI "bool \fB_input_fire\fP"
+.br
+.ti -1c
+.RI "bool \fB_input_left\fP"
+.br
+.ti -1c
+.RI "bool \fB_input_right\fP"
+.br
+.ti -1c
+.RI "bool \fB_input_up\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBVector\fP > \fB_vector\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBapply_vector_to_position\fP (long elapsed_ticks)"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fB_bullet_speed\fP"
+.br
+.ti -1c
+.RI "std::vector< std::shared_ptr< \fBBullet\fP > > \fB_fired_bullets\fP"
+.br
+.ti -1c
+.RI "long \fB_lifetime_ticks\fP"
+.br
+.ti -1c
+.RI "std::vector< std::pair< double, double > > \fB_polygon_points\fP"
+.br
+.ti -1c
+.RI "double \fB_pos_x\fP"
+.br
+.ti -1c
+.RI "double \fB_pos_y\fP"
+.br
+.ti -1c
+.RI "\fBRect\fP \fB_rect\fP"
+.br
+.ti -1c
+.RI "double \fB_rotation_radians\fP"
+.br
+.ti -1c
+.RI "bool \fB_wants_to_be_deleted\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBActorInterface\fP\&. 
+.PP
+Definition at line 30 of file Actor\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Actors::Actor::Actor ()"
+
+.PP
+Definition at line 32 of file Actor\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double Asteroids::Domain::Game::Actors::Actor::adjust_rotation (double radians)"
+
+.PP
+Definition at line 258 of file Actor\&.cpp\&.
+.PP
+References _rotation_radians, and set_rotation()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::apply_vector_to_position (long elapsed_ticks)\fC [private]\fP"
+
+.PP
+Definition at line 322 of file Actor\&.cpp\&.
+.PP
+References _pos_x, _pos_y, _rotation_radians, _vector, and update_rect()\&.
+.PP
+Referenced by update()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::check_collision (const \fBAsteroids::Domain::Game::Actors::Actor\fP & other_actor)"
+
+.PP
+Definition at line 301 of file Actor\&.cpp\&.
+.PP
+References _rect, Asteroids::Domain::Game::Actors::Rect::collides_with_rect(), and get_rect()\&.
+.PP
+Referenced by check_collision()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::check_collision (std::shared_ptr< \fBAsteroids::Domain::Game::Actors::Actor\fP > other_actor)"
+
+.PP
+Definition at line 315 of file Actor\&.cpp\&.
+.PP
+References check_collision()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::clear_input ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 96 of file Actor\&.cpp\&.
+.PP
+References _input_down, _input_fire, _input_left, _input_right, and _input_up\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::deleteme ()\fC [protected]\fP"
+
+.PP
+Definition at line 347 of file Actor\&.cpp\&.
+.PP
+References _wants_to_be_deleted\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::Bullet::maybe_die()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::fire_bullet ()\fC [protected]\fP"
+
+.PP
+Definition at line 361 of file Actor\&.cpp\&.
+.PP
+References _bullet_speed, _fired_bullets, _vector, get_rotation(), get_x(), get_y(), and Asteroids::Domain::Game::Actors::Vector::rotate_velocity()\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "std::vector< std::shared_ptr< \fBBullet\fP > > Asteroids::Domain::Game::Actors::Actor::get_fired_bullets (bool clear = \fCtrue\fP)"
+
+.PP
+Definition at line 279 of file Actor\&.cpp\&.
+.PP
+References _fired_bullets\&.
+.SS "long Asteroids::Domain::Game::Actors::Actor::get_lifetime_ticks ()"
+
+.PP
+Definition at line 71 of file Actor\&.cpp\&.
+.PP
+References _lifetime_ticks\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::Bullet::maybe_die()\&.
+.SS "const std::vector< std::pair< double, double > > & Asteroids::Domain::Game::Actors::Actor::get_polygon ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 152 of file Actor\&.cpp\&.
+.PP
+References _polygon_points\&.
+.SS "std::pair< double, double > Asteroids::Domain::Game::Actors::Actor::get_position ()"
+
+.PP
+Definition at line 225 of file Actor\&.cpp\&.
+.PP
+References _pos_x, and _pos_y\&.
+.SS "\fBRect\fP Asteroids::Domain::Game::Actors::Actor::get_rect () const"
+
+.PP
+Definition at line 294 of file Actor\&.cpp\&.
+.PP
+References _rect\&.
+.PP
+Referenced by check_collision()\&.
+.SS "std::vector< std::pair< double, double > > Asteroids::Domain::Game::Actors::Actor::get_rotated_polygon ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 159 of file Actor\&.cpp\&.
+.PP
+References _rotation_radians, and rotate_polygon()\&.
+.SS "double Asteroids::Domain::Game::Actors::Actor::get_rotation ()"
+
+.PP
+Definition at line 265 of file Actor\&.cpp\&.
+.PP
+References _rotation_radians\&.
+.PP
+Referenced by fire_bullet(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "double Asteroids::Domain::Game::Actors::Actor::get_x ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 237 of file Actor\&.cpp\&.
+.PP
+References _pos_x\&.
+.PP
+Referenced by fire_bullet()\&.
+.SS "double Asteroids::Domain::Game::Actors::Actor::get_y ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 243 of file Actor\&.cpp\&.
+.PP
+References _pos_y\&.
+.PP
+Referenced by fire_bullet()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::init ()\fC [private]\fP"
+
+.PP
+Definition at line 39 of file Actor\&.cpp\&.
+.PP
+References _vector, and reset()\&.
+.PP
+Referenced by Actor()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::reset ()"
+
+.PP
+Definition at line 51 of file Actor\&.cpp\&.
+.PP
+References _bullet_speed, _lifetime_ticks, _polygon_points, _pos_x, _pos_y, _rotation_radians, _wants_to_be_deleted, ASTEROIDS_GAME_BULLET_DEFAULT_SPEED, and clear_input()\&.
+.PP
+Referenced by init(), Asteroids::Domain::Game::Actors::Bullet::reset(), Asteroids::Domain::Game::Actors::GunShip::reset(), and Asteroids::Domain::Game::Actors::Rock::reset()\&.
+.SS "std::vector< std::pair< double, double > > Asteroids::Domain::Game::Actors::Actor::rotate_polygon (double radians)"
+
+.PP
+Definition at line 166 of file Actor\&.cpp\&.
+.PP
+References _polygon_points\&.
+.PP
+Referenced by get_rotated_polygon()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_bullet_speed (double s)\fC [protected]\fP"
+
+.PP
+Definition at line 354 of file Actor\&.cpp\&.
+.PP
+References _bullet_speed\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::GunShip::reset()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_input_down (bool b)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 114 of file Actor\&.cpp\&.
+.PP
+References _input_down\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_input_fire (bool b)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 135 of file Actor\&.cpp\&.
+.PP
+References _input_fire\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_input_left (bool b)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 121 of file Actor\&.cpp\&.
+.PP
+References _input_left\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_input_right (bool b)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 128 of file Actor\&.cpp\&.
+.PP
+References _input_right\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_input_up (bool b)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 107 of file Actor\&.cpp\&.
+.PP
+References _input_up\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_polygon (std::vector< std::pair< double, double >> points)"
+
+.PP
+Definition at line 142 of file Actor\&.cpp\&.
+.PP
+References _polygon_points, and update_rect()\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::LongRock::initialize_polygon(), Asteroids::Domain::Game::Actors::Rock::initialize_polygon(), Asteroids::Domain::Game::Actors::Bullet::initialize_polygon(), and Asteroids::Domain::Game::Actors::GunShip::initialize_polygon()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_position (double x, double y)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::Actors::ActorInterface\fP\&.
+.PP
+Definition at line 214 of file Actor\&.cpp\&.
+.PP
+References _pos_x, _pos_y, and update_rect()\&.
+.SS "double Asteroids::Domain::Game::Actors::Actor::set_rotation (double radians)"
+
+.PP
+Definition at line 249 of file Actor\&.cpp\&.
+.PP
+References _rotation_radians\&.
+.PP
+Referenced by adjust_rotation()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::set_velocity (double x, double y, double r)"
+
+.PP
+Definition at line 272 of file Actor\&.cpp\&.
+.PP
+References _vector\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::update (long elapsed_ticks)"
+
+.PP
+Definition at line 85 of file Actor\&.cpp\&.
+.PP
+References _lifetime_ticks, _vector, and apply_vector_to_position()\&.
+.PP
+Referenced by Asteroids::Domain::Game::Actors::Bullet::update(), and Asteroids::Domain::Game::Actors::GunShip::update()\&.
+.SS "void Asteroids::Domain::Game::Actors::Actor::update_rect ()\fC [protected]\fP"
+
+.PP
+Definition at line 339 of file Actor\&.cpp\&.
+.PP
+References _polygon_points, _pos_x, _pos_y, _rect, Asteroids::Domain::Game::Actors::Rect::add_offset(), and Asteroids::Domain::Game::Actors::Rect::consume_polygon()\&.
+.PP
+Referenced by apply_vector_to_position(), set_polygon(), and set_position()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::wants_to_be_deleted ()"
+
+.PP
+Definition at line 78 of file Actor\&.cpp\&.
+.PP
+References _wants_to_be_deleted\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double Asteroids::Domain::Game::Actors::Actor::_bullet_speed\fC [private]\fP"
+
+.PP
+Definition at line 134 of file Actor\&.h\&.
+.PP
+Referenced by fire_bullet(), reset(), and set_bullet_speed()\&.
+.SS "std::vector<std::shared_ptr<\fBBullet\fP> > Asteroids::Domain::Game::Actors::Actor::_fired_bullets\fC [private]\fP"
+
+.PP
+Definition at line 133 of file Actor\&.h\&.
+.PP
+Referenced by fire_bullet(), and get_fired_bullets()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::_input_down\fC [protected]\fP"
+
+.PP
+Definition at line 95 of file Actor\&.h\&.
+.PP
+Referenced by clear_input(), set_input_down(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::_input_fire\fC [protected]\fP"
+
+.PP
+Definition at line 95 of file Actor\&.h\&.
+.PP
+Referenced by clear_input(), set_input_fire(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::_input_left\fC [protected]\fP"
+
+.PP
+Definition at line 95 of file Actor\&.h\&.
+.PP
+Referenced by clear_input(), set_input_left(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::_input_right\fC [protected]\fP"
+
+.PP
+Definition at line 95 of file Actor\&.h\&.
+.PP
+Referenced by clear_input(), set_input_right(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::_input_up\fC [protected]\fP"
+
+.PP
+Definition at line 95 of file Actor\&.h\&.
+.PP
+Referenced by clear_input(), set_input_up(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "long Asteroids::Domain::Game::Actors::Actor::_lifetime_ticks\fC [private]\fP"
+
+.PP
+Definition at line 116 of file Actor\&.h\&.
+.PP
+Referenced by get_lifetime_ticks(), reset(), and update()\&.
+.SS "std::vector< std::pair<double, double> > Asteroids::Domain::Game::Actors::Actor::_polygon_points\fC [private]\fP"
+
+.PP
+Definition at line 129 of file Actor\&.h\&.
+.PP
+Referenced by get_polygon(), reset(), rotate_polygon(), set_polygon(), and update_rect()\&.
+.SS "double Asteroids::Domain::Game::Actors::Actor::_pos_x\fC [private]\fP"
+
+.PP
+Definition at line 121 of file Actor\&.h\&.
+.PP
+Referenced by apply_vector_to_position(), get_position(), get_x(), reset(), set_position(), and update_rect()\&.
+.SS "double Asteroids::Domain::Game::Actors::Actor::_pos_y\fC [private]\fP"
+
+.PP
+Definition at line 121 of file Actor\&.h\&.
+.PP
+Referenced by apply_vector_to_position(), get_position(), get_y(), reset(), set_position(), and update_rect()\&.
+.SS "\fBRect\fP Asteroids::Domain::Game::Actors::Actor::_rect\fC [private]\fP"
+
+.PP
+Definition at line 130 of file Actor\&.h\&.
+.PP
+Referenced by check_collision(), get_rect(), and update_rect()\&.
+.SS "double Asteroids::Domain::Game::Actors::Actor::_rotation_radians\fC [private]\fP"
+
+.PP
+Definition at line 121 of file Actor\&.h\&.
+.PP
+Referenced by adjust_rotation(), apply_vector_to_position(), get_rotated_polygon(), get_rotation(), reset(), and set_rotation()\&.
+.SS "std::unique_ptr<\fBVector\fP> Asteroids::Domain::Game::Actors::Actor::_vector\fC [protected]\fP"
+
+.PP
+Definition at line 91 of file Actor\&.h\&.
+.PP
+Referenced by apply_vector_to_position(), fire_bullet(), init(), set_velocity(), update(), and Asteroids::Domain::Game::Actors::GunShip::use_input()\&.
+.SS "bool Asteroids::Domain::Game::Actors::Actor::_wants_to_be_deleted\fC [private]\fP"
+
+.PP
+Definition at line 117 of file Actor\&.h\&.
+.PP
+Referenced by deleteme(), reset(), and wants_to_be_deleted()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,5 @@
+<map id="Asteroids::Domain::Game::Actors::Actor::apply_vector_to_position" name="Asteroids::Domain::Game::Actors::Actor::apply_vector_to_position">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a5a53ac407eec2feb06f167d1a496bbe5" title="Asteroids::Domain::\lGame::Actors::Actor\l::update" alt="" coords="228,45,371,101"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet.html#a06eb5b7aa30c8547159696c82fd2f642" title="Asteroids::Domain::\lGame::Actors::Bullet\l::update" alt="" coords="427,5,571,61"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#a4b37d42d9758c701d75e6a91dda71a5b" title="Asteroids::Domain::\lGame::Actors::GunShip\l::update" alt="" coords="419,85,580,141"/>
+</map>

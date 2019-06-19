@@ -1,0 +1,24 @@
+<map id="Domain/Factory/Factory.cpp" name="Domain/Factory/Factory.cpp">
+<area shape="rect" id="node2" href="$Factory_8h.html" title="Asteroids/Domain/Factory\l/Factory.h" alt="" coords="749,169,923,211"/>
+<area shape="rect" id="node6" href="$GameFactory_8h.html" title="Asteroids/Domain/Game\l/GameFactory.h" alt="" coords="5,169,171,211"/>
+<area shape="rect" id="node8" href="$NetFactory_8h.html" title="Asteroids/Domain/Net\l/NetFactory.h" alt="" coords="1681,80,1831,121"/>
+<area shape="rect" id="node15" href="$ServerFactory_8h.html" title="Asteroids/Domain/Server\l/ServerFactory.h" alt="" coords="2133,169,2301,211"/>
+<area shape="rect" id="node21" href="$StoreFactory_8h.html" title="Asteroids/Domain/Store\l/StoreFactory.h" alt="" coords="1946,169,2107,211"/>
+<area shape="rect" id="node23" href="$TechnicalServicesFactory_8h.html" title="Asteroids/TechnicalServices\l/TechnicalServicesFactory.h" alt="" coords="2353,169,2541,211"/>
+<area shape="rect" id="node25" href="$UIFactory_8h.html" title="Asteroids/UI/UIFactory.h" alt="" coords="2616,177,2784,203"/>
+<area shape="rect" id="node3" href="$FactoryInterface_8h.html" title="Asteroids/Domain/Factory\l/FactoryInterface.h" alt="" coords="1569,266,1743,307"/>
+<area shape="rect" id="node4" href="$ForwardDeclarations_8h.html" title="Asteroids/ForwardDeclarations.h" alt="" coords="2341,363,2553,389"/>
+<area shape="rect" id="node7" href="$GameFactoryInterface_8h.html" title="Asteroids/Domain/Game\l/GameFactoryInterface.h" alt="" coords="1378,266,1545,307"/>
+<area shape="rect" id="node9" href="$NetFactoryInterface_8h.html" title="Asteroids/Domain/Net\l/NetFactoryInterface.h" alt="" coords="1767,266,1921,307"/>
+<area shape="rect" id="node10" href="$ClientServerCommunicator_8h.html" title="Asteroids/Domain/Net\l/ClientServerCommunicator.h" alt="" coords="1727,169,1921,211"/>
+<area shape="rect" id="node13" href="$Authenticator_8h.html" title="Asteroids/Domain/Net\l/Authentication/Authenticator.h" alt="" coords="947,169,1149,211"/>
+<area shape="rect" id="node11" href="$ClientServerCommunicatorInterface_8h.html" title="Asteroids/Domain/Net\l/ClientServerCommunicatorInterface.h" alt="" coords="601,266,847,307"/>
+<area shape="rect" id="node14" href="$AuthenticationInterface_8h.html" title="Asteroids/Domain/Net\l/Authentication/Authentication\lInterface.h" alt="" coords="381,259,577,315"/>
+<area shape="rect" id="node16" href="$ServerFactoryInterface_8h.html" title="Asteroids/Domain/Server\l/ServerFactoryInterface.h" alt="" coords="2132,266,2303,307"/>
+<area shape="rect" id="node17" href="$ServerDaemonInterface_8h.html" title="Asteroids/Domain/Server\l/ServerDaemonInterface.h" alt="" coords="922,266,1097,307"/>
+<area shape="rect" id="node18" href="$ServerUpdaterInterface_8h.html" title="Asteroids/Domain/Server\l/ServerUpdaterInterface.h" alt="" coords="3037,266,3209,307"/>
+<area shape="rect" id="node19" href="$HACCS__REPORT__INTERFACE_8h.html" title="Asteroids/Domain/Server\l/HACCS_REPORT_INTERFACE.h" alt="" coords="1121,266,1353,307"/>
+<area shape="rect" id="node22" href="$StoreFactoryInterface_8h.html" title="Asteroids/Domain/Store\l/StoreFactoryInterface.h" alt="" coords="1945,266,2108,307"/>
+<area shape="rect" id="node24" href="$TechnicalServicesFactoryInterface_8h.html" title="Asteroids/TechnicalServices\l/TechnicalServicesFactoryInterface.h" alt="" coords="2327,266,2566,307"/>
+<area shape="rect" id="node26" href="$UIFactoryInterface_8h.html" title="Asteroids/UI/UIFactoryInterface.h" alt="" coords="2591,273,2809,300"/>
+</map>

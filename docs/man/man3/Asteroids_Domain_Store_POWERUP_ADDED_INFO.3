@@ -1,0 +1,133 @@
+.TH "Asteroids::Domain::Store::POWERUP_ADDED_INFO" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::POWERUP_ADDED_INFO \- Implementation of \fBPOWERUP_ADDED_INFO_INTERFACE\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <POWERUP_ADDED_INFO\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPOWERUP_ADDED_INFO\fP ()"
+.br
+.ti -1c
+.RI "size_t \fBget_quantity\fP ()"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > \fBget_store_item\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_quantity\fP (size_t n)"
+.br
+.ti -1c
+.RI "void \fBset_store_item\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > \fB_item\fP"
+.br
+.ti -1c
+.RI "size_t \fB_item_quantity\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBPOWERUP_ADDED_INFO_INTERFACE\fP\&. 
+.PP
+Definition at line 20 of file POWERUP_ADDED_INFO\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Store::POWERUP_ADDED_INFO::POWERUP_ADDED_INFO ()"
+
+.PP
+Definition at line 17 of file POWERUP_ADDED_INFO\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "size_t Asteroids::Domain::Store::POWERUP_ADDED_INFO::get_quantity ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP\&.
+.PP
+Definition at line 53 of file POWERUP_ADDED_INFO\&.cpp\&.
+.PP
+References _item_quantity\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > Asteroids::Domain::Store::POWERUP_ADDED_INFO::get_store_item ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP\&.
+.PP
+Definition at line 39 of file POWERUP_ADDED_INFO\&.cpp\&.
+.PP
+References _item\&.
+.SS "void Asteroids::Domain::Store::POWERUP_ADDED_INFO::init ()\fC [private]\fP"
+
+.PP
+Definition at line 60 of file POWERUP_ADDED_INFO\&.cpp\&.
+.PP
+References reset()\&.
+.PP
+Referenced by POWERUP_ADDED_INFO()\&.
+.SS "void Asteroids::Domain::Store::POWERUP_ADDED_INFO::reset ()"
+
+.PP
+Definition at line 24 of file POWERUP_ADDED_INFO\&.cpp\&.
+.PP
+References _item, and _item_quantity\&.
+.PP
+Referenced by init()\&.
+.SS "void Asteroids::Domain::Store::POWERUP_ADDED_INFO::set_quantity (size_t n)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP\&.
+.PP
+Definition at line 46 of file POWERUP_ADDED_INFO\&.cpp\&.
+.PP
+References _item_quantity\&.
+.SS "void Asteroids::Domain::Store::POWERUP_ADDED_INFO::set_store_item (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP\&.
+.PP
+Definition at line 32 of file POWERUP_ADDED_INFO\&.cpp\&.
+.PP
+References _item\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP> Asteroids::Domain::Store::POWERUP_ADDED_INFO::_item\fC [private]\fP"
+
+.PP
+Definition at line 43 of file POWERUP_ADDED_INFO\&.h\&.
+.PP
+Referenced by get_store_item(), reset(), and set_store_item()\&.
+.SS "size_t Asteroids::Domain::Store::POWERUP_ADDED_INFO::_item_quantity\fC [private]\fP"
+
+.PP
+Definition at line 44 of file POWERUP_ADDED_INFO\&.h\&.
+.PP
+Referenced by get_quantity(), reset(), and set_quantity()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

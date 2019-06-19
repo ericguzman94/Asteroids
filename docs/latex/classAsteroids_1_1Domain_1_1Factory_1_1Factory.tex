@@ -1,0 +1,252 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory}{}\section{Asteroids\+:\+:Domain\+:\+:Factory\+:\+:Factory Class Reference}
+\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory}\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Factory\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Factory.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Factory\+:\+:Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Factory\+:\+:Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a988bf74b46cff282611c6a52c6937a94}{Factory} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a8029c274a6886b2aef3b31d1bd15da77}{create\+Game\+Factory} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1NetFactoryInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Net\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_abde97e85ba71b218eed2e3ff534a7d56}{create\+Network\+Factory} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a7d3fd1dd5d6f0e44de2b4a57985b623b}{create\+Server\+Factory} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_abc6cc7d441ceeca66671c79cff1e0c99}{create\+Store\+Factory} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a8ea28b3c5b9c351eb49ac2f97786b7b1}{create\+Technical\+Services\+Factory} ()
+\item 
+std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1UIFactoryInterface}{Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_acb69fddf282eda975e582394dde7e7f6}{create\+U\+I\+Factory} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_adf3c63ebcd2022de789631e861f2aa15}{reset} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory}{Factory} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a9fcc5e21b7009846e744564a60b45619}{this\+\_\+pointer} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Factory\+Interface}. 
+
+Definition at line 23 of file Factory.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a988bf74b46cff282611c6a52c6937a94}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a988bf74b46cff282611c6a52c6937a94}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!Factory@{Factory}}
+\index{Factory@{Factory}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{Factory()}{Factory()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 24 of file Factory.\+cpp.
+
+
+
+References reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a988bf74b46cff282611c6a52c6937a94_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a8029c274a6886b2aef3b31d1bd15da77}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a8029c274a6886b2aef3b31d1bd15da77}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!create\+Game\+Factory@{create\+Game\+Factory}}
+\index{create\+Game\+Factory@{create\+Game\+Factory}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{create\+Game\+Factory()}{createGameFactory()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1GameFactoryInterface}{Asteroids\+::\+Domain\+::\+Game\+::\+Game\+Factory\+Interface} $>$ Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::create\+Game\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface_a1589f6b3a9c7d1ee34e9e312b6adb2c8}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}.
+
+
+
+Definition at line 48 of file Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_abde97e85ba71b218eed2e3ff534a7d56}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_abde97e85ba71b218eed2e3ff534a7d56}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!create\+Network\+Factory@{create\+Network\+Factory}}
+\index{create\+Network\+Factory@{create\+Network\+Factory}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{create\+Network\+Factory()}{createNetworkFactory()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1NetFactoryInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Net\+Factory\+Interface} $>$ Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::create\+Network\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface_ab638c74cc5a7cd464064b686b79f8056}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}.
+
+
+
+Definition at line 59 of file Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a7d3fd1dd5d6f0e44de2b4a57985b623b}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a7d3fd1dd5d6f0e44de2b4a57985b623b}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!create\+Server\+Factory@{create\+Server\+Factory}}
+\index{create\+Server\+Factory@{create\+Server\+Factory}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{create\+Server\+Factory()}{createServerFactory()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface} $>$ Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::create\+Server\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface_a3425d5d2760883c62951a46268e6ddac}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}.
+
+
+
+Definition at line 37 of file Factory.\+cpp.
+
+
+
+References this\+\_\+pointer().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a7d3fd1dd5d6f0e44de2b4a57985b623b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_abc6cc7d441ceeca66671c79cff1e0c99}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_abc6cc7d441ceeca66671c79cff1e0c99}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!create\+Store\+Factory@{create\+Store\+Factory}}
+\index{create\+Store\+Factory@{create\+Store\+Factory}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{create\+Store\+Factory()}{createStoreFactory()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1StoreFactoryInterface}{Asteroids\+::\+Domain\+::\+Store\+::\+Store\+Factory\+Interface} $>$ Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::create\+Store\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface_ae658038784c7e05435350f631f5e1924}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}.
+
+
+
+Definition at line 70 of file Factory.\+cpp.
+
+
+
+References this\+\_\+pointer().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory_abc6cc7d441ceeca66671c79cff1e0c99_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a8ea28b3c5b9c351eb49ac2f97786b7b1}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a8ea28b3c5b9c351eb49ac2f97786b7b1}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!create\+Technical\+Services\+Factory@{create\+Technical\+Services\+Factory}}
+\index{create\+Technical\+Services\+Factory@{create\+Technical\+Services\+Factory}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{create\+Technical\+Services\+Factory()}{createTechnicalServicesFactory()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1TechnicalServices_1_1TechnicalServicesFactoryInterface}{Asteroids\+::\+Technical\+Services\+::\+Technical\+Services\+Factory\+Interface} $>$ Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::create\+Technical\+Services\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface_a9b67997dd9975091acd7f407e2aa71b1}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}.
+
+
+
+Definition at line 92 of file Factory.\+cpp.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_acb69fddf282eda975e582394dde7e7f6}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_acb69fddf282eda975e582394dde7e7f6}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!create\+U\+I\+Factory@{create\+U\+I\+Factory}}
+\index{create\+U\+I\+Factory@{create\+U\+I\+Factory}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{create\+U\+I\+Factory()}{createUIFactory()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1UI_1_1UIFactoryInterface}{Asteroids\+::\+U\+I\+::\+U\+I\+Factory\+Interface} $>$ Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::create\+U\+I\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface_a2576e64553a529bd6161acb3aea9d773}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}.
+
+
+
+Definition at line 81 of file Factory.\+cpp.
+
+
+
+References this\+\_\+pointer().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory_acb69fddf282eda975e582394dde7e7f6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_adf3c63ebcd2022de789631e861f2aa15}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_adf3c63ebcd2022de789631e861f2aa15}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 31 of file Factory.\+cpp.
+
+
+
+Referenced by Factory().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory_adf3c63ebcd2022de789631e861f2aa15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a9fcc5e21b7009846e744564a60b45619}\label{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a9fcc5e21b7009846e744564a60b45619}} 
+\index{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}!this\+\_\+pointer@{this\+\_\+pointer}}
+\index{this\+\_\+pointer@{this\+\_\+pointer}!Asteroids\+::\+Domain\+::\+Factory\+::\+Factory@{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory}}
+\subsubsection{\texorpdfstring{this\+\_\+pointer()}{this\_pointer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1Factory}{Factory} $>$ Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+::this\+\_\+pointer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file Factory.\+cpp.
+
+
+
+Referenced by create\+Server\+Factory(), create\+Store\+Factory(), and create\+U\+I\+Factory().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Factory_1_1Factory_a9fcc5e21b7009846e744564a60b45619_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Factory/\hyperlink{Factory_8h}{Factory.\+h}\item 
+Domain/\+Factory/\hyperlink{Factory_8cpp}{Factory.\+cpp}\end{DoxyCompactItemize}

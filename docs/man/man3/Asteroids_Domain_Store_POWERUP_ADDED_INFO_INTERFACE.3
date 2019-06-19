@@ -1,0 +1,56 @@
+.TH "Asteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE \- Information what powerup was just added to your account\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <POWERUP_ADDED_INFO_INTERFACE\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual size_t \fBget_quantity\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > \fBget_store_item\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_quantity\fP (size_t n)=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_store_item\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Information what powerup was just added to your account\&. 
+.PP
+Definition at line 23 of file POWERUP_ADDED_INFO_INTERFACE\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual size_t Asteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE::get_quantity ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO\fP\&.
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP> Asteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE::get_store_item ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO\fP\&.
+.SS "virtual void Asteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE::set_quantity (size_t n)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO\fP\&.
+.SS "virtual void Asteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE::set_store_item (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

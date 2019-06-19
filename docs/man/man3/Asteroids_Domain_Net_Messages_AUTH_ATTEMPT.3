@@ -1,0 +1,116 @@
+.TH "Asteroids::Domain::Net::Messages::AUTH_ATTEMPT" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::Messages::AUTH_ATTEMPT \- Just holds one authentication attempt; Is 'sent to server'\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AUTH_ATTEMPT\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAUTH_ATTEMPT\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPassword\fP (string password)"
+.br
+.ti -1c
+.RI "void \fBsetUsername\fP (string username)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static constexpr const char * \fBDEFAULT_PASSWORD\fP = ''"
+.br
+.ti -1c
+.RI "static constexpr const char * \fBDEFAULT_USERNAME\fP = ''"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fB_password\fP"
+.br
+.ti -1c
+.RI "string \fB_username\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Just holds one authentication attempt; Is 'sent to server'\&. 
+.PP
+Definition at line 29 of file AUTH_ATTEMPT\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::AUTH_ATTEMPT ()"
+
+.PP
+Definition at line 20 of file AUTH_ATTEMPT\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::reset ()"
+
+.PP
+Definition at line 27 of file AUTH_ATTEMPT\&.cpp\&.
+.PP
+References DEFAULT_PASSWORD, DEFAULT_USERNAME, setPassword(), and setUsername()\&.
+.PP
+Referenced by AUTH_ATTEMPT()\&.
+.SS "void Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::setPassword (string password)"
+
+.PP
+Definition at line 42 of file AUTH_ATTEMPT\&.cpp\&.
+.PP
+References _password\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::setUsername (string username)"
+
+.PP
+Definition at line 35 of file AUTH_ATTEMPT\&.cpp\&.
+.PP
+References _username\&.
+.PP
+Referenced by reset()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "string Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::_password\fC [private]\fP"
+
+.PP
+Definition at line 53 of file AUTH_ATTEMPT\&.h\&.
+.PP
+Referenced by setPassword()\&.
+.SS "string Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::_username\fC [private]\fP"
+
+.PP
+Definition at line 53 of file AUTH_ATTEMPT\&.h\&.
+.PP
+Referenced by setUsername()\&.
+.SS "constexpr const char* Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::DEFAULT_PASSWORD = ''\fC [static]\fP"
+
+.PP
+Definition at line 46 of file AUTH_ATTEMPT\&.h\&.
+.PP
+Referenced by reset()\&.
+.SS "constexpr const char* Asteroids::Domain::Net::Messages::AUTH_ATTEMPT::DEFAULT_USERNAME = ''\fC [static]\fP"
+
+.PP
+Definition at line 45 of file AUTH_ATTEMPT\&.h\&.
+.PP
+Referenced by reset()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,56 @@
+.TH "Asteroids::Domain::Store::PaymentHelperInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::PaymentHelperInterface \- A class that lets you attempt to make payments\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <PaymentHelperInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Store::PaymentHelper\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::vector< \fBEnums::PaymentMethod\fP > \fBget_available_payment_methods\fP ()=0"
+.br
+.ti -1c
+.RI "virtual bool \fBis_payment_method_implemented\fP (\fBEnums::PaymentMethod\fP m)=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > \fBpay_for_store_item_with_credit_card\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBpayment_method_to_string\fP (\fBEnums::PaymentMethod\fP m)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+A class that lets you attempt to make payments\&. 
+.PP
+Definition at line 25 of file PaymentHelperInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::vector<\fBEnums::PaymentMethod\fP> Asteroids::Domain::Store::PaymentHelperInterface::get_available_payment_methods ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::PaymentHelper\fP\&.
+.SS "virtual bool Asteroids::Domain::Store::PaymentHelperInterface::is_payment_method_implemented (\fBEnums::PaymentMethod\fP m)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::PaymentHelper\fP\&.
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP> Asteroids::Domain::Store::PaymentHelperInterface::pay_for_store_item_with_credit_card (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::PaymentHelper\fP\&.
+.SS "virtual std::string Asteroids::Domain::Store::PaymentHelperInterface::payment_method_to_string (\fBEnums::PaymentMethod\fP m)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::PaymentHelper\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

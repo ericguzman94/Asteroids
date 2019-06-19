@@ -1,0 +1,6 @@
+<map id="Asteroids::Domain::Net::ClientServerCommunicatorInterface::notifyServerOfGameHistoryEntrySocialMediaShare" name="Asteroids::Domain::Net::ClientServerCommunicatorInterface::notifyServerOfGameHistoryEntrySocialMediaShare">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#ab0a3f9e22046b77a85dc7771d3502365" title="Asteroids::UI::ClientText\lUI::ClientTextUI::share\l_game_history_entry_to_social_media" alt="" coords="296,13,540,69"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a27ec39f73edbb3688a3ebe67533abf5a" title="Asteroids::UI::ClientText\lUI::ClientTextUI::review\l_game_history" alt="" coords="588,13,755,69"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a67521714973f97f76618f9598d34d3b8" title="Asteroids::UI::ClientText\lUI::ClientTextUI::main\l_menu_loop" alt="" coords="803,13,969,69"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a835f455a627e77a5ef99661350281ec3" title="Begin the user interface. " alt="" coords="1017,20,1184,61"/>
+</map>

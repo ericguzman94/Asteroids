@@ -1,0 +1,7 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI::play_game" name="Asteroids::UI::ClientTextUI::ClientTextUI::play_game">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a68028ff6a5b6d38321496c83ff872158" title="Asteroids::UI::ClientText\lUI::ClientTextUI::draw_game" alt="" coords="243,5,436,47"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#aaea5f1fccb9aa46a331b15ad2274b319" title="Asteroids::UI::ClientText\lUI::ClientTextUI::handle\l_game_input" alt="" coords="256,71,423,127"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a41f904ea570af3e3a8c4d70da8411ef3" title="Asteroids::UI::ClientText\lUI::ClientTextUI::print" alt="" coords="496,111,663,152"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a681a6bfc7d4438a4eb3cc146c9117125" title="Asteroids::UI::ClientText\lUI::ClientTextUI::initialize\l_display_grid" alt="" coords="253,202,426,258"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a6157c8167618db7195c35479096620ec" title="Asteroids::UI::ClientText\lUI::ClientTextUI::draw_actor" alt="" coords="484,5,675,47"/>
+</map>

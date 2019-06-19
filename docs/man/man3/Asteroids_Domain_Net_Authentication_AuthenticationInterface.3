@@ -1,0 +1,37 @@
+.TH "Asteroids::Domain::Net::Authentication::AuthenticationInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Net::Authentication::AuthenticationInterface \- Main interface for client to authenticate with server\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AuthenticationInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Net::Authentication::Authenticator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Net::Messages::AUTH_STATE\fP > \fBattemptLogin\fP (string username, string password)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main interface for client to authenticate with server\&. 
+.PP
+Definition at line 30 of file AuthenticationInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Net::Messages::AUTH_STATE\fP> Asteroids::Domain::Net::Authentication::AuthenticationInterface::attemptLogin (string username, string password)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Net::Authentication::Authenticator\fP\&.
+.PP
+Referenced by Asteroids::UI::ClientTextUI::ClientTextUI::do_authentication()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

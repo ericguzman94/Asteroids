@@ -1,0 +1,5 @@
+<map id="Asteroids::Domain::Game::Actors::Actor::Actor" name="Asteroids::Domain::Game::Actors::Actor::Actor">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a5f59fc92345120fdc67675ec0884b137" title="Asteroids::Domain::\lGame::Actors::Actor::init" alt="" coords="196,13,363,54"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a538200753592ca63f7c3348fcece583f" title="Asteroids::Domain::\lGame::Actors::Actor\l::reset" alt="" coords="411,5,553,61"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a3678c27cfb63d8b4eb9b0aa64e352ee1" title="Asteroids::Domain::\lGame::Actors::Actor\l::clear_input" alt="" coords="601,5,744,61"/>
+</map>

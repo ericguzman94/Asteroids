@@ -1,0 +1,181 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Actor\+Interface Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+
+
+Main superclass for game board actors.  
+
+
+
+
+{\ttfamily \#include $<$Actor\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Actor\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Actor\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a168455859e83a22084c372ea19de13fd}{clear\+\_\+input} ()=0
+\item 
+virtual const std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ \& \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a93f09dfff17f0addd37d216d123ed797}{get\+\_\+polygon} ()=0
+\item 
+virtual std\+::vector$<$ std\+::pair$<$ double, double $>$ $>$ \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_ad6a8faa5ca09697f5614a94db525e6f0}{get\+\_\+rotated\+\_\+polygon} ()=0
+\item 
+virtual double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a446ca9de79b6f06dafa4986133eb0c17}{get\+\_\+x} ()=0
+\item 
+virtual double \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a71d55cfa13fd2fcd77eb8f4dfbb77721}{get\+\_\+y} ()=0
+\item 
+virtual void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_acbc674bab36afc9b6851a401b7b0cfe5}{set\+\_\+input\+\_\+down} (bool b)=0
+\item 
+virtual void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_aa1d77d8c42a23f720925c763d1b1780e}{set\+\_\+input\+\_\+fire} (bool b)=0
+\item 
+virtual void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a2871052707d65e47a71da67234fc6f93}{set\+\_\+input\+\_\+left} (bool b)=0
+\item 
+virtual void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a9d63b00cc69e5dfec1baa65faaa6cf15}{set\+\_\+input\+\_\+right} (bool b)=0
+\item 
+virtual void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a3f68243b241482302e31c0a4c2fd0588}{set\+\_\+input\+\_\+up} (bool b)=0
+\item 
+virtual void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a7b1c2b10db2671640979619ca904474a}{set\+\_\+position} (double x, double y)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main superclass for game board actors. 
+
+Allow other packages to access important properties of actors 
+
+Definition at line 29 of file Actor\+Interface.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a168455859e83a22084c372ea19de13fd}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a168455859e83a22084c372ea19de13fd}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!clear\+\_\+input@{clear\+\_\+input}}
+\index{clear\+\_\+input@{clear\+\_\+input}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{clear\+\_\+input()}{clear\_input()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::clear\+\_\+input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_a3678c27cfb63d8b4eb9b0aa64e352ee1}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a93f09dfff17f0addd37d216d123ed797}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a93f09dfff17f0addd37d216d123ed797}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!get\+\_\+polygon@{get\+\_\+polygon}}
+\index{get\+\_\+polygon@{get\+\_\+polygon}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{get\+\_\+polygon()}{get\_polygon()}}
+{\footnotesize\ttfamily virtual const std\+::vector$<$std\+::pair$<$double,double$>$ $>$\& Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::get\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_a8c78eaf91bff447a07b24708478ed0d8}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_ad6a8faa5ca09697f5614a94db525e6f0}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_ad6a8faa5ca09697f5614a94db525e6f0}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!get\+\_\+rotated\+\_\+polygon@{get\+\_\+rotated\+\_\+polygon}}
+\index{get\+\_\+rotated\+\_\+polygon@{get\+\_\+rotated\+\_\+polygon}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{get\+\_\+rotated\+\_\+polygon()}{get\_rotated\_polygon()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::pair$<$double,double$>$ $>$ Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::get\+\_\+rotated\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_a8518140e16304bd6cf7a8bc6a99c9509}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a446ca9de79b6f06dafa4986133eb0c17}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a446ca9de79b6f06dafa4986133eb0c17}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{get\+\_\+x()}{get\_x()}}
+{\footnotesize\ttfamily virtual double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_a6b56087b412883601fce5af07d67bd50}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a71d55cfa13fd2fcd77eb8f4dfbb77721}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a71d55cfa13fd2fcd77eb8f4dfbb77721}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{get\+\_\+y()}{get\_y()}}
+{\footnotesize\ttfamily virtual double Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_afa54aab6e7be56e04014dd3f80f0e7af}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_acbc674bab36afc9b6851a401b7b0cfe5}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_acbc674bab36afc9b6851a401b7b0cfe5}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!set\+\_\+input\+\_\+down@{set\+\_\+input\+\_\+down}}
+\index{set\+\_\+input\+\_\+down@{set\+\_\+input\+\_\+down}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{set\+\_\+input\+\_\+down()}{set\_input\_down()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::set\+\_\+input\+\_\+down (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_a6e0b2bd1eb20d224a527963e5bc035e4}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_aa1d77d8c42a23f720925c763d1b1780e}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_aa1d77d8c42a23f720925c763d1b1780e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!set\+\_\+input\+\_\+fire@{set\+\_\+input\+\_\+fire}}
+\index{set\+\_\+input\+\_\+fire@{set\+\_\+input\+\_\+fire}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{set\+\_\+input\+\_\+fire()}{set\_input\_fire()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::set\+\_\+input\+\_\+fire (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_ade49ee1d618ef27e07314794fcf25cf0}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a2871052707d65e47a71da67234fc6f93}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a2871052707d65e47a71da67234fc6f93}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!set\+\_\+input\+\_\+left@{set\+\_\+input\+\_\+left}}
+\index{set\+\_\+input\+\_\+left@{set\+\_\+input\+\_\+left}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{set\+\_\+input\+\_\+left()}{set\_input\_left()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::set\+\_\+input\+\_\+left (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_aada120155b2f6b72c6af18296fd97bc7}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a9d63b00cc69e5dfec1baa65faaa6cf15}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a9d63b00cc69e5dfec1baa65faaa6cf15}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!set\+\_\+input\+\_\+right@{set\+\_\+input\+\_\+right}}
+\index{set\+\_\+input\+\_\+right@{set\+\_\+input\+\_\+right}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{set\+\_\+input\+\_\+right()}{set\_input\_right()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::set\+\_\+input\+\_\+right (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_a6d6074e20ae4461eec4f46226d86ffa2}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a3f68243b241482302e31c0a4c2fd0588}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a3f68243b241482302e31c0a4c2fd0588}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!set\+\_\+input\+\_\+up@{set\+\_\+input\+\_\+up}}
+\index{set\+\_\+input\+\_\+up@{set\+\_\+input\+\_\+up}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{set\+\_\+input\+\_\+up()}{set\_input\_up()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::set\+\_\+input\+\_\+up (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_ad633a650d229eee0e3b35f1495d35473}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a7b1c2b10db2671640979619ca904474a}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1ActorInterface_a7b1c2b10db2671640979619ca904474a}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}!set\+\_\+position@{set\+\_\+position}}
+\index{set\+\_\+position@{set\+\_\+position}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface}}
+\subsubsection{\texorpdfstring{set\+\_\+position()}{set\_position()}}
+{\footnotesize\ttfamily virtual void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+Interface\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor_aa572cc87c0d07330348c811d778aa314}{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\+Actors/\hyperlink{ActorInterface_8h}{Actor\+Interface.\+h}\end{DoxyCompactItemize}

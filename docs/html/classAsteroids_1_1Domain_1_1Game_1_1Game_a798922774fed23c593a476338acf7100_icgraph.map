@@ -1,0 +1,9 @@
+<map id="Asteroids::Domain::Game::Game::get_random_board_position" name="Asteroids::Domain::Game::Game::get_random_board_position">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#ad3a7040e8cc0b14228f46577ecf2bc78" title="Asteroids::Domain::\lGame::Game::initialize\l_random_rocks" alt="" coords="229,5,384,61"/>
+<area shape="rect" id="node8" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#a5de32d7dcb5350720e625be3d40cee54" title="Asteroids::Domain::\lGame::Game::randomly\l_place_player" alt="" coords="438,76,599,132"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#aa242712e038fce29760d53eb1d57c9fb" title="Asteroids::Domain::\lGame::Game::start_round" alt="" coords="432,10,605,51"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#a824018131c10d49c8addd305ff36209b" title="Asteroids::Domain::\lGame::Game::start" alt="" coords="667,79,806,121"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#ac3e1c5498adb64ea278d1a4b69db412b" title="Asteroids::Domain::\lGame::Game::win_round" alt="" coords="653,10,820,51"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#abf55b1a7206729ce7e384bc8e6cb73d0" title="Asteroids::Domain::\lGame::Game::maybe_win_round" alt="" coords="868,10,1081,51"/>
+<area shape="rect" id="node7" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#aa63114be578393b0113f116798346ac4" title="Asteroids::Domain::\lGame::Game::update" alt="" coords="1129,10,1276,51"/>
+</map>

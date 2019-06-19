@@ -1,0 +1,122 @@
+.TH "Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY \- Implements the \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <HACCS_REPORT_ACTIVITY\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Server::HACCS_REPORT_ACTIVITY_INTERFACE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHACCS_REPORT_ACTIVITY\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_what\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_when\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_what\fP (std::string what)"
+.br
+.ti -1c
+.RI "void \fBset_when\fP (std::string when)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fB_what\fP"
+.br
+.ti -1c
+.RI "std::string \fB_when\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implements the \fBHACCS_REPORT_ACTIVITY_INTERFACE\fP interface\&. 
+
+Owned and created by \fBHACCS_REPORT\fP, since they're the only one that will create us (ie not created by normal factory) 
+.PP
+Definition at line 31 of file HACCS_REPORT_ACTIVITY\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::HACCS_REPORT_ACTIVITY ()"
+
+.PP
+Definition at line 17 of file HACCS_REPORT_ACTIVITY\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::get_what ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_ACTIVITY_INTERFACE\fP\&.
+.PP
+Definition at line 53 of file HACCS_REPORT_ACTIVITY\&.cpp\&.
+.PP
+References _what\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::get_when ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_ACTIVITY_INTERFACE\fP\&.
+.PP
+Definition at line 39 of file HACCS_REPORT_ACTIVITY\&.cpp\&.
+.PP
+References _when\&.
+.SS "void Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::reset ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_ACTIVITY_INTERFACE\fP\&.
+.PP
+Definition at line 24 of file HACCS_REPORT_ACTIVITY\&.cpp\&.
+.PP
+References _what, and _when\&.
+.PP
+Referenced by HACCS_REPORT_ACTIVITY()\&.
+.SS "void Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::set_what (std::string what)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_ACTIVITY_INTERFACE\fP\&.
+.PP
+Definition at line 46 of file HACCS_REPORT_ACTIVITY\&.cpp\&.
+.PP
+References _what\&.
+.SS "void Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::set_when (std::string when)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Server::HACCS_REPORT_ACTIVITY_INTERFACE\fP\&.
+.PP
+Definition at line 32 of file HACCS_REPORT_ACTIVITY\&.cpp\&.
+.PP
+References _when\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::_what\fC [private]\fP"
+
+.PP
+Definition at line 56 of file HACCS_REPORT_ACTIVITY\&.h\&.
+.PP
+Referenced by get_what(), reset(), and set_what()\&.
+.SS "std::string Asteroids::Domain::Server::HACCS_REPORT_ACTIVITY::_when\fC [private]\fP"
+
+.PP
+Definition at line 56 of file HACCS_REPORT_ACTIVITY\&.h\&.
+.PP
+Referenced by get_when(), reset(), and set_when()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

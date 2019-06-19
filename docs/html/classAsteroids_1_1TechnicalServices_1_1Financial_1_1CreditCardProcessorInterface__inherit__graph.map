@@ -1,0 +1,4 @@
+<map id="Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface" name="Asteroids::TechnicalServices::Financial::CreditCardProcessorInterface">
+<area shape="rect" id="node2" href="$classAsteroids_1_1TechnicalServices_1_1Financial_1_1MastercardProcessor.html" title="{Asteroids::TechnicalServices\l::Financial::MastercardProcessor\n||+ MastercardProcessor()\l+ authorizePayment()\l+ get_processor_description()\l}" alt="" coords="5,175,220,296"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1TechnicalServices_1_1Financial_1_1VisaProcessor.html" title="{Asteroids::TechnicalServices\l::Financial::VisaProcessor\n||+ VisaProcessor()\l+ authorizePayment()\l+ get_processor_description()\l}" alt="" coords="245,175,439,296"/>
+</map>

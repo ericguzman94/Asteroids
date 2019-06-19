@@ -1,0 +1,107 @@
+.TH "Asteroids::Domain::Game::Actors::ActorInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors::ActorInterface \- Main superclass for game board actors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ActorInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBclear_input\fP ()=0"
+.br
+.ti -1c
+.RI "virtual const std::vector< std::pair< double, double > > & \fBget_polygon\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::vector< std::pair< double, double > > \fBget_rotated_polygon\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBget_x\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBget_y\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_input_down\fP (bool b)=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_input_fire\fP (bool b)=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_input_left\fP (bool b)=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_input_right\fP (bool b)=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_input_up\fP (bool b)=0"
+.br
+.ti -1c
+.RI "virtual void \fBset_position\fP (double x, double y)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Main superclass for game board actors\&. 
+
+Allow other packages to access important properties of actors 
+.PP
+Definition at line 29 of file ActorInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Asteroids::Domain::Game::Actors::ActorInterface::clear_input ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual const std::vector<std::pair<double,double> >& Asteroids::Domain::Game::Actors::ActorInterface::get_polygon ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual std::vector<std::pair<double,double> > Asteroids::Domain::Game::Actors::ActorInterface::get_rotated_polygon ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual double Asteroids::Domain::Game::Actors::ActorInterface::get_x ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual double Asteroids::Domain::Game::Actors::ActorInterface::get_y ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual void Asteroids::Domain::Game::Actors::ActorInterface::set_input_down (bool b)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual void Asteroids::Domain::Game::Actors::ActorInterface::set_input_fire (bool b)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual void Asteroids::Domain::Game::Actors::ActorInterface::set_input_left (bool b)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual void Asteroids::Domain::Game::Actors::ActorInterface::set_input_right (bool b)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual void Asteroids::Domain::Game::Actors::ActorInterface::set_input_up (bool b)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.SS "virtual void Asteroids::Domain::Game::Actors::ActorInterface::set_position (double x, double y)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

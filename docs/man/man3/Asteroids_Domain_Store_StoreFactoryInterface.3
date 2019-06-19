@@ -1,0 +1,56 @@
+.TH "Asteroids::Domain::Store::StoreFactoryInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::StoreFactoryInterface \- Creates things inside the \fBStore\fP package\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <StoreFactoryInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Store::StoreFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Store::PaymentHelperInterface\fP > \fBcreatePaymentHelper\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > \fBcreatePaymentResultDetails\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP > \fBcreatePowerUpAddedInfo\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Store::StoreInterface\fP > \fBcreateStore\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Creates things inside the \fBStore\fP package\&. 
+.PP
+Definition at line 23 of file StoreFactoryInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Store::PaymentHelperInterface\fP> Asteroids::Domain::Store::StoreFactoryInterface::createPaymentHelper ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::StoreFactory\fP\&.
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP> Asteroids::Domain::Store::StoreFactoryInterface::createPaymentResultDetails ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::StoreFactory\fP\&.
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP> Asteroids::Domain::Store::StoreFactoryInterface::createPowerUpAddedInfo ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::StoreFactory\fP\&.
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Store::StoreInterface\fP> Asteroids::Domain::Store::StoreFactoryInterface::createStore ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Store::StoreFactory\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,49 @@
+.TH "Asteroids::TechnicalServices::Persistence::DatabaserInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::TechnicalServices::Persistence::DatabaserInterface \- The \fBDatabaser\fP interface allows us to connect to and manipulate a database\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DatabaserInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::TechnicalServices::Persistence::Databaser\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBclose\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBconnect\fP (std::string uri)=0"
+.br
+.ti -1c
+.RI "virtual std::vector< std::map< std::string, std::string > > \fBquery\fP (std::string q, std::map< std::string, std::string > params=std::map< std::string, std::string >())=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBDatabaser\fP interface allows us to connect to and manipulate a database\&. 
+.PP
+Definition at line 25 of file DatabaserInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Asteroids::TechnicalServices::Persistence::DatabaserInterface::close ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::Persistence::Databaser\fP\&.
+.SS "virtual void Asteroids::TechnicalServices::Persistence::DatabaserInterface::connect (std::string uri)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::Persistence::Databaser\fP\&.
+.SS "virtual std::vector<std::map<std::string, std::string> > Asteroids::TechnicalServices::Persistence::DatabaserInterface::query (std::string q, std::map< std::string, std::string > params = \fCstd::map< std::string, std::string >()\fP)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::Persistence::Databaser\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

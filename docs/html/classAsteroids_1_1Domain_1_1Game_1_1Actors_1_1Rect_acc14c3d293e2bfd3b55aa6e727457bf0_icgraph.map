@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Actors::Rect::collides_with_rect" name="Asteroids::Domain::Game::Actors::Rect::collides_with_rect">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a80d8992f00d8e0056d0287e6076c22a4" title="Asteroids::Domain::\lGame::Actors::Actor\l::check_collision" alt="" coords="200,5,343,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#aa9baec5098ef0bcc7bb8675881919c7f" title="Asteroids::Domain::\lGame::Actors::Actor\l::check_collision" alt="" coords="391,5,533,61"/>
+</map>

@@ -1,0 +1,83 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}{}\section{Asteroids\+:\+:Domain\+:\+:Server\+:\+:Server\+Factory\+Interface Class Reference}
+\label{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface}\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}}
+
+
+Creates things inside the \hyperlink{namespaceAsteroids_1_1Domain_1_1Server}{Server} package.  
+
+
+
+
+{\ttfamily \#include $<$Server\+Factory\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Server\+:\+:Server\+Factory\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Server\+:\+:Server\+Factory\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_acf3a4bbded1c96d2b9a2954db153c2c5}{create\+Daemon} ()=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_a8a91d8b4b3aa1ee18a12fedf9941e98f}{create\+Empty\+H\+A\+C\+C\+S\+Report} ()=0
+\item 
+virtual std\+::unique\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerUpdaterInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Updater\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_a08286f1ac8f12fb63eeadeedad7d6d9b}{create\+Updater} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates things inside the \hyperlink{namespaceAsteroids_1_1Domain_1_1Server}{Server} package. 
+
+Definition at line 23 of file Server\+Factory\+Interface.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_acf3a4bbded1c96d2b9a2954db153c2c5}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_acf3a4bbded1c96d2b9a2954db153c2c5}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}!create\+Daemon@{create\+Daemon}}
+\index{create\+Daemon@{create\+Daemon}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}}
+\subsubsection{\texorpdfstring{create\+Daemon()}{createDaemon()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerDaemonInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Daemon\+Interface}$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface\+::create\+Daemon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactory_abcb3f5aae1910a28b5b1f574d9b1c57e}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_a8a91d8b4b3aa1ee18a12fedf9941e98f}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_a8a91d8b4b3aa1ee18a12fedf9941e98f}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}!create\+Empty\+H\+A\+C\+C\+S\+Report@{create\+Empty\+H\+A\+C\+C\+S\+Report}}
+\index{create\+Empty\+H\+A\+C\+C\+S\+Report@{create\+Empty\+H\+A\+C\+C\+S\+Report}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}}
+\subsubsection{\texorpdfstring{create\+Empty\+H\+A\+C\+C\+S\+Report()}{createEmptyHACCSReport()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1HACCS__REPORT__INTERFACE}{Asteroids\+::\+Domain\+::\+Server\+::\+H\+A\+C\+C\+S\+\_\+\+R\+E\+P\+O\+R\+T\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface\+::create\+Empty\+H\+A\+C\+C\+S\+Report (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactory_ab02d2953b438f3532f183d640f5391ec}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory}.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_a08286f1ac8f12fb63eeadeedad7d6d9b}\label{classAsteroids_1_1Domain_1_1Server_1_1ServerFactoryInterface_a08286f1ac8f12fb63eeadeedad7d6d9b}} 
+\index{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}!create\+Updater@{create\+Updater}}
+\index{create\+Updater@{create\+Updater}!Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface@{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface}}
+\subsubsection{\texorpdfstring{create\+Updater()}{createUpdater()}}
+{\footnotesize\ttfamily virtual std\+::unique\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerUpdaterInterface}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Updater\+Interface}$>$ Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory\+Interface\+::create\+Updater (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classAsteroids_1_1Domain_1_1Server_1_1ServerFactory_a151bf3c05e01e2f0d288a3aa97cbfec0}{Asteroids\+::\+Domain\+::\+Server\+::\+Server\+Factory}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Server/\hyperlink{ServerFactoryInterface_8h}{Server\+Factory\+Interface.\+h}\end{DoxyCompactItemize}

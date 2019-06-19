@@ -1,0 +1,4 @@
+<map id="Asteroids::UI::ServerTextUI::ServerTextUI::do_process_credit_card_payment" name="Asteroids::UI::ServerTextUI::ServerTextUI::do_process_credit_card_payment">
+<area shape="rect" id="node2" href="$classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface.html#a605de1c4a264b4f9ae94ed13dd5fe1c0" title="Asteroids::TechnicalServices\l::Financial::CreditCardProcessor\lInterface::authorizePayment" alt="" coords="261,5,473,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1TechnicalServices_1_1Financial_1_1CreditCardProcessorInterface.html#a8dcf97d20a9de55d04e0f84b4a788f78" title="Asteroids::TechnicalServices\l::Financial::CreditCardProcessor\lInterface::get_processor_description" alt="" coords="251,85,484,141"/>
+</map>

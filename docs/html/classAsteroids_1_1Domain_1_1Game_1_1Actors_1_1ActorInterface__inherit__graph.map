@@ -1,0 +1,7 @@
+<map id="Asteroids::Domain::Game::Actors::ActorInterface" name="Asteroids::Domain::Game::Actors::ActorInterface">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html" title="Implementation of ActorInterface. " alt="" coords="163,292,346,1059"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet.html" title="A bullet is... a bullet... Can be shot by the player (eventually Alien too); Player&#39;s bullet kills ro..." alt="" coords="5,1114,149,1279"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html" title="GunShip is the player&#39;s main actor; Subclass of Actor; Flies around and shoots at stuff..." alt="" coords="174,1107,335,1287"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rock.html" title="A rock is an actor that floats within the game; Can be shot by player; Can smash player. " alt="" coords="359,1129,502,1265"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1LongRock.html" title="A long rock is an actor that floats within the game; Can be shot by player; Can smash player..." alt="" coords="345,1335,516,1441"/>
+</map>

@@ -1,0 +1,153 @@
+.TH "Asteroids::Domain::Game::GAME_HISTORY_ENTRY" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::GAME_HISTORY_ENTRY \- Implements \fBGAME_HISTORY_ENTRY_INTERFACE\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GAME_HISTORY_ENTRY\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGAME_HISTORY_ENTRY\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_date\fP ()"
+.br
+.ti -1c
+.RI "std::string \fBget_id\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_score\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_date\fP (std::string d)"
+.br
+.ti -1c
+.RI "void \fBset_id\fP (std::string id)"
+.br
+.ti -1c
+.RI "void \fBset_score\fP (int s)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fB_date\fP"
+.br
+.ti -1c
+.RI "std::string \fB_id\fP"
+.br
+.ti -1c
+.RI "int \fB_score\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implements \fBGAME_HISTORY_ENTRY_INTERFACE\fP\&. 
+.PP
+Definition at line 25 of file GAME_HISTORY_ENTRY\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::GAME_HISTORY_ENTRY::GAME_HISTORY_ENTRY ()"
+
+.PP
+Definition at line 21 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "string Asteroids::Domain::Game::GAME_HISTORY_ENTRY::get_date ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP\&.
+.PP
+Definition at line 57 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References _date\&.
+.SS "std::string Asteroids::Domain::Game::GAME_HISTORY_ENTRY::get_id ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP\&.
+.PP
+Definition at line 43 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References _id\&.
+.SS "int Asteroids::Domain::Game::GAME_HISTORY_ENTRY::get_score ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP\&.
+.PP
+Definition at line 71 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References _score\&.
+.SS "void Asteroids::Domain::Game::GAME_HISTORY_ENTRY::reset ()"
+
+.PP
+Definition at line 28 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References set_date(), and set_score()\&.
+.PP
+Referenced by GAME_HISTORY_ENTRY()\&.
+.SS "void Asteroids::Domain::Game::GAME_HISTORY_ENTRY::set_date (std::string d)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP\&.
+.PP
+Definition at line 50 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References _date\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::Domain::Game::GAME_HISTORY_ENTRY::set_id (std::string id)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP\&.
+.PP
+Definition at line 36 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References _id\&.
+.SS "void Asteroids::Domain::Game::GAME_HISTORY_ENTRY::set_score (int s)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP\&.
+.PP
+Definition at line 64 of file GAME_HISTORY_ENTRY\&.cpp\&.
+.PP
+References _score\&.
+.PP
+Referenced by reset()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string Asteroids::Domain::Game::GAME_HISTORY_ENTRY::_date\fC [private]\fP"
+
+.PP
+Definition at line 54 of file GAME_HISTORY_ENTRY\&.h\&.
+.PP
+Referenced by get_date(), and set_date()\&.
+.SS "std::string Asteroids::Domain::Game::GAME_HISTORY_ENTRY::_id\fC [private]\fP"
+
+.PP
+Definition at line 53 of file GAME_HISTORY_ENTRY\&.h\&.
+.PP
+Referenced by get_id(), and set_id()\&.
+.SS "int Asteroids::Domain::Game::GAME_HISTORY_ENTRY::_score\fC [private]\fP"
+
+.PP
+Definition at line 55 of file GAME_HISTORY_ENTRY\&.h\&.
+.PP
+Referenced by get_score(), and set_score()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

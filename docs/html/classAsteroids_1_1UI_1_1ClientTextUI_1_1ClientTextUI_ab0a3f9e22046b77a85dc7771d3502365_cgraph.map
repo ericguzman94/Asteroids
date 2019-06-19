@@ -1,0 +1,4 @@
+<map id="Asteroids::UI::ClientTextUI::ClientTextUI::share_game_history_entry_to_social_media" name="Asteroids::UI::ClientTextUI::ClientTextUI::share_game_history_entry_to_social_media">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface.html#a99c8f2baa739330f44096da950a1d145" title="Asteroids::Domain::\lNet::ClientServerCommunicator\lInterface::notifyServerOfGameHistory\lEntrySocialMediaShare" alt="" coords="297,5,540,76"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1ClientTextUI.html#a41f904ea570af3e3a8c4d70da8411ef3" title="Asteroids::UI::ClientText\lUI::ClientTextUI::print" alt="" coords="335,100,502,141"/>
+</map>

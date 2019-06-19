@@ -1,0 +1,8 @@
+<map id="Asteroids::UI::ClientTextUI::DisplayGrid::reset" name="Asteroids::UI::ClientTextUI::DisplayGrid::reset">
+<area shape="rect" id="node2" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#aba2b6b3d0cef0cff63f709207652cf44" title="Asteroids::UI::ClientText\lUI::DisplayGrid::calculate\l_translation" alt="" coords="222,5,394,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#aa5b4f98a3eae7f672021228e5f484f54" title="Asteroids::UI::ClientText\lUI::DisplayGrid::clear_grid" alt="" coords="220,86,396,127"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#a8c7048980c9b3443b5cfa20dd16c6935" title="Asteroids::UI::ClientText\lUI::DisplayGrid::add_border" alt="" coords="444,86,628,127"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#a3f77a0874f78d753020e8ba12081bd85" title="Asteroids::UI::ClientText\lUI::DisplayGrid::set_pixel" alt="" coords="676,86,848,127"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#ae831e34de9c3fe439b09ed2543e30dee" title="Asteroids::UI::ClientText\lUI::DisplayGrid::translate\l_source_point" alt="" coords="911,41,1081,97"/>
+<area shape="rect" id="node7" href="$classAsteroids_1_1UI_1_1ClientTextUI_1_1DisplayGrid.html#acd82bd351302d1423b4e30f3312f7398" title="Asteroids::UI::ClientText\lUI::DisplayGrid::set_grid_pixel" alt="" coords="896,122,1096,163"/>
+</map>

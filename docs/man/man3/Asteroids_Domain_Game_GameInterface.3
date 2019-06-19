@@ -1,0 +1,118 @@
+.TH "Asteroids::Domain::Game::GameInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::GameInterface \- Interface that allows users to control the main client game\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <GameInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::vector< std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > > \fBget_actors\fP ()=0"
+.br
+.RI "Return all actors in the game\&. "
+.ti -1c
+.RI "virtual double \fBget_board_height\fP ()=0"
+.br
+.ti -1c
+.RI "virtual double \fBget_board_width\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > \fBget_player\fP ()=0"
+.br
+.RI "Return the player\&. "
+.ti -1c
+.RI "virtual int \fBget_round\fP ()=0"
+.br
+.ti -1c
+.RI "virtual int \fBget_score\fP ()=0"
+.br
+.ti -1c
+.RI "virtual bool \fBis_active\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBquit\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBreset\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBstart\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBupdate\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBwait_for_frames_per_second\fP (long tps)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Interface that allows users to control the main client game\&. 
+.PP
+Definition at line 20 of file GameInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::vector< std::shared_ptr<\fBAsteroids::Domain::Game::Actors::ActorInterface\fP> > Asteroids::Domain::Game::GameInterface::get_actors ()\fC [pure virtual]\fP"
+
+.PP
+Return all actors in the game\&. 
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual double Asteroids::Domain::Game::GameInterface::get_board_height ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual double Asteroids::Domain::Game::GameInterface::get_board_width ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Game::Actors::ActorInterface\fP> Asteroids::Domain::Game::GameInterface::get_player ()\fC [pure virtual]\fP"
+
+.PP
+Return the player\&. 
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual int Asteroids::Domain::Game::GameInterface::get_round ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual int Asteroids::Domain::Game::GameInterface::get_score ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual bool Asteroids::Domain::Game::GameInterface::is_active ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual void Asteroids::Domain::Game::GameInterface::quit ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual void Asteroids::Domain::Game::GameInterface::reset ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual void Asteroids::Domain::Game::GameInterface::start ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual void Asteroids::Domain::Game::GameInterface::update ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+.SS "virtual void Asteroids::Domain::Game::GameInterface::wait_for_frames_per_second (long tps)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Game::Game\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,46 @@
+.TH "Asteroids::UI::UIFactoryInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::UI::UIFactoryInterface \- Creates things inside the \fBUI\fP package\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <UIFactoryInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::UI::UIFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::UI::ClientTextUI::ClientTextUIInterface\fP > \fBcreateClientTextUI\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::UI::ServerTextUI::ServerTextUIInterface\fP > \fBcreateServerTextUI\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Creates things inside the \fBUI\fP package\&. 
+.PP
+Definition at line 20 of file UIFactoryInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::unique_ptr<\fBAsteroids::UI::ClientTextUI::ClientTextUIInterface\fP> Asteroids::UI::UIFactoryInterface::createClientTextUI ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::UI::UIFactory\fP\&.
+.PP
+Referenced by main()\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::UI::ServerTextUI::ServerTextUIInterface\fP> Asteroids::UI::UIFactoryInterface::createServerTextUI ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::UI::UIFactory\fP\&.
+.PP
+Referenced by main()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,237 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet}{}\section{Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Bullet Class Reference}
+\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet}\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}}
+
+
+A bullet is... a bullet... Can be shot by the player (eventually Alien too); Player\textquotesingle{}s bullet kills rocks/alien; Alien bullet kills rocks/player.  
+
+
+
+
+{\ttfamily \#include $<$Bullet.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Bullet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Game\+:\+:Actors\+:\+:Bullet\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a48557011de2d1939a8b5f7fe7e9fccda}{Bullet} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae3837ed471d290688f684e8187e6865e}{reset} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a06eb5b7aa30c8547159696c82fd2f642}{update} (long ticks)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a1c7b384d298439c581d97f996f067985}{init} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae02bb0b6f3886f31ffdf1e51b1735035}{initialize\+\_\+polygon} ()
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_aa5772b07856c5191c8ccdf5d0df568e8}{maybe\+\_\+die} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A bullet is... a bullet... Can be shot by the player (eventually Alien too); Player\textquotesingle{}s bullet kills rocks/alien; Alien bullet kills rocks/player. 
+
+Definition at line 23 of file Bullet.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a48557011de2d1939a8b5f7fe7e9fccda}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a48557011de2d1939a8b5f7fe7e9fccda}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}}
+\subsubsection{\texorpdfstring{Bullet()}{Bullet()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet\+::\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 20 of file Bullet.\+cpp.
+
+
+
+References init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a48557011de2d1939a8b5f7fe7e9fccda_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a1c7b384d298439c581d97f996f067985}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a1c7b384d298439c581d97f996f067985}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}!init@{init}}
+\index{init@{init}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Bullet.\+cpp.
+
+
+
+References reset().
+
+
+
+Referenced by Bullet().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a1c7b384d298439c581d97f996f067985_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a1c7b384d298439c581d97f996f067985_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae02bb0b6f3886f31ffdf1e51b1735035}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae02bb0b6f3886f31ffdf1e51b1735035}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}!initialize\+\_\+polygon@{initialize\+\_\+polygon}}
+\index{initialize\+\_\+polygon@{initialize\+\_\+polygon}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}}
+\subsubsection{\texorpdfstring{initialize\+\_\+polygon()}{initialize\_polygon()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet\+::initialize\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 63 of file Bullet.\+cpp.
+
+
+
+References Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::set\+\_\+polygon().
+
+
+
+Referenced by reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae02bb0b6f3886f31ffdf1e51b1735035_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae02bb0b6f3886f31ffdf1e51b1735035_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_aa5772b07856c5191c8ccdf5d0df568e8}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_aa5772b07856c5191c8ccdf5d0df568e8}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}!maybe\+\_\+die@{maybe\+\_\+die}}
+\index{maybe\+\_\+die@{maybe\+\_\+die}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}}
+\subsubsection{\texorpdfstring{maybe\+\_\+die()}{maybe\_die()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet\+::maybe\+\_\+die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file Bullet.\+cpp.
+
+
+
+References A\+S\+T\+E\+R\+O\+I\+D\+S\+\_\+\+G\+A\+M\+E\+\_\+\+B\+U\+L\+L\+E\+T\+\_\+\+L\+I\+F\+E\+T\+I\+M\+E\+\_\+\+T\+I\+C\+KS, Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::deleteme(), and Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::get\+\_\+lifetime\+\_\+ticks().
+
+
+
+Referenced by update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_aa5772b07856c5191c8ccdf5d0df568e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_aa5772b07856c5191c8ccdf5d0df568e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae3837ed471d290688f684e8187e6865e}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae3837ed471d290688f684e8187e6865e}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}!reset@{reset}}
+\index{reset@{reset}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file Bullet.\+cpp.
+
+
+
+References initialize\+\_\+polygon(), and Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::reset().
+
+
+
+Referenced by init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae3837ed471d290688f684e8187e6865e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_ae3837ed471d290688f684e8187e6865e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a06eb5b7aa30c8547159696c82fd2f642}\label{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a06eb5b7aa30c8547159696c82fd2f642}} 
+\index{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}!update@{update}}
+\index{update@{update}!Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet@{Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Bullet\+::update (\begin{DoxyParamCaption}\item[{long}]{ticks }\end{DoxyParamCaption})}
+
+
+
+Definition at line 44 of file Bullet.\+cpp.
+
+
+
+References maybe\+\_\+die(), and Asteroids\+::\+Domain\+::\+Game\+::\+Actors\+::\+Actor\+::update().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Bullet_a06eb5b7aa30c8547159696c82fd2f642_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Game/\+Actors/\hyperlink{Bullet_8h}{Bullet.\+h}\item 
+Domain/\+Game/\+Actors/\hyperlink{Bullet_8cpp}{Bullet.\+cpp}\end{DoxyCompactItemize}

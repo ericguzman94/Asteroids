@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Game::start_round" name="Asteroids::Domain::Game::Game::start_round">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#ad3a7040e8cc0b14228f46577ecf2bc78" title="Asteroids::Domain::\lGame::Game::initialize\l_random_rocks" alt="" coords="227,5,381,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#a798922774fed23c593a476338acf7100" title="Asteroids::Domain::\lGame::Game::get_random\l_board_position" alt="" coords="429,5,605,61"/>
+</map>

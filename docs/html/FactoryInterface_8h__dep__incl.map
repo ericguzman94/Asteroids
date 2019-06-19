@@ -1,0 +1,13 @@
+<map id="Domain/Factory/FactoryInterface.h" name="Domain/Factory/FactoryInterface.h">
+<area shape="rect" id="node2" href="$Factory_8h.html" title="Domain/Factory/Factory.h" alt="" coords="311,87,485,114"/>
+<area shape="rect" id="node7" href="$ServerDaemon_8cpp.html" title="Domain/Server/ServerDaemon.cpp" alt="" coords="509,87,735,114"/>
+<area shape="rect" id="node8" href="$PaymentHelper_8cpp.html" title="Domain/Store/PaymentHelper.cpp" alt="" coords="759,87,981,114"/>
+<area shape="rect" id="node9" href="$ClientTextUI_8cpp.html" title="UI/ClientTextUI/ClientText\lUI.cpp" alt="" coords="929,169,1107,211"/>
+<area shape="rect" id="node10" href="$ClientTextUI_8h.html" title="UI/ClientTextUI/ClientTextUI.h" alt="" coords="1055,87,1258,114"/>
+<area shape="rect" id="node12" href="$ServerTextUI_8cpp.html" title="UI/ServerTextUI/ServerText\lUI.cpp" alt="" coords="1282,80,1469,121"/>
+<area shape="rect" id="node3" href="$Factory_8cpp.html" title="Domain/Factory/Factory.cpp" alt="" coords="5,177,193,203"/>
+<area shape="rect" id="node4" href="$Game_8cpp.html" title="Domain/Game/Game.cpp" alt="" coords="218,177,389,203"/>
+<area shape="rect" id="node5" href="$main-console-client_8cpp.html" title="main&#45;console&#45;client.cpp" alt="" coords="413,177,572,203"/>
+<area shape="rect" id="node6" href="$main-server_8cpp.html" title="main&#45;server.cpp" alt="" coords="597,177,711,203"/>
+<area shape="rect" id="node11" href="$UIFactory_8cpp.html" title="UI/UIFactory.cpp" alt="" coords="1131,177,1254,203"/>
+</map>

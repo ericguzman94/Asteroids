@@ -1,0 +1,4 @@
+<map id="Asteroids::Domain::Game::Game::lose_round" name="Asteroids::Domain::Game::Game::lose_round">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#a5b851b86192080f5f59d61f689bf97a4" title="Asteroids::Domain::\lGame::Game::maybe_lose_round" alt="" coords="224,5,441,47"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#aa63114be578393b0113f116798346ac4" title="Asteroids::Domain::\lGame::Game::update" alt="" coords="489,5,636,47"/>
+</map>

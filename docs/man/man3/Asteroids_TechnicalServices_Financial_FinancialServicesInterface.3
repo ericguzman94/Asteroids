@@ -1,0 +1,37 @@
+.TH "Asteroids::TechnicalServices::Financial::FinancialServicesInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::TechnicalServices::Financial::FinancialServicesInterface \- Provides an interface to external financial services, such as external banking systems\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FinancialServicesInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::TechnicalServices::Financial::FinancialServices\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBauthorizePayment\fP (std::string cc_number, std::string cc_expiration, std::string cc_security_code)=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Provides an interface to external financial services, such as external banking systems\&. 
+
+This class isn't connected to anything yet, because the client still doesn't connect to the server, which means there's no need for the server daemon to actually call this method yet 
+.PP
+Definition at line 28 of file FinancialServicesInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual bool Asteroids::TechnicalServices::Financial::FinancialServicesInterface::authorizePayment (std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::Financial::FinancialServices\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

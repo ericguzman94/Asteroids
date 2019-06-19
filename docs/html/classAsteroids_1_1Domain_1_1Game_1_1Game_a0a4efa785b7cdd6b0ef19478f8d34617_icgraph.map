@@ -1,0 +1,5 @@
+<map id="Asteroids::Domain::Game::Game::get_current_timestamp_ticks" name="Asteroids::Domain::Game::Game::get_current_timestamp_ticks">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#af8a67c4af1521c3184e873f79aad17f3" title="Asteroids::Domain::\lGame::Game::calculate\l_ticks_since_last_update" alt="" coords="227,5,396,61"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#aa63114be578393b0113f116798346ac4" title="Asteroids::Domain::\lGame::Game::update" alt="" coords="647,13,793,54"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Game.html#ab586cddf7972dbb9313ad3b241b550b4" title="Implement GameInterface methods. " alt="" coords="444,37,599,93"/>
+</map>

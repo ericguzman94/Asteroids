@@ -1,0 +1,86 @@
+.TH "Asteroids::Domain::Game::Actors::Rock" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Game::Actors::Rock \- A rock is an actor that floats within the game; Can be shot by player; Can smash player\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Rock\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Game::Actors::Actor\fP\&.
+.PP
+Inherited by \fBAsteroids::Domain::Game::Actors::LongRock\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRock\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitialize_polygon\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A rock is an actor that floats within the game; Can be shot by player; Can smash player\&. 
+.PP
+Definition at line 24 of file Rock\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Game::Actors::Rock::Rock ()"
+
+.PP
+Definition at line 21 of file Rock\&.cpp\&.
+.PP
+References init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::Domain::Game::Actors::Rock::init ()\fC [protected]\fP"
+
+.PP
+Definition at line 28 of file Rock\&.cpp\&.
+.PP
+References reset()\&.
+.PP
+Referenced by Rock()\&.
+.SS "void Asteroids::Domain::Game::Actors::Rock::initialize_polygon ()\fC [protected]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Make the rocks more round 
+.RE
+.PP
+
+.PP
+Definition at line 45 of file Rock\&.cpp\&.
+.PP
+References ASTEROIDS_GAME_ACTOR_SIZE_FACTOR, and Asteroids::Domain::Game::Actors::Actor::set_polygon()\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::Domain::Game::Actors::Rock::reset ()"
+
+.PP
+Definition at line 35 of file Rock\&.cpp\&.
+.PP
+References initialize_polygon(), and Asteroids::Domain::Game::Actors::Actor::reset()\&.
+.PP
+Referenced by init()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

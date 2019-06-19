@@ -1,0 +1,71 @@
+.TH "Asteroids::TechnicalServices::TechnicalServicesFactory" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::TechnicalServices::TechnicalServicesFactory \- Implementation of \fBTechnicalServicesFactoryInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TechnicalServicesFactory\&.h>\fP
+.PP
+Inherits \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTechnicalServicesFactory\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::TechnicalServices::Financial::CreditCardProcessorInterface\fP > \fBcreateCreditCardProcessor\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP > \fBcreateDatabaser\fP ()"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::TechnicalServices::Social::SocialMediaInterface\fP > \fBcreateSocialMedia\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBTechnicalServicesFactoryInterface\fP\&. 
+.PP
+Definition at line 17 of file TechnicalServicesFactory\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::TechnicalServices::TechnicalServicesFactory::TechnicalServicesFactory ()"
+
+.PP
+Definition at line 20 of file TechnicalServicesFactory\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::unique_ptr< \fBAsteroids::TechnicalServices::Financial::CreditCardProcessorInterface\fP > Asteroids::TechnicalServices::TechnicalServicesFactory::createCreditCardProcessor ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP\&.
+.PP
+Definition at line 37 of file TechnicalServicesFactory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP > Asteroids::TechnicalServices::TechnicalServicesFactory::createDatabaser ()\fC [virtual]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Should eventually actually connect to some database during creation 
+.RE
+.PP
+
+.PP
+Implements \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP\&.
+.PP
+Definition at line 26 of file TechnicalServicesFactory\&.cpp\&.
+.SS "std::unique_ptr< \fBAsteroids::TechnicalServices::Social::SocialMediaInterface\fP > Asteroids::TechnicalServices::TechnicalServicesFactory::createSocialMedia ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP\&.
+.PP
+Definition at line 58 of file TechnicalServicesFactory\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

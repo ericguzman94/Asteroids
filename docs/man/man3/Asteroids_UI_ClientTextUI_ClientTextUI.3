@@ -1,0 +1,421 @@
+.TH "Asteroids::UI::ClientTextUI::ClientTextUI" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::UI::ClientTextUI::ClientTextUI \- Implementation of \fBClientTextUIInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ClientTextUI\&.h>\fP
+.PP
+Inherits \fBAsteroids::UI::ClientTextUI::ClientTextUIInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBClientTextUI\fP (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.RI "Begin the user interface\&. "
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBdemand_authentication\fP ()"
+.br
+.ti -1c
+.RI "void \fBdo_authentication\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw_actor\fP (std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > actor)"
+.br
+.ti -1c
+.RI "void \fBdraw_game\fP ()"
+.br
+.ti -1c
+.RI "void \fBfind_friends_on_social_media\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandle_game_input\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitialize_display_grid\fP ()"
+.br
+.ti -1c
+.RI "\fBEnums::MainMenuChoice\fP \fBmain_menu\fP ()"
+.br
+.ti -1c
+.RI "void \fBmain_menu_loop\fP ()"
+.br
+.ti -1c
+.RI "bool \fBpay_for_store_item\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, \fBAsteroids::Domain::Store::Enums::PaymentMethod\fP payment_method)"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > \fBpay_for_store_item_with_credit_card\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)"
+.br
+.ti -1c
+.RI "void \fBplay_game\fP ()"
+.br
+.ti -1c
+.RI "void \fBprint\fP (string s='', bool do_newline=true)"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP > \fBpurchasing_store_item\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)"
+.br
+.ti -1c
+.RI "void \fBreview_game_history\fP ()"
+.br
+.ti -1c
+.RI "void \fBshare_game_history_entry_to_social_media\fP (std::shared_ptr< \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP > entry)"
+.br
+.ti -1c
+.RI "void \fBstore\fP ()"
+.br
+.ti -1c
+.RI "bool \fBstore_loop\fP ()"
+.br
+.ti -1c
+.RI "void \fBstore_offer_available_items\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Net::Messages::AUTH_STATE\fP > \fB_authentication_state\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::UI::ClientTextUI::DisplayGrid\fP > \fB_display_grid\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > \fB_factory\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Game::GameInterface\fP > \fB_game\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Game::GameFactoryInterface\fP > \fB_game_factory\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Game::GameHistoryInterface\fP > \fB_game_history\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::UI::ClientTextUI::Input\fP > \fB_input\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Net::NetFactoryInterface\fP > \fB_net_factory\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::PaymentHelperInterface\fP > \fB_payment_helper\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::StoreInterface\fP > \fB_store\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::Domain::Store::StoreFactoryInterface\fP > \fB_store_factory\fP"
+.br
+.ti -1c
+.RI "std::unique_ptr< \fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP > \fB_technical_services_factory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBClientTextUIInterface\fP\&. 
+.PP
+Definition at line 54 of file ClientTextUI\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::UI::ClientTextUI::ClientTextUI::ClientTextUI (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+
+.PP
+Definition at line 57 of file ClientTextUI\&.cpp\&.
+.PP
+References _factory, init(), and reset()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Asteroids::UI::ClientTextUI::ClientTextUI::demand_authentication ()\fC [private]\fP"
+
+.PP
+Definition at line 143 of file ClientTextUI\&.cpp\&.
+.PP
+References _authentication_state, do_authentication(), and print()\&.
+.PP
+Referenced by run()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::do_authentication ()\fC [private]\fP"
+
+.PP
+Definition at line 164 of file ClientTextUI\&.cpp\&.
+.PP
+References _authentication_state, _net_factory, Asteroids::Domain::Net::Authentication::AuthenticationInterface::attemptLogin(), and print()\&.
+.PP
+Referenced by demand_authentication()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::draw_actor (std::shared_ptr< \fBAsteroids::Domain::Game::Actors::ActorInterface\fP > actor)\fC [private]\fP"
+
+.PP
+Definition at line 375 of file ClientTextUI\&.cpp\&.
+.PP
+References _display_grid\&.
+.PP
+Referenced by draw_game()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::draw_game ()\fC [private]\fP"
+
+.PP
+Definition at line 348 of file ClientTextUI\&.cpp\&.
+.PP
+References _display_grid, _game, and draw_actor()\&.
+.PP
+Referenced by play_game()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::find_friends_on_social_media ()\fC [private]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Actually navigate to the friend's social media account, somehow 
+.RE
+.PP
+
+.PP
+Definition at line 468 of file ClientTextUI\&.cpp\&.
+.PP
+References _technical_services_factory, and print()\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::handle_game_input ()\fC [private]\fP"
+
+.PP
+Definition at line 308 of file ClientTextUI\&.cpp\&.
+.PP
+References _game, _input, Asteroids::UI::ClientTextUI::Input::KEY_DOWN, Asteroids::UI::ClientTextUI::Input::KEY_FIRE, Asteroids::UI::ClientTextUI::Input::KEY_LEFT, Asteroids::UI::ClientTextUI::Input::KEY_RIGHT, Asteroids::UI::ClientTextUI::Input::KEY_UP, and print()\&.
+.PP
+Referenced by play_game()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::init ()\fC [private]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Make a TextUI Factory instead of doing this here 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file ClientTextUI\&.cpp\&.
+.PP
+References _factory, _game_factory, _input, _net_factory, _store_factory, and _technical_services_factory\&.
+.PP
+Referenced by ClientTextUI()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::initialize_display_grid ()\fC [private]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Make a TextUI Factory instead of doing this here 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file ClientTextUI\&.cpp\&.
+.PP
+References _display_grid, _game, ASTEROIDS_UI_TEXTUI_DISPLAYGRID_HEIGHT, and ASTEROIDS_UI_TEXTUI_DISPLAYGRID_WIDTH\&.
+.PP
+Referenced by play_game()\&.
+.SS "\fBEnums::MainMenuChoice\fP Asteroids::UI::ClientTextUI::ClientTextUI::main_menu ()\fC [private]\fP"
+
+.PP
+Definition at line 233 of file ClientTextUI\&.cpp\&.
+.PP
+References Asteroids::UI::ClientTextUI::Enums::FindFriendsOnSocialMedia, Asteroids::UI::ClientTextUI::Enums::Invalid, Asteroids::UI::ClientTextUI::Enums::PlayGame, Asteroids::UI::ClientTextUI::Enums::PowerUpStore, print(), Asteroids::UI::ClientTextUI::Enums::Quit, and Asteroids::UI::ClientTextUI::Enums::ReviewGameHistory\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::main_menu_loop ()\fC [private]\fP"
+
+.PP
+Definition at line 185 of file ClientTextUI\&.cpp\&.
+.PP
+References find_friends_on_social_media(), Asteroids::UI::ClientTextUI::Enums::FindFriendsOnSocialMedia, Asteroids::UI::ClientTextUI::Enums::Invalid, main_menu(), play_game(), Asteroids::UI::ClientTextUI::Enums::PlayGame, Asteroids::UI::ClientTextUI::Enums::PowerUpStore, print(), Asteroids::UI::ClientTextUI::Enums::Quit, review_game_history(), Asteroids::UI::ClientTextUI::Enums::ReviewGameHistory, and store()\&.
+.PP
+Referenced by run()\&.
+.SS "bool Asteroids::UI::ClientTextUI::ClientTextUI::pay_for_store_item (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, \fBAsteroids::Domain::Store::Enums::PaymentMethod\fP payment_method)\fC [private]\fP"
+
+.PP
+Definition at line 750 of file ClientTextUI\&.cpp\&.
+.PP
+References _payment_helper, Asteroids::Domain::Store::Enums::CreditCard, pay_for_store_item_with_credit_card(), and print()\&.
+.PP
+Referenced by purchasing_store_item()\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > Asteroids::UI::ClientTextUI::ClientTextUI::pay_for_store_item_with_credit_card (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)\fC [private]\fP"
+
+.PP
+Definition at line 804 of file ClientTextUI\&.cpp\&.
+.PP
+References _payment_helper, and print()\&.
+.PP
+Referenced by pay_for_store_item()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::play_game ()\fC [private]\fP"
+
+.PP
+Definition at line 277 of file ClientTextUI\&.cpp\&.
+.PP
+References _game, _game_factory, _input, draw_game(), handle_game_input(), initialize_display_grid(), and print()\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::print (string s = \fC''\fP, bool do_newline = \fCtrue\fP)\fC [private]\fP"
+
+.PP
+Definition at line 102 of file ClientTextUI\&.cpp\&.
+.PP
+Referenced by demand_authentication(), do_authentication(), find_friends_on_social_media(), handle_game_input(), main_menu(), main_menu_loop(), pay_for_store_item(), pay_for_store_item_with_credit_card(), play_game(), purchasing_store_item(), review_game_history(), run(), share_game_history_entry_to_social_media(), store(), store_loop(), and store_offer_available_items()\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::POWERUP_ADDED_INFO_INTERFACE\fP > Asteroids::UI::ClientTextUI::ClientTextUI::purchasing_store_item (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item)\fC [private]\fP"
+
+.PP
+Definition at line 679 of file ClientTextUI\&.cpp\&.
+.PP
+References _payment_helper, _store_factory, pay_for_store_item(), and print()\&.
+.PP
+Referenced by store_offer_available_items()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::reset ()"
+
+.PP
+Definition at line 120 of file ClientTextUI\&.cpp\&.
+.PP
+References _authentication_state\&.
+.PP
+Referenced by ClientTextUI()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::review_game_history ()\fC [private]\fP"
+
+.PP
+Definition at line 385 of file ClientTextUI\&.cpp\&.
+.PP
+References _game_factory, _game_history, print(), and share_game_history_entry_to_social_media()\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::run ()\fC [virtual]\fP"
+
+.PP
+Begin the user interface\&. 
+.PP
+Implements \fBAsteroids::UI::ClientTextUI::ClientTextUIInterface\fP\&.
+.PP
+Definition at line 127 of file ClientTextUI\&.cpp\&.
+.PP
+References demand_authentication(), main_menu_loop(), and print()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::share_game_history_entry_to_social_media (std::shared_ptr< \fBAsteroids::Domain::Game::GAME_HISTORY_ENTRY_INTERFACE\fP > entry)\fC [private]\fP"
+
+.PP
+Definition at line 436 of file ClientTextUI\&.cpp\&.
+.PP
+References _net_factory, _technical_services_factory, Asteroids::Domain::Net::ClientServerCommunicatorInterface::notifyServerOfGameHistoryEntrySocialMediaShare(), and print()\&.
+.PP
+Referenced by review_game_history()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::store ()\fC [private]\fP"
+
+.PP
+Definition at line 534 of file ClientTextUI\&.cpp\&.
+.PP
+References _payment_helper, _store, _store_factory, print(), and store_loop()\&.
+.PP
+Referenced by main_menu_loop()\&.
+.SS "bool Asteroids::UI::ClientTextUI::ClientTextUI::store_loop ()\fC [private]\fP"
+
+.PP
+Definition at line 553 of file ClientTextUI\&.cpp\&.
+.PP
+References print(), and store_offer_available_items()\&.
+.PP
+Referenced by store()\&.
+.SS "void Asteroids::UI::ClientTextUI::ClientTextUI::store_offer_available_items ()\fC [private]\fP"
+
+.PP
+Definition at line 591 of file ClientTextUI\&.cpp\&.
+.PP
+References _store, print(), and purchasing_store_item()\&.
+.PP
+Referenced by store_loop()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::Domain::Net::Messages::AUTH_STATE\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_authentication_state\fC [private]\fP"
+
+.PP
+Definition at line 80 of file ClientTextUI\&.h\&.
+.PP
+Referenced by demand_authentication(), do_authentication(), and reset()\&.
+.SS "std::unique_ptr<\fBAsteroids::UI::ClientTextUI::DisplayGrid\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_display_grid\fC [private]\fP"
+
+.PP
+Definition at line 85 of file ClientTextUI\&.h\&.
+.PP
+Referenced by draw_actor(), draw_game(), and initialize_display_grid()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Factory::FactoryInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_factory\fC [private]\fP"
+
+.PP
+Definition at line 73 of file ClientTextUI\&.h\&.
+.PP
+Referenced by ClientTextUI(), and init()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Game::GameInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_game\fC [private]\fP"
+
+.PP
+Definition at line 83 of file ClientTextUI\&.h\&.
+.PP
+Referenced by draw_game(), handle_game_input(), initialize_display_grid(), and play_game()\&.
+.SS "std::unique_ptr<\fBAsteroids::Domain::Game::GameFactoryInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_game_factory\fC [private]\fP"
+
+.PP
+Definition at line 74 of file ClientTextUI\&.h\&.
+.PP
+Referenced by init(), play_game(), and review_game_history()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Game::GameHistoryInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_game_history\fC [private]\fP"
+
+.PP
+Definition at line 88 of file ClientTextUI\&.h\&.
+.PP
+Referenced by review_game_history()\&.
+.SS "std::unique_ptr<\fBAsteroids::UI::ClientTextUI::Input\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_input\fC [private]\fP"
+
+.PP
+Definition at line 84 of file ClientTextUI\&.h\&.
+.PP
+Referenced by handle_game_input(), init(), and play_game()\&.
+.SS "std::unique_ptr<\fBAsteroids::Domain::Net::NetFactoryInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_net_factory\fC [private]\fP"
+
+.PP
+Definition at line 75 of file ClientTextUI\&.h\&.
+.PP
+Referenced by do_authentication(), init(), and share_game_history_entry_to_social_media()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Store::PaymentHelperInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_payment_helper\fC [private]\fP"
+
+.PP
+Definition at line 92 of file ClientTextUI\&.h\&.
+.PP
+Referenced by pay_for_store_item(), pay_for_store_item_with_credit_card(), purchasing_store_item(), and store()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Store::StoreInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_store\fC [private]\fP"
+
+.PP
+Definition at line 91 of file ClientTextUI\&.h\&.
+.PP
+Referenced by store(), and store_offer_available_items()\&.
+.SS "std::unique_ptr<\fBAsteroids::Domain::Store::StoreFactoryInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_store_factory\fC [private]\fP"
+
+.PP
+Definition at line 76 of file ClientTextUI\&.h\&.
+.PP
+Referenced by init(), purchasing_store_item(), and store()\&.
+.SS "std::unique_ptr<\fBAsteroids::TechnicalServices::TechnicalServicesFactoryInterface\fP> Asteroids::UI::ClientTextUI::ClientTextUI::_technical_services_factory\fC [private]\fP"
+
+.PP
+Definition at line 77 of file ClientTextUI\&.h\&.
+.PP
+Referenced by find_friends_on_social_media(), init(), and share_game_history_entry_to_social_media()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

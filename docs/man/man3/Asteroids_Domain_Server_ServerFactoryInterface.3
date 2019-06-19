@@ -1,0 +1,49 @@
+.TH "Asteroids::Domain::Server::ServerFactoryInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Server::ServerFactoryInterface \- Creates things inside the \fBServer\fP package\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ServerFactoryInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::Domain::Server::ServerFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Server::ServerDaemonInterface\fP > \fBcreateDaemon\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP > \fBcreateEmptyHACCSReport\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::Domain::Server::ServerUpdaterInterface\fP > \fBcreateUpdater\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Creates things inside the \fBServer\fP package\&. 
+.PP
+Definition at line 23 of file ServerFactoryInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Server::ServerDaemonInterface\fP> Asteroids::Domain::Server::ServerFactoryInterface::createDaemon ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerFactory\fP\&.
+.SS "virtual std::shared_ptr<\fBAsteroids::Domain::Server::HACCS_REPORT_INTERFACE\fP> Asteroids::Domain::Server::ServerFactoryInterface::createEmptyHACCSReport ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerFactory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::Domain::Server::ServerUpdaterInterface\fP> Asteroids::Domain::Server::ServerFactoryInterface::createUpdater ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::Domain::Server::ServerFactory\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

@@ -1,0 +1,49 @@
+.TH "Asteroids::TechnicalServices::TechnicalServicesFactoryInterface" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::TechnicalServices::TechnicalServicesFactoryInterface \- Creates objects that belong to the \fBTechnicalServices\fP package\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TechnicalServicesFactoryInterface\&.h>\fP
+.PP
+Inherited by \fBAsteroids::TechnicalServices::TechnicalServicesFactory\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::TechnicalServices::Financial::CreditCardProcessorInterface\fP > \fBcreateCreditCardProcessor\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP > \fBcreateDatabaser\fP ()=0"
+.br
+.ti -1c
+.RI "virtual std::unique_ptr< \fBAsteroids::TechnicalServices::Social::SocialMediaInterface\fP > \fBcreateSocialMedia\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Creates objects that belong to the \fBTechnicalServices\fP package\&. 
+.PP
+Definition at line 20 of file TechnicalServicesFactoryInterface\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual std::unique_ptr<\fBAsteroids::TechnicalServices::Financial::CreditCardProcessorInterface\fP> Asteroids::TechnicalServices::TechnicalServicesFactoryInterface::createCreditCardProcessor ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::TechnicalServicesFactory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::TechnicalServices::Persistence::DatabaserInterface\fP> Asteroids::TechnicalServices::TechnicalServicesFactoryInterface::createDatabaser ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::TechnicalServicesFactory\fP\&.
+.SS "virtual std::unique_ptr<\fBAsteroids::TechnicalServices::Social::SocialMediaInterface\fP> Asteroids::TechnicalServices::TechnicalServicesFactoryInterface::createSocialMedia ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAsteroids::TechnicalServices::TechnicalServicesFactory\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

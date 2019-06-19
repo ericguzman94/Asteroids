@@ -1,0 +1,242 @@
+\hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper}{}\section{Asteroids\+:\+:Domain\+:\+:Store\+:\+:Payment\+Helper Class Reference}
+\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper}\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+
+
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface}{Payment\+Helper\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$Payment\+Helper.\+h$>$}
+
+
+
+Inheritance diagram for Asteroids\+:\+:Domain\+:\+:Store\+:\+:Payment\+Helper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asteroids\+:\+:Domain\+:\+:Store\+:\+:Payment\+Helper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a76969f028c9cbad646a492bb38e945b5}{Payment\+Helper} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ factory)
+\item 
+std\+::vector$<$ \hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Enums\+::\+Payment\+Method} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a97fdef985d90e7ed6170c9f414102ee1}{get\+\_\+available\+\_\+payment\+\_\+methods} ()
+\item 
+bool \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a5769756eb1f58b351e36f5619745e398}{is\+\_\+payment\+\_\+method\+\_\+implemented} (\hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Enums\+::\+Payment\+Method} m)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PAYMENT__RESULT__DETAILS__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a603cc23e44e6e3f760f05c3657bf81c5}{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card} (std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ item, std\+::string cc\+\_\+number, std\+::string cc\+\_\+expiration, std\+::string cc\+\_\+security\+\_\+code)
+\item 
+std\+::string \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a94fe588a84f831f5717ea5dbf5eb2b2d}{payment\+\_\+method\+\_\+to\+\_\+string} (\hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Enums\+::\+Payment\+Method} m)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_afc5b560df53ca599a801c77e48f511f2}{init} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_aada704df6830a51f1f40f5785730a5f3}{\+\_\+client\+\_\+server\+\_\+comm}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_aa4aea2ad9b1de1b304bf8d3a08c15b4a}{\+\_\+factory}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Net_1_1NetFactoryInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Net\+Factory\+Interface} $>$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_adcd8cedaf305228ab6d938551f3fbef3}{\+\_\+net\+\_\+factory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface}{Payment\+Helper\+Interface}. 
+
+Definition at line 20 of file Payment\+Helper.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a76969f028c9cbad646a492bb38e945b5}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a76969f028c9cbad646a492bb38e945b5}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!Payment\+Helper@{Payment\+Helper}}
+\index{Payment\+Helper@{Payment\+Helper}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{Payment\+Helper()}{PaymentHelper()}}
+{\footnotesize\ttfamily Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::\+Payment\+Helper (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface} $>$}]{factory }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file Payment\+Helper.\+cpp.
+
+
+
+References \+\_\+factory, and init().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a76969f028c9cbad646a492bb38e945b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a97fdef985d90e7ed6170c9f414102ee1}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a97fdef985d90e7ed6170c9f414102ee1}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!get\+\_\+available\+\_\+payment\+\_\+methods@{get\+\_\+available\+\_\+payment\+\_\+methods}}
+\index{get\+\_\+available\+\_\+payment\+\_\+methods@{get\+\_\+available\+\_\+payment\+\_\+methods}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{get\+\_\+available\+\_\+payment\+\_\+methods()}{get\_available\_payment\_methods()}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Enums\+::\+Payment\+Method} $>$ Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::get\+\_\+available\+\_\+payment\+\_\+methods (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface_adad811502d567c3f77636c4117998a0e}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface}.
+
+
+
+Definition at line 37 of file Payment\+Helper.\+cpp.
+
+
+
+References Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Account\+Balance, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Bitcoin, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Blood, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Credit\+Card, and Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Paypal.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_afc5b560df53ca599a801c77e48f511f2}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_afc5b560df53ca599a801c77e48f511f2}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!init@{init}}
+\index{init@{init}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 133 of file Payment\+Helper.\+cpp.
+
+
+
+References \+\_\+client\+\_\+server\+\_\+comm, \+\_\+factory, and \+\_\+net\+\_\+factory.
+
+
+
+Referenced by Payment\+Helper().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_afc5b560df53ca599a801c77e48f511f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a5769756eb1f58b351e36f5619745e398}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a5769756eb1f58b351e36f5619745e398}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!is\+\_\+payment\+\_\+method\+\_\+implemented@{is\+\_\+payment\+\_\+method\+\_\+implemented}}
+\index{is\+\_\+payment\+\_\+method\+\_\+implemented@{is\+\_\+payment\+\_\+method\+\_\+implemented}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{is\+\_\+payment\+\_\+method\+\_\+implemented()}{is\_payment\_method\_implemented()}}
+{\footnotesize\ttfamily bool Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::is\+\_\+payment\+\_\+method\+\_\+implemented (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Enums\+::\+Payment\+Method}}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface_ac07f8ba4559bd4df4623bf6b65bfaed8}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface}.
+
+
+
+Definition at line 53 of file Payment\+Helper.\+cpp.
+
+
+
+References Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Credit\+Card.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a603cc23e44e6e3f760f05c3657bf81c5}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a603cc23e44e6e3f760f05c3657bf81c5}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card@{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card}}
+\index{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card@{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card()}{pay\_for\_store\_item\_with\_credit\_card()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PAYMENT__RESULT__DETAILS__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+P\+A\+Y\+M\+E\+N\+T\+\_\+\+R\+E\+S\+U\+L\+T\+\_\+\+D\+E\+T\+A\+I\+L\+S\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$ Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1STORE__ITEM__INTERFACE}{Asteroids\+::\+Domain\+::\+Store\+::\+S\+T\+O\+R\+E\+\_\+\+I\+T\+E\+M\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE} $>$}]{item,  }\item[{std\+::string}]{cc\+\_\+number,  }\item[{std\+::string}]{cc\+\_\+expiration,  }\item[{std\+::string}]{cc\+\_\+security\+\_\+code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000014}{Todo}]Uhhhhhhmmm.... using the \char`\"{}\+This object knows about payment result, therefore create it\char`\"{} pattern ; Contrast against the normal factory pattern because normal factory pattern will make this class more dependent on factory classes and less self contained \end{DoxyRefDesc}
+
+
+Ask the Client\+Server\+Communicator to ask the server to authorize on our behalf The server itself would have the external payment gateway interface, which we\textquotesingle{}ll implement there also, but ... there is no T\+CP between client-\/server yet, so the call to Client\+Server\+Communicator\+::authorize\+Patment() is the last call that really matters 
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface_a0e5bbe982669558759c50a5741bcf6cf}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface}.
+
+
+
+Definition at line 107 of file Payment\+Helper.\+cpp.
+
+
+
+References \+\_\+client\+\_\+server\+\_\+comm.
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a94fe588a84f831f5717ea5dbf5eb2b2d}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_a94fe588a84f831f5717ea5dbf5eb2b2d}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!payment\+\_\+method\+\_\+to\+\_\+string@{payment\+\_\+method\+\_\+to\+\_\+string}}
+\index{payment\+\_\+method\+\_\+to\+\_\+string@{payment\+\_\+method\+\_\+to\+\_\+string}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{payment\+\_\+method\+\_\+to\+\_\+string()}{payment\_method\_to\_string()}}
+{\footnotesize\ttfamily std\+::string Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::payment\+\_\+method\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{\hyperlink{namespaceAsteroids_1_1Domain_1_1Store_1_1Enums_a0a0c269f6834cb8b1b6ed3bb02983564}{Enums\+::\+Payment\+Method}}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelperInterface_ab0541525dcfd59b26763f1ce4c90aaae}{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+Interface}.
+
+
+
+Definition at line 64 of file Payment\+Helper.\+cpp.
+
+
+
+References Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Account\+Balance, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Bitcoin, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Blood, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Credit\+Card, Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Paypal, and Asteroids\+::\+Domain\+::\+Store\+::\+Enums\+::\+Undefined.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_aada704df6830a51f1f40f5785730a5f3}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_aada704df6830a51f1f40f5785730a5f3}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!\+\_\+client\+\_\+server\+\_\+comm@{\+\_\+client\+\_\+server\+\_\+comm}}
+\index{\+\_\+client\+\_\+server\+\_\+comm@{\+\_\+client\+\_\+server\+\_\+comm}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{\+\_\+client\+\_\+server\+\_\+comm}{\_client\_server\_comm}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Net_1_1ClientServerCommunicatorInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Client\+Server\+Communicator\+Interface}$>$ Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::\+\_\+client\+\_\+server\+\_\+comm\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 50 of file Payment\+Helper.\+h.
+
+
+
+Referenced by init(), and pay\+\_\+for\+\_\+store\+\_\+item\+\_\+with\+\_\+credit\+\_\+card().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_aa4aea2ad9b1de1b304bf8d3a08c15b4a}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_aa4aea2ad9b1de1b304bf8d3a08c15b4a}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!\+\_\+factory@{\+\_\+factory}}
+\index{\+\_\+factory@{\+\_\+factory}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{\+\_\+factory}{\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Factory_1_1FactoryInterface}{Asteroids\+::\+Domain\+::\+Factory\+::\+Factory\+Interface}$>$ Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Payment\+Helper.\+h.
+
+
+
+Referenced by init(), and Payment\+Helper().
+
+\mbox{\Hypertarget{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_adcd8cedaf305228ab6d938551f3fbef3}\label{classAsteroids_1_1Domain_1_1Store_1_1PaymentHelper_adcd8cedaf305228ab6d938551f3fbef3}} 
+\index{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}!\+\_\+net\+\_\+factory@{\+\_\+net\+\_\+factory}}
+\index{\+\_\+net\+\_\+factory@{\+\_\+net\+\_\+factory}!Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper@{Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper}}
+\subsubsection{\texorpdfstring{\+\_\+net\+\_\+factory}{\_net\_factory}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classAsteroids_1_1Domain_1_1Net_1_1NetFactoryInterface}{Asteroids\+::\+Domain\+::\+Net\+::\+Net\+Factory\+Interface}$>$ Asteroids\+::\+Domain\+::\+Store\+::\+Payment\+Helper\+::\+\_\+net\+\_\+factory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Payment\+Helper.\+h.
+
+
+
+Referenced by init().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Domain/\+Store/\hyperlink{PaymentHelper_8h}{Payment\+Helper.\+h}\item 
+Domain/\+Store/\hyperlink{PaymentHelper_8cpp}{Payment\+Helper.\+cpp}\end{DoxyCompactItemize}

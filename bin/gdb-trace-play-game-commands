@@ -1,0 +1,65 @@
+
+# Note:
+# - Temporary breakpoints used to speed up the trace (avoid too many repeated breakponits)
+# - The very beginning isn't traced because we're using gdb::attach, thus the first breakpoints get skipped
+# - We're not breaking on specific input handlers (ie set_input_up) because we can't provide input during debug
+
+file asteroids-console-client
+exec-file asteroids-console-client
+
+#	Define breakpoints for the trace
+tbreak UI/ClientTextUI/ClientTextUI.cpp:run()
+tbreak UI/ClientTextUI/ClientTextUI.cpp:demand_authentication()
+tbreak UI/ClientTextUI/ClientTextUI.cpp:do_authentication()
+tbreak Domain/Net/Authentication/Authenticator.cpp:attemptLogin
+tbreak Domain/Net/Authentication/Authenticator.cpp:sendAuthToServer
+
+tbreak UI/ClientTextUI/ClientTextUI.cpp:main_menu_loop()
+tbreak UI/ClientTextUI/ClientTextUI.cpp:main_menu()
+
+#	Playing the game
+tbreak UI/ClientTextUI/ClientTextUI.cpp:play_game()
+tbreak Domain/Game/GameFactory.cpp:createGame()
+tbreak UI/ClientTextUI/ClientTextUI.cpp:initialize_display_grid()
+tbreak Domain/Game/Game.cpp:start()
+tbreak Domain/Game/Game.cpp:randomly_place_player
+tbreak Domain/Game/Game.cpp:get_random_board_position
+tbreak Domain/Game/Randomer.cpp:get_double
+tbreak Domain/Game/Actors/Actor.cpp:set_position
+tbreak Domain/Game/Game.cpp:start_round
+tbreak Domain/Game/Game.cpp:initialize_random_rocks
+tbreak UI/ClientTextUI/Input.cpp:enable()
+tbreak UI/ClientTextUI/ClientTextUI.cpp:handle_game_input()
+tbreak Domain/Game/Game.cpp:update()
+tbreak Domain/Game/Game.cpp:calculate_ticks_since_last_update()
+tbreak Domain/Game/Actors/Actor.cpp:get_fired_bullets
+tbreak Domain/Game/Actors/Actor.cpp:update
+tbreak Domain/Game/Actors/Vector.cpp:update
+tbreak Domain/Game/Actors/Actor.cpp:apply_vector_to_position
+tbreak Domain/Game/Game.cpp:keep_actors_in_bounds
+tbreak Domain/Game/Actors/Actor.cpp:check_collision
+tbreak Domain/Game/Game.cpp:maybe_lose_round
+tbreak Domain/Game/Game.cpp:maybe_win_round
+tbreak Domain/Game/Game.cpp:wait_for_frames_per_second
+#	Draw the game
+tbreak UI/ClientTextUI/ClientTextUI.cpp:draw_game()
+tbreak Domain/Game/Game.cpp:get_round()
+tbreak Domain/Game/Game.cpp:get_score()
+tbreak UI/ClientTextUI/DisplayGrid.cpp:135
+tbreak UI/ClientTextUI/DisplayGrid.cpp:add_border
+tbreak UI/ClientTextUI/DisplayGrid.cpp:set_header_text
+tbreak UI/ClientTextUI/DisplayGrid.cpp:set_footer_text
+tbreak Domain/Game/Game.cpp:get_actors()
+tbreak UI/ClientTextUI/ClientTextUI.cpp:draw_actor
+tbreak UI/ClientTextUI/DisplayGrid.cpp:draw_filled_polygon
+tbreak UI/ClientTextUI/DisplayGrid.cpp:draw_polygon
+tbreak UI/ClientTextUI/DisplayGrid.cpp:print()
+tbreak UI/ClientTextUI/DisplayGrid.cpp:render()
+tbreak UI/ClientTextUI/DisplayGrid.cpp:clear_grid()
+#	Game over
+tbreak UI/ClientTextUI/Input.cpp:disable()
+
+
+
+
+

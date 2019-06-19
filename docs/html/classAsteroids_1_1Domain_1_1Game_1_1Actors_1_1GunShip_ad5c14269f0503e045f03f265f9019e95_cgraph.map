@@ -1,0 +1,12 @@
+<map id="Asteroids::Domain::Game::Actors::GunShip::init" name="Asteroids::Domain::Game::Actors::GunShip::init">
+<area shape="rect" id="node2" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#a753c275a7840962c92cfe4843bcbd6ac" title="Asteroids::Domain::\lGame::Actors::GunShip\l::reset" alt="" coords="240,85,401,141"/>
+<area shape="rect" id="node3" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a538200753592ca63f7c3348fcece583f" title="Asteroids::Domain::\lGame::Actors::Actor\l::reset" alt="" coords="459,5,601,61"/>
+<area shape="rect" id="node5" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a4dddef94a025aca35e8592aa3aac71e5" title="Asteroids::Domain::\lGame::Actors::Actor\l::set_bullet_speed" alt="" coords="459,85,601,141"/>
+<area shape="rect" id="node6" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1GunShip.html#a4947769593f504d4342abcec5a01330b" title="Asteroids::Domain::\lGame::Actors::GunShip\l::initialize_polygon" alt="" coords="449,165,611,221"/>
+<area shape="rect" id="node4" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a3678c27cfb63d8b4eb9b0aa64e352ee1" title="Asteroids::Domain::\lGame::Actors::Actor\l::clear_input" alt="" coords="659,5,801,61"/>
+<area shape="rect" id="node7" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a224abd0a9dff102361ce2a305ba4734f" title="Asteroids::Domain::\lGame::Actors::Actor\l::set_polygon" alt="" coords="659,165,801,221"/>
+<area shape="rect" id="node8" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Actor.html#a4bb89af7457ff402fa5a4a11d62ab4ca" title="Asteroids::Domain::\lGame::Actors::Actor\l::update_rect" alt="" coords="849,165,992,221"/>
+<area shape="rect" id="node9" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a0ab06f4fe6e0dbd681c89397f22aa08f" title="Asteroids::Domain::\lGame::Actors::Rect::\ladd_offset" alt="" coords="1040,125,1187,181"/>
+<area shape="rect" id="node11" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a687d0848c13d1b8dfbd2f896636b4145" title="Create a rect from polygon points. " alt="" coords="1040,205,1187,261"/>
+<area shape="rect" id="node10" href="$classAsteroids_1_1Domain_1_1Game_1_1Actors_1_1Rect.html#a40c593b8be9c243d6cdc30e2f8ee67df" title="Asteroids::Domain::\lGame::Actors::Rect::\lupdate_dimensions" alt="" coords="1235,165,1381,221"/>
+</map>

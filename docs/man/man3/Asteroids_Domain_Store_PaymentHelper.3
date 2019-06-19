@@ -1,0 +1,139 @@
+.TH "Asteroids::Domain::Store::PaymentHelper" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::Domain::Store::PaymentHelper \- Implementation of \fBPaymentHelperInterface\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <PaymentHelper\&.h>\fP
+.PP
+Inherits \fBAsteroids::Domain::Store::PaymentHelperInterface\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPaymentHelper\fP (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+.br
+.ti -1c
+.RI "std::vector< \fBEnums::PaymentMethod\fP > \fBget_available_payment_methods\fP ()"
+.br
+.ti -1c
+.RI "bool \fBis_payment_method_implemented\fP (\fBEnums::PaymentMethod\fP m)"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > \fBpay_for_store_item_with_credit_card\fP (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)"
+.br
+.ti -1c
+.RI "std::string \fBpayment_method_to_string\fP (\fBEnums::PaymentMethod\fP m)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Net::ClientServerCommunicatorInterface\fP > \fB_client_server_comm\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > \fB_factory\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBAsteroids::Domain::Net::NetFactoryInterface\fP > \fB_net_factory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementation of \fBPaymentHelperInterface\fP\&. 
+.PP
+Definition at line 20 of file PaymentHelper\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::Domain::Store::PaymentHelper::PaymentHelper (std::shared_ptr< \fBAsteroids::Domain::Factory::FactoryInterface\fP > factory)"
+
+.PP
+Definition at line 27 of file PaymentHelper\&.cpp\&.
+.PP
+References _factory, and init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::vector< \fBEnums::PaymentMethod\fP > Asteroids::Domain::Store::PaymentHelper::get_available_payment_methods ()\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::PaymentHelperInterface\fP\&.
+.PP
+Definition at line 37 of file PaymentHelper\&.cpp\&.
+.PP
+References Asteroids::Domain::Store::Enums::AccountBalance, Asteroids::Domain::Store::Enums::Bitcoin, Asteroids::Domain::Store::Enums::Blood, Asteroids::Domain::Store::Enums::CreditCard, and Asteroids::Domain::Store::Enums::Paypal\&.
+.SS "void Asteroids::Domain::Store::PaymentHelper::init ()\fC [private]\fP"
+
+.PP
+Definition at line 133 of file PaymentHelper\&.cpp\&.
+.PP
+References _client_server_comm, _factory, and _net_factory\&.
+.PP
+Referenced by PaymentHelper()\&.
+.SS "bool Asteroids::Domain::Store::PaymentHelper::is_payment_method_implemented (\fBEnums::PaymentMethod\fP m)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::PaymentHelperInterface\fP\&.
+.PP
+Definition at line 53 of file PaymentHelper\&.cpp\&.
+.PP
+References Asteroids::Domain::Store::Enums::CreditCard\&.
+.SS "std::shared_ptr< \fBAsteroids::Domain::Store::PAYMENT_RESULT_DETAILS_INTERFACE\fP > Asteroids::Domain::Store::PaymentHelper::pay_for_store_item_with_credit_card (std::shared_ptr< \fBAsteroids::Domain::Store::STORE_ITEM_INTERFACE\fP > item, std::string cc_number, std::string cc_expiration, std::string cc_security_code)\fC [virtual]\fP"
+
+.PP
+\fBTodo\fP
+.RS 4
+Uhhhhhhmmm\&.\&.\&.\&. using the 'This object knows about payment result, therefore create it' pattern ; Contrast against the normal factory pattern because normal factory pattern will make this class more dependent on factory classes and less self contained 
+.RE
+.PP
+.PP
+Ask the ClientServerCommunicator to ask the server to authorize on our behalf The server itself would have the external payment gateway interface, which we'll implement there also, but \&.\&.\&. there is no TCP between client-server yet, so the call to ClientServerCommunicator::authorizePatment() is the last call that really matters 
+.PP
+Implements \fBAsteroids::Domain::Store::PaymentHelperInterface\fP\&.
+.PP
+Definition at line 107 of file PaymentHelper\&.cpp\&.
+.PP
+References _client_server_comm\&.
+.SS "std::string Asteroids::Domain::Store::PaymentHelper::payment_method_to_string (\fBEnums::PaymentMethod\fP m)\fC [virtual]\fP"
+
+.PP
+Implements \fBAsteroids::Domain::Store::PaymentHelperInterface\fP\&.
+.PP
+Definition at line 64 of file PaymentHelper\&.cpp\&.
+.PP
+References Asteroids::Domain::Store::Enums::AccountBalance, Asteroids::Domain::Store::Enums::Bitcoin, Asteroids::Domain::Store::Enums::Blood, Asteroids::Domain::Store::Enums::CreditCard, Asteroids::Domain::Store::Enums::Paypal, and Asteroids::Domain::Store::Enums::Undefined\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::shared_ptr<\fBAsteroids::Domain::Net::ClientServerCommunicatorInterface\fP> Asteroids::Domain::Store::PaymentHelper::_client_server_comm\fC [private]\fP"
+
+.PP
+Definition at line 50 of file PaymentHelper\&.h\&.
+.PP
+Referenced by init(), and pay_for_store_item_with_credit_card()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Factory::FactoryInterface\fP> Asteroids::Domain::Store::PaymentHelper::_factory\fC [private]\fP"
+
+.PP
+Definition at line 46 of file PaymentHelper\&.h\&.
+.PP
+Referenced by init(), and PaymentHelper()\&.
+.SS "std::shared_ptr<\fBAsteroids::Domain::Net::NetFactoryInterface\fP> Asteroids::Domain::Store::PaymentHelper::_net_factory\fC [private]\fP"
+
+.PP
+Definition at line 47 of file PaymentHelper\&.h\&.
+.PP
+Referenced by init()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.

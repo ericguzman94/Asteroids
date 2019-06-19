@@ -1,0 +1,317 @@
+.TH "Asteroids::UI::ClientTextUI::DisplayGrid" 3 "Fri Dec 14 2018" "CPSC 462 - Asteroids" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Asteroids::UI::ClientTextUI::DisplayGrid \- Class to help translate and render actors and stuff from the virtual game board, to actual ASCII graphics that can be seen\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DisplayGrid\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDisplayGrid\fP (double source_width, double source_height, int grid_width, int grid_height)"
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "void \fBdraw_filled_polygon\fP (double offset_x, double offset_y, const std::vector< std::pair< double, double >> &points)"
+.br
+.ti -1c
+.RI "void \fBdraw_polygon\fP (double offset_x, double offset_y, const std::vector< std::pair< double, double >> &points)"
+.br
+.ti -1c
+.RI "void \fBprint\fP ()"
+.br
+.ti -1c
+.RI "string \fBrender\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_footer_text\fP (string s)"
+.br
+.ti -1c
+.RI "void \fBset_grid_pixel\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBset_header_text\fP (string s)"
+.br
+.ti -1c
+.RI "void \fBset_pixel\fP (double x, double y)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBadd_border\fP ()"
+.br
+.ti -1c
+.RI "void \fBcalculate_translation\fP ()"
+.br
+.ti -1c
+.RI "void \fBclear_grid\fP ()"
+.br
+.ti -1c
+.RI "void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "std::pair< int, int > \fBtranslate_source_point\fP (double x, double y)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fB_footer_text\fP"
+.br
+.ti -1c
+.RI "string \fB_header_text\fP"
+.br
+.ti -1c
+.RI "int \fB_height\fP"
+.br
+.ti -1c
+.RI "double \fB_source_height\fP"
+.br
+.ti -1c
+.RI "double \fB_source_width\fP"
+.br
+.ti -1c
+.RI "double \fB_translation_ratio\fP"
+.br
+.ti -1c
+.RI "int \fB_unused_height\fP"
+.br
+.ti -1c
+.RI "double \fB_unused_source_height\fP"
+.br
+.ti -1c
+.RI "double \fB_unused_source_width\fP"
+.br
+.ti -1c
+.RI "int \fB_unused_width\fP"
+.br
+.ti -1c
+.RI "int \fB_width\fP"
+.br
+.ti -1c
+.RI "std::vector< std::vector< bool > > \fBgrid\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class to help translate and render actors and stuff from the virtual game board, to actual ASCII graphics that can be seen\&. 
+.PP
+Definition at line 28 of file DisplayGrid\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Asteroids::UI::ClientTextUI::DisplayGrid::DisplayGrid (double source_width, double source_height, int grid_width, int grid_height)"
+
+.PP
+Definition at line 29 of file DisplayGrid\&.cpp\&.
+.PP
+References _height, _source_height, _source_width, _width, and init()\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::add_border ()\fC [private]\fP"
+
+.PP
+Definition at line 102 of file DisplayGrid\&.cpp\&.
+.PP
+References _source_height, _source_width, and set_pixel()\&.
+.PP
+Referenced by clear(), and clear_grid()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::calculate_translation ()\fC [private]\fP"
+
+.PP
+Definition at line 54 of file DisplayGrid\&.cpp\&.
+.PP
+References _height, _source_height, _source_width, _translation_ratio, _unused_height, _unused_source_height, _unused_source_width, _unused_width, and _width\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::clear ()"
+
+.PP
+Definition at line 135 of file DisplayGrid\&.cpp\&.
+.PP
+References add_border(), and grid\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::clear_grid ()\fC [private]\fP"
+
+.PP
+Definition at line 78 of file DisplayGrid\&.cpp\&.
+.PP
+References _height, _width, add_border(), and grid\&.
+.PP
+Referenced by reset()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::draw_filled_polygon (double offset_x, double offset_y, const std::vector< std::pair< double, double >> & points)"
+
+.PP
+Definition at line 163 of file DisplayGrid\&.cpp\&.
+.PP
+References draw_polygon()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::draw_polygon (double offset_x, double offset_y, const std::vector< std::pair< double, double >> & points)"
+
+.PP
+\fBTodo\fP
+.RS 4
+It'd be nice if we could finish connecting the polygon points with a line 
+.RE
+.PP
+
+.PP
+Definition at line 219 of file DisplayGrid\&.cpp\&.
+.PP
+References set_pixel()\&.
+.PP
+Referenced by draw_filled_polygon()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::init ()\fC [private]\fP"
+
+.PP
+Definition at line 47 of file DisplayGrid\&.cpp\&.
+.PP
+References reset()\&.
+.PP
+Referenced by DisplayGrid()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::print ()"
+
+.PP
+Definition at line 317 of file DisplayGrid\&.cpp\&.
+.PP
+References render()\&.
+.SS "string Asteroids::UI::ClientTextUI::DisplayGrid::render ()"
+
+.PP
+Definition at line 333 of file DisplayGrid\&.cpp\&.
+.PP
+References _footer_text, _header_text, _unused_width, and grid\&.
+.PP
+Referenced by print()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::reset ()"
+
+.PP
+Definition at line 121 of file DisplayGrid\&.cpp\&.
+.PP
+References _footer_text, _header_text, calculate_translation(), and clear_grid()\&.
+.PP
+Referenced by init()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::set_footer_text (string s)"
+
+.PP
+Definition at line 156 of file DisplayGrid\&.cpp\&.
+.PP
+References _footer_text\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::set_grid_pixel (int x, int y)"
+
+.PP
+Definition at line 300 of file DisplayGrid\&.cpp\&.
+.PP
+References _height, _width, and grid\&.
+.PP
+Referenced by set_pixel()\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::set_header_text (string s)"
+
+.PP
+Definition at line 149 of file DisplayGrid\&.cpp\&.
+.PP
+References _header_text\&.
+.SS "void Asteroids::UI::ClientTextUI::DisplayGrid::set_pixel (double x, double y)"
+
+.PP
+Definition at line 288 of file DisplayGrid\&.cpp\&.
+.PP
+References set_grid_pixel(), and translate_source_point()\&.
+.PP
+Referenced by add_border(), and draw_polygon()\&.
+.SS "std::pair< int, int > Asteroids::UI::ClientTextUI::DisplayGrid::translate_source_point (double x, double y)\fC [private]\fP"
+
+.PP
+Definition at line 380 of file DisplayGrid\&.cpp\&.
+.PP
+References _translation_ratio\&.
+.PP
+Referenced by set_pixel()\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "string Asteroids::UI::ClientTextUI::DisplayGrid::_footer_text\fC [private]\fP"
+
+.PP
+Definition at line 88 of file DisplayGrid\&.h\&.
+.PP
+Referenced by render(), reset(), and set_footer_text()\&.
+.SS "string Asteroids::UI::ClientTextUI::DisplayGrid::_header_text\fC [private]\fP"
+
+.PP
+Definition at line 88 of file DisplayGrid\&.h\&.
+.PP
+Referenced by render(), reset(), and set_header_text()\&.
+.SS "int Asteroids::UI::ClientTextUI::DisplayGrid::_height\fC [private]\fP"
+
+.PP
+Definition at line 72 of file DisplayGrid\&.h\&.
+.PP
+Referenced by calculate_translation(), clear_grid(), DisplayGrid(), and set_grid_pixel()\&.
+.SS "double Asteroids::UI::ClientTextUI::DisplayGrid::_source_height\fC [private]\fP"
+
+.PP
+Definition at line 78 of file DisplayGrid\&.h\&.
+.PP
+Referenced by add_border(), calculate_translation(), and DisplayGrid()\&.
+.SS "double Asteroids::UI::ClientTextUI::DisplayGrid::_source_width\fC [private]\fP"
+
+.PP
+Definition at line 78 of file DisplayGrid\&.h\&.
+.PP
+Referenced by add_border(), calculate_translation(), and DisplayGrid()\&.
+.SS "double Asteroids::UI::ClientTextUI::DisplayGrid::_translation_ratio\fC [private]\fP"
+
+.PP
+Definition at line 83 of file DisplayGrid\&.h\&.
+.PP
+Referenced by calculate_translation(), and translate_source_point()\&.
+.SS "int Asteroids::UI::ClientTextUI::DisplayGrid::_unused_height\fC [private]\fP"
+
+.PP
+Definition at line 72 of file DisplayGrid\&.h\&.
+.PP
+Referenced by calculate_translation()\&.
+.SS "double Asteroids::UI::ClientTextUI::DisplayGrid::_unused_source_height\fC [private]\fP"
+
+.PP
+Definition at line 78 of file DisplayGrid\&.h\&.
+.PP
+Referenced by calculate_translation()\&.
+.SS "double Asteroids::UI::ClientTextUI::DisplayGrid::_unused_source_width\fC [private]\fP"
+
+.PP
+Definition at line 78 of file DisplayGrid\&.h\&.
+.PP
+Referenced by calculate_translation()\&.
+.SS "int Asteroids::UI::ClientTextUI::DisplayGrid::_unused_width\fC [private]\fP"
+
+.PP
+Definition at line 72 of file DisplayGrid\&.h\&.
+.PP
+Referenced by calculate_translation(), and render()\&.
+.SS "int Asteroids::UI::ClientTextUI::DisplayGrid::_width\fC [private]\fP"
+
+.PP
+Definition at line 72 of file DisplayGrid\&.h\&.
+.PP
+Referenced by calculate_translation(), clear_grid(), DisplayGrid(), and set_grid_pixel()\&.
+.SS "std::vector<std::vector<bool> > Asteroids::UI::ClientTextUI::DisplayGrid::grid\fC [private]\fP"
+
+.PP
+Definition at line 84 of file DisplayGrid\&.h\&.
+.PP
+Referenced by clear(), clear_grid(), render(), and set_grid_pixel()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CPSC 462 - Asteroids from the source code\&.
